@@ -1,4 +1,9 @@
 reset
+set encoding utf8
+
+set terminal postscript eps enhanced color linewidth 4 size 16cm,9cm font 32
+set output 'plots/alter-spielzeit.eps'
+
 set xlabel "Wöchentliche Spielzeit / h"
 set ylabel "Anteil / %"
 
