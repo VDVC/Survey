@@ -9,5 +9,7 @@ set ylabel "Anzahl / 1"
 
 set style fill solid 0.5
 
-plot "daten/alter.tsv" using (2014-$1):2 t"" with boxes lc rgb"black"
+set xrange [10:60]
+
+plot "daten/alter.tsv" using (2014-$1):2:(sqrt($2)) t"" with boxerror lc rgb"black"
 
