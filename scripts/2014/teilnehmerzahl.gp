@@ -11,8 +11,8 @@ set xtics rotate by -30
 set xdata time
 set timefmt "%Y-%m-%dT%H:%M:%S"
 set format x "%d.%m."
+set xrange ["2014-12-01T00:00:00":"2014-12-31T24:00:00"]
 set ytics 1
 
 plot \
-	"daten/2014/teilnehmerzahl-w1.tsv" using 4:($1/1e3) t"" with lines ls 1, \
-	"daten/2014/teilnehmerzahl.tsv" using 4:($1/1e3) t"" with lines ls 3
+	"daten/2014/teilnehmerzahl.tsv" using 3:($1/1e3) t"" with lines ls 1
