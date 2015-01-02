@@ -1,3 +1,5 @@
 *~
-*.eps
+*.DS_Store
 *.ods
+rohdaten/*
+
