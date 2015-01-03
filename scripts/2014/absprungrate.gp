@@ -8,7 +8,7 @@ set ylabel "Anteil / %"
 
 set style fill solid 0.5
 
+set key off
 set xtics rotate by -30
 
-plot "daten/2014/absprungrate.tsv" using 3:xticlabels(4) t"" with boxes lc rgb"black"
-
+plot "daten/2014/absprungrate.tsv" using 3:xticlabels(4) with boxes lc rgb"black"

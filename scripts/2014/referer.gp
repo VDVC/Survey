@@ -10,7 +10,9 @@ set yrange [1:5000]
 
 set style fill solid 0.5
 
+set key off
 set xtics rotate by -30
 
-plot "daten/2014/referer.tsv" using 2:xticlabels(1) t"" with boxes lc rgb"black"
+plot "daten/2014/referer.tsv" using 2:xticlabels(1) t"" with boxes lc rgb"black",\
+	"daten/2014/referer.tsv" u 0:($2*0.9):($2) with labels rotate by -90 left
 
