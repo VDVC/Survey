@@ -4,7 +4,7 @@ set encoding utf8
 set terminal postscript eps enhanced color linewidth 4 size 16cm,9cm font 32
 set output 'plots/2014/ipversion.eps'
 
-set ylabel "Anzahl / k"
+set ylabel "Anzahl / 1000"
 
 set style fill solid 0.5
 
