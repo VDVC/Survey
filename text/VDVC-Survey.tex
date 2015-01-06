@@ -1,11 +1,11 @@
 \documentclass[11pt]{scrartcl}
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage[ngerman]{babel}
 \usepackage[pdftex]{graphicx}
 \usepackage{epstopdf}
 \usepackage{hyperref}
 \usepackage[utf8]{inputenc}
-\usepackage{units}
 \usepackage{verbatim}
 
 \graphicspath{{./}{plots/}}
@@ -17,38 +17,27 @@
 \begin{document}
 \maketitle
 
+\newpage
 \section{Beschreibung der Stichprobe}
 \subsection{Altersstruktur}
 
 \begin{figure}[htbp]
    \centering
-   \includegraphics{2013/alter}
-   \caption{Altersstruktur 2013}
-   \label{fig:2013-alter}
+   \includegraphics[width=0.8\linewidth]{2013/alter}\\
+   \includegraphics[width=0.8\linewidth]{2014/alter}
+   \caption{Altersstruktur}
+   \label{fig:alter}
 \end{figure}
 
-\begin{figure}[htbp]
-   \centering
-   \includegraphics{2014/alter}
-   \caption{Altersstruktur 2014}
-   \label{fig:2014-alter}
-\end{figure}
-
-
+\clearpage
 \subsection{Geschlechter}
 
 \begin{figure}[htbp]
    \centering
-   \includegraphics{2013/geschlecht-abs}
-   \caption{Geschlechter 2013}
-   \label{fig:2013-geschlecht}
-\end{figure}
-
-\begin{figure}[htbp]
-   \centering
-   \includegraphics{2014/geschlecht-abs}
-   \caption{Geschlechter 2014}
-   \label{fig:2014-geschlecht}
+   \includegraphics[width=0.8\linewidth]{2013/geschlecht-rel}\\
+   \includegraphics[width=0.8\linewidth]{2014/geschlecht-rel}
+   \caption{Geschlechter}
+   \label{fig:geschlecht}
 \end{figure}
 
 \clearpage
