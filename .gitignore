@@ -5,5 +5,5 @@
 *.ods
 *.out
 *converted-to.pdf
-rohdaten/*
+rohdaten
 
