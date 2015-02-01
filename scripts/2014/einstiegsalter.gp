@@ -2,7 +2,6 @@ reset
 set encoding utf8
 
 set terminal postscript eps enhanced color linewidth 4 size 16cm,9cm font 32
-set output 'plots/2014/einstiegsalter.eps'
 
 set xlabel "Einstiegsalter / a"
 set xrange [0:50]
