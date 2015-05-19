@@ -318,13 +318,6 @@
 "Anderes"	0	1	1	3	2	7					
 "Gesamt"	139	479	702	1032	556	2908					
 
-"Table: Was ist dein Geschlecht? * In Videospielen ist die körperbetonte Darstellung … [Anzahl, Zeile %, Spalte %, Gesamt %]."											
-"Was ist dein Geschlecht?"		1	2	3	4	5	"… von Frauen problematischer als die von Männer."	"… von Männern problematischer als von Frauen."	"… gleich problematisch."	"… nicht problematisch."	"Gesamt"
-"Männlich"	1362	6	8	17	24	13	993	48	665	1277	4413
-"Weiblich"	44	0	0	1	0	2	64	1	31	36	179
-"Anderes"	8	0	0	0	0	0	3	0	3	3	17
-"Gesamt"	1414	6	8	18	24	15	1060	49	699	1316	4609
-
 "Table: Was ist dein Geschlecht? * [… körperbetonte Darstellungen.] [Skala 1] Ich wünsche mir in Computerspielen … [Anzahl, Zeile %, Spalte %, Gesamt %]."											
 "[… körperbetonte Darstellungen.] [Skala 1] Ich wünsche mir in Computerspielen …"											
 "Was ist dein Geschlecht?"	"mehr"	"unverändert"	"weniger"	"Gesamt"							
