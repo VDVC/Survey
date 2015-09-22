@@ -212,9 +212,9 @@
 "Alan Wake's American Nightmare"	"Alan Wake's American Nightmare"
 "Alarm für Cobra 11: Das Syndikat"	"Alarm für Cobra 11: Das Syndikat"
 "Alice: Madness Returns"	"Alice: Madness Returns"
-"Alien  Isolation"	(titel)
 "Alien Hive"	(titel)
 "Alien: Isolation"	"Alien: Isolation"
+"Alien Isolation"	(titel)
 "Alien Rage: Unlimited"	(titel)
 "Alien Swarm"	"Alien Swarm"
 "Aliens: Colonial Marines"	"Aliens: Colonial Marines"
@@ -260,10 +260,8 @@
 "Army of Two"	"Army of Two"
 "Art of Balance"	"Art of Balance"
 "Asphalt 8: Airborne"	(titel)
-"Assassins  Creed Black Flag"	(titel)
-"Assassins  Creed Unity"	(titel)
-"Assassin's Creed  Unity"	(titel)
 "Assassin's Creed (1)"	(titel)
+"Assassins Creed Black Flag"	(titel)
 "Assassin's Creed: Brotherhood"	"Assassin's Creed: Brotherhood"
 "Assassin's Creed II"	"Assassin's Creed II"
 "Assassin's Creed III"	"Assassin's Creed III"
@@ -271,6 +269,7 @@
 "Assassin's Creed: Revelations"	"Assassin's Creed: Revelations"
 "Assassin's Creed Rogue"	(titel)
 "Assassin's Creed: Unity"	"Assassin's Creed: Unity"
+"Assassin's Creed Unity"	(titel)
 "Assetto Corsa"	(titel)
 "Audiosurf 2"	(titel)
 "Audiosurf: Ride Your Music"	"Audiosurf: Ride Your Music"
@@ -297,12 +296,11 @@
 "Battle Island"	(titel)
 "Battle Realms"	"Battle Realms"
 "BattleBlock Theater"	"BattleBlock Theater"
-"Battlefield  4"	(titel)
 "Battlefield 1942"	"Battlefield 1942"
 "Battlefield 2"	"Battlefield 2"
 "Battlefield 3"	"Battlefield 3"
 "Battlefield 4"	"Battlefield 4"
-"Battlefield 4/Final  Stand"	(titel)
+"Battlefield 4/Final Stand"	(titel)
 "Battlefield: Bad Company"	"Battlefield: Bad Company"
 "Battlefield: Bad Company 2"	"Battlefield: Bad Company 2"
 "Battlefield Heroes"	(titel)
@@ -342,11 +340,11 @@
 "BloodRayne"	BloodRayne
 "Bloons Tower Defense 5"	(titel)
 "Blur"	Blur
-"Book  of unwritten Tales"	(titel)
+"Book of unwritten Tales"	(titel)
 "Boom Beach"	(titel)
 "Borderlands"	Borderlands
-"Borderlands  The Pre- Sequel"	(titel)
 "Borderlands 2"	"Borderlands 2"
+"Borderlands The Pre- Sequel"	(titel)
 "Borderlands: The Pre-Sequel"	(titel)
 "Boulder Dash"	"Boulder Dash"
 "Braid"	Braid
@@ -411,7 +409,7 @@
 "Cities in Motion"	"Cities in Motion"
 "Cities in Motion 2"	"Cities in Motion 2"
 "Civ. Beyond Earth"	(titel)
-"Civilization  Beyond Earth"	(titel)
+"Civilization Beyond Earth"	(titel)
 "Civilization Revolution"	(titel)
 "Clash of Clans"	(titel)
 "Clicker heroes"	(titel)
@@ -426,8 +424,6 @@
 "Command & Conquer: Tiberian Sun"	"Command & Conquer: Tiberian Sun"
 "Command & Conquer: Tiberium Alliances"	(titel)
 "Command and Conquer 3: Tiberium Wars"	(titel)
-"Company of  Heroes"	(titel)
-"Company of  Heroes 2"	(titel)
 "Company of Heroes"	"Company of Heroes"
 "Company of Heroes 2"	"Company of Heroes 2"
 "Construction Simulator 2015"	(titel)
@@ -519,7 +515,7 @@
 "Democracy 3"	(titel)
 "Demon's Souls"	"Demon's Souls"
 "Deponia"	Deponia
-"Deponia -  the Complete Journey"	(titel)
+"Deponia - the Complete Journey"	(titel)
 "Deponia: The Complete Journey"	(titel)
 "Depth"	(titel)
 "Der Herr der Ringe: Der Krieg im Norden"	"Der Herr der Ringe: Der Krieg im Norden"
@@ -582,8 +578,6 @@
 "DotA 1"	(titel)
 "Dota 2"	(titel)
 "Downfall"	(titel)
-"Dragon  Age: Inquisition"	(titel)
-"Dragon Age  Inquisition"	(titel)
 "Dragon Age II"	"Dragon Age II"
 "Dragon Age: Inquisition"	"Dragon Age: Inquisition"
 "Dragon Age. Inquisition"	(titel)
@@ -682,7 +676,6 @@
 "F1 Race Stars"	"F1 Race Stars"
 "F.E.A.R. 2"	(titel)
 "F.E.A.R. 3"	"F.E.A.R. 3"
-"FIFA  15"	(titel)
 "FIFA 12"	"FIFA 12"
 "FIFA 13"	"FIFA 13"
 "FIFA 14"	"FIFA 14"
@@ -704,13 +697,12 @@
 "Family Guy: Mission Sachensuche"	(titel)
 "Fantasia: Mickey Mouse Magic"	(titel)
 "Fantasy Life"	"Fantasy Life"
-"Far  Cry 3"	(titel)
-"Far  cry 4"	(titel)
 "Far Cry"	"Far Cry"
 "Far Cry 2"	"Far Cry 2"
 "Far Cry 3"	"Far Cry 3"
 "Far Cry 3: Blood Dragon"	"Far Cry 3: Blood Dragon"
 "Far Cry 4"	"Far Cry 4"
+"Far cry 4"	"Far Cry 4"
 "FarmVille"	(titel)
 "Farmville 2"	(titel)
 "Farmville Heroes"	(titel)
@@ -754,7 +746,6 @@
 "FortressCraft Evolved!"	(titel)
 "Forza Horizon"	"Forza Horizon"
 "Forza Horizon 2"	"Forza Horizon 2"
-"Forza Motorsport  5"	(titel)
 "Forza Motorsport 4"	"Forza Motorsport 4"
 "Forza Motorsport 5"	"Forza Motorsport 5"
 "Fractured Space"	(titel)
@@ -817,7 +808,7 @@
 "Gothic"	Gothic
 "Gothic 3"	"Gothic 3"
 "Gothic II"	"Gothic II"
-"Gothic II - Die  Nacht des Raben"	(titel)
+"Gothic II - Die Nacht des Raben"	(titel)
 "Gran Turismo 5"	"Gran Turismo 5"
 "Gran Turismo 6"	"Gran Turismo 6"
 "Grand Theft Auto"	"Grand Theft Auto"
@@ -876,8 +867,8 @@
 "Heroes & Generals"	(titel)
 "Heroes Charge"	(titel)
 "Heroes of Dragon Age"	(titel)
-"Heroes of Might and  Magic 5"	(titel)
 "Heroes of Might and Magic 2"	(titel)
+"Heroes of Might and Magic 5"	(titel)
 "Heroes of Might and Magic 6"	(titel)
 "Heroes of Might and Magic III: The Restoration of Erathia"	"Heroes of Might and Magic III: The Restoration of Erathia"
 "Heroes of Might and Magic V"	"Heroes of Might and Magic V"
@@ -919,8 +910,8 @@
 "Imouto Ijime"	(titel)
 "InFamous: First Light"	"inFamous: First Light"
 "InWorldz"	(titel)
-"Indiana  Jones-greatest Adventures"	(titel)
 "Indiana Jones and the Fate of Atlantis"	"Indiana Jones and the Fate of Atlantis"
+"Indiana Jones-greatest Adventures"	(titel)
 "Infestation"	Infestation
 "Infinite Undiscovery"	"Infinite Undiscovery"
 "Infinity Blade II"	"Infinity Blade II"
@@ -991,8 +982,8 @@
 "Landwirtschafts-Simulator 2015"	(titel)
 "Lara Croft and the Guardian of Light"	"Lara Croft and the Guardian of Light"
 "Lara Croft und der Tempel des Osiris"	(titel)
-"Last  of Us"	(titel)
 "Last Chaos"	"Last Chaos"
+"Last of Us"	(titel)
 "League of Legends"	(titel)
 "Left 4 Dead"	"Left 4 Dead"
 "Left 4 Dead 2"	"Left 4 Dead 2"
@@ -1152,10 +1143,10 @@
 "Need for Speed: Shift"	"Need for Speed: Shift"
 "Need for Speed: The Crew"	(titel)
 "Need for Speed: The Run"	"Need for Speed: The Run"
-"Need for Speed Underground  2"	(titel)
 "Need for Speed: Underground 2"	"Need for Speed: Underground 2"
+"Need for Speed Underground 2"	(titel)
 "Need for Speed World"	(titel)
-"Neuroshima  Hex"	(titel)
+"Neuroshima Hex"	(titel)
 "Never Alone"	(titel)
 "Neverwinter Nights"	"Neverwinter Nights"
 "Neverwinter Nights 2"	"Neverwinter Nights 2"
@@ -1200,7 +1191,6 @@
 "Pandora - First Contact"	(titel)
 "Panzer Corps: Wehrmacht"	(titel)
 "Papers, Please"	(titel)
-"Path of  Exile"	(titel)
 "Path of Exile"	"Path of Exile"
 "Pathfinder Online"	(titel)
 "Patrizier IV"	"Patrizier IV"
@@ -1229,26 +1219,25 @@
 "Plague Inc."	"Plague Inc."
 "Plague Inc. Evolved"	(titel)
 "Planetary Annihilation"	(titel)
-"Planetside  2"	(titel)
 "Planetside 2"	"PlanetSide 2"
-"Plants vs.  Zombie"	(titel)
+"Plants vs. Zombie"	(titel)
 "Play Epic Battle Fantasy 4"	(titel)
 "Playstation Home"	(titel)
-"Pokémon Feuerrot/Blattgrün"	(titel)
-"Pokémon Gelb"	(titel)
-"Pokémon Mystery Dungeon 2"	(titel)
-"Pokémon Mystery Dungeon: Explorers of Sky"	(titel)
-"Pokémon Omega  Rubin"	(titel)
-"Pokémon Omega Rubin/Alpha Saphir"	(titel)
-"Pokémon Platin-Edition"	"Pokémon Platin-Edition"
-"Pokémon: Schwarz/Weiß"	(titel)
-"Pokémon: Schwarz/Weiß 2"	(titel)
+"Pokémon: Alpha Saphir"	(titel)
+"Pokémon: Feuerrote Edition"	"Pokémon: Feuerrote Edition"
+"Pokémon: Gelbe Edition - Special Pikachu Edition"	"Pokémon: Gelbe Edition - Special Pikachu Edition"
+"Pokémon Mystery Dungeon: Erkundungsteam Dunkelheit"	"Pokémon Mystery Dungeon: Erkundungsteam Dunkelheit"
+"Pokémon Mystery Dungeon: Erkundungsteam Himmel"	"Pokémon Mystery Dungeon: Erkundungsteam Himmel"
+"Pokémon Omega Rubin"	(titel)
+"Pokémon: Platinum Version"	"Pokémon: Platinum Version"
+"Pokémon: Schwarze Edition"	"Pokémon: Schwarze Edition"
+"Pokémon: Schwarze Edition 2"	"Pokémon: Schwarze Edition 2"
 "Pokémon Showdown"	(titel)
-"Pokémon Silber/Gold"	(titel)
-"Pokémon Smaragd"	(titel)
-"Pokémon: SoulSilver/HeartGold"	(titel)
+"Pokémon: Silberne Edition"	"Pokémon: Silberne Edition"
+"Pokémon: Silberne Edition SoulSilver"	"Pokémon: Silberne Edition SoulSilver"
+"Pokémon: Smaragd-Edition"	"Pokémon: Smaragd-Edition"
 "Pokémon Trading Card Game Online"	(titel)
-"Pokémon X/Y"	(titel)
+"Pokémon X"	"Pokémon X"
 "Pool Nation"	"Pool Nation"
 "Port Royale 3"	"Port Royale 3"
 "Portal"	Portal
@@ -1265,7 +1254,7 @@
 "Pro Evolution Soccer 2014"	"Pro Evolution Soccer 2014"
 "Pro Evolution Soccer 2015"	"Pro Evolution Soccer 2015"
 "Pro Evolution Soccer 6"	"Pro Evolution Soccer 6"
-"Professor Layton und das Geheimnisvolle  Dorf"	(titel)
+"Professor Layton und das Geheimnisvolle Dorf"	"Professor Layton und das geheimnisvolle Dorf"
 "Professor Layton und das Vermächtnis von Aslant"	"Professor Layton und das Vermächtnis von Aslant"
 "Professor Layton und die Maske der Wunder"	"Professor Layton und die Maske der Wunder"
 "Professor Layton vs. Phoenix Wright: Ace Attorney"	"Professor Layton vs. Phoenix Wright: Ace Attorney"
@@ -1393,7 +1382,6 @@
 "Serious Sam 3: BFE"	"Serious Sam 3: BFE"
 "Serious Sam HD: The First Encounter"	"Serious Sam HD: The First Encounter"
 "Severance: Blade of Darkness"	"Severance: Blade of Darkness"
-"Shadow  Warrior"	(titel)
 "Shadow Hearts"	"Shadow Hearts"
 "Shadow Kings"	(titel)
 "Shadow Man"	"Shadow Man"
@@ -1549,10 +1537,10 @@
 "Super Mario Galaxy"	"Super Mario Galaxy"
 "Super Mario World"	"Super Mario World"
 "Super Meat Boy"	"Super Meat Boy"
-"Super Smash  Bros  Wii U"	(titel)
 "Super Smash Bros 4"	"Super Smash Bros 4"
 "Super Smash Bros. Brawl"	"Super Smash Bros. Brawl"
 "Super Smash Bros. Melee"	"Super Smash Bros. Melee"
+"Super Smash Bros Wii U"	(titel)
 "Super Street Fighter IV"	"Super Street Fighter IV"
 "Super Street Fighter V"	(titel)
 "Supersonic Acrobatic Rocket-Powered Battle-Cars"	"Supersonic Acrobatic Rocket-Powered Battle-Cars"
@@ -1565,7 +1553,7 @@
 "Symphony"	(titel)
 "System Shock 2"	"System Shock 2"
 "Söldner – Secret Wars"	(titel)
-"TITAN  ATTACKS"	(titel)
+"TITAN ATTACKS"	(titel)
 "TOME: Immortal Arena"	(titel)
 "TRI: Of Friendship and Madness"	(titel)
 "Tactical Ops"	(titel)
@@ -1600,7 +1588,6 @@
 "Tetris"	Tetris
 "Tetris Ultimate"	(titel)
 "Texas Hold'Em King 2"	(titel)
-"The  Witcher 2"	(titel)
 "The Age of Decadence"	(titel)
 "The Amazing Spider-Man"	"The Amazing Spider-Man"
 "The Amazing Spider-Man 2"	"The Amazing Spider-Man 2"
@@ -1670,12 +1657,12 @@
 "The Stanley Parable"	(titel)
 "The Swapper"	"The Swapper"
 "The Talos Principle"	(titel)
-"The Third Age Mod für Medieval II:Total War"	(titel)
 "The Thirty-Nine Steps"	(titel)
 "The Tiny Bang Story"	"The Tiny Bang Story"
 "The Vanishing of Ethan Carter"	"The Vanishing of Ethan Carter"
 "The Walking Dead"	(titel)
 "The Witcher"	"The Witcher"
+"The Witcher 2"	"The Witcher 2"
 "The Witcher 2: Assassins of Kings"	"The Witcher 2: Assassins of Kings"
 "The Witcher Adventure Game"	(titel)
 "The Wolf Among Us"	(titel)
@@ -1817,7 +1804,6 @@
 "Warlords: Battlecry III"	"Warlords: Battlecry III"
 "Warmachine: Tactics"	(titel)
 "Warzone 2100"	"Warzone 2100"
-"Wasteland   2"	(titel)
 "Wasteland 2"	(titel)
 "Watch_Dogs"	Watch_Dogs
 "Way of the Samurai 4"	"Way of the Samurai 4"
@@ -1832,13 +1818,11 @@
 "Wolfenstein"	Wolfenstein
 "Wolfenstein: Enemy Territory"	"Wolfenstein: Enemy Territory"
 "Wolfenstein: The New Order"	"Wolfenstein: The New Order"
-"World  of Warcraft"	(titel)
 "World Cruise Story"	(titel)
 "World In Conflict"	"World in Conflict"
 "World Soccer Winning Eleven 9"	"World Soccer Winning Eleven 9"
 "World War II Online"	(titel)
 "World in Conflict"	"World in Conflict"
-"World of  Warcraft"	(titel)
 "World of Guns: Gun Disassembly"	(titel)
 "World of Tanks"	"World of Tanks"
 "World of Warcraft"	"World of WarCraft"
@@ -1877,9 +1861,9 @@
 "Zombies vs. Plants"	(titel)
 "Zoo Tycoon"	"Zoo Tycoon"
 "Zug um Zug"	(titel)
-"der herr der ringe  schlacht um mittelerde"	(titel)
-"diablo  3"	(titel)
-"forza horizon  2"	(titel)
+"der herr der ringe schlacht um mittelerde"	(titel)
+"diablo 3"	(titel)
+"forza horizon 2"	"Forza Horizon 2"
 "guitar hero 6"	(titel)
 "iRacing.com"	(titel)
 "inFAMOUS Second Son"	(titel)
@@ -1889,7 +1873,7 @@
 "rFactor"	rFactor
 "salt"	(titel)
 "skate 3"	"skate 3"
-"the  crew"	(titel)
-"the evil  within"	(titel)
-"the walking  dead telltall"	(titel)
-"this  war of  mine"	(titel)
+"the crew"	"The Crew"
+"the evil within"	"The Evil Within"
+"the walking dead telltall"	(titel)
+"this war of mine"	"This War of Mine"
