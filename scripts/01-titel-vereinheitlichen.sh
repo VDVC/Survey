@@ -20,7 +20,7 @@ while read p; do
     fi
     replaceme=$(echo "${p#*'	'}" | sed 's/&/\\&/')
     replaceby=$(echo "${p%'	'*}" | sed 's/&/\\&/')
-    $(sedbin) -i "s#$replaceme#$replaceby#gI" $datenfileout
+    $sedbin -i "s#$replaceme#$replaceby#gI" $datenfileout
 done < $duplikatsliste
-$(sedbin) -i "s#  # #gI" $datenfileout
-$(sedbin) -i "s#  # #gI" $datenfileout
+$sedbin -i "s#  # #gI" $datenfileout
+$sedbin -i "s#  # #gI" $datenfileout
