@@ -18,3 +18,10 @@ do
   echo \"${titel}	${text} >> $schreibweisen
 done
 
+tmpfile=`date +%s`
+
+mv $schreibweisen $tmpfile
+sort -u $tmpfile > $schreibweisen
+
+rm $tmpfile
+
