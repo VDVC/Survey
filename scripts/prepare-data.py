@@ -12,6 +12,12 @@ import unicodecsv
 reload(sys)  
 sys.setdefaultencoding('utf8')
 
+duplikatsliste='daten/schreibweisen.tsv'
+
+with io.open(duplikatsliste, encoding='utf8') as nl_file:
+	reader = unicodecsv.reader(nl_file,delimiter="\t")
+	namelookup={nl_entry[1].lower():nl_entry[0] for nl_entry in reader}
+
 ogdcompare = io.open("./rohdaten/ogdb-compare.dat", "w", encoding="utf8")
 
 ogdb_data = []
@@ -93,6 +99,7 @@ def same_plattform(ogdb,VDVC):
 def find_gameinfo(title): # search data of the game
 	if len(title) == 0:
 		return ['-1','-1','-1','(genres)','(region)']
+	title = namelookup[title.lower()]
 	candidates = []
 	vdvc_title = title.lower()
 	vdvc_roman = (roman(title)).lower()
@@ -201,7 +208,6 @@ with io.open('./rohdaten/survey-data.dat', encoding='utf8') as f:
 		game = ''
 		if len(spss_entry) > 46:
 			game = spss_entry[41:46]
-			print(loop)
 		else:
 			sys.exit()
 
