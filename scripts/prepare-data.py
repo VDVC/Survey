@@ -12,11 +12,32 @@ import unicodecsv
 reload(sys)  
 sys.setdefaultencoding('utf8')
 
-duplikatsliste='daten/schreibweisen.tsv'
+duplikatsliste='./daten/schreibweisen.tsv'
+ogdbexport='./rohdaten/games.csv'
+matchfname ='./daten/titel-matches.tsv'
+matchfile =io.open(matchfname, "w", encoding="utf8")
+
+
+with io.open(ogdbexport, encoding='utf8') as ogdb_file:
+	ogdb_reader = unicodecsv.reader(ogdb_file,delimiter=";")
+	ogdblookup={ogdb_entry[0].lower():ogdb_entry[0] for ogdb_entry in ogdb_reader}
 
 with io.open(duplikatsliste, encoding='utf8') as nl_file:
-	reader = unicodecsv.reader(nl_file,delimiter="\t")
-	namelookup={nl_entry[1].lower():nl_entry[0] for nl_entry in reader}
+	nl_reader = unicodecsv.reader(nl_file,delimiter="\t")
+	namelookup={nl_entry[1].lower():nl_entry[0] for nl_entry in nl_reader}
+
+for game in namelookup:
+	name=namelookup[game]
+	if name[0:5] == "(???)":
+		matchfile.write(u'"' + name + u'"\t"' + u'"\n')
+	else:
+		if name.lower() in ogdblookup:
+			matchfile.write(u'"' + name + u'"\t"' + ogdblookup[name.lower()] + u'"\n')
+		else:
+			print(u'"'+name+u'"')
+
+sys.exit()
+
 
 ogdcompare = io.open("./rohdaten/ogdb-compare.dat", "w", encoding="utf8")
 
@@ -100,6 +121,7 @@ def find_gameinfo(title): # search data of the game
 	if len(title) == 0:
 		return ['-1','-1','-1','(genres)','(region)']
 	title = namelookup[title.lower()]
+	return ['-1','-1','-1','(genres)','(region)']
 	candidates = []
 	vdvc_title = title.lower()
 	vdvc_roman = (roman(title)).lower()
