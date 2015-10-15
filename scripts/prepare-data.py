@@ -13,14 +13,18 @@ reload(sys)
 sys.setdefaultencoding('utf8')
 
 duplikatsliste='./daten/schreibweisen.tsv'
-ogdbexport='./rohdaten/games.csv'
+ogdbgames='./rohdaten/ogdb-games.csv'
+moregames='./daten/no-ogdb.tsv'
 matchfname ='./daten/titel-matches.tsv'
 matchfile =io.open(matchfname, "w", encoding="utf8")
 
 
-with io.open(ogdbexport, encoding='utf8') as ogdb_file:
+with io.open(ogdbgames, encoding='utf8') as ogdb_file:
 	ogdb_reader = unicodecsv.reader(ogdb_file,delimiter=";")
 	ogdblookup={ogdb_entry[0].lower():ogdb_entry[0] for ogdb_entry in ogdb_reader}
+with io.open(moregames, encoding='utf8') as extra_file:
+	extra_reader = unicodecsv.reader(extra_file,delimiter="\t")
+	vdvclookup={extra_entry[0].lower():extra_entry[0] for extra_entry in extra_reader}
 
 with io.open(duplikatsliste, encoding='utf8') as nl_file:
 	nl_reader = unicodecsv.reader(nl_file,delimiter="\t")
@@ -32,7 +36,9 @@ for game in namelookup:
 		matchfile.write(u'"' + name + u'"\t"' + u'"\n')
 	else:
 		if name.lower() in ogdblookup:
-			matchfile.write(u'"' + name + u'"\t"' + ogdblookup[name.lower()] + u'"\n')
+			matchfile.write(u'"' + name + u'"\t"' + ogdblookup[name.lower()] + u'"\t"(OGDB)"\n')
+		elif name.lower() in vdvclookup:
+			matchfile.write(u'"' + name + u'"\t"' + vdvclookup[name.lower()] + u'"\t"(VDVC)"\n')
 		else:
 			print(u'"'+name+u'"')
 
