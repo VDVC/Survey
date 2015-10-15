@@ -12,7 +12,7 @@ import unicodecsv
 reload(sys)  
 sys.setdefaultencoding('utf8')
 
-duplikatsliste='./daten/schreibweisen.tsv'
+duplikatsliste='./daten/zuordnung.tsv'
 ogdbgames='./rohdaten/ogdb-games.csv'
 moregames='./daten/no-ogdb.tsv'
 matchfname ='./daten/titel-matches.tsv'
