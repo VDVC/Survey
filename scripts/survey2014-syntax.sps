@@ -1,6 +1,6 @@
 GET DATA
  /TYPE=TXT
- /FILE='../daten/rohdaten2014.dat'
+ /FILE='./daten/rohdaten2014.dat'
  /DELCASE=LINE
  /DELIMITERS=";"
  /QUALIFIER='"'

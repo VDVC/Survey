@@ -35,11 +35,13 @@ with io.open(duplikatsliste, encoding='utf8') as nl_file:
 def find_gameinfo(title): # search data of the game
 	if title.lower() in namelookup:
 		title = namelookup[title.lower()].lower()
-	year = u"Jahr"
-	freigabe = u"Freigabe"
+	year = u""
+	freigabe = u""
 	if title in ogdblookup:
 		year = ogdblookup[title][0].encode('utf-8')
 		usk = ogdblookup[title][1]
+		if ',' in usk:
+			usk = usk.split(',')[0];
 		if len(usk) >= 6:
 			if usk[4] == '_': # Format: YYYY_NN or YYYY_N
 				freigabe = usk[5:]
@@ -68,7 +70,7 @@ def find_gameinfo(title): # search data of the game
 
 
 
-results = io.open("./rohdaten/enriched-data.dat", "w", encoding="utf8")
+results = io.open("./daten/rohdaten2014.dat", "w", encoding="utf8")
 
 #for pspp_entry in pspp_data:
 with io.open('./rohdaten/survey-data.dat', encoding='utf8') as f:
