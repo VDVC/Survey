@@ -1,11 +1,11 @@
 *~
 *.aux
 *.DS_Store
+*.jnl
 *.log
 *.ods
 *.out
 *converted-to.pdf
 rohdaten
 daten/rohdaten2014.dat
-scripts/pspp.jnl
 

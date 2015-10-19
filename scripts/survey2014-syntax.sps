@@ -1,3 +1,6 @@
+SET
+ \DECIMAL=DOT
+
 GET DATA
  /TYPE=TXT
  /FILE='./daten/rohdaten2014.dat'
@@ -67,7 +70,7 @@ GET DATA
  Nutzungsdauer_SQ1 A2
  Nutzungsdauer_SQ2 A2
  Nutzungsdauer_SQ3 A2
- Nutzungsdauer_SQ3 A2
+ Nutzungsdauer_SQ4 A2
  Nutzungsdauer_SQ5 A2
  Nutzungsumfang F14.13
  Bezugsweg_SQ1 F1
@@ -113,7 +116,7 @@ GET DATA
  Illegalmotivation_3#0 A2
  Illegalmotivation_3#1 F1
  Illegalmotivation_4#0 A2
- Illegalmotivation_4#0 F1
+ Illegalmotivation_4#1 F1
  Illegalmotivation_5#0 A2
  Illegalmotivation_5#1 F1
  Illegalmotivation_6#0 A2
@@ -177,71 +180,71 @@ GET DATA
  UncutBezugWegErf_SQ009#1 A2
  UncutBezugWegErf_SQ010#0 A1
  UncutBezugWegErf_SQ010#1 A2
- V161 F1
- V162 F1
- V163 F1
- V164 F1
- V165 F1
- V166 F1
- V167 F1
- V168 F1
- V169 A2
- V170 F1
- V171 A2
- V172 F1
- V173 A2
- V174 F1
- V175 A2
- V176 F1
- V177 A2
- V178 F1
- V179 F1
- V180 F1
- V181 F1
- V182 F1
- V183 F1
- V184 F1
- V185 F1
- V186 F1
- V187 F1
- V188 F1
- V189 F1
- V190 F1
- V191 F1
- V192 F1
- V193 F1
- V194 F1
- V195 F1
- V196 F1
- V197 F1
- V198 F1
- V199 F1
- V200 F1
- V201 F1
- V202 F1
- V203 F1
- V204 F1
- V205 F1
- V206 F1
- V207 F1
- V208 F1
- V209 F1
- V210 F1
- V211 F1
- V212 F1
- V213 F1
- V214 F1
- V215 F1
- V216 F1
- V217 F1
- V218 A2
- V219 F1
- V220 F1
- V221 F1
- V222 F1
- V223 F1
- V224 F1
- V225 A2033.
+ Onlineaktivierung F1
+ Onlinezwang F1
+ Kontingent F1
+ Kopierschutz F1
+ Sicherheitskopie F1
+ Datenschutz F1
+ Geolock F1
+ Informationsinteress_1#0 F1
+ Informationsinteress_1#1 A2
+ Informationsinteress_2#0 F1
+ Informationsinteress_2#1 A2
+ Informationsinteress_3#0 F1
+ Informationsinteress_3#1 A2
+ Informationsinteress_4#0 F1
+ Informationsinteress_4#1 A2
+ Informationsinteress_5#0 F1
+ Informationsinteress_5#1 A2
+ SexSelbstbew_SQ001#0 F1
+ SexSelbstbew_SQ001#1 F1
+ SexSelbstbew_SQ002#0 F1
+ SexSelbstbew_SQ002#1 F1
+ SexSelbstbew_SQ003#0 F1
+ SexSelbstbew_SQ003#1 F1
+ SexSelbstbew_SQ004#0 F1
+ SexSelbstbew_SQ004#1 F1
+ SexSelbstbew_SQ005#0 F1
+ SexSelbstbew_SQ005#1 F1
+ SexSelbstbew_SQ006#0 F1
+ SexSelbstbew_SQ006#1 F1
+ SexWehrlos_SQ001#0 F1
+ SexWehrlos_SQ001#1 F1
+ SexWehrlos_SQ002#0 F1
+ SexWehrlos_SQ002#1 F1
+ SexWehrlos_SQ003#0 F1
+ SexWehrlos_SQ003#1 F1
+ SexWehrlos_SQ004#0 F1
+ SexWehrlos_SQ004#1 F1
+ SexWehrlos_SQ005#0 F1
+ SexWehrlos_SQ005#1 F1
+ SexWehrlos_SQ006#0 F1
+ SexWehrlos_SQ006#1 F1
+ SexKoerper_SQ001#0 F1
+ SexKoerper_SQ001#1 F1
+ SexKoerper_SQ002#0 F1
+ SexKoerper_SQ002#1 F1
+ SexKoerper_SQ003#0 F1
+ SexKoerper_SQ003#1 F1
+ SexKoerper_SQ004#0 F1
+ SexKoerper_SQ004#1 F1
+ SexKoerper_SQ005#0 F1
+ SexKoerper_SQ005#1 F1
+ SexKoerper_SQ006#0 F1
+ SexKoerper_SQ006#1 F1
+ SexKoerper_SQ007#0 F1
+ SexKoerper_SQ007#1 F1
+ SexKoerper_SQ008#0 F1
+ SexKoerper_SQ008#1 F1
+ SexProblem A2
+ SexMehr_Korper#0 F1
+ SexMehr_Korper#1 F1
+ SexMehr_Selbstbew#0 F1
+ SexMehr_Selbstbew#1 F1
+ SexMehr_Stereotype#0 F1
+ SexMehr_Stereotype#1 F1
+ feddbacktext A2033.
 CACHE.
 EXECUTE.
 *Define Variable Properties.
@@ -253,11 +256,19 @@ VARIABLE LABELS ipaddr "ipaddr".
 VARIABLE LABELS refurl "refurl".
 VARIABLE LABELS Geburtsjahr "In welchem Jahr bist du geboren?".
 VARIABLE LABELS Geschlecht "Was ist dein Geschlecht?".
+VARIABLE LEVEL V10(SCALE).
+VALUE LABELS  Geschlecht
+ 1 "Männlich"
+ 2 "Weiblich"
+ 3 "Anderes".
 VARIABLE LABELS WohnortDeutschland "Lebst du in Deutschland?".
 VARIABLE LABELS Breitbandzugang "Was für einen Internetzugang hast du an deinem Wohnort?".
 VARIABLE LABELS COAXSpeed "Wie schnell ist der Internetzugang an deinem Wohnort?".
+VARIABLE LEVEL COAXSpeed(ORDINAL).
 VARIABLE LABELS DSLSpeed "Wie schnell ist der Internetzugang an deinem Wohnort?".
+VARIABLE LEVEL DSLSpeed(ORDINAL).
 VARIABLE LABELS FunkSpeed "Wie schnell ist der Internetzugang an deinem Wohnort?".
+VARIABLE LEVEL FunkSpeed(ORDINAL).
 VARIABLE LABELS Videospieler "Nutzt du Videospiele?".
 VARIABLE LABELS ExSpieler "Hast du einmal Videospiele genutzt?".
 VARIABLE LABELS ExWann "In welchem Jahr hast du zuletzt ein Videospiel genutzt?".
@@ -423,294 +434,290 @@ VARIABLE LABELS UncutBezugWegErf_SQ010#0 "[Illegal von Bekannten (z.B. auf DVD g
 "Erfolgsaussichten ein, auf folgenden Wegen an die ungeschnittene Version eines Spiels zu gelangen.".
 VARIABLE LABELS UncutBezugWegErf_SQ010#1 "[Illegal von Bekannten (z.B. auf DVD gebrannt)] [Skala 2] Gib bitte an, auf welchen der folgenden Wege du bereits versucht hast, an die ungeschnittene Version eines Spiels zu gelangen. Schätze bitte außerdem deine persönlichen "+
 "Erfolgsaussichten ein, auf folgenden Wegen an die ungeschnittene Version eines Spiels zu gelangen.".
-VARIABLE LABELS V161 "Hat bei deiner Kaufentscheidung die Erforderlichkeit einer (nach jeder Installation einmaligen) Onlineaktivierung eine Bedeutung?".
-VARIABLE LABELS V162 "Hat bei deiner Kaufentscheidung das Vorhandensein eines Always-On-System (auch zur Nutzung im Einzelspieler muss eine Internetverbindung bestehen), eine Bedeutung?".
-VARIABLE LABELS V163 "Hat bei deiner Kaufentscheidung ein beschränktes Installationskontingent (es ist - mit dem Key - nur eine beschränkte Anzahl von Installationen möglich) eine Bedeutung?".
-VARIABLE LABELS V164 "Hat bei deiner Kaufentscheidung ein „aggressiver“ Kopierschutz, der z.B. die Festplatte nach bestimmten Programmen durchsucht, nach der Deinstallation des Spieles verbleibt oder eigene Gerätetreiber installiert, eine Bedeutung?".
-VARIABLE LABELS V165 "Hat bei deiner Kaufentscheidung das Fehlen der Möglichkeit, (legal) eine Sicherheitskopie anfertigen zu können, eine Bedeutung?".
-VARIABLE LABELS V166 "Haben bei deiner Kaufentscheidung Datenschutzbedenken, weil unklar ist welche Daten vom PC/dem Spielverhalten übermittelt werden, eine Bedeutung?".
-VARIABLE LABELS V167 "Hat bei deiner Kaufentscheidung die Festlegung auf eine bestimmte Region der Erde (Geolock) eine Bedeutung?".
-VARIABLE LABELS V168 "[Art und Wirkungsweise des Kopierschutzes] [Skala 1] 			Fühlst du dich über die folgenden Umstände vor der Anschaffung eines Videospiels gut informiert?			Hast du wegen der Ungewissheit über einen dieser Punkte schon einmal auf"+
+VARIABLE LABELS Onlineaktivierung "Hat bei deiner Kaufentscheidung die Erforderlichkeit einer (nach jeder Installation einmaligen) Onlineaktivierung eine Bedeutung?".
+VARIABLE LABELS Onlinezwang "Hat bei deiner Kaufentscheidung das Vorhandensein eines Always-On-System (auch zur Nutzung im Einzelspieler muss eine Internetverbindung bestehen), eine Bedeutung?".
+VARIABLE LABELS Kontingent "Hat bei deiner Kaufentscheidung ein beschränktes Installationskontingent (es ist - mit dem Key - nur eine beschränkte Anzahl von Installationen möglich) eine Bedeutung?".
+VARIABLE LABELS Kopierschutz "Hat bei deiner Kaufentscheidung ein „aggressiver“ Kopierschutz, der z.B. die Festplatte nach bestimmten Programmen durchsucht, nach der Deinstallation des Spieles verbleibt oder eigene Gerätetreiber installiert, eine Bedeutung?".
+VARIABLE LABELS Sicherheitskopie "Hat bei deiner Kaufentscheidung das Fehlen der Möglichkeit, (legal) eine Sicherheitskopie anfertigen zu können, eine Bedeutung?".
+VARIABLE LABELS Datenschutz "Haben bei deiner Kaufentscheidung Datenschutzbedenken, weil unklar ist welche Daten vom PC/dem Spielverhalten übermittelt werden, eine Bedeutung?".
+VARIABLE LABELS Geolock "Hat bei deiner Kaufentscheidung die Festlegung auf eine bestimmte Region der Erde (Geolock) eine Bedeutung?".
+VARIABLE LABELS Informationsinteress_1#0 "[Art und Wirkungsweise des Kopierschutzes] [Skala 1] 			Fühlst du dich über die folgenden Umstände vor der Anschaffung eines Videospiels gut informiert?			Hast du wegen der Ungewissheit über einen dieser Punkte schon einmal auf"+
 " ein Spiels verzichtet?".
-VARIABLE LABELS V169 "[Art und Wirkungsweise des Kopierschutzes] [Skala 2] 			Fühlst du dich über die folgenden Umstände vor der Anschaffung eines Videospiels gut informiert?			Hast du wegen der Ungewissheit über einen dieser Punkte schon einmal auf"+
+VARIABLE LABELS Informationsinteress_1#1 "[Art und Wirkungsweise des Kopierschutzes] [Skala 2] 			Fühlst du dich über die folgenden Umstände vor der Anschaffung eines Videospiels gut informiert?			Hast du wegen der Ungewissheit über einen dieser Punkte schon einmal auf"+
 " ein Spiels verzichtet?".
-VARIABLE LABELS V170 "[Ob und welche Daten durch die Nutzung des Spieles übermittelt werden] [Skala 1] 			Fühlst du dich über die folgenden Umstände vor der Anschaffung eines Videospiels gut informiert?			Hast du wegen der Ungewissheit über einen di"+
+VARIABLE LABELS Informationsinteress_2#0 "[Ob und welche Daten durch die Nutzung des Spieles übermittelt werden] [Skala 1] 			Fühlst du dich über die folgenden Umstände vor der Anschaffung eines Videospiels gut informiert?			Hast du wegen der Ungewissheit über einen di"+
 "eser Punkte schon einmal auf ein Spiels verzichtet?".
-VARIABLE LABELS V171 "[Ob und welche Daten durch die Nutzung des Spieles übermittelt werden] [Skala 2] 			Fühlst du dich über die folgenden Umstände vor der Anschaffung eines Videospiels gut informiert?			Hast du wegen der Ungewissheit über einen di"+
+VARIABLE LABELS Informationsinteress_2#1 "[Ob und welche Daten durch die Nutzung des Spieles übermittelt werden] [Skala 2] 			Fühlst du dich über die folgenden Umstände vor der Anschaffung eines Videospiels gut informiert?			Hast du wegen der Ungewissheit über einen di"+
 "eser Punkte schon einmal auf ein Spiels verzichtet?".
-VARIABLE LABELS V172 "[Inwieweit bei dem Spiel Gewaltdarstellungen entschärft worden sind] [Skala 1] 			Fühlst du dich über die folgenden Umstände vor der Anschaffung eines Videospiels gut informiert?			Hast du wegen der Ungewissheit über einen dies"+
+VARIABLE LABELS Informationsinteress_3#0 "[Inwieweit bei dem Spiel Gewaltdarstellungen entschärft worden sind] [Skala 1] 			Fühlst du dich über die folgenden Umstände vor der Anschaffung eines Videospiels gut informiert?			Hast du wegen der Ungewissheit über einen dies"+
 "er Punkte schon einmal auf ein Spiels verzichtet?".
-VARIABLE LABELS V173 "[Inwieweit bei dem Spiel Gewaltdarstellungen entschärft worden sind] [Skala 2] 			Fühlst du dich über die folgenden Umstände vor der Anschaffung eines Videospiels gut informiert?			Hast du wegen der Ungewissheit über einen dies"+
+VARIABLE LABELS Informationsinteress_3#1 "[Inwieweit bei dem Spiel Gewaltdarstellungen entschärft worden sind] [Skala 2] 			Fühlst du dich über die folgenden Umstände vor der Anschaffung eines Videospiels gut informiert?			Hast du wegen der Ungewissheit über einen dies"+
 "er Punkte schon einmal auf ein Spiels verzichtet?".
-VARIABLE LABELS V174 "[Ob der Multiplayer mit der internationalen Version kompatibel ist] [Skala 1] 			Fühlst du dich über die folgenden Umstände vor der Anschaffung eines Videospiels gut informiert?			Hast du wegen der Ungewissheit über einen diese"+
+VARIABLE LABELS Informationsinteress_4#0 "[Ob der Multiplayer mit der internationalen Version kompatibel ist] [Skala 1] 			Fühlst du dich über die folgenden Umstände vor der Anschaffung eines Videospiels gut informiert?			Hast du wegen der Ungewissheit über einen diese"+
 "r Punkte schon einmal auf ein Spiels verzichtet?".
-VARIABLE LABELS V175 "[Ob der Multiplayer mit der internationalen Version kompatibel ist] [Skala 2] 			Fühlst du dich über die folgenden Umstände vor der Anschaffung eines Videospiels gut informiert?			Hast du wegen der Ungewissheit über einen diese"+
+VARIABLE LABELS Informationsinteress_4#1 "[Ob der Multiplayer mit der internationalen Version kompatibel ist] [Skala 2] 			Fühlst du dich über die folgenden Umstände vor der Anschaffung eines Videospiels gut informiert?			Hast du wegen der Ungewissheit über einen diese"+
 "r Punkte schon einmal auf ein Spiels verzichtet?".
-VARIABLE LABELS V176 "[Ob eventuelle DLCs auch von Deutschland aus bezogen werden können] [Skala 1] 			Fühlst du dich über die folgenden Umstände vor der Anschaffung eines Videospiels gut informiert?			Hast du wegen der Ungewissheit über einen diese"+
+VARIABLE LABELS Informationsinteress_5#0 "[Ob eventuelle DLCs auch von Deutschland aus bezogen werden können] [Skala 1] 			Fühlst du dich über die folgenden Umstände vor der Anschaffung eines Videospiels gut informiert?			Hast du wegen der Ungewissheit über einen diese"+
 "r Punkte schon einmal auf ein Spiels verzichtet?".
-VARIABLE LABELS V177 "[Ob eventuelle DLCs auch von Deutschland aus bezogen werden können] [Skala 2] 			Fühlst du dich über die folgenden Umstände vor der Anschaffung eines Videospiels gut informiert?			Hast du wegen der Ungewissheit über einen diese"+
+VARIABLE LABELS Informationsinteress_5#1 "[Ob eventuelle DLCs auch von Deutschland aus bezogen werden können] [Skala 2] 			Fühlst du dich über die folgenden Umstände vor der Anschaffung eines Videospiels gut informiert?			Hast du wegen der Ungewissheit über einen diese"+
 "r Punkte schon einmal auf ein Spiels verzichtet?".
-VARIABLE LABELS V178 "[… sind der Normalfall.] [Skala 1] Weibliche/Männliche Charaktere werden in vielen Videospielen als selbstbewusste, unabhängige und starke Persönlichkeiten dargestellt. Diese Darstellungen …".
-VARIABLE LABELS V179 "[… sind der Normalfall.] [Skala 2] Weibliche/Männliche Charaktere werden in vielen Videospielen als selbstbewusste, unabhängige und starke Persönlichkeiten dargestellt. Diese Darstellungen …".
-VARIABLE LABELS V180 "[… finde ich positiv.] [Skala 1] Weibliche/Männliche Charaktere werden in vielen Videospielen als selbstbewusste, unabhängige und starke Persönlichkeiten dargestellt. Diese Darstellungen …".
-VARIABLE LABELS V181 "[… finde ich positiv.] [Skala 2] Weibliche/Männliche Charaktere werden in vielen Videospielen als selbstbewusste, unabhängige und starke Persönlichkeiten dargestellt. Diese Darstellungen …".
-VARIABLE LABELS V182 "[… färben auf das Selbstbild von SpielerInnen des Geschlechts der betreffenden Spielfiguren ab.] [Skala 1] Weibliche/Männliche Charaktere werden in vielen Videospielen als selbstbewusste, unabhängige und starke Persönlichkeiten"+
+VARIABLE LABELS SexSelbstbew_SQ001#0 "[… sind der Normalfall.] [Skala 1] Weibliche/Männliche Charaktere werden in vielen Videospielen als selbstbewusste, unabhängige und starke Persönlichkeiten dargestellt. Diese Darstellungen …".
+VARIABLE LABELS SexSelbstbew_SQ001#1 "[… sind der Normalfall.] [Skala 2] Weibliche/Männliche Charaktere werden in vielen Videospielen als selbstbewusste, unabhängige und starke Persönlichkeiten dargestellt. Diese Darstellungen …".
+VARIABLE LABELS SexSelbstbew_SQ002#0 "[… finde ich positiv.] [Skala 1] Weibliche/Männliche Charaktere werden in vielen Videospielen als selbstbewusste, unabhängige und starke Persönlichkeiten dargestellt. Diese Darstellungen …".
+VARIABLE LABELS SexSelbstbew_SQ002#1 "[… finde ich positiv.] [Skala 2] Weibliche/Männliche Charaktere werden in vielen Videospielen als selbstbewusste, unabhängige und starke Persönlichkeiten dargestellt. Diese Darstellungen …".
+VARIABLE LABELS SexSelbstbew_SQ003#0 "[… färben auf das Selbstbild von SpielerInnen des Geschlechts der betreffenden Spielfiguren ab.] [Skala 1] Weibliche/Männliche Charaktere werden in vielen Videospielen als selbstbewusste, unabhängige und starke Persönlichkeiten"+
 " dargestellt. Diese Darstellungen …".
-VARIABLE LABELS V183 "[… färben auf das Selbstbild von SpielerInnen des Geschlechts der betreffenden Spielfiguren ab.] [Skala 2] Weibliche/Männliche Charaktere werden in vielen Videospielen als selbstbewusste, unabhängige und starke Persönlichkeiten"+
+VARIABLE LABELS SexSelbstbew_SQ003#1 "[… färben auf das Selbstbild von SpielerInnen des Geschlechts der betreffenden Spielfiguren ab.] [Skala 2] Weibliche/Männliche Charaktere werden in vielen Videospielen als selbstbewusste, unabhängige und starke Persönlichkeiten"+
 " dargestellt. Diese Darstellungen …".
-VARIABLE LABELS V184 "[… erzeugen bei SpielerInnen des anderen Geschlechts dahingehende Erwartungshaltungen.] [Skala 1] Weibliche/Männliche Charaktere werden in vielen Videospielen als selbstbewusste, unabhängige und starke Persönlichkeiten dargeste"+
+VARIABLE LABELS SexSelbstbew_SQ004#0 "[… erzeugen bei SpielerInnen des anderen Geschlechts dahingehende Erwartungshaltungen.] [Skala 1] Weibliche/Männliche Charaktere werden in vielen Videospielen als selbstbewusste, unabhängige und starke Persönlichkeiten dargeste"+
 "llt. Diese Darstellungen …".
-VARIABLE LABELS V185 "[… erzeugen bei SpielerInnen des anderen Geschlechts dahingehende Erwartungshaltungen.] [Skala 2] Weibliche/Männliche Charaktere werden in vielen Videospielen als selbstbewusste, unabhängige und starke Persönlichkeiten dargeste"+
+VARIABLE LABELS SexSelbstbew_SQ004#1 "[… erzeugen bei SpielerInnen des anderen Geschlechts dahingehende Erwartungshaltungen.] [Skala 2] Weibliche/Männliche Charaktere werden in vielen Videospielen als selbstbewusste, unabhängige und starke Persönlichkeiten dargeste"+
 "llt. Diese Darstellungen …".
-VARIABLE LABELS V186 "[… sind realistisch und daher für eine glaubwürdige Spielwelt nötig.] [Skala 1] Weibliche/Männliche Charaktere werden in vielen Videospielen als selbstbewusste, unabhängige und starke Persönlichkeiten dargestellt. Diese Darstel"+
+VARIABLE LABELS SexSelbstbew_SQ005#0 "[… sind realistisch und daher für eine glaubwürdige Spielwelt nötig.] [Skala 1] Weibliche/Männliche Charaktere werden in vielen Videospielen als selbstbewusste, unabhängige und starke Persönlichkeiten dargestellt. Diese Darstel"+
 "lungen …".
-VARIABLE LABELS V187 "[… sind realistisch und daher für eine glaubwürdige Spielwelt nötig.] [Skala 2] Weibliche/Männliche Charaktere werden in vielen Videospielen als selbstbewusste, unabhängige und starke Persönlichkeiten dargestellt. Diese Darstel"+
+VARIABLE LABELS SexSelbstbew_SQ005#1 "[… sind realistisch und daher für eine glaubwürdige Spielwelt nötig.] [Skala 2] Weibliche/Männliche Charaktere werden in vielen Videospielen als selbstbewusste, unabhängige und starke Persönlichkeiten dargestellt. Diese Darstel"+
 "lungen …".
-VARIABLE LABELS V188 "[… sind Teil einer etablierten Erzähltradition.] [Skala 1] Weibliche/Männliche Charaktere werden in vielen Videospielen als selbstbewusste, unabhängige und starke Persönlichkeiten dargestellt. Diese Darstellungen …".
-VARIABLE LABELS V189 "[… sind Teil einer etablierten Erzähltradition.] [Skala 2] Weibliche/Männliche Charaktere werden in vielen Videospielen als selbstbewusste, unabhängige und starke Persönlichkeiten dargestellt. Diese Darstellungen …".
-VARIABLE LABELS V190 "[… sind der Normalfall.] [Skala 1] Weibliche/Männliche Charaktere werden in vielen Videospielen als unterwürfig, wehrlos und hilfsbedürftig dargestellt. Diese Darstellungen …".
-VARIABLE LABELS V191 "[… sind der Normalfall.] [Skala 2] Weibliche/Männliche Charaktere werden in vielen Videospielen als unterwürfig, wehrlos und hilfsbedürftig dargestellt. Diese Darstellungen …".
-VARIABLE LABELS V192 "[… finde ich positiv.] [Skala 1] Weibliche/Männliche Charaktere werden in vielen Videospielen als unterwürfig, wehrlos und hilfsbedürftig dargestellt. Diese Darstellungen …".
-VARIABLE LABELS V193 "[… finde ich positiv.] [Skala 2] Weibliche/Männliche Charaktere werden in vielen Videospielen als unterwürfig, wehrlos und hilfsbedürftig dargestellt. Diese Darstellungen …".
-VARIABLE LABELS V194 "[… färben auf das Selbstbild von SpielerInnen des Geschlechts der betreffenden Spielfiguren ab.] [Skala 1] Weibliche/Männliche Charaktere werden in vielen Videospielen als unterwürfig, wehrlos und hilfsbedürftig dargestellt. Di"+
+VARIABLE LABELS SexSelbstbew_SQ006#0 "[… sind Teil einer etablierten Erzähltradition.] [Skala 1] Weibliche/Männliche Charaktere werden in vielen Videospielen als selbstbewusste, unabhängige und starke Persönlichkeiten dargestellt. Diese Darstellungen …".
+VARIABLE LABELS SexSelbstbew_SQ006#1 "[… sind Teil einer etablierten Erzähltradition.] [Skala 2] Weibliche/Männliche Charaktere werden in vielen Videospielen als selbstbewusste, unabhängige und starke Persönlichkeiten dargestellt. Diese Darstellungen …".
+VARIABLE LABELS SexWehrlos_SQ001#0 "[… sind der Normalfall.] [Skala 1] Weibliche/Männliche Charaktere werden in vielen Videospielen als unterwürfig, wehrlos und hilfsbedürftig dargestellt. Diese Darstellungen …".
+VARIABLE LABELS SexWehrlos_SQ001#1 "[… sind der Normalfall.] [Skala 2] Weibliche/Männliche Charaktere werden in vielen Videospielen als unterwürfig, wehrlos und hilfsbedürftig dargestellt. Diese Darstellungen …".
+VARIABLE LABELS SexWehrlos_SQ002#0 "[… finde ich positiv.] [Skala 1] Weibliche/Männliche Charaktere werden in vielen Videospielen als unterwürfig, wehrlos und hilfsbedürftig dargestellt. Diese Darstellungen …".
+VARIABLE LABELS SexWehrlos_SQ002#1 "[… finde ich positiv.] [Skala 2] Weibliche/Männliche Charaktere werden in vielen Videospielen als unterwürfig, wehrlos und hilfsbedürftig dargestellt. Diese Darstellungen …".
+VARIABLE LABELS SexWehrlos_SQ003#0 "[… färben auf das Selbstbild von SpielerInnen des Geschlechts der betreffenden Spielfiguren ab.] [Skala 1] Weibliche/Männliche Charaktere werden in vielen Videospielen als unterwürfig, wehrlos und hilfsbedürftig dargestellt. Di"+
 "ese Darstellungen …".
-VARIABLE LABELS V195 "[… färben auf das Selbstbild von SpielerInnen des Geschlechts der betreffenden Spielfiguren ab.] [Skala 2] Weibliche/Männliche Charaktere werden in vielen Videospielen als unterwürfig, wehrlos und hilfsbedürftig dargestellt. Di"+
+VARIABLE LABELS SexWehrlos_SQ003#1 "[… färben auf das Selbstbild von SpielerInnen des Geschlechts der betreffenden Spielfiguren ab.] [Skala 2] Weibliche/Männliche Charaktere werden in vielen Videospielen als unterwürfig, wehrlos und hilfsbedürftig dargestellt. Di"+
 "ese Darstellungen …".
-VARIABLE LABELS V196 "[… erzeugen bei SpielerInnen des anderen Geschlechts dahingehende Erwartungshaltungen.] [Skala 1] Weibliche/Männliche Charaktere werden in vielen Videospielen als unterwürfig, wehrlos und hilfsbedürftig dargestellt. Diese Darst"+
+VARIABLE LABELS SexWehrlos_SQ004#0 "[… erzeugen bei SpielerInnen des anderen Geschlechts dahingehende Erwartungshaltungen.] [Skala 1] Weibliche/Männliche Charaktere werden in vielen Videospielen als unterwürfig, wehrlos und hilfsbedürftig dargestellt. Diese Darst"+
 "ellungen …".
-VARIABLE LABELS V197 "[… erzeugen bei SpielerInnen des anderen Geschlechts dahingehende Erwartungshaltungen.] [Skala 2] Weibliche/Männliche Charaktere werden in vielen Videospielen als unterwürfig, wehrlos und hilfsbedürftig dargestellt. Diese Darst"+
+VARIABLE LABELS SexWehrlos_SQ004#1 "[… erzeugen bei SpielerInnen des anderen Geschlechts dahingehende Erwartungshaltungen.] [Skala 2] Weibliche/Männliche Charaktere werden in vielen Videospielen als unterwürfig, wehrlos und hilfsbedürftig dargestellt. Diese Darst"+
 "ellungen …".
-VARIABLE LABELS V198 "[… sind realistisch und daher für eine glaubwürdige Spielwelt nötig.] [Skala 1] Weibliche/Männliche Charaktere werden in vielen Videospielen als unterwürfig, wehrlos und hilfsbedürftig dargestellt. Diese Darstellungen …".
-VARIABLE LABELS V199 "[… sind realistisch und daher für eine glaubwürdige Spielwelt nötig.] [Skala 2] Weibliche/Männliche Charaktere werden in vielen Videospielen als unterwürfig, wehrlos und hilfsbedürftig dargestellt. Diese Darstellungen …".
-VARIABLE LABELS V200 "[… sind Teil einer etablierten Erzähltradition.] [Skala 1] Weibliche/Männliche Charaktere werden in vielen Videospielen als unterwürfig, wehrlos und hilfsbedürftig dargestellt. Diese Darstellungen …".
-VARIABLE LABELS V201 "[… sind Teil einer etablierten Erzähltradition.] [Skala 2] Weibliche/Männliche Charaktere werden in vielen Videospielen als unterwürfig, wehrlos und hilfsbedürftig dargestellt. Diese Darstellungen …".
-VARIABLE LABELS V202 "[… sind der Normalfall.] [Skala 1] Weibliche/Männliche Charaktere werden in vielen Videospielen körperbetont dargestellt. Diese Darstellungen …".
-VARIABLE LABELS V203 "[… sind der Normalfall.] [Skala 2] Weibliche/Männliche Charaktere werden in vielen Videospielen körperbetont dargestellt. Diese Darstellungen …".
-VARIABLE LABELS V204 "[… finde ich positiv.] [Skala 1] Weibliche/Männliche Charaktere werden in vielen Videospielen körperbetont dargestellt. Diese Darstellungen …".
-VARIABLE LABELS V205 "[… finde ich positiv.] [Skala 2] Weibliche/Männliche Charaktere werden in vielen Videospielen körperbetont dargestellt. Diese Darstellungen …".
-VARIABLE LABELS V206 "[… gefallen mir optisch.] [Skala 1] Weibliche/Männliche Charaktere werden in vielen Videospielen körperbetont dargestellt. Diese Darstellungen …".
-VARIABLE LABELS V207 "[… gefallen mir optisch.] [Skala 2] Weibliche/Männliche Charaktere werden in vielen Videospielen körperbetont dargestellt. Diese Darstellungen …".
-VARIABLE LABELS V208 "[… verstärken bei SpielerInnen des Geschlechts der Spielfigur unrealistische Einstellungen zum eigenen Körper.] [Skala 1] Weibliche/Männliche Charaktere werden in vielen Videospielen körperbetont dargestellt. Diese Darstellunge"+
+VARIABLE LABELS SexWehrlos_SQ005#0 "[… sind realistisch und daher für eine glaubwürdige Spielwelt nötig.] [Skala 1] Weibliche/Männliche Charaktere werden in vielen Videospielen als unterwürfig, wehrlos und hilfsbedürftig dargestellt. Diese Darstellungen …".
+VARIABLE LABELS SexWehrlos_SQ005#1 "[… sind realistisch und daher für eine glaubwürdige Spielwelt nötig.] [Skala 2] Weibliche/Männliche Charaktere werden in vielen Videospielen als unterwürfig, wehrlos und hilfsbedürftig dargestellt. Diese Darstellungen …".
+VARIABLE LABELS SexWehrlos_SQ006#0 "[… sind Teil einer etablierten Erzähltradition.] [Skala 1] Weibliche/Männliche Charaktere werden in vielen Videospielen als unterwürfig, wehrlos und hilfsbedürftig dargestellt. Diese Darstellungen …".
+VARIABLE LABELS SexWehrlos_SQ006#1 "[… sind Teil einer etablierten Erzähltradition.] [Skala 2] Weibliche/Männliche Charaktere werden in vielen Videospielen als unterwürfig, wehrlos und hilfsbedürftig dargestellt. Diese Darstellungen …".
+VARIABLE LABELS SexKoerper_SQ001#0 "[… sind der Normalfall.] [Skala 1] Weibliche/Männliche Charaktere werden in vielen Videospielen körperbetont dargestellt. Diese Darstellungen …".
+VARIABLE LABELS SexKoerper_SQ001#1 "[… sind der Normalfall.] [Skala 2] Weibliche/Männliche Charaktere werden in vielen Videospielen körperbetont dargestellt. Diese Darstellungen …".
+VARIABLE LABELS SexKoerper_SQ002#0 "[… finde ich positiv.] [Skala 1] Weibliche/Männliche Charaktere werden in vielen Videospielen körperbetont dargestellt. Diese Darstellungen …".
+VARIABLE LABELS SexKoerper_SQ002#1 "[… finde ich positiv.] [Skala 2] Weibliche/Männliche Charaktere werden in vielen Videospielen körperbetont dargestellt. Diese Darstellungen …".
+VARIABLE LABELS SexKoerper_SQ003#0 "[… gefallen mir optisch.] [Skala 1] Weibliche/Männliche Charaktere werden in vielen Videospielen körperbetont dargestellt. Diese Darstellungen …".
+VARIABLE LABELS SexKoerper_SQ003#1 "[… gefallen mir optisch.] [Skala 2] Weibliche/Männliche Charaktere werden in vielen Videospielen körperbetont dargestellt. Diese Darstellungen …".
+VARIABLE LABELS SexKoerper_SQ004#0 "[… verstärken bei SpielerInnen des Geschlechts der Spielfigur unrealistische Einstellungen zum eigenen Körper.] [Skala 1] Weibliche/Männliche Charaktere werden in vielen Videospielen körperbetont dargestellt. Diese Darstellunge"+
 "n …".
-VARIABLE LABELS V209 "[… verstärken bei SpielerInnen des Geschlechts der Spielfigur unrealistische Einstellungen zum eigenen Körper.] [Skala 2] Weibliche/Männliche Charaktere werden in vielen Videospielen körperbetont dargestellt. Diese Darstellunge"+
+VARIABLE LABELS SexKoerper_SQ004#1 "[… verstärken bei SpielerInnen des Geschlechts der Spielfigur unrealistische Einstellungen zum eigenen Körper.] [Skala 2] Weibliche/Männliche Charaktere werden in vielen Videospielen körperbetont dargestellt. Diese Darstellunge"+
 "n …".
-VARIABLE LABELS V210 "[… sind entwürdigend.] [Skala 1] Weibliche/Männliche Charaktere werden in vielen Videospielen körperbetont dargestellt. Diese Darstellungen …".
-VARIABLE LABELS V211 "[… sind entwürdigend.] [Skala 2] Weibliche/Männliche Charaktere werden in vielen Videospielen körperbetont dargestellt. Diese Darstellungen …".
-VARIABLE LABELS V212 "[… führen zu vermehrter Reduzierung echter Menschen auf ihren Körper.] [Skala 1] Weibliche/Männliche Charaktere werden in vielen Videospielen körperbetont dargestellt. Diese Darstellungen …".
-VARIABLE LABELS V213 "[… führen zu vermehrter Reduzierung echter Menschen auf ihren Körper.] [Skala 2] Weibliche/Männliche Charaktere werden in vielen Videospielen körperbetont dargestellt. Diese Darstellungen …".
-VARIABLE LABELS V214 "[… dienen der Atmosphäre des Spiels.] [Skala 1] Weibliche/Männliche Charaktere werden in vielen Videospielen körperbetont dargestellt. Diese Darstellungen …".
-VARIABLE LABELS V215 "[… dienen der Atmosphäre des Spiels.] [Skala 2] Weibliche/Männliche Charaktere werden in vielen Videospielen körperbetont dargestellt. Diese Darstellungen …".
-VARIABLE LABELS V216 "[… helfen mir, mich mit der (attraktiven) Spielfigur zu identifizieren.] [Skala 1] Weibliche/Männliche Charaktere werden in vielen Videospielen körperbetont dargestellt. Diese Darstellungen …".
-VARIABLE LABELS V217 "[… helfen mir, mich mit der (attraktiven) Spielfigur zu identifizieren.] [Skala 2] Weibliche/Männliche Charaktere werden in vielen Videospielen körperbetont dargestellt. Diese Darstellungen …".
-VARIABLE LABELS V218 "In Videospielen ist die körperbetonte Darstellung …".
-VARIABLE LABELS V219 "[… körperbetonte Darstellungen.] [Skala 1] Ich wünsche mir in Computerspielen …".
-VARIABLE LABELS V220 "[… körperbetonte Darstellungen.] [Skala 2] Ich wünsche mir in Computerspielen …".
-VARIABLE LABELS V221 "[… selbstbewusste Charaktere.] [Skala 1] Ich wünsche mir in Computerspielen …".
-VARIABLE LABELS V222 "[… selbstbewusste Charaktere.] [Skala 2] Ich wünsche mir in Computerspielen …".
-VARIABLE LABELS V223 "[… schwache Charaktere.] [Skala 1] Ich wünsche mir in Computerspielen …".
-VARIABLE LABELS V224 "[… schwache Charaktere.] [Skala 2] Ich wünsche mir in Computerspielen …".
-VARIABLE LABELS V225 "Wenn du möchtest, kannst du uns hier Feedback zur Umfrage hinterlassen. Um die Umfrage abzuschließen, klicke einfach “Absenden”.".
-*Define Value labels.
-VALUE LABELS  V11
- 1 "Männlich"
- 2 "Weiblich"
- 3 "Anderes".
-VALUE LABELS  V12
+VARIABLE LABELS SexKoerper_SQ005#0 "[… sind entwürdigend.] [Skala 1] Weibliche/Männliche Charaktere werden in vielen Videospielen körperbetont dargestellt. Diese Darstellungen …".
+VARIABLE LABELS SexKoerper_SQ005#1 "[… sind entwürdigend.] [Skala 2] Weibliche/Männliche Charaktere werden in vielen Videospielen körperbetont dargestellt. Diese Darstellungen …".
+VARIABLE LABELS SexKoerper_SQ006#0 "[… führen zu vermehrter Reduzierung echter Menschen auf ihren Körper.] [Skala 1] Weibliche/Männliche Charaktere werden in vielen Videospielen körperbetont dargestellt. Diese Darstellungen …".
+VARIABLE LABELS SexKoerper_SQ006#1 "[… führen zu vermehrter Reduzierung echter Menschen auf ihren Körper.] [Skala 2] Weibliche/Männliche Charaktere werden in vielen Videospielen körperbetont dargestellt. Diese Darstellungen …".
+VARIABLE LABELS SexKoerper_SQ007#0 "[… dienen der Atmosphäre des Spiels.] [Skala 1] Weibliche/Männliche Charaktere werden in vielen Videospielen körperbetont dargestellt. Diese Darstellungen …".
+VARIABLE LABELS SexKoerper_SQ007#1 "[… dienen der Atmosphäre des Spiels.] [Skala 2] Weibliche/Männliche Charaktere werden in vielen Videospielen körperbetont dargestellt. Diese Darstellungen …".
+VARIABLE LABELS SexKoerper_SQ008#0 "[… helfen mir, mich mit der (attraktiven) Spielfigur zu identifizieren.] [Skala 1] Weibliche/Männliche Charaktere werden in vielen Videospielen körperbetont dargestellt. Diese Darstellungen …".
+VARIABLE LABELS SexKoerper_SQ008#1 "[… helfen mir, mich mit der (attraktiven) Spielfigur zu identifizieren.] [Skala 2] Weibliche/Männliche Charaktere werden in vielen Videospielen körperbetont dargestellt. Diese Darstellungen …".
+VARIABLE LABELS SexProblem "In Videospielen ist die körperbetonte Darstellung …".
+VARIABLE LABELS SexMehr_Korper#0 "[… körperbetonte Darstellungen.] [Skala 1] Ich wünsche mir in Computerspielen …".
+VARIABLE LABELS SexMehr_Korper#1 "[… körperbetonte Darstellungen.] [Skala 2] Ich wünsche mir in Computerspielen …".
+VARIABLE LABELS SexMehr_Selbstbew#0 "[… selbstbewusste Charaktere.] [Skala 1] Ich wünsche mir in Computerspielen …".
+VARIABLE LABELS SexMehr_Selbstbew#1 "[… selbstbewusste Charaktere.] [Skala 2] Ich wünsche mir in Computerspielen …".
+VARIABLE LABELS SexMehr_Stereotype#0 "[… schwache Charaktere.] [Skala 1] Ich wünsche mir in Computerspielen …".
+VARIABLE LABELS SexMehr_Stereotype#1 "[… schwache Charaktere.] [Skala 2] Ich wünsche mir in Computerspielen …".
+VARIABLE LABELS feddbacktext "Wenn du möchtest, kannst du uns hier Feedback zur Umfrage hinterlassen. Um die Umfrage abzuschließen, klicke einfach “Absenden”.".
+
+VALUE LABELS WohnortDeutschland
  "A1" "Ja."
  "A2" "Nein, aber in einem (auch) deutschsprachigen Land."
  "A3" "Nein.".
-VALUE LABELS  V13
+VALUE LABELS  Breitbandzugang
  "ISDN" "Analog/ISDN"
  "DSL" "DSL/VDSL"
  "COAX" "Kabel"
  "Funk" "UMTS/LTE"
  "Sonst" "Sonstige"
  "Nope" "Keinen".
-VALUE LABELS  V14
+VALUE LABELS COAXSpeed
  1 "Bis 10 MBit/s"
  2 "Bis 25 MBit/s"
  3 "Bis 50 Mbit/s"
  4 "Bis 100 MBit/s"
  5 "Schneller".
-VALUE LABELS  V15
+VALUE LABELS DSLSpeed
  1 "Bis 6 MBit/s"
  2 "Bis 16 MBit/s"
  3 "Bis 50 MBit/s"
  4 "Bis 100 MBit/s"
  5 "Schneller".
-VALUE LABELS  V16
+VALUE LABELS FunkSpeed
  1 "Bis 7,2 MBit/s"
  2 "Bis 14,4 MBit/s"
  3 "Bis 25 MBit/s"
  4 "Bis 50 MBit/s"
  5 "Bis 100 MBit/s"
  6 "Schneller".
-VALUE LABELS  V17
+VALUE LABELS Videospieler
  1 "Yes"
  2 "No".
-VALUE LABELS  V18
+VALUE LABELS ExSpieler
  1 "Yes"
  2 "No".
-VALUE LABELS  V20
+VALUE LABELS Ablehnung_1
  1 "Yes"
  0 "Not selected".
-VALUE LABELS  V21
+VALUE LABELS Ablehnung_2
  1 "Yes"
  0 "Not selected".
-VALUE LABELS  V22
+VALUE LABELS Ablehnung_3
  1 "Yes"
  0 "Not selected".
-VALUE LABELS  V23
+VALUE LABELS Ablehnung_4
  1 "Yes"
  0 "Not selected".
-VALUE LABELS  V24
+VALUE LABELS Ablehnung_5
  1 "Yes"
  0 "Not selected".
-VALUE LABELS  V25
+VALUE LABELS  VersteckJN
  1 "Yes"
  2 "No".
-VALUE LABELS  V26
+VALUE LABELS  VersteckArt_1
  1 "Yes"
  0 "Not selected".
-VALUE LABELS  V27
+VALUE LABELS  VersteckArt_2
  1 "Yes"
  0 "Not selected".
-VALUE LABELS  V28
+VALUE LABELS  VersteckArt_3
  1 "Yes"
  0 "Not selected".
-VALUE LABELS  V29
+VALUE LABELS  VersteckArt_1
  1 "Yes"
  0 "Not selected".
-VALUE LABELS  V31
+VALUE LABELS  Multiplayer
  "A1" "Vorrangig Einzelspieler."
  "A3" "Beides gleichermaßen."
  "A5" "Vorrangig Mehrspieler.".
-VALUE LABELS  V33
+VALUE LABELS  AllgemPlatt_SQ001
  "A1" "Gar nicht"
  "A2" "Selten"
  "A3" "Manchmal"
  "A4" "Oft"
  "A5" "Ständig".
-VALUE LABELS  V34
+VALUE LABELS  AllgemPlatt_SQ002
  "A1" "Gar nicht"
  "A2" "Selten"
  "A3" "Manchmal"
  "A4" "Oft"
  "A5" "Ständig".
-VALUE LABELS  V35
+VALUE LABELS  AllgemPlatt_SQ003
  "A1" "Gar nicht"
  "A2" "Selten"
  "A3" "Manchmal"
  "A4" "Oft"
  "A5" "Ständig".
-VALUE LABELS  V36
+VALUE LABELS  AllgemPlatt_SQ004
  "A1" "Gar nicht"
  "A2" "Selten"
  "A3" "Manchmal"
  "A4" "Oft"
  "A5" "Ständig".
-VALUE LABELS  V37
+VALUE LABELS  AllgemPlatt_SQ005
  "A1" "Gar nicht"
  "A2" "Selten"
  "A3" "Manchmal"
  "A4" "Oft"
  "A5" "Ständig".
-VALUE LABELS  V38
+VALUE LABELS  AllgemPlatt_SQ006
  "A1" "Gar nicht"
  "A2" "Selten"
  "A3" "Manchmal"
  "A4" "Oft"
  "A5" "Ständig".
-VALUE LABELS  V39
+VALUE LABELS  AllgemPlatt_SQ007
  "A1" "Gar nicht"
  "A2" "Selten"
  "A3" "Manchmal"
  "A4" "Oft"
  "A5" "Ständig".
-VALUE LABELS  V40
+VALUE LABELS  AllgemPlatt_SQ008
  "A1" "Gar nicht"
  "A2" "Selten"
  "A3" "Manchmal"
  "A4" "Oft"
  "A5" "Ständig".
-VALUE LABELS  V41
+VALUE LABELS  AllgemPlatt_SQ009
  "A1" "Gar nicht"
  "A2" "Selten"
  "A3" "Manchmal"
  "A4" "Oft"
  "A5" "Ständig".
-VALUE LABELS  V42
+VALUE LABELS  AllgemPlatt_SQ010
  "A1" "Gar nicht"
  "A2" "Selten"
  "A3" "Manchmal"
  "A4" "Oft"
  "A5" "Ständig".
-VALUE LABELS  V48
+VALUE LABELS  AllgemPlatt_SQ001
  "5J" "Seit mehr als fünf Jahren"
  "J" "Seit über einem Jahr"
  "Q" "Seit über drei Monaten"
  "M" "Seit über einem Monat"
  "W" "Seit über einer Woche"
  "T" "Seit weniger als einer Woche".
-VALUE LABELS  V49
+VALUE LABELS  Nutzungsdauer_SQ2
  "5J" "Seit mehr als fünf Jahren"
  "J" "Seit über einem Jahr"
  "Q" "Seit über drei Monaten"
  "M" "Seit über einem Monat"
  "W" "Seit über einer Woche"
  "T" "Seit weniger als einer Woche".
-VALUE LABELS  V50
+VALUE LABELS  Nutzungsdauer_SQ3
  "5J" "Seit mehr als fünf Jahren"
  "J" "Seit über einem Jahr"
  "Q" "Seit über drei Monaten"
  "M" "Seit über einem Monat"
  "W" "Seit über einer Woche"
  "T" "Seit weniger als einer Woche".
-VALUE LABELS  V51
+VALUE LABELS  Nutzungsdauer_SQ4
  "5J" "Seit mehr als fünf Jahren"
  "J" "Seit über einem Jahr"
  "Q" "Seit über drei Monaten"
  "M" "Seit über einem Monat"
  "W" "Seit über einer Woche"
  "T" "Seit weniger als einer Woche".
-VALUE LABELS  V52
+VALUE LABELS  Nutzungsdauer_SQ5
  "5J" "Seit mehr als fünf Jahren"
  "J" "Seit über einem Jahr"
  "Q" "Seit über drei Monaten"
  "M" "Seit über einem Monat"
  "W" "Seit über einer Woche"
  "T" "Seit weniger als einer Woche".
-VALUE LABELS  V54
+VALUE LABELS  Bezugsweg_SQ1
  1 "Selbst gekauft/ bezogen"
  2 "Geschenkt bekommen"
  3 "Geliehen"
  4 "Bei Bekannten genutzt"
  5 "Illegal bezogen".
-VALUE LABELS  V55
+VALUE LABELS  Bezugsweg_SQ2
  1 "Selbst gekauft/ bezogen"
  2 "Geschenkt bekommen"
  3 "Geliehen"
  4 "Bei Bekannten genutzt"
  5 "Illegal bezogen".
-VALUE LABELS  V56
+VALUE LABELS  Bezugsweg_SQ3
  1 "Selbst gekauft/ bezogen"
  2 "Geschenkt bekommen"
  3 "Geliehen"
  4 "Bei Bekannten genutzt"
  5 "Illegal bezogen".
-VALUE LABELS  V57
+VALUE LABELS  Bezugsweg_SQ4
  1 "Selbst gekauft/ bezogen"
  2 "Geschenkt bekommen"
  3 "Geliehen"
  4 "Bei Bekannten genutzt"
  5 "Illegal bezogen".
-VALUE LABELS  V58
+VALUE LABELS  Bezugsweg_SQ5
  1 "Selbst gekauft/ bezogen"
  2 "Geschenkt bekommen"
  3 "Geliehen"
  4 "Bei Bekannten genutzt"
  5 "Illegal bezogen".
-VALUE LABELS  V59
+VALUE LABELS  Plattformen_SQ1
  "Sony" "Konsole: Playstation"
  "Wii" "Konsole: Wii"
  "XBox" "Konsole: XBox"
@@ -720,7 +727,7 @@ VALUE LABELS  V59
  "Mac" "PC: Mac"
  "Win" "PC: Windows"
  "X" "Sonstige".
-VALUE LABELS  V60
+VALUE LABELS  Plattformen_SQ2
  "Sony" "Konsole: Playstation"
  "Wii" "Konsole: Wii"
  "XBox" "Konsole: XBox"
@@ -730,7 +737,7 @@ VALUE LABELS  V60
  "Mac" "PC: Mac"
  "Win" "PC: Windows"
  "X" "Sonstige".
-VALUE LABELS  V61
+VALUE LABELS  Plattformen_SQ3
  "Sony" "Konsole: Playstation"
  "Wii" "Konsole: Wii"
  "XBox" "Konsole: XBox"
@@ -740,7 +747,7 @@ VALUE LABELS  V61
  "Mac" "PC: Mac"
  "Win" "PC: Windows"
  "X" "Sonstige".
-VALUE LABELS  V62
+VALUE LABELS  Plattformen_SQ4
  "Sony" "Konsole: Playstation"
  "Wii" "Konsole: Wii"
  "XBox" "Konsole: XBox"
@@ -750,7 +757,7 @@ VALUE LABELS  V62
  "Mac" "PC: Mac"
  "Win" "PC: Windows"
  "X" "Sonstige".
-VALUE LABELS  V63
+VALUE LABELS  Plattformen_SQ5
  "Sony" "Konsole: Playstation"
  "Wii" "Konsole: Wii"
  "XBox" "Konsole: XBox"
@@ -760,867 +767,800 @@ VALUE LABELS  V63
  "Mac" "PC: Mac"
  "Win" "PC: Windows"
  "X" "Sonstige".
-VALUE LABELS  V69
+VALUE LABELS  Endmotivation_1
  "A1" "Auf jeden Fall"
  "A2" "Eher ja"
  "A3" "Vielleicht"
  "A4" "Eher nicht"
  "A5" "Auf keinen Fall".
-VALUE LABELS  V70
+VALUE LABELS  Endmotivation_2
  "A1" "Auf jeden Fall"
  "A2" "Eher ja"
  "A3" "Vielleicht"
  "A4" "Eher nicht"
  "A5" "Auf keinen Fall".
-VALUE LABELS  V71
+VALUE LABELS  Endmotivation_3
  "A1" "Auf jeden Fall"
  "A2" "Eher ja"
  "A3" "Vielleicht"
  "A4" "Eher nicht"
  "A5" "Auf keinen Fall".
-VALUE LABELS  V72
+VALUE LABELS  Endmotivation_4
  "A1" "Auf jeden Fall"
  "A2" "Eher ja"
  "A3" "Vielleicht"
  "A4" "Eher nicht"
  "A5" "Auf keinen Fall".
-VALUE LABELS  V73
+VALUE LABELS  Endmotivation_5
  "A1" "Auf jeden Fall"
  "A2" "Eher ja"
  "A3" "Vielleicht"
  "A4" "Eher nicht"
  "A5" "Auf keinen Fall".
-VALUE LABELS  V74
+VALUE LABELS  Endmotivation_7
  "A1" "Auf jeden Fall"
  "A2" "Eher ja"
  "A3" "Vielleicht"
  "A4" "Eher nicht"
  "A5" "Auf keinen Fall".
-VALUE LABELS  V75
+VALUE LABELS  Endmotivation_9
  "A1" "Auf jeden Fall"
  "A2" "Eher ja"
  "A3" "Vielleicht"
  "A4" "Eher nicht"
  "A5" "Auf keinen Fall".
-VALUE LABELS  V76
+VALUE LABELS  Endzwang_SQ001
  "A1" "Ja, mehrfach"
  "A2" "Ja, ein Mal"
  "A3" "Nein, noch nie".
-VALUE LABELS  V77
+VALUE LABELS  Endzwang_SQ002
  "A1" "Ja, mehrfach"
  "A2" "Ja, ein Mal"
  "A3" "Nein, noch nie".
-VALUE LABELS  V78
+VALUE LABELS  Endverstndnis_1
  1 "Ja"
  2 "Manchmal"
  3 "Nein".
-VALUE LABELS  V79
+VALUE LABELS  Endverstndnis_2
  1 "Ja"
  2 "Manchmal"
  3 "Nein".
-VALUE LABELS  V80
+VALUE LABELS  Endverstndnis_3
  1 "Ja"
  2 "Manchmal"
  3 "Nein".
-VALUE LABELS  V81
+VALUE LABELS  Endverstndnis_4
  1 "Ja"
  2 "Manchmal"
  3 "Nein".
-VALUE LABELS  V82
+VALUE LABELS  Endverstndnis_5
  1 "Ja"
  2 "Manchmal"
  3 "Nein".
-VALUE LABELS  V83
+VALUE LABELS  Endverstndnis_7
  1 "Ja"
  2 "Manchmal"
  3 "Nein".
-VALUE LABELS  V84
+VALUE LABELS  Endverstndnis_9
  1 "Ja"
  2 "Manchmal"
  3 "Nein".
-VALUE LABELS  V85
+VALUE LABELS  Startmotivation_1
  1 "Auf jeden Fall"
  2 "Eher ja"
  3 "Vielleicht"
  4 "Eher nicht"
  5 "Auf keinen Fall".
-VALUE LABELS  V86
+VALUE LABELS  Startmotivation_2
  1 "Auf jeden Fall"
  2 "Eher ja"
  3 "Vielleicht"
  4 "Eher nicht"
  5 "Auf keinen Fall".
-VALUE LABELS  V87
+VALUE LABELS  Startmotivation_3
  1 "Auf jeden Fall"
  2 "Eher ja"
  3 "Vielleicht"
  4 "Eher nicht"
  5 "Auf keinen Fall".
-VALUE LABELS  V88
+VALUE LABELS  Startmotivation_4
  1 "Auf jeden Fall"
  2 "Eher ja"
  3 "Vielleicht"
  4 "Eher nicht"
  5 "Auf keinen Fall".
-VALUE LABELS  V89
+VALUE LABELS  Startmotivation_5
  1 "Auf jeden Fall"
  2 "Eher ja"
  3 "Vielleicht"
  4 "Eher nicht"
  5 "Auf keinen Fall".
-VALUE LABELS  V90
+VALUE LABELS  Illegalmotivation_1#0
  "A3" "Ja, die meisten"
  "A2" "Ja, einige"
  "A1" "Fast keines"
  "A0" "Kein  einziges".
-VALUE LABELS  V91
+VALUE LABELS  Illegalmotivation_1#1
  2 "Ja"
  1 "Manchmal"
  0 "Nein".
-VALUE LABELS  V92
+VALUE LABELS  Illegalmotivation_2#0
  "A3" "Ja, die meisten"
  "A2" "Ja, einige"
  "A1" "Fast keines"
  "A0" "Kein  einziges".
-VALUE LABELS  V93
+VALUE LABELS  Illegalmotivation_2#1
  2 "Ja"
  1 "Manchmal"
  0 "Nein".
-VALUE LABELS  V94
+VALUE LABELS  Illegalmotivation_3#0
  "A3" "Ja, die meisten"
  "A2" "Ja, einige"
  "A1" "Fast keines"
  "A0" "Kein  einziges".
-VALUE LABELS  V95
+VALUE LABELS  Illegalmotivation_3#1
  2 "Ja"
  1 "Manchmal"
  0 "Nein".
-VALUE LABELS  V96
+VALUE LABELS  Illegalmotivation_4#0
  "A3" "Ja, die meisten"
  "A2" "Ja, einige"
  "A1" "Fast keines"
  "A0" "Kein  einziges".
-VALUE LABELS  V97
+VALUE LABELS  Illegalmotivation_4#1
  2 "Ja"
  1 "Manchmal"
  0 "Nein".
-VALUE LABELS  V98
+VALUE LABELS  Illegalmotivation_5#0
  "A3" "Ja, die meisten"
  "A2" "Ja, einige"
  "A1" "Fast keines"
  "A0" "Kein  einziges".
-VALUE LABELS  V99
+VALUE LABELS  Illegalmotivation_5#1
  2 "Ja"
  1 "Manchmal"
  0 "Nein".
-VALUE LABELS  V100
+VALUE LABELS  Illegalmotivation_6#0
  "A3" "Ja, die meisten"
  "A2" "Ja, einige"
  "A1" "Fast keines"
  "A0" "Kein  einziges".
-VALUE LABELS  V101
+VALUE LABELS  Illegalmotivation_6#1
  2 "Ja"
  1 "Manchmal"
  0 "Nein".
-VALUE LABELS  V102
+VALUE LABELS  Illegalmotivation_7#0
  "A3" "Ja, die meisten"
  "A2" "Ja, einige"
  "A1" "Fast keines"
  "A0" "Kein  einziges".
-VALUE LABELS  V103
+VALUE LABELS  Illegalmotivation_7#1
  2 "Ja"
  1 "Manchmal"
  0 "Nein".
-VALUE LABELS  V104
+VALUE LABELS  Illegalmotivation_8#0
  "A3" "Ja, die meisten"
  "A2" "Ja, einige"
  "A1" "Fast keines"
  "A0" "Kein  einziges".
-VALUE LABELS  V105
+VALUE LABELS  Illegalmotivation_8#1
  2 "Ja"
  1 "Manchmal"
  0 "Nein".
-VALUE LABELS  V106
+VALUE LABELS  IllegalVerstaendnis_1
  2 "Ja"
  1 "Manchmal"
  0 "Nein".
-VALUE LABELS  V107
+VALUE LABELS  IllegalVerstaendnis_2
  2 "Ja"
  1 "Manchmal"
  0 "Nein".
-VALUE LABELS  V108
+VALUE LABELS  IllegalVerstaendnis_3
  2 "Ja"
  1 "Manchmal"
  0 "Nein".
-VALUE LABELS  V109
+VALUE LABELS  IllegalVerstaendnis_4
  2 "Ja"
  1 "Manchmal"
  0 "Nein".
-VALUE LABELS  V110
+VALUE LABELS  IllegalVerstaendnis_5
  2 "Ja"
  1 "Manchmal"
  0 "Nein".
-VALUE LABELS  V111
+VALUE LABELS  IllegalVerstaendnis_6
  2 "Ja"
  1 "Manchmal"
  0 "Nein".
-VALUE LABELS  V112
+VALUE LABELS  IllegalVerstaendnis_7
  2 "Ja"
  1 "Manchmal"
  0 "Nein".
-VALUE LABELS  V113
+VALUE LABELS  IllegalVerstaendnis_8
  2 "Ja"
  1 "Manchmal"
  0 "Nein".
-VALUE LABELS  V114
+VALUE LABELS  Kennzeichenkenntnis_SQ001
  1 "Yes"
  0 "Not selected".
-VALUE LABELS  V115
+VALUE LABELS  Kennzeichenkenntnis_SQ002
  1 "Yes"
  0 "Not selected".
-VALUE LABELS  V116
+VALUE LABELS  Kennzeichenkenntnis_SQ003
  1 "Yes"
  0 "Not selected".
-VALUE LABELS  V117
+VALUE LABELS  Kennzeichenkenntnis_SQ004
  1 "Yes"
  0 "Not selected".
-VALUE LABELS  V118
+VALUE LABELS  Kennzeichenkenntnis_SQ005
  1 "Yes"
  0 "Not selected".
-VALUE LABELS  V119
+VALUE LABELS  Schnittkenntnis
  1 "Ja, ich weiß es bei allen."
  2 "Ich weiß es bei den meisten."
  3 "Ich weiß es bei einigen."
  4 "Nein, ich weiß es bei keinem.".
-VALUE LABELS  V120
+VALUE LABELS  Zensurmeinung
  1 "Entschärfte Versionen sind für mich kein Problem."
  2 "Schnitte stören mich, halten mich aber nicht von der Nutzung ab."
  3 "Ich versuche entschärfte Spiele nur in Ausnahmefällen zu nutzen."
  4 "Ich habe kein Interesse an geschnittenen Spielen.".
-VALUE LABELS  V121
+VALUE LABELS  Zensurinformation
  1 "Yes"
  2 "No".
-VALUE LABELS  V122
+VALUE LABELS  Zensurinfowege_1
  1 "Yes"
  0 "Not selected".
-VALUE LABELS  V123
+VALUE LABELS  Zensurinfowege_2
  1 "Yes"
  0 "Not selected".
-VALUE LABELS  V124
+VALUE LABELS  Zensurinfowege_3
  1 "Yes"
  0 "Not selected".
-VALUE LABELS  V125
+VALUE LABELS  Zensurinfowege_4
  1 "Yes"
  0 "Not selected".
-VALUE LABELS  V126
+VALUE LABELS  Zensurinfowege_5
  1 "Yes"
  0 "Not selected".
-VALUE LABELS  V127
+VALUE LABELS  Zensurinfowege_6
  1 "Yes"
  0 "Not selected".
-VALUE LABELS  V129
+VALUE LABELS  UncutBezug
  4 "Immer"
  3 "Meistens"
  2 "Manchmal"
  1 "Selten"
  0 "Nie".
-VALUE LABELS  V130
+VALUE LABELS  UncutBezugErfolg
  "A1" "Immer."
  "A2" "Meistens"
  "A3" "Manchmal"
  "A4" "Selten"
  "A5" "Nie".
-VALUE LABELS  V131
+VALUE LABELS  UncutBezugWegKErf_SQ001
  "A1" "sehr groß (>90%)"
  "A2" "groß (etwa 80%)"
  "A3" "mittelmäßig (etwa 50%)"
  "A4" "gering (etwa 25%)"
  "A5" "nicht vorhanden (0%)".
-VALUE LABELS  V132
+VALUE LABELS  UncutBezugWegKErf_SQ002
  "A1" "sehr groß (>90%)"
  "A2" "groß (etwa 80%)"
  "A3" "mittelmäßig (etwa 50%)"
  "A4" "gering (etwa 25%)"
  "A5" "nicht vorhanden (0%)".
-VALUE LABELS  V133
+VALUE LABELS  UncutBezugWegKErf_SQ003
  "A1" "sehr groß (>90%)"
  "A2" "groß (etwa 80%)"
  "A3" "mittelmäßig (etwa 50%)"
  "A4" "gering (etwa 25%)"
  "A5" "nicht vorhanden (0%)".
-VALUE LABELS  V134
+VALUE LABELS  UncutBezugWegKErf_SQ004
  "A1" "sehr groß (>90%)"
  "A2" "groß (etwa 80%)"
  "A3" "mittelmäßig (etwa 50%)"
  "A4" "gering (etwa 25%)"
  "A5" "nicht vorhanden (0%)".
-VALUE LABELS  V135
+VALUE LABELS  UncutBezugWegKErf_SQ005
  "A1" "sehr groß (>90%)"
  "A2" "groß (etwa 80%)"
  "A3" "mittelmäßig (etwa 50%)"
  "A4" "gering (etwa 25%)"
  "A5" "nicht vorhanden (0%)".
-VALUE LABELS  V136
+VALUE LABELS  UncutBezugWegKErf_SQ006
  "A1" "sehr groß (>90%)"
  "A2" "groß (etwa 80%)"
  "A3" "mittelmäßig (etwa 50%)"
  "A4" "gering (etwa 25%)"
  "A5" "nicht vorhanden (0%)".
-VALUE LABELS  V137
+VALUE LABELS  UncutBezugWegKErf_SQ007
  "A1" "sehr groß (>90%)"
  "A2" "groß (etwa 80%)"
  "A3" "mittelmäßig (etwa 50%)"
  "A4" "gering (etwa 25%)"
  "A5" "nicht vorhanden (0%)".
-VALUE LABELS  V138
+VALUE LABELS  UncutBezugWegKErf_SQ008
  "A1" "sehr groß (>90%)"
  "A2" "groß (etwa 80%)"
  "A3" "mittelmäßig (etwa 50%)"
  "A4" "gering (etwa 25%)"
  "A5" "nicht vorhanden (0%)".
-VALUE LABELS  V139
+VALUE LABELS  UncutBezugWegKErf_SQ009
  "A1" "sehr groß (>90%)"
  "A2" "groß (etwa 80%)"
  "A3" "mittelmäßig (etwa 50%)"
  "A4" "gering (etwa 25%)"
  "A5" "nicht vorhanden (0%)".
-VALUE LABELS  V140
+VALUE LABELS  UncutBezugWegKErf_SQ010
  "A1" "sehr groß (>90%)"
  "A2" "groß (etwa 80%)"
  "A3" "mittelmäßig (etwa 50%)"
  "A4" "gering (etwa 25%)"
  "A5" "nicht vorhanden (0%)".
-VALUE LABELS  V141
+VALUE LABELS  UncutBezugWegErf_SQ001#0
  "J" "Ja."
  "N" "Nein.".
-VALUE LABELS  V142
+VALUE LABELS  UncutBezugWegErf_SQ001#1
  "A1" "sehr groß (>90%)"
  "A2" "groß (etwa 80%)"
  "A3" "mittelmäßig (etwa 50%)"
  "A4" "gering (etwa 25%)"
  "A5" "nicht vorhanden (0%)".
-VALUE LABELS  V143
+VALUE LABELS  UncutBezugWegErf_SQ002#0
  "J" "Ja."
  "N" "Nein.".
-VALUE LABELS  V144
+VALUE LABELS  UncutBezugWegErf_SQ002#1
  "A1" "sehr groß (>90%)"
  "A2" "groß (etwa 80%)"
  "A3" "mittelmäßig (etwa 50%)"
  "A4" "gering (etwa 25%)"
  "A5" "nicht vorhanden (0%)".
-VALUE LABELS  V145
+VALUE LABELS  UncutBezugWegErf_SQ003#0
  "J" "Ja."
  "N" "Nein.".
-VALUE LABELS  V146
+VALUE LABELS  UncutBezugWegErf_SQ003#1
  "A1" "sehr groß (>90%)"
  "A2" "groß (etwa 80%)"
  "A3" "mittelmäßig (etwa 50%)"
  "A4" "gering (etwa 25%)"
  "A5" "nicht vorhanden (0%)".
-VALUE LABELS  V147
+VALUE LABELS  UncutBezugWegErf_SQ004#0
  "J" "Ja."
  "N" "Nein.".
-VALUE LABELS  V148
+VALUE LABELS  UncutBezugWegErf_SQ004#1
  "A1" "sehr groß (>90%)"
  "A2" "groß (etwa 80%)"
  "A3" "mittelmäßig (etwa 50%)"
  "A4" "gering (etwa 25%)"
  "A5" "nicht vorhanden (0%)".
-VALUE LABELS  V149
+VALUE LABELS  UncutBezugWegErf_SQ005#0
  "J" "Ja."
  "N" "Nein.".
-VALUE LABELS  V150
+VALUE LABELS  UncutBezugWegErf_SQ005#1
  "A1" "sehr groß (>90%)"
  "A2" "groß (etwa 80%)"
  "A3" "mittelmäßig (etwa 50%)"
  "A4" "gering (etwa 25%)"
  "A5" "nicht vorhanden (0%)".
-VALUE LABELS  V151
+VALUE LABELS  UncutBezugWegErf_SQ006#0
  "J" "Ja."
  "N" "Nein.".
-VALUE LABELS  V152
+VALUE LABELS  UncutBezugWegErf_SQ006#1
  "A1" "sehr groß (>90%)"
  "A2" "groß (etwa 80%)"
  "A3" "mittelmäßig (etwa 50%)"
  "A4" "gering (etwa 25%)"
  "A5" "nicht vorhanden (0%)".
-VALUE LABELS  V153
+VALUE LABELS  UncutBezugWegErf_SQ007#0
  "J" "Ja."
  "N" "Nein.".
-VALUE LABELS  V154
+VALUE LABELS  UncutBezugWegErf_SQ007#1
  "A1" "sehr groß (>90%)"
  "A2" "groß (etwa 80%)"
  "A3" "mittelmäßig (etwa 50%)"
  "A4" "gering (etwa 25%)"
  "A5" "nicht vorhanden (0%)".
-VALUE LABELS  V155
+VALUE LABELS  UncutBezugWegErf_SQ008#0
  "J" "Ja."
  "N" "Nein.".
-VALUE LABELS  V156
+VALUE LABELS  UncutBezugWegErf_SQ008#1
  "A1" "sehr groß (>90%)"
  "A2" "groß (etwa 80%)"
  "A3" "mittelmäßig (etwa 50%)"
  "A4" "gering (etwa 25%)"
  "A5" "nicht vorhanden (0%)".
-VALUE LABELS  V157
+VALUE LABELS  UncutBezugWegErf_SQ009#0
  "J" "Ja."
  "N" "Nein.".
-VALUE LABELS  V158
+VALUE LABELS  UncutBezugWegErf_SQ009#1
  "A1" "sehr groß (>90%)"
  "A2" "groß (etwa 80%)"
  "A3" "mittelmäßig (etwa 50%)"
  "A4" "gering (etwa 25%)"
  "A5" "nicht vorhanden (0%)".
-VALUE LABELS  V159
+VALUE LABELS  UncutBezugWegErf_SQ010#0
  "J" "Ja."
  "N" "Nein.".
-VALUE LABELS  V160
+VALUE LABELS  UncutBezugWegErf_SQ010#1
  "A1" "sehr groß (>90%)"
  "A2" "groß (etwa 80%)"
  "A3" "mittelmäßig (etwa 50%)"
  "A4" "gering (etwa 25%)"
  "A5" "nicht vorhanden (0%)".
-VALUE LABELS  V161
+VALUE LABELS  Onlineaktivierung
  1 "Keine."
  2 "Ja, aber es ist kein Grund auf die Anschaffung zu verzichten."
  3 "Ja, es kann ein Grund sein auf die Anschaffung zu verzichten."
  4 "Ja, ich habe deswegen bereits auf die Anschaffung von Spielen verzichtet - es ist aber kein absoluter Ausschlussgrund."
  5 "Ja, ich kaufe solche Spiele prinzipiell nicht.".
-VALUE LABELS  V162
+VALUE LABELS  Onlinezwang
  1 "Keine."
  2 "Ja, aber es ist kein Grund auf die Anschaffung zu verzichten."
  3 "Ja, es kann ein Grund sein auf die Anschaffung zu verzichten."
  4 "Ja, ich habe deswegen bereits auf die Anschaffung von Spielen verzichtet - es ist aber kein absoluter Ausschlussgrund."
  5 "Ja, ich kaufe solche Spiele prinzipiell nicht.".
-VALUE LABELS  V163
+VALUE LABELS  Kontingent
  1 "Keine."
  2 "Ja, aber es ist kein Grund auf die Anschaffung zu verzichten."
  3 "Ja, es kann ein Grund sein auf die Anschaffung zu verzichten."
  4 "Ja, ich habe deswegen bereits auf die Anschaffung von Spielen verzichtet - es ist aber kein absoluter Ausschlussgrund."
  5 "Ja, ich kaufe solche Spiele prinzipiell nicht.".
-VALUE LABELS  V164
+VALUE LABELS  Kopierschutz
  1 "Keine."
  2 "Ja, aber es ist kein Grund auf die Anschaffung zu verzichten."
  3 "Ja, es kann ein Grund sein auf die Anschaffung zu verzichten."
  4 "Ja, ich habe deswegen bereits auf die Anschaffung von Spielen verzichtet - es ist aber kein absoluter Ausschlussgrund."
  5 "Ja, ich kaufe solche Spiele prinzipiell nicht.".
-VALUE LABELS  V165
+VALUE LABELS  Sicherheitskopie
  1 "Keine."
  2 "Ja, aber es ist kein Grund auf die Anschaffung zu verzichten."
  3 "Ja, es kann ein Grund sein auf die Anschaffung zu verzichten."
  4 "Ja, ich habe deswegen bereits auf die Anschaffung von Spielen verzichtet - es ist aber kein absoluter Ausschlussgrund."
  5 "Ja, ich kaufe solche Spiele prinzipiell nicht.".
-VALUE LABELS  V166
+VALUE LABELS  Datenschutz
  1 "Keine."
  2 "Ja, aber es ist kein Grund auf die Anschaffung zu verzichten."
  3 "Ja, es kann ein Grund sein auf die Anschaffung zu verzichten."
  4 "Ja, ich habe deswegen bereits auf die Anschaffung von Spielen verzichtet - es ist aber kein absoluter Ausschlussgrund."
  5 "Ja, ich kaufe solche Spiele prinzipiell nicht.".
-VALUE LABELS  V167
+VALUE LABELS  Geolock
  1 "Keine."
  2 "Ja, aber es ist kein Grund auf die Anschaffung zu verzichten."
  3 "Ja, es kann ein Grund sein auf die Anschaffung zu verzichten."
  4 "Ja, ich habe deswegen bereits auf die Anschaffung von Spielen verzichtet - es ist aber kein absoluter Ausschlussgrund."
  5 "Ja, ich kaufe solche Spiele prinzipiell nicht.".
-VALUE LABELS  V168
+VALUE LABELS  Informationsinteress_1#0
  1 "Immer"
  2 "Meistens"
  3 "Manchmal"
  4 "Selten"
  5 "Nie".
-VALUE LABELS  V169
+VALUE LABELS  Informationsinteress_1#1
  "A1" "Ja"
  "A2" "Nein".
-VALUE LABELS  V170
+VALUE LABELS  Informationsinteress_2#0
  1 "Immer"
  2 "Meistens"
  3 "Manchmal"
  4 "Selten"
  5 "Nie".
-VALUE LABELS  V171
+VALUE LABELS  Informationsinteress_2#1
  "A1" "Ja"
  "A2" "Nein".
-VALUE LABELS  V172
+VALUE LABELS  Informationsinteress_3#0
  1 "Immer"
  2 "Meistens"
  3 "Manchmal"
  4 "Selten"
  5 "Nie".
-VALUE LABELS  V173
+VALUE LABELS  Informationsinteress_3#1
  "A1" "Ja"
  "A2" "Nein".
-VALUE LABELS  V174
+VALUE LABELS  Informationsinteress_4#0
  1 "Immer"
  2 "Meistens"
  3 "Manchmal"
  4 "Selten"
  5 "Nie".
-VALUE LABELS  V175
+VALUE LABELS  Informationsinteress_4#1
  "A1" "Ja"
  "A2" "Nein".
-VALUE LABELS  V176
+VALUE LABELS  Informationsinteress_5#0
  1 "Immer"
  2 "Meistens"
  3 "Manchmal"
  4 "Selten"
  5 "Nie".
-VALUE LABELS  V177
+VALUE LABELS  Informationsinteress_5#1
  "A1" "Ja"
  "A2" "Nein".
-VALUE LABELS  V178
+VALUE LABELS  SexSelbstbew_SQ001#0
  1 "Auf jeden Fall"
  2 "Eher ja"
  3 "Vielleicht"
  4 "Eher nicht"
  5 "Auf keinen Fall".
-VALUE LABELS  V179
+VALUE LABELS  SexSelbstbew_SQ001#1
  1 "Auf jeden Fall"
  2 "Eher ja"
  3 "Vielleicht"
  4 "Eher nicht"
  5 "Auf keinen Fall".
-VALUE LABELS  V180
+VALUE LABELS  SexSelbstbew_SQ002#0
  1 "Auf jeden Fall"
  2 "Eher ja"
  3 "Vielleicht"
  4 "Eher nicht"
  5 "Auf keinen Fall".
-VALUE LABELS  V181
+VALUE LABELS  SexSelbstbew_SQ002#1
  1 "Auf jeden Fall"
  2 "Eher ja"
  3 "Vielleicht"
  4 "Eher nicht"
  5 "Auf keinen Fall".
-VALUE LABELS  V182
+VALUE LABELS  SexSelbstbew_SQ003#0
  1 "Auf jeden Fall"
  2 "Eher ja"
  3 "Vielleicht"
  4 "Eher nicht"
  5 "Auf keinen Fall".
-VALUE LABELS  V183
+VALUE LABELS  SexSelbstbew_SQ003#1
  1 "Auf jeden Fall"
  2 "Eher ja"
  3 "Vielleicht"
  4 "Eher nicht"
  5 "Auf keinen Fall".
-VALUE LABELS  V184
+VALUE LABELS  SexSelbstbew_SQ004#0
  1 "Auf jeden Fall"
  2 "Eher ja"
  3 "Vielleicht"
  4 "Eher nicht"
  5 "Auf keinen Fall".
-VALUE LABELS  V185
+VALUE LABELS  SexSelbstbew_SQ004#1
  1 "Auf jeden Fall"
  2 "Eher ja"
  3 "Vielleicht"
  4 "Eher nicht"
  5 "Auf keinen Fall".
-VALUE LABELS  V186
+VALUE LABELS  SexSelbstbew_SQ005#0
  1 "Auf jeden Fall"
  2 "Eher ja"
  3 "Vielleicht"
  4 "Eher nicht"
  5 "Auf keinen Fall".
-VALUE LABELS  V187
+VALUE LABELS  SexSelbstbew_SQ005#1
  1 "Auf jeden Fall"
  2 "Eher ja"
  3 "Vielleicht"
  4 "Eher nicht"
  5 "Auf keinen Fall".
-VALUE LABELS  V188
+VALUE LABELS  SexSelbstbew_SQ006#0
  1 "Auf jeden Fall"
  2 "Eher ja"
  3 "Vielleicht"
  4 "Eher nicht"
  5 "Auf keinen Fall".
-VALUE LABELS  V189
+VALUE LABELS  SexSelbstbew_SQ006#1
  1 "Auf jeden Fall"
  2 "Eher ja"
  3 "Vielleicht"
  4 "Eher nicht"
  5 "Auf keinen Fall".
-VALUE LABELS  V190
+VALUE LABELS  SexWehrlos_SQ001#0
  1 "Auf jeden Fall"
  2 "Eher ja"
  3 "Vielleicht"
  4 "Eher nicht"
  5 "Auf keinen Fall".
-VALUE LABELS  V191
+VALUE LABELS  SexWehrlos_SQ001#1
  1 "Auf jeden Fall"
  2 "Eher ja"
  3 "Vielleicht"
  4 "Eher nicht"
  5 "Auf keinen Fall".
-VALUE LABELS  V192
+VALUE LABELS  SexWehrlos_SQ002#0
  1 "Auf jeden Fall"
  2 "Eher ja"
  3 "Vielleicht"
  4 "Eher nicht"
  5 "Auf keinen Fall".
-VALUE LABELS  V193
+VALUE LABELS  SexWehrlos_SQ002#1
  1 "Auf jeden Fall"
  2 "Eher ja"
  3 "Vielleicht"
  4 "Eher nicht"
  5 "Auf keinen Fall".
-VALUE LABELS  V194
+VALUE LABELS  SexWehrlos_SQ003#0
  1 "Auf jeden Fall"
  2 "Eher ja"
  3 "Vielleicht"
  4 "Eher nicht"
  5 "Auf keinen Fall".
-VALUE LABELS  V195
+VALUE LABELS  SexWehrlos_SQ003#1
  1 "Auf jeden Fall"
  2 "Eher ja"
  3 "Vielleicht"
  4 "Eher nicht"
  5 "Auf keinen Fall".
-VALUE LABELS  V196
+VALUE LABELS  SexWehrlos_SQ004#0
  1 "Auf jeden Fall"
  2 "Eher ja"
  3 "Vielleicht"
  4 "Eher nicht"
  5 "Auf keinen Fall".
-VALUE LABELS  V197
+VALUE LABELS  SexWehrlos_SQ004#1
  1 "Auf jeden Fall"
  2 "Eher ja"
  3 "Vielleicht"
  4 "Eher nicht"
  5 "Auf keinen Fall".
-VALUE LABELS  V198
+VALUE LABELS  SexWehrlos_SQ005#0
  1 "Auf jeden Fall"
  2 "Eher ja"
  3 "Vielleicht"
  4 "Eher nicht"
  5 "Auf keinen Fall".
-VALUE LABELS  V199
+VALUE LABELS  SexWehrlos_SQ005#1
  1 "Auf jeden Fall"
  2 "Eher ja"
  3 "Vielleicht"
  4 "Eher nicht"
  5 "Auf keinen Fall".
-VALUE LABELS  V200
+VALUE LABELS  SexWehrlos_SQ006#0
  1 "Auf jeden Fall"
  2 "Eher ja"
  3 "Vielleicht"
  4 "Eher nicht"
  5 "Auf keinen Fall".
-VALUE LABELS  V201
+VALUE LABELS  SexWehrlos_SQ006#1
  1 "Auf jeden Fall"
  2 "Eher ja"
  3 "Vielleicht"
  4 "Eher nicht"
  5 "Auf keinen Fall".
-VALUE LABELS  V202
+VALUE LABELS  SexKoerper_SQ001#0
  1 "Auf jeden Fall"
  2 "Eher ja"
  3 "Vielleicht"
  4 "Eher nicht"
  5 "Auf keinen Fall".
-VALUE LABELS  V203
+VALUE LABELS  SexKoerper_SQ001#1
  1 "Auf jeden Fall"
  2 "Eher ja"
  3 "Vielleicht"
  4 "Eher nicht"
  5 "Auf keinen Fall".
-VALUE LABELS  V204
+VALUE LABELS  SexKoerper_SQ002#0
  1 "Auf jeden Fall"
  2 "Eher ja"
  3 "Vielleicht"
  4 "Eher nicht"
  5 "Auf keinen Fall".
-VALUE LABELS  V205
+VALUE LABELS  SexKoerper_SQ002#1
  1 "Auf jeden Fall"
  2 "Eher ja"
  3 "Vielleicht"
  4 "Eher nicht"
  5 "Auf keinen Fall".
-VALUE LABELS  V206
+VALUE LABELS  SexKoerper_SQ003#0
  1 "Auf jeden Fall"
  2 "Eher ja"
  3 "Vielleicht"
  4 "Eher nicht"
  5 "Auf keinen Fall".
-VALUE LABELS  V207
+VALUE LABELS  SexKoerper_SQ003#1
  1 "Auf jeden Fall"
  2 "Eher ja"
  3 "Vielleicht"
  4 "Eher nicht"
  5 "Auf keinen Fall".
-VALUE LABELS  V208
+VALUE LABELS  SexKoerper_SQ004#0
  1 "Auf jeden Fall"
  2 "Eher ja"
  3 "Vielleicht"
  4 "Eher nicht"
  5 "Auf keinen Fall".
-VALUE LABELS  V209
+VALUE LABELS  SexKoerper_SQ004#1
  1 "Auf jeden Fall"
  2 "Eher ja"
  3 "Vielleicht"
  4 "Eher nicht"
  5 "Auf keinen Fall".
-VALUE LABELS  V210
+VALUE LABELS  SexKoerper_SQ005#0
  1 "Auf jeden Fall"
  2 "Eher ja"
  3 "Vielleicht"
  4 "Eher nicht"
  5 "Auf keinen Fall".
-VALUE LABELS  V211
+VALUE LABELS  SexKoerper_SQ005#1
  1 "Auf jeden Fall"
  2 "Eher ja"
  3 "Vielleicht"
  4 "Eher nicht"
  5 "Auf keinen Fall".
-VALUE LABELS  V212
+VALUE LABELS  SexKoerper_SQ006#0
  1 "Auf jeden Fall"
  2 "Eher ja"
  3 "Vielleicht"
  4 "Eher nicht"
  5 "Auf keinen Fall".
-VALUE LABELS  V213
+VALUE LABELS  SexKoerper_SQ006#1
  1 "Auf jeden Fall"
  2 "Eher ja"
  3 "Vielleicht"
  4 "Eher nicht"
  5 "Auf keinen Fall".
-VALUE LABELS  V214
+VALUE LABELS  SexKoerper_SQ007#0
  1 "Auf jeden Fall"
  2 "Eher ja"
  3 "Vielleicht"
  4 "Eher nicht"
  5 "Auf keinen Fall".
-VALUE LABELS  V215
+VALUE LABELS  SexKoerper_SQ007#1
  1 "Auf jeden Fall"
  2 "Eher ja"
  3 "Vielleicht"
  4 "Eher nicht"
  5 "Auf keinen Fall".
-VALUE LABELS  V216
+VALUE LABELS  SexKoerper_SQ008#0
  1 "Auf jeden Fall"
  2 "Eher ja"
  3 "Vielleicht"
  4 "Eher nicht"
  5 "Auf keinen Fall".
-VALUE LABELS  V217
+VALUE LABELS  SexKoerper_SQ008#1
  1 "Auf jeden Fall"
  2 "Eher ja"
  3 "Vielleicht"
  4 "Eher nicht"
  5 "Auf keinen Fall".
-VALUE LABELS  V218
+VALUE LABELS  SexProblem
  "A1" "… von Frauen problematischer als die von Männer."
  "A2" "… von Männern problematischer als von Frauen."
  "A3" "… gleich problematisch."
  "A4" "… nicht problematisch.".
-VALUE LABELS  V219
+VALUE LABELS  SexMehr_Korper#0
  0 "mehr"
  1 "unverändert"
  2 "weniger".
-VALUE LABELS  V220
+VALUE LABELS  SexMehr_Korper#1
  0 "mehr"
  1 "unverändert"
  2 "weniger".
-VALUE LABELS  V221
+VALUE LABELS  SexMehr_Selbstbew#0
  0 "mehr"
  1 "unverändert"
  2 "weniger".
-VALUE LABELS  V222
+VALUE LABELS  SexMehr_Selbstbew#1
  0 "mehr"
  1 "unverändert"
  2 "weniger".
-VALUE LABELS  V223
+VALUE LABELS  SexMehr_Stereotype#0
  0 "mehr"
  1 "unverändert"
  2 "weniger".
-VALUE LABELS  V224
+VALUE LABELS  SexMehr_Stereotype#1
  0 "mehr"
  1 "unverändert"
  2 "weniger".
-VARIABLE LEVEL V10(SCALE).
-VARIABLE LEVEL V14(ORDINAL).
-VARIABLE LEVEL V15(ORDINAL).
-VARIABLE LEVEL V16(ORDINAL).
-VARIABLE LEVEL V19(SCALE).
-VARIABLE LEVEL V32(SCALE).
-VARIABLE LEVEL V48(ORDINAL).
-VARIABLE LEVEL V49(ORDINAL).
-VARIABLE LEVEL V50(ORDINAL).
-VARIABLE LEVEL V51(ORDINAL).
-VARIABLE LEVEL V52(ORDINAL).
-VARIABLE LEVEL V53(SCALE).
-VARIABLE LEVEL V54(ORDINAL).
-VARIABLE LEVEL V55(ORDINAL).
-VARIABLE LEVEL V56(ORDINAL).
-VARIABLE LEVEL V57(ORDINAL).
-VARIABLE LEVEL V58(ORDINAL).
-VARIABLE LEVEL V59(ORDINAL).
-VARIABLE LEVEL V60(ORDINAL).
-VARIABLE LEVEL V61(ORDINAL).
-VARIABLE LEVEL V62(ORDINAL).
-VARIABLE LEVEL V63(ORDINAL).
-RENAME VARIABLE ( V161 = Onlineaktivierung ).
-RENAME VARIABLE ( V162 = Onlinezwang ).
-RENAME VARIABLE ( V163 = Kontingent ).
-RENAME VARIABLE ( V164 = Kopierschutz ).
-RENAME VARIABLE ( V165 = Sicherheitskopie ).
-RENAME VARIABLE ( V166 = Datenschutz ).
-RENAME VARIABLE ( V167 = Geolock ).
-RENAME VARIABLE ( V168 = Informationsinteress_1#0 ).
-RENAME VARIABLE ( V169 = Informationsinteress_1#1 ).
-RENAME VARIABLE ( V170 = Informationsinteress_2#0 ).
-RENAME VARIABLE ( V171 = Informationsinteress_2#1 ).
-RENAME VARIABLE ( V172 = Informationsinteress_3#0 ).
-RENAME VARIABLE ( V173 = Informationsinteress_3#1 ).
-RENAME VARIABLE ( V174 = Informationsinteress_4#0 ).
-RENAME VARIABLE ( V175 = Informationsinteress_4#1 ).
-RENAME VARIABLE ( V176 = Informationsinteress_5#0 ).
-RENAME VARIABLE ( V177 = Informationsinteress_5#1 ).
-RENAME VARIABLE ( V178 = SexSelbstbew_SQ001#0 ).
-RENAME VARIABLE ( V179 = SexSelbstbew_SQ001#1 ).
-RENAME VARIABLE ( V180 = SexSelbstbew_SQ002#0 ).
-RENAME VARIABLE ( V181 = SexSelbstbew_SQ002#1 ).
-RENAME VARIABLE ( V182 = SexSelbstbew_SQ003#0 ).
-RENAME VARIABLE ( V183 = SexSelbstbew_SQ003#1 ).
-RENAME VARIABLE ( V184 = SexSelbstbew_SQ004#0 ).
-RENAME VARIABLE ( V185 = SexSelbstbew_SQ004#1 ).
-RENAME VARIABLE ( V186 = SexSelbstbew_SQ005#0 ).
-RENAME VARIABLE ( V187 = SexSelbstbew_SQ005#1 ).
-RENAME VARIABLE ( V188 = SexSelbstbew_SQ006#0 ).
-RENAME VARIABLE ( V189 = SexSelbstbew_SQ006#1 ).
-RENAME VARIABLE ( V190 = SexWehrlos_SQ001#0 ).
-RENAME VARIABLE ( V191 = SexWehrlos_SQ001#1 ).
-RENAME VARIABLE ( V192 = SexWehrlos_SQ002#0 ).
-RENAME VARIABLE ( V193 = SexWehrlos_SQ002#1 ).
-RENAME VARIABLE ( V194 = SexWehrlos_SQ003#0 ).
-RENAME VARIABLE ( V195 = SexWehrlos_SQ003#1 ).
-RENAME VARIABLE ( V196 = SexWehrlos_SQ004#0 ).
-RENAME VARIABLE ( V197 = SexWehrlos_SQ004#1 ).
-RENAME VARIABLE ( V198 = SexWehrlos_SQ005#0 ).
-RENAME VARIABLE ( V199 = SexWehrlos_SQ005#1 ).
-RENAME VARIABLE ( V200 = SexWehrlos_SQ006#0 ).
-RENAME VARIABLE ( V201 = SexWehrlos_SQ006#1 ).
-RENAME VARIABLE ( V202 = SexKoerper_SQ001#0 ).
-RENAME VARIABLE ( V203 = SexKoerper_SQ001#1 ).
-RENAME VARIABLE ( V204 = SexKoerper_SQ002#0 ).
-RENAME VARIABLE ( V205 = SexKoerper_SQ002#1 ).
-RENAME VARIABLE ( V206 = SexKoerper_SQ003#0 ).
-RENAME VARIABLE ( V207 = SexKoerper_SQ003#1 ).
-RENAME VARIABLE ( V208 = SexKoerper_SQ004#0 ).
-RENAME VARIABLE ( V209 = SexKoerper_SQ004#1 ).
-RENAME VARIABLE ( V210 = SexKoerper_SQ005#0 ).
-RENAME VARIABLE ( V211 = SexKoerper_SQ005#1 ).
-RENAME VARIABLE ( V212 = SexKoerper_SQ006#0 ).
-RENAME VARIABLE ( V213 = SexKoerper_SQ006#1 ).
-RENAME VARIABLE ( V214 = SexKoerper_SQ007#0 ).
-RENAME VARIABLE ( V215 = SexKoerper_SQ007#1 ).
-RENAME VARIABLE ( V216 = SexKoerper_SQ008#0 ).
-RENAME VARIABLE ( V217 = SexKoerper_SQ008#1 ).
-RENAME VARIABLE ( V218 = SexProblem ).
-RENAME VARIABLE ( V219 = SexMehr_Korper#0 ).
-RENAME VARIABLE ( V220 = SexMehr_Korper#1 ).
-RENAME VARIABLE ( V221 = SexMehr_Selbstbew#0 ).
-RENAME VARIABLE ( V222 = SexMehr_Selbstbew#1 ).
-RENAME VARIABLE ( V223 = SexMehr_Stereotype#0 ).
-RENAME VARIABLE ( V224 = SexMehr_Stereotype#1 ).
-RENAME VARIABLE ( V225 = feddbacktext ).
+
+
+VARIABLE LEVEL ExWann(SCALE).
+VARIABLE LEVEL Erfahrung(SCALE).
+VARIABLE LEVEL Nutzungsdauer_SQ1(ORDINAL).
+VARIABLE LEVEL Nutzungsdauer_SQ2(ORDINAL).
+VARIABLE LEVEL Nutzungsdauer_SQ3(ORDINAL).
+VARIABLE LEVEL Nutzungsdauer_SQ4(ORDINAL).
+VARIABLE LEVEL Nutzungsdauer_SQ5(ORDINAL).
+VARIABLE LEVEL Nutzungsumfang(SCALE).
+VARIABLE LEVEL Bezugsweg_SQ1(ORDINAL).
+VARIABLE LEVEL Bezugsweg_SQ2(ORDINAL).
+VARIABLE LEVEL Bezugsweg_SQ3(ORDINAL).
+VARIABLE LEVEL Bezugsweg_SQ4(ORDINAL).
+VARIABLE LEVEL Bezugsweg_SQ5(ORDINAL).
+VARIABLE LEVEL Plattformen_SQ1(ORDINAL).
+VARIABLE LEVEL Plattformen_SQ2(ORDINAL).
+VARIABLE LEVEL Plattformen_SQ3(ORDINAL).
+VARIABLE LEVEL Plattformen_SQ4(ORDINAL).
+VARIABLE LEVEL Plattformen_SQ5(ORDINAL).
 RESTORE LOCALE.
