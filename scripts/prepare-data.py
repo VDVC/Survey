@@ -39,13 +39,29 @@ def find_gameinfo(title): # search data of the game
 	freigabe = u"Freigabe"
 	if title in ogdblookup:
 		year = ogdblookup[title][0].encode('utf-8')
-		freigabe = ogdblookup[title][1].encode('utf-8')
+		usk = ogdblookup[title][1]
+		if len(usk) >= 6:
+			if usk[4] == '_': # Format: YYYY_NN or YYYY_N
+				freigabe = usk[5:]
+			elif usk[2] == '_': # Format: NN_YYYY
+				freigabe = usk[0:2]
+			elif usk[1] == '_': # Format: N_YYYY
+				freigabe = usk[0]
+			else:
+				freigabe = usk
+		else:
+			if len(usk) == '1':
+				freigabe = usk
+			elif usk[0:2] == 'OA':
+				freigabe = '00'
+			elif usk[0:2] == "KJ":
+				freigabe = '18'
 	elif title in vdvclookup:
 		year = vdvclookup[title][0].encode('utf-8')
-		freigabe = vdvclookup[title][1].encode('utf-8')
+		freigabe = vdvclookup[title][1][3:].encode('utf-8')
 	else:
 		if len(title) > 0 and title[0:5] != "(???)":
-			print("Not found:" + title)
+			print("Not found: " + title)
 
 	# make a return value out of the result
 	return [year,freigabe]
@@ -65,10 +81,11 @@ with io.open('./rohdaten/survey-data.dat', encoding='utf8') as f:
 			sys.exit()
 
 		# write data before items to insert
-		for item in spss_entry[:46]:
+		for item in spss_entry[:41]:
 			results.write(u'"'+item+u'";')
 		for g in range(0,5): # 5 games (hardcoded)
 			gameinfo = find_gameinfo(game[g])
+			results.write(u'"'+spss_entry[41+g]+u'";')
 			for i in range(0,2):
 				results.write(u'\"'+gameinfo[i]+u'\";')
 		for item in spss_entry[46:-1]:
