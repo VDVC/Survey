@@ -9,46 +9,46 @@ GET DATA
  /IMPORTCASE=ALL
  /VARIABLES=
  id F7
- V2 A16
- V3 DATETIME23.2
- V5 A19
- V6 DATETIME23.2
- V7 DATETIME23.2
- V8 A39
- V9 A255
- V10 F4
- V11 F1
- V12 A2
- V13 A5
- V14 F1
- V15 F1
- V16 F1
- V17 F1
- V18 F1
- V19 F3.2
- V20 F1
- V21 F1
- V22 F1
- V23 F1
- V24 F1
- V25 F1
- V26 F1
- V27 F1
- V28 F1
- V29 F1
- V30 A50
- V31 A2
- V32 F15.14
- V33 A2
- V34 A2
- V35 A2
- V36 A2
- V37 A2
- V38 A2
- V39 A2
- V40 A2
- V41 A2
- V42 A2
+ token A16
+ submitdate DATETIME23.2
+ startlanguage A19
+ startdate DATETIME23.2
+ datestamp DATETIME23.2
+ ipaddr A39
+ refurl A255
+ Geburtsjahr F4
+ Geschlecht F1
+ WohnortDeutschland A2
+ Breitbandzugang A5
+ COAXSpeed F1
+ DSLSpeed F1
+ FunkSpeed F1
+ Videospieler F1
+ ExSpieler F1
+ ExWann F3.2
+ Ablehnung_1 F1
+ Ablehnung_2 F1
+ Ablehnung_3 F1
+ Ablehnung_4 F1
+ Ablehnung_5 F1
+ VersteckJN F1
+ VersteckArt_1 F1
+ VersteckArt_2 F1
+ VersteckArt_3 F1
+ VersteckArt_4 F1
+ VersteckArt_other A50
+ Multiplayer A2
+ Erfahrung F15.14
+ AllgemPlatt_SQ001 A2
+ AllgemPlatt_SQ002 A2
+ AllgemPlatt_SQ003 A2
+ AllgemPlatt_SQ004 A2
+ AllgemPlatt_SQ005 A2
+ AllgemPlatt_SQ006 A2
+ AllgemPlatt_SQ007 A2
+ AllgemPlatt_SQ008 A2
+ AllgemPlatt_SQ009 A2
+ AllgemPlatt_SQ010 A2
  Spiel_1 A44
  Release_1 F4
  Freigabe_1 F2
@@ -64,119 +64,119 @@ GET DATA
  Spiel_5 A46
  Release_5 F4
  Freigabe_5 F2
- V48 A2
- V49 A2
- V50 A2
- V51 A2
- V52 A2
- V53 F14.13
- V54 F1
- V55 F1
- V56 F1
- V57 F1
- V58 F1
- V59 A5
- V60 A5
- V61 A5
- V62 A5
- V63 A5
- V64 F15.14
- V65 F15.14
- V66 F15.14
- V67 F15.14
- V68 F14.13
- V69 A2
- V70 A2
- V71 A2
- V72 A2
- V73 A2
- V74 A2
- V75 A2
- V76 A2
- V77 A2
- V78 F1
- V79 F1
- V80 F1
- V81 F1
- V82 F1
- V83 F1
- V84 F1
- V85 F1
- V86 F1
- V87 F1
- V88 F1
- V89 F1
- V90 A2
- V91 F1
- V92 A2
- V93 F1
- V94 A2
- V95 F1
- V96 A2
- V97 F1
- V98 A2
- V99 F1
- V100 A2
- V101 F1
- V102 A2
- V103 F1
- V104 A2
- V105 F1
- V106 F1
- V107 F1
- V108 F1
- V109 F1
- V110 F1
- V111 F1
- V112 F1
- V113 F1
- V114 F1
- V115 F1
- V116 F1
- V117 F1
- V118 F1
- V119 F1
- V120 F1
- V121 F1
- V122 F1
- V123 F1
- V124 F1
- V125 F1
- V126 F1
- V127 F1
- V128 A66
- V129 F1
- V130 A2
- V131 A2
- V132 A2
- V133 A2
- V134 A2
- V135 A2
- V136 A2
- V137 A2
- V138 A2
- V139 A2
- V140 A2
- V141 A1
- V142 A2
- V143 A1
- V144 A2
- V145 A1
- V146 A2
- V147 A1
- V148 A2
- V149 A1
- V150 A2
- V151 A1
- V152 A2
- V153 A1
- V154 A2
- V155 A1
- V156 A2
- V157 A1
- V158 A2
- V159 A1
- V160 A2
+ Nutzungsdauer_SQ1 A2
+ Nutzungsdauer_SQ2 A2
+ Nutzungsdauer_SQ3 A2
+ Nutzungsdauer_SQ3 A2
+ Nutzungsdauer_SQ5 A2
+ Nutzungsumfang F14.13
+ Bezugsweg_SQ1 F1
+ Bezugsweg_SQ2 F1
+ Bezugsweg_SQ3 F1
+ Bezugsweg_SQ4 F1
+ Bezugsweg_SQ5 F1
+ Plattformen_SQ1 A5
+ Plattformen_SQ2 A5
+ Plattformen_SQ3 A5
+ Plattformen_SQ4 A5
+ Plattformen_SQ5 A5
+ Zusatzangebote_SQ000 F15.14
+ Zusatzangebote_SQ001 F15.14
+ Zusatzangebote_SQ002 F15.14
+ Zusatzangebote_SQ003 F15.14
+ Zusatzangebote_SQ004 F14.13
+ Endmotivation_1 A2
+ Endmotivation_2 A2
+ Endmotivation_3 A2
+ Endmotivation_4 A2
+ Endmotivation_5 A2
+ Endmotivation_7 A2
+ Endmotivation_9 A2
+ Endzwang_SQ001 A2
+ Endzwang_SQ002 A2
+ Endverstndnis_1 F1
+ Endverstndnis_2 F1
+ Endverstndnis_3 F1
+ Endverstndnis_4 F1
+ Endverstndnis_5 F1
+ Endverstndnis_7 F1
+ Endverstndnis_9 F1
+ Startmotivation_1 F1
+ Startmotivation_2 F1
+ Startmotivation_3 F1
+ Startmotivation_4 F1
+ Startmotivation_5 F1
+ Illegalmotivation_1#0 A2
+ Illegalmotivation_1#1 F1
+ Illegalmotivation_2#0 A2
+ Illegalmotivation_2#1 F1
+ Illegalmotivation_3#0 A2
+ Illegalmotivation_3#1 F1
+ Illegalmotivation_4#0 A2
+ Illegalmotivation_4#0 F1
+ Illegalmotivation_5#0 A2
+ Illegalmotivation_5#1 F1
+ Illegalmotivation_6#0 A2
+ Illegalmotivation_6#1 F1
+ Illegalmotivation_7#0 A2
+ Illegalmotivation_7#1 F1
+ Illegalmotivation_8#0 A2
+ Illegalmotivation_8#1 F1
+ IllegalVerstaendnis_1 F1
+ IllegalVerstaendnis_2 F1
+ IllegalVerstaendnis_3 F1
+ IllegalVerstaendnis_4 F1
+ IllegalVerstaendnis_5 F1
+ IllegalVerstaendnis_6 F1
+ IllegalVerstaendnis_7 F1
+ IllegalVerstaendnis_8 F1
+ Kennzeichenkenntnis_SQ001 F1
+ Kennzeichenkenntnis_SQ002 F1
+ Kennzeichenkenntnis_SQ003 F1
+ Kennzeichenkenntnis_SQ004 F1
+ Kennzeichenkenntnis_SQ005 F1
+ Schnittkenntnis F1
+ Zensurmeinung F1
+ Zensurinformation F1
+ Zensurinfowege_1 F1
+ Zensurinfowege_2 F1
+ Zensurinfowege_3 F1
+ Zensurinfowege_4 F1
+ Zensurinfowege_5 F1
+ Zensurinfowege_6 F1
+ Zensurinfowege_other A66
+ UncutBezug F1
+ UncutBezugErfolg A2
+ UncutBezugWegKErf_SQ001 A2
+ UncutBezugWegKErf_SQ002 A2
+ UncutBezugWegKErf_SQ003 A2
+ UncutBezugWegKErf_SQ004 A2
+ UncutBezugWegKErf_SQ005 A2
+ UncutBezugWegKErf_SQ006 A2
+ UncutBezugWegKErf_SQ007 A2
+ UncutBezugWegKErf_SQ008 A2
+ UncutBezugWegKErf_SQ009 A2
+ UncutBezugWegKErf_SQ010 A2
+ UncutBezugWegErf_SQ001#0 A1
+ UncutBezugWegErf_SQ001#1 A2
+ UncutBezugWegErf_SQ002#0 A1
+ UncutBezugWegErf_SQ002#1 A2
+ UncutBezugWegErf_SQ003#0 A1
+ UncutBezugWegErf_SQ003#1 A2
+ UncutBezugWegErf_SQ004#0 A1
+ UncutBezugWegErf_SQ004#1 A2
+ UncutBezugWegErf_SQ005#0 A1
+ UncutBezugWegErf_SQ005#1 A2
+ UncutBezugWegErf_SQ006#0 A1
+ UncutBezugWegErf_SQ006#1 A2
+ UncutBezugWegErf_SQ007#0 A1
+ UncutBezugWegErf_SQ007#1 A2
+ UncutBezugWegErf_SQ008#0 A1
+ UncutBezugWegErf_SQ008#1 A2
+ UncutBezugWegErf_SQ009#0 A1
+ UncutBezugWegErf_SQ009#1 A2
+ UncutBezugWegErf_SQ010#0 A1
+ UncutBezugWegErf_SQ010#1 A2
  V161 F1
  V162 F1
  V163 F1
@@ -245,185 +245,183 @@ GET DATA
 CACHE.
 EXECUTE.
 *Define Variable Properties.
-VARIABLE LABELS id "id".
-VARIABLE LABELS V2 "token".
-VARIABLE LABELS V3 "submitdate".
-VARIABLE LABELS V5 "startlanguage".
-VARIABLE LABELS V6 "startdate".
-VARIABLE LABELS V7 "datestamp".
-VARIABLE LABELS V8 "ipaddr".
-VARIABLE LABELS V9 "refurl".
-VARIABLE LABELS V10 "In welchem Jahr bist du geboren?".
-VARIABLE LABELS V11 "Was ist dein Geschlecht?".
-VARIABLE LABELS V12 "Lebst du in Deutschland?".
-VARIABLE LABELS V13 "Was für einen Internetzugang hast du an deinem Wohnort?".
-VARIABLE LABELS V14 "Wie schnell ist der Internetzugang an deinem Wohnort?".
-VARIABLE LABELS V15 "Wie schnell ist der Internetzugang an deinem Wohnort?".
-VARIABLE LABELS V16 "Wie schnell ist der Internetzugang an deinem Wohnort?".
-VARIABLE LABELS V17 "Nutzt du Videospiele?".
-VARIABLE LABELS V18 "Hast du einmal Videospiele genutzt?".
-VARIABLE LABELS V19 "In welchem Jahr hast du zuletzt ein Videospiel genutzt?".
-VARIABLE LABELS V20 "[… Erwachsene sich mit so etwas nicht mehr beschäftigen sollten.] Auf meine Videospielnutzung haben Außenstehende schon abschätzig reagiert, weil sie meinen, dass …".
-VARIABLE LABELS V21 "[… dadurch die Aggressivität beeinflusst werde.] Auf meine Videospielnutzung haben Außenstehende schon abschätzig reagiert, weil sie meinen, dass …".
-VARIABLE LABELS V22 "[… es eine Freizeitbeschäftigung “ungebildeter Kreise” sei.] Auf meine Videospielnutzung haben Außenstehende schon abschätzig reagiert, weil sie meinen, dass …".
-VARIABLE LABELS V23 "[… man offenbar Spaß daran habe Menschen zu töten.] Auf meine Videospielnutzung haben Außenstehende schon abschätzig reagiert, weil sie meinen, dass …".
-VARIABLE LABELS V24 "[… es keinen kulturellen/sonstigen Wert habe.] Auf meine Videospielnutzung haben Außenstehende schon abschätzig reagiert, weil sie meinen, dass …".
-VARIABLE LABELS V25 "Wegen dieser Erfahrungen ist es so, dass ich mein Verhalten in der Öffentlichkeit/am Arbeitsplatz angepasst habe.".
-VARIABLE LABELS V26 "[… verberge/verleugne ich meine Videospielnutzung.] Auf meine Videospielnutzung haben Außenstehende schon abschätzig reagiert. Als Reaktion hierauf …".
-VARIABLE LABELS V27 "[… ""oute"" ich mich nur auf Nachfrage als Videospieler.] Auf meine Videospielnutzung haben Außenstehende schon abschätzig reagiert. Als Reaktion hierauf …".
-VARIABLE LABELS V28 "[… versuche ich Videospiele(r) zu verteidigen, wenn ich darauf angesprochen werde.] Auf meine Videospielnutzung haben Außenstehende schon abschätzig reagiert. Als Reaktion hierauf …".
-VARIABLE LABELS V29 "[… gehe ich offensiv mit dem Thema um - in dem ich z.B. Kleidung mit Games-Motiven trage.] Auf meine Videospielnutzung haben Außenstehende schon abschätzig reagiert. Als Reaktion hierauf …".
-VARIABLE LABELS V30 "[Sonstiges] Auf meine Videospielnutzung haben Außenstehende schon abschätzig reagiert. Als Reaktion hierauf …".
-VARIABLE LABELS V31 "Spielst du eher Single- oder Multiplayer?".
-VARIABLE LABELS V32 "Seit wann nutzt du Videospiele?".
-VARIABLE LABELS V33 "[Mac/MacBook] Auf welchen Plattformen hast du im vergangenen Jahr wie intensiv gespielt?".
-VARIABLE LABELS V34 "[Windows] Auf welchen Plattformen hast du im vergangenen Jahr wie intensiv gespielt?".
-VARIABLE LABELS V35 "[Linux] Auf welchen Plattformen hast du im vergangenen Jahr wie intensiv gespielt?".
-VARIABLE LABELS V36 "[Playstation 3/4] Auf welchen Plattformen hast du im vergangenen Jahr wie intensiv gespielt?".
-VARIABLE LABELS V37 "[Wii/WiiU] Auf welchen Plattformen hast du im vergangenen Jahr wie intensiv gespielt?".
-VARIABLE LABELS V38 "[XBox360/ XBox One] Auf welchen Plattformen hast du im vergangenen Jahr wie intensiv gespielt?".
-VARIABLE LABELS V39 "[DS/2DS/3DS/DSi/…] Auf welchen Plattformen hast du im vergangenen Jahr wie intensiv gespielt?".
-VARIABLE LABELS V40 "[Smartphone (Android)] Auf welchen Plattformen hast du im vergangenen Jahr wie intensiv gespielt?".
-VARIABLE LABELS V41 "[Smartphone (iPhone)] Auf welchen Plattformen hast du im vergangenen Jahr wie intensiv gespielt?".
-VARIABLE LABELS V42 "[Smartphone (Windows)] Auf welchen Plattformen hast du im vergangenen Jahr wie intensiv gespielt?".
+VARIABLE LABELS submitdate "submitdate".
+VARIABLE LABELS startlanguage "startlanguage".
+VARIABLE LABELS startdate "startdate".
+VARIABLE LABELS datestamp "datestamp".
+VARIABLE LABELS ipaddr "ipaddr".
+VARIABLE LABELS refurl "refurl".
+VARIABLE LABELS Geburtsjahr "In welchem Jahr bist du geboren?".
+VARIABLE LABELS Geschlecht "Was ist dein Geschlecht?".
+VARIABLE LABELS WohnortDeutschland "Lebst du in Deutschland?".
+VARIABLE LABELS Breitbandzugang "Was für einen Internetzugang hast du an deinem Wohnort?".
+VARIABLE LABELS COAXSpeed "Wie schnell ist der Internetzugang an deinem Wohnort?".
+VARIABLE LABELS DSLSpeed "Wie schnell ist der Internetzugang an deinem Wohnort?".
+VARIABLE LABELS FunkSpeed "Wie schnell ist der Internetzugang an deinem Wohnort?".
+VARIABLE LABELS Videospieler "Nutzt du Videospiele?".
+VARIABLE LABELS ExSpieler "Hast du einmal Videospiele genutzt?".
+VARIABLE LABELS ExWann "In welchem Jahr hast du zuletzt ein Videospiel genutzt?".
+VARIABLE LABELS Ablehnung_1 "[… Erwachsene sich mit so etwas nicht mehr beschäftigen sollten.] Auf meine Videospielnutzung haben Außenstehende schon abschätzig reagiert, weil sie meinen, dass …".
+VARIABLE LABELS Ablehnung_2 "[… dadurch die Aggressivität beeinflusst werde.] Auf meine Videospielnutzung haben Außenstehende schon abschätzig reagiert, weil sie meinen, dass …".
+VARIABLE LABELS Ablehnung_3 "[… es eine Freizeitbeschäftigung “ungebildeter Kreise” sei.] Auf meine Videospielnutzung haben Außenstehende schon abschätzig reagiert, weil sie meinen, dass …".
+VARIABLE LABELS Ablehnung_4 "[… man offenbar Spaß daran habe Menschen zu töten.] Auf meine Videospielnutzung haben Außenstehende schon abschätzig reagiert, weil sie meinen, dass …".
+VARIABLE LABELS Ablehnung_5 "[… es keinen kulturellen/sonstigen Wert habe.] Auf meine Videospielnutzung haben Außenstehende schon abschätzig reagiert, weil sie meinen, dass …".
+VARIABLE LABELS VersteckJN "Wegen dieser Erfahrungen ist es so, dass ich mein Verhalten in der Öffentlichkeit/am Arbeitsplatz angepasst habe.".
+VARIABLE LABELS VersteckArt_1 "[… verberge/verleugne ich meine Videospielnutzung.] Auf meine Videospielnutzung haben Außenstehende schon abschätzig reagiert. Als Reaktion hierauf …".
+VARIABLE LABELS VersteckArt_2 "[… ""oute"" ich mich nur auf Nachfrage als Videospieler.] Auf meine Videospielnutzung haben Außenstehende schon abschätzig reagiert. Als Reaktion hierauf …".
+VARIABLE LABELS VersteckArt_3 "[… versuche ich Videospiele(r) zu verteidigen, wenn ich darauf angesprochen werde.] Auf meine Videospielnutzung haben Außenstehende schon abschätzig reagiert. Als Reaktion hierauf …".
+VARIABLE LABELS VersteckArt_4 "[… gehe ich offensiv mit dem Thema um - in dem ich z.B. Kleidung mit Games-Motiven trage.] Auf meine Videospielnutzung haben Außenstehende schon abschätzig reagiert. Als Reaktion hierauf …".
+VARIABLE LABELS VersteckArt_other "[Sonstiges] Auf meine Videospielnutzung haben Außenstehende schon abschätzig reagiert. Als Reaktion hierauf …".
+VARIABLE LABELS Multiplayer "Spielst du eher Single- oder Multiplayer?".
+VARIABLE LABELS Erfahrung "Seit wann nutzt du Videospiele?".
+VARIABLE LABELS AllgemPlatt_SQ001 "[Mac/MacBook] Auf welchen Plattformen hast du im vergangenen Jahr wie intensiv gespielt?".
+VARIABLE LABELS AllgemPlatt_SQ002 "[Windows] Auf welchen Plattformen hast du im vergangenen Jahr wie intensiv gespielt?".
+VARIABLE LABELS AllgemPlatt_SQ003 "[Linux] Auf welchen Plattformen hast du im vergangenen Jahr wie intensiv gespielt?".
+VARIABLE LABELS AllgemPlatt_SQ004 "[Playstation 3/4] Auf welchen Plattformen hast du im vergangenen Jahr wie intensiv gespielt?".
+VARIABLE LABELS AllgemPlatt_SQ005 "[Wii/WiiU] Auf welchen Plattformen hast du im vergangenen Jahr wie intensiv gespielt?".
+VARIABLE LABELS AllgemPlatt_SQ006 "[XBox360/ XBox One] Auf welchen Plattformen hast du im vergangenen Jahr wie intensiv gespielt?".
+VARIABLE LABELS AllgemPlatt_SQ007 "[DS/2DS/3DS/DSi/…] Auf welchen Plattformen hast du im vergangenen Jahr wie intensiv gespielt?".
+VARIABLE LABELS AllgemPlatt_SQ008 "[Smartphone (Android)] Auf welchen Plattformen hast du im vergangenen Jahr wie intensiv gespielt?".
+VARIABLE LABELS AllgemPlatt_SQ009 "[Smartphone (iPhone)] Auf welchen Plattformen hast du im vergangenen Jahr wie intensiv gespielt?".
+VARIABLE LABELS AllgemPlatt_SQ010 "[Smartphone (Windows)] Auf welchen Plattformen hast du im vergangenen Jahr wie intensiv gespielt?".
 VARIABLE LABELS Spiel_1 "[Spiel 1] Welche Spiele hast du in den letzten 21 Tagen genutzt? (Gib bei Addons/Mods bitte das Hauptspiel an.)".
 VARIABLE LABELS Spiel_2 "[Spiel 2] Welche Spiele hast du in den letzten 21 Tagen genutzt? (Gib bei Addons/Mods bitte das Hauptspiel an.)".
 VARIABLE LABELS Spiel_3 "[Spiel 3] Welche Spiele hast du in den letzten 21 Tagen genutzt? (Gib bei Addons/Mods bitte das Hauptspiel an.)".
 VARIABLE LABELS Spiel_4 "[Spiel 4] Welche Spiele hast du in den letzten 21 Tagen genutzt? (Gib bei Addons/Mods bitte das Hauptspiel an.)".
 VARIABLE LABELS Spiel_5 "[Spiel 5] Welche Spiele hast du in den letzten 21 Tagen genutzt? (Gib bei Addons/Mods bitte das Hauptspiel an.)".
-VARIABLE LABELS V48 "[{Products_SQ1}] Seit wann nutzt du diese Spiele?".
-VARIABLE LABELS V49 "[{Products_SQ2}] Seit wann nutzt du diese Spiele?".
-VARIABLE LABELS V50 "[{Products_SQ3}] Seit wann nutzt du diese Spiele?".
-VARIABLE LABELS V51 "[{Products_SQ4}] Seit wann nutzt du diese Spiele?".
-VARIABLE LABELS V52 "[{Products_SQ5}] Seit wann nutzt du diese Spiele?".
-VARIABLE LABELS V53 "Wie viele Stunden verbringst du in der Woche mit Videospielen?".
-VARIABLE LABELS V54 "[{Products_SQ1}] Woher hast du diese Spiele?".
-VARIABLE LABELS V55 "[{Products_SQ2}] Woher hast du diese Spiele?".
-VARIABLE LABELS V56 "[{Products_SQ3}] Woher hast du diese Spiele?".
-VARIABLE LABELS V57 "[{Products_SQ4}] Woher hast du diese Spiele?".
-VARIABLE LABELS V58 "[{Products_SQ5}] Woher hast du diese Spiele?".
-VARIABLE LABELS V59 "[{Products_SQ1}] Auf welcher Plattform nutzt du diese Spiele hauptsächlich?".
-VARIABLE LABELS V60 "[{Products_SQ2}] Auf welcher Plattform nutzt du diese Spiele hauptsächlich?".
-VARIABLE LABELS V61 "[{Products_SQ3}] Auf welcher Plattform nutzt du diese Spiele hauptsächlich?".
-VARIABLE LABELS V62 "[{Products_SQ4}] Auf welcher Plattform nutzt du diese Spiele hauptsächlich?".
-VARIABLE LABELS V63 "[{Products_SQ5}] Auf welcher Plattform nutzt du diese Spiele hauptsächlich?".
-VARIABLE LABELS V64 "[Spielbezogene Hardware] Wie viel hast du im vergangenen Jahr in etwa für Folgendes ausgegeben?".
-VARIABLE LABELS V65 "[Spiele-Kauf (einmalige Ausgabe)] Wie viel hast du im vergangenen Jahr in etwa für Folgendes ausgegeben?".
-VARIABLE LABELS V66 "[Spielbezogene Abos (regelmäßige Ausgabe)] Wie viel hast du im vergangenen Jahr in etwa für Folgendes ausgegeben?".
-VARIABLE LABELS V67 "[Addons, DLC, Bezahlinhalte] Wie viel hast du im vergangenen Jahr in etwa für Folgendes ausgegeben?".
-VARIABLE LABELS V68 "[Eigene Gameserver (bei Clans: dein Anteil)] Wie viel hast du im vergangenen Jahr in etwa für Folgendes ausgegeben?".
-VARIABLE LABELS V69 "[Durchgespielt] Aus welchen Gründen hörst du auf, ein Spiel zu nutzen?".
-VARIABLE LABELS V70 "[Grafik nicht mehr zeitgemäß] Aus welchen Gründen hörst du auf, ein Spiel zu nutzen?".
-VARIABLE LABELS V71 "[Gameplay nicht mehr zeitgemäß] Aus welchen Gründen hörst du auf, ein Spiel zu nutzen?".
-VARIABLE LABELS V72 "[Kein Spaß mehr] Aus welchen Gründen hörst du auf, ein Spiel zu nutzen?".
-VARIABLE LABELS V73 "[(Besserer) Nachfolger] Aus welchen Gründen hörst du auf, ein Spiel zu nutzen?".
-VARIABLE LABELS V74 "[Geänderte Interessen/Vorlieben] Aus welchen Gründen hörst du auf, ein Spiel zu nutzen?".
-VARIABLE LABELS V75 "[Freundeskreis hat Spiel gewechselt] Aus welchen Gründen hörst du auf, ein Spiel zu nutzen?".
-VARIABLE LABELS V76 "[Spiel läuft nicht mehr (neues Betriebssystem oder neue Konsole)] Hast du schon aus einem der folgenden Gründe aufgehört, ein Spiel zu nutzen?".
-VARIABLE LABELS V77 "[Kein Support mehr oder Betrieb vom Anbieter eingestellt] Hast du schon aus einem der folgenden Gründe aufgehört, ein Spiel zu nutzen?".
-VARIABLE LABELS V78 "[Durchgespielt] Wenn man nach Gründen fragt, ein Spiel nicht mehr zu nutzen, bekommt man unter anderem folgende genannt. Hältst du diese Gründe jeweils für nachvollziehbar?".
-VARIABLE LABELS V79 "[Grafik nicht mehr zeitgemäß] Wenn man nach Gründen fragt, ein Spiel nicht mehr zu nutzen, bekommt man unter anderem folgende genannt. Hältst du diese Gründe jeweils für nachvollziehbar?".
-VARIABLE LABELS V80 "[Gameplay nicht mehr zeitgemäß] Wenn man nach Gründen fragt, ein Spiel nicht mehr zu nutzen, bekommt man unter anderem folgende genannt. Hältst du diese Gründe jeweils für nachvollziehbar?".
-VARIABLE LABELS V81 "[Kein Spaß mehr] Wenn man nach Gründen fragt, ein Spiel nicht mehr zu nutzen, bekommt man unter anderem folgende genannt. Hältst du diese Gründe jeweils für nachvollziehbar?".
-VARIABLE LABELS V82 "[(Besserer) Nachfolger] Wenn man nach Gründen fragt, ein Spiel nicht mehr zu nutzen, bekommt man unter anderem folgende genannt. Hältst du diese Gründe jeweils für nachvollziehbar?".
-VARIABLE LABELS V83 "[Geänderte Interessen/Vorlieben] Wenn man nach Gründen fragt, ein Spiel nicht mehr zu nutzen, bekommt man unter anderem folgende genannt. Hältst du diese Gründe jeweils für nachvollziehbar?".
-VARIABLE LABELS V84 "[Freundeskreis hat Spiel gewechselt] Wenn man nach Gründen fragt, ein Spiel nicht mehr zu nutzen, bekommt man unter anderem folgende genannt. Hältst du diese Gründe jeweils für nachvollziehbar?".
-VARIABLE LABELS V85 "[Erfahrung mit Vorgänger] Aus welchem Grund nutzt du ein neues Spiel?".
-VARIABLE LABELS V86 "[Zusagendes Gameplay/Zusagende Spielidee] Aus welchem Grund nutzt du ein neues Spiel?".
-VARIABLE LABELS V87 "[Neugierde auf die Story] Aus welchem Grund nutzt du ein neues Spiel?".
-VARIABLE LABELS V88 "[Bessere Grafik] Aus welchem Grund nutzt du ein neues Spiel?".
-VARIABLE LABELS V89 "[Freundeskreis hat Spiel gewechselt] Aus welchem Grund nutzt du ein neues Spiel?".
-VARIABLE LABELS V90 "[„Antesten“, um es ggf. zu erwerben] [Skala 1] Wenn man nach Gründen für die illegale Nutzung fragt, werden unter anderem folgende genannt.".
-VARIABLE LABELS V91 "[„Antesten“, um es ggf. zu erwerben] [Skala 2] Wenn man nach Gründen für die illegale Nutzung fragt, werden unter anderem folgende genannt.".
-VARIABLE LABELS V92 "[Geldmangel] [Skala 1] Wenn man nach Gründen für die illegale Nutzung fragt, werden unter anderem folgende genannt.".
-VARIABLE LABELS V93 "[Geldmangel] [Skala 2] Wenn man nach Gründen für die illegale Nutzung fragt, werden unter anderem folgende genannt.".
-VARIABLE LABELS V94 "[Abneigung gegen den Anbieter] [Skala 1] Wenn man nach Gründen für die illegale Nutzung fragt, werden unter anderem folgende genannt.".
-VARIABLE LABELS V95 "[Abneigung gegen den Anbieter] [Skala 2] Wenn man nach Gründen für die illegale Nutzung fragt, werden unter anderem folgende genannt.".
-VARIABLE LABELS V96 "[Mangelnde Qualität - für einen Kauf ist es nicht gut genug] [Skala 1] Wenn man nach Gründen für die illegale Nutzung fragt, werden unter anderem folgende genannt.".
-VARIABLE LABELS V97 "[Mangelnde Qualität - für einen Kauf ist es nicht gut genug] [Skala 2] Wenn man nach Gründen für die illegale Nutzung fragt, werden unter anderem folgende genannt.".
-VARIABLE LABELS V98 "[Spiel ist nicht legal erhältlich.] [Skala 1] Wenn man nach Gründen für die illegale Nutzung fragt, werden unter anderem folgende genannt.".
-VARIABLE LABELS V99 "[Spiel ist nicht legal erhältlich.] [Skala 2] Wenn man nach Gründen für die illegale Nutzung fragt, werden unter anderem folgende genannt.".
-VARIABLE LABELS V100 "[Einfacher/ schneller als kaufen.] [Skala 1] Wenn man nach Gründen für die illegale Nutzung fragt, werden unter anderem folgende genannt.".
-VARIABLE LABELS V101 "[Einfacher/ schneller als kaufen.] [Skala 2] Wenn man nach Gründen für die illegale Nutzung fragt, werden unter anderem folgende genannt.".
-VARIABLE LABELS V102 "[Zusätzlich zum Original, um mit Leuten spielen zu können, die das Original nicht besitzen.] [Skala 1] Wenn man nach Gründen für die illegale Nutzung fragt, werden unter anderem folgende genannt.".
-VARIABLE LABELS V103 "[Zusätzlich zum Original, um mit Leuten spielen zu können, die das Original nicht besitzen.] [Skala 2] Wenn man nach Gründen für die illegale Nutzung fragt, werden unter anderem folgende genannt.".
-VARIABLE LABELS V104 "[Zum Spielen mit Freunden, ohne selbst ein Original zu haben.] [Skala 1] Wenn man nach Gründen für die illegale Nutzung fragt, werden unter anderem folgende genannt.".
-VARIABLE LABELS V105 "[Zum Spielen mit Freunden, ohne selbst ein Original zu haben.] [Skala 2] Wenn man nach Gründen für die illegale Nutzung fragt, werden unter anderem folgende genannt.".
-VARIABLE LABELS V106 "[„Antesten“, um es ggf. zu erwerben] Wenn man nach Gründen für illegale Nutzung fragt, werden unter anderem folgende genannt. Findest du illegale Nutzung aus diesen Gründen in Ordnung?".
-VARIABLE LABELS V107 "[Geldmangel] Wenn man nach Gründen für illegale Nutzung fragt, werden unter anderem folgende genannt. Findest du illegale Nutzung aus diesen Gründen in Ordnung?".
-VARIABLE LABELS V108 "[Abneigung gegen den Anbieter] Wenn man nach Gründen für illegale Nutzung fragt, werden unter anderem folgende genannt. Findest du illegale Nutzung aus diesen Gründen in Ordnung?".
-VARIABLE LABELS V109 "[Mangelnde Qualität - für einen Kauf ist es nicht gut genug] Wenn man nach Gründen für illegale Nutzung fragt, werden unter anderem folgende genannt. Findest du illegale Nutzung aus diesen Gründen in Ordnung?".
-VARIABLE LABELS V110 "[Spiel ist nicht legal erhältlich.] Wenn man nach Gründen für illegale Nutzung fragt, werden unter anderem folgende genannt. Findest du illegale Nutzung aus diesen Gründen in Ordnung?".
-VARIABLE LABELS V111 "[Einfacher/ schneller als kaufen.] Wenn man nach Gründen für illegale Nutzung fragt, werden unter anderem folgende genannt. Findest du illegale Nutzung aus diesen Gründen in Ordnung?".
-VARIABLE LABELS V112 "[Neben dem Original, um mit Leuten spielen zu können, die das Original nicht besitzen.] Wenn man nach Gründen für illegale Nutzung fragt, werden unter anderem folgende genannt. Findest du illegale Nutzung aus diesen Gründen in "+
+VARIABLE LABELS Nutzungsdauer_SQ1 "[{Products_SQ1}] Seit wann nutzt du diese Spiele?".
+VARIABLE LABELS Nutzungsdauer_SQ2 "[{Products_SQ2}] Seit wann nutzt du diese Spiele?".
+VARIABLE LABELS Nutzungsdauer_SQ3 "[{Products_SQ3}] Seit wann nutzt du diese Spiele?".
+VARIABLE LABELS Nutzungsdauer_SQ4 "[{Products_SQ4}] Seit wann nutzt du diese Spiele?".
+VARIABLE LABELS Nutzungsdauer_SQ5 "[{Products_SQ5}] Seit wann nutzt du diese Spiele?".
+VARIABLE LABELS Nutzungsumfang "Wie viele Stunden verbringst du in der Woche mit Videospielen?".
+VARIABLE LABELS Bezugsweg_SQ1 "[{Products_SQ1}] Woher hast du diese Spiele?".
+VARIABLE LABELS Bezugsweg_SQ2 "[{Products_SQ2}] Woher hast du diese Spiele?".
+VARIABLE LABELS Bezugsweg_SQ3 "[{Products_SQ3}] Woher hast du diese Spiele?".
+VARIABLE LABELS Bezugsweg_SQ4 "[{Products_SQ4}] Woher hast du diese Spiele?".
+VARIABLE LABELS Bezugsweg_SQ5 "[{Products_SQ5}] Woher hast du diese Spiele?".
+VARIABLE LABELS Plattformen_SQ1 "[{Products_SQ1}] Auf welcher Plattform nutzt du diese Spiele hauptsächlich?".
+VARIABLE LABELS Plattformen_SQ2 "[{Products_SQ2}] Auf welcher Plattform nutzt du diese Spiele hauptsächlich?".
+VARIABLE LABELS Plattformen_SQ3 "[{Products_SQ3}] Auf welcher Plattform nutzt du diese Spiele hauptsächlich?".
+VARIABLE LABELS Plattformen_SQ4 "[{Products_SQ4}] Auf welcher Plattform nutzt du diese Spiele hauptsächlich?".
+VARIABLE LABELS Plattformen_SQ5 "[{Products_SQ5}] Auf welcher Plattform nutzt du diese Spiele hauptsächlich?".
+VARIABLE LABELS Zusatzangebote_SQ000 "[Spielbezogene Hardware] Wie viel hast du im vergangenen Jahr in etwa für Folgendes ausgegeben?".
+VARIABLE LABELS Zusatzangebote_SQ001 "[Spiele-Kauf (einmalige Ausgabe)] Wie viel hast du im vergangenen Jahr in etwa für Folgendes ausgegeben?".
+VARIABLE LABELS Zusatzangebote_SQ002 "[Spielbezogene Abos (regelmäßige Ausgabe)] Wie viel hast du im vergangenen Jahr in etwa für Folgendes ausgegeben?".
+VARIABLE LABELS Zusatzangebote_SQ003 "[Addons, DLC, Bezahlinhalte] Wie viel hast du im vergangenen Jahr in etwa für Folgendes ausgegeben?".
+VARIABLE LABELS Zusatzangebote_SQ004 "[Eigene Gameserver (bei Clans: dein Anteil)] Wie viel hast du im vergangenen Jahr in etwa für Folgendes ausgegeben?".
+VARIABLE LABELS Endmotivation_1 "[Durchgespielt] Aus welchen Gründen hörst du auf, ein Spiel zu nutzen?".
+VARIABLE LABELS Endmotivation_2 "[Grafik nicht mehr zeitgemäß] Aus welchen Gründen hörst du auf, ein Spiel zu nutzen?".
+VARIABLE LABELS Endmotivation_3 "[Gameplay nicht mehr zeitgemäß] Aus welchen Gründen hörst du auf, ein Spiel zu nutzen?".
+VARIABLE LABELS Endmotivation_4 "[Kein Spaß mehr] Aus welchen Gründen hörst du auf, ein Spiel zu nutzen?".
+VARIABLE LABELS Endmotivation_5 "[(Besserer) Nachfolger] Aus welchen Gründen hörst du auf, ein Spiel zu nutzen?".
+VARIABLE LABELS Endmotivation_7 "[Geänderte Interessen/Vorlieben] Aus welchen Gründen hörst du auf, ein Spiel zu nutzen?".
+VARIABLE LABELS Endmotivation_9 "[Freundeskreis hat Spiel gewechselt] Aus welchen Gründen hörst du auf, ein Spiel zu nutzen?".
+VARIABLE LABELS Endzwang_SQ001 "[Spiel läuft nicht mehr (neues Betriebssystem oder neue Konsole)] Hast du schon aus einem der folgenden Gründe aufgehört, ein Spiel zu nutzen?".
+VARIABLE LABELS Endzwang_SQ002 "[Kein Support mehr oder Betrieb vom Anbieter eingestellt] Hast du schon aus einem der folgenden Gründe aufgehört, ein Spiel zu nutzen?".
+VARIABLE LABELS Endverstndnis_1 "[Durchgespielt] Wenn man nach Gründen fragt, ein Spiel nicht mehr zu nutzen, bekommt man unter anderem folgende genannt. Hältst du diese Gründe jeweils für nachvollziehbar?".
+VARIABLE LABELS Endverstndnis_2 "[Grafik nicht mehr zeitgemäß] Wenn man nach Gründen fragt, ein Spiel nicht mehr zu nutzen, bekommt man unter anderem folgende genannt. Hältst du diese Gründe jeweils für nachvollziehbar?".
+VARIABLE LABELS Endverstndnis_3 "[Gameplay nicht mehr zeitgemäß] Wenn man nach Gründen fragt, ein Spiel nicht mehr zu nutzen, bekommt man unter anderem folgende genannt. Hältst du diese Gründe jeweils für nachvollziehbar?".
+VARIABLE LABELS Endverstndnis_4 "[Kein Spaß mehr] Wenn man nach Gründen fragt, ein Spiel nicht mehr zu nutzen, bekommt man unter anderem folgende genannt. Hältst du diese Gründe jeweils für nachvollziehbar?".
+VARIABLE LABELS Endverstndnis_5 "[(Besserer) Nachfolger] Wenn man nach Gründen fragt, ein Spiel nicht mehr zu nutzen, bekommt man unter anderem folgende genannt. Hältst du diese Gründe jeweils für nachvollziehbar?".
+VARIABLE LABELS Endverstndnis_7 "[Geänderte Interessen/Vorlieben] Wenn man nach Gründen fragt, ein Spiel nicht mehr zu nutzen, bekommt man unter anderem folgende genannt. Hältst du diese Gründe jeweils für nachvollziehbar?".
+VARIABLE LABELS Endverstndnis_9 "[Freundeskreis hat Spiel gewechselt] Wenn man nach Gründen fragt, ein Spiel nicht mehr zu nutzen, bekommt man unter anderem folgende genannt. Hältst du diese Gründe jeweils für nachvollziehbar?".
+VARIABLE LABELS Startmotivation_1 "[Erfahrung mit Vorgänger] Aus welchem Grund nutzt du ein neues Spiel?".
+VARIABLE LABELS Startmotivation_2 "[Zusagendes Gameplay/Zusagende Spielidee] Aus welchem Grund nutzt du ein neues Spiel?".
+VARIABLE LABELS Startmotivation_3 "[Neugierde auf die Story] Aus welchem Grund nutzt du ein neues Spiel?".
+VARIABLE LABELS Startmotivation_4 "[Bessere Grafik] Aus welchem Grund nutzt du ein neues Spiel?".
+VARIABLE LABELS Startmotivation_5 "[Freundeskreis hat Spiel gewechselt] Aus welchem Grund nutzt du ein neues Spiel?".
+VARIABLE LABELS Illegalmotivation_1#0 "[„Antesten“, um es ggf. zu erwerben] [Skala 1] Wenn man nach Gründen für die illegale Nutzung fragt, werden unter anderem folgende genannt.".
+VARIABLE LABELS Illegalmotivation_1#1 "[„Antesten“, um es ggf. zu erwerben] [Skala 2] Wenn man nach Gründen für die illegale Nutzung fragt, werden unter anderem folgende genannt.".
+VARIABLE LABELS Illegalmotivation_2#0 "[Geldmangel] [Skala 1] Wenn man nach Gründen für die illegale Nutzung fragt, werden unter anderem folgende genannt.".
+VARIABLE LABELS Illegalmotivation_2#1 "[Geldmangel] [Skala 2] Wenn man nach Gründen für die illegale Nutzung fragt, werden unter anderem folgende genannt.".
+VARIABLE LABELS Illegalmotivation_3#0 "[Abneigung gegen den Anbieter] [Skala 1] Wenn man nach Gründen für die illegale Nutzung fragt, werden unter anderem folgende genannt.".
+VARIABLE LABELS Illegalmotivation_3#1 "[Abneigung gegen den Anbieter] [Skala 2] Wenn man nach Gründen für die illegale Nutzung fragt, werden unter anderem folgende genannt.".
+VARIABLE LABELS Illegalmotivation_4#0 "[Mangelnde Qualität - für einen Kauf ist es nicht gut genug] [Skala 1] Wenn man nach Gründen für die illegale Nutzung fragt, werden unter anderem folgende genannt.".
+VARIABLE LABELS Illegalmotivation_4#1 "[Mangelnde Qualität - für einen Kauf ist es nicht gut genug] [Skala 2] Wenn man nach Gründen für die illegale Nutzung fragt, werden unter anderem folgende genannt.".
+VARIABLE LABELS Illegalmotivation_5#0 "[Spiel ist nicht legal erhältlich.] [Skala 1] Wenn man nach Gründen für die illegale Nutzung fragt, werden unter anderem folgende genannt.".
+VARIABLE LABELS Illegalmotivation_5#1 "[Spiel ist nicht legal erhältlich.] [Skala 2] Wenn man nach Gründen für die illegale Nutzung fragt, werden unter anderem folgende genannt.".
+VARIABLE LABELS Illegalmotivation_6#0 "[Einfacher/ schneller als kaufen.] [Skala 1] Wenn man nach Gründen für die illegale Nutzung fragt, werden unter anderem folgende genannt.".
+VARIABLE LABELS Illegalmotivation_6#1 "[Einfacher/ schneller als kaufen.] [Skala 2] Wenn man nach Gründen für die illegale Nutzung fragt, werden unter anderem folgende genannt.".
+VARIABLE LABELS Illegalmotivation_7#0 "[Zusätzlich zum Original, um mit Leuten spielen zu können, die das Original nicht besitzen.] [Skala 1] Wenn man nach Gründen für die illegale Nutzung fragt, werden unter anderem folgende genannt.".
+VARIABLE LABELS Illegalmotivation_7#1 "[Zusätzlich zum Original, um mit Leuten spielen zu können, die das Original nicht besitzen.] [Skala 2] Wenn man nach Gründen für die illegale Nutzung fragt, werden unter anderem folgende genannt.".
+VARIABLE LABELS Illegalmotivation_8#0 "[Zum Spielen mit Freunden, ohne selbst ein Original zu haben.] [Skala 1] Wenn man nach Gründen für die illegale Nutzung fragt, werden unter anderem folgende genannt.".
+VARIABLE LABELS Illegalmotivation_8#1 "[Zum Spielen mit Freunden, ohne selbst ein Original zu haben.] [Skala 2] Wenn man nach Gründen für die illegale Nutzung fragt, werden unter anderem folgende genannt.".
+VARIABLE LABELS IllegalVerstaendnis_1 "[„Antesten“, um es ggf. zu erwerben] Wenn man nach Gründen für illegale Nutzung fragt, werden unter anderem folgende genannt. Findest du illegale Nutzung aus diesen Gründen in Ordnung?".
+VARIABLE LABELS IllegalVerstaendnis_2 "[Geldmangel] Wenn man nach Gründen für illegale Nutzung fragt, werden unter anderem folgende genannt. Findest du illegale Nutzung aus diesen Gründen in Ordnung?".
+VARIABLE LABELS IllegalVerstaendnis_3 "[Abneigung gegen den Anbieter] Wenn man nach Gründen für illegale Nutzung fragt, werden unter anderem folgende genannt. Findest du illegale Nutzung aus diesen Gründen in Ordnung?".
+VARIABLE LABELS IllegalVerstaendnis_4 "[Mangelnde Qualität - für einen Kauf ist es nicht gut genug] Wenn man nach Gründen für illegale Nutzung fragt, werden unter anderem folgende genannt. Findest du illegale Nutzung aus diesen Gründen in Ordnung?".
+VARIABLE LABELS IllegalVerstaendnis_5 "[Spiel ist nicht legal erhältlich.] Wenn man nach Gründen für illegale Nutzung fragt, werden unter anderem folgende genannt. Findest du illegale Nutzung aus diesen Gründen in Ordnung?".
+VARIABLE LABELS IllegalVerstaendnis_6 "[Einfacher/ schneller als kaufen.] Wenn man nach Gründen für illegale Nutzung fragt, werden unter anderem folgende genannt. Findest du illegale Nutzung aus diesen Gründen in Ordnung?".
+VARIABLE LABELS IllegalVerstaendnis_7 "[Neben dem Original, um mit Leuten spielen zu können, die das Original nicht besitzen.] Wenn man nach Gründen für illegale Nutzung fragt, werden unter anderem folgende genannt. Findest du illegale Nutzung aus diesen Gründen in "+
 "Ordnung?".
-VARIABLE LABELS V113 "[Zum Spielen mit Freunden, ohne selbst ein Original zu haben.] Wenn man nach Gründen für illegale Nutzung fragt, werden unter anderem folgende genannt. Findest du illegale Nutzung aus diesen Gründen in Ordnung?".
-VARIABLE LABELS V114 "[USK-Kennzeichnung] Welche der folgenden Bewertungen von Videospielen kennst du?".
-VARIABLE LABELS V115 "[PEGI-Kennzeichnung] Welche der folgenden Bewertungen von Videospielen kennst du?".
-VARIABLE LABELS V116 "[Indizierungen (durch die BPjM)] Welche der folgenden Bewertungen von Videospielen kennst du?".
-VARIABLE LABELS V117 "[Verbot (durch Strafgesetzbuch)] Welche der folgenden Bewertungen von Videospielen kennst du?".
-VARIABLE LABELS V118 "[Beschlagnahme (durch Gerichtsurteil)] Welche der folgenden Bewertungen von Videospielen kennst du?".
-VARIABLE LABELS V119 "Weißt du, ob die Videospiele, die du besitzt, ungeschnittene oder entschärfte Versionen sind?".
-VARIABLE LABELS V120 "Was denkst du über Videospiele, bei denen die Gewaltdarstellung gegenüber dem Original reduziert ist?".
-VARIABLE LABELS V121 "Versuchst du dich über die Veröffentlichung indizierter oder verbotener Videospiele zu informieren?".
-VARIABLE LABELS V122 "[Deutsche Spielemagazine] Auf welchen Wegen informierst du dich über unzensierte Versionen von Videospielen?".
-VARIABLE LABELS V123 "[Ausländische Spielemagazine] Auf welchen Wegen informierst du dich über unzensierte Versionen von Videospielen?".
-VARIABLE LABELS V124 "[Foren] Auf welchen Wegen informierst du dich über unzensierte Versionen von Videospielen?".
-VARIABLE LABELS V125 "[Spezialisierte Webseiten] Auf welchen Wegen informierst du dich über unzensierte Versionen von Videospielen?".
-VARIABLE LABELS V126 "[BPjM-Aktuell (z.B. in Bibliotheken)] Auf welchen Wegen informierst du dich über unzensierte Versionen von Videospielen?".
-VARIABLE LABELS V127 "[Freunde oder Bekannte] Auf welchen Wegen informierst du dich über unzensierte Versionen von Videospielen?".
-VARIABLE LABELS V128 "[Sonstiges] Auf welchen Wegen informierst du dich über unzensierte Versionen von Videospielen?".
-VARIABLE LABELS V129 "Versuchst du ungeschnittene Version von Spielen zu bekommen?".
-VARIABLE LABELS V130 "Wenn du versuchst, die ungeschnittene Version eines Spiels zu bekommen, schaffst du das üblicherweise?".
-VARIABLE LABELS V131 "[Ladengeschäfte (Inland)] Schätze bitte außerdem deine persönlichen Erfolgsaussichten ein, auf folgenden Wegen an die ungeschnittene Version eines Spiels zu gelangen.".
-VARIABLE LABELS V132 "[Ladengeschäfte (Ausland)] Schätze bitte außerdem deine persönlichen Erfolgsaussichten ein, auf folgenden Wegen an die ungeschnittene Version eines Spiels zu gelangen.".
-VARIABLE LABELS V133 "[Onlineshops (Inland)] Schätze bitte außerdem deine persönlichen Erfolgsaussichten ein, auf folgenden Wegen an die ungeschnittene Version eines Spiels zu gelangen.".
-VARIABLE LABELS V134 "[Onlineshops (Ausland)] Schätze bitte außerdem deine persönlichen Erfolgsaussichten ein, auf folgenden Wegen an die ungeschnittene Version eines Spiels zu gelangen.".
-VARIABLE LABELS V135 "[Illegal über das Internet (z.B. Tauschbörsen)] Schätze bitte außerdem deine persönlichen Erfolgsaussichten ein, auf folgenden Wegen an die ungeschnittene Version eines Spiels zu gelangen.".
-VARIABLE LABELS V136 "[Modifizieren der zensierten Version (z.B. ""Blutpatches"")] Schätze bitte außerdem deine persönlichen Erfolgsaussichten ein, auf folgenden Wegen an die ungeschnittene Version eines Spiels zu gelangen.".
-VARIABLE LABELS V137 "[Legal von Bekannten (z.B. geliehen)] Schätze bitte außerdem deine persönlichen Erfolgsaussichten ein, auf folgenden Wegen an die ungeschnittene Version eines Spiels zu gelangen.".
-VARIABLE LABELS V138 "[Legal über Bekannte (im Ausland)] Schätze bitte außerdem deine persönlichen Erfolgsaussichten ein, auf folgenden Wegen an die ungeschnittene Version eines Spiels zu gelangen.".
-VARIABLE LABELS V139 "[Über Unbekannte im Ausland (z.B. ""Gifter"")] Schätze bitte außerdem deine persönlichen Erfolgsaussichten ein, auf folgenden Wegen an die ungeschnittene Version eines Spiels zu gelangen.".
-VARIABLE LABELS V140 "[Illegal von Bekannten (z.B. auf DVD gebrannt)] Schätze bitte außerdem deine persönlichen Erfolgsaussichten ein, auf folgenden Wegen an die ungeschnittene Version eines Spiels zu gelangen.".
-VARIABLE LABELS V141 "[Ladengeschäfte (Inland)] [Skala 1] Gib bitte an, auf welchen der folgenden Wege du bereits versucht hast, an die ungeschnittene Version eines Spiels zu gelangen. Schätze bitte außerdem deine persönlichen Erfolgsaussichten ein,"+
+VARIABLE LABELS IllegalVerstaendnis_8 "[Zum Spielen mit Freunden, ohne selbst ein Original zu haben.] Wenn man nach Gründen für illegale Nutzung fragt, werden unter anderem folgende genannt. Findest du illegale Nutzung aus diesen Gründen in Ordnung?".
+VARIABLE LABELS Kennzeichenkenntnis_SQ001 "[USK-Kennzeichnung] Welche der folgenden Bewertungen von Videospielen kennst du?".
+VARIABLE LABELS Kennzeichenkenntnis_SQ002 "[PEGI-Kennzeichnung] Welche der folgenden Bewertungen von Videospielen kennst du?".
+VARIABLE LABELS Kennzeichenkenntnis_SQ003 "[Indizierungen (durch die BPjM)] Welche der folgenden Bewertungen von Videospielen kennst du?".
+VARIABLE LABELS Kennzeichenkenntnis_SQ004 "[Verbot (durch Strafgesetzbuch)] Welche der folgenden Bewertungen von Videospielen kennst du?".
+VARIABLE LABELS Kennzeichenkenntnis_SQ005 "[Beschlagnahme (durch Gerichtsurteil)] Welche der folgenden Bewertungen von Videospielen kennst du?".
+VARIABLE LABELS Schnittkenntnis "Weißt du, ob die Videospiele, die du besitzt, ungeschnittene oder entschärfte Versionen sind?".
+VARIABLE LABELS Zensurmeinung "Was denkst du über Videospiele, bei denen die Gewaltdarstellung gegenüber dem Original reduziert ist?".
+VARIABLE LABELS Zensurinformation "Versuchst du dich über die Veröffentlichung indizierter oder verbotener Videospiele zu informieren?".
+VARIABLE LABELS Zensurinfowege_1 "[Deutsche Spielemagazine] Auf welchen Wegen informierst du dich über unzensierte Versionen von Videospielen?".
+VARIABLE LABELS Zensurinfowege_2 "[Ausländische Spielemagazine] Auf welchen Wegen informierst du dich über unzensierte Versionen von Videospielen?".
+VARIABLE LABELS Zensurinfowege_3 "[Foren] Auf welchen Wegen informierst du dich über unzensierte Versionen von Videospielen?".
+VARIABLE LABELS Zensurinfowege_4 "[Spezialisierte Webseiten] Auf welchen Wegen informierst du dich über unzensierte Versionen von Videospielen?".
+VARIABLE LABELS Zensurinfowege_5 "[BPjM-Aktuell (z.B. in Bibliotheken)] Auf welchen Wegen informierst du dich über unzensierte Versionen von Videospielen?".
+VARIABLE LABELS Zensurinfowege_6 "[Freunde oder Bekannte] Auf welchen Wegen informierst du dich über unzensierte Versionen von Videospielen?".
+VARIABLE LABELS Zensurinfowege_other "[Sonstiges] Auf welchen Wegen informierst du dich über unzensierte Versionen von Videospielen?".
+VARIABLE LABELS UncutBezug "Versuchst du ungeschnittene Version von Spielen zu bekommen?".
+VARIABLE LABELS UncutBezugErfolg "Wenn du versuchst, die ungeschnittene Version eines Spiels zu bekommen, schaffst du das üblicherweise?".
+VARIABLE LABELS UncutBezugWegKErf_SQ001 "[Ladengeschäfte (Inland)] Schätze bitte außerdem deine persönlichen Erfolgsaussichten ein, auf folgenden Wegen an die ungeschnittene Version eines Spiels zu gelangen.".
+VARIABLE LABELS UncutBezugWegKErf_SQ002 "[Ladengeschäfte (Ausland)] Schätze bitte außerdem deine persönlichen Erfolgsaussichten ein, auf folgenden Wegen an die ungeschnittene Version eines Spiels zu gelangen.".
+VARIABLE LABELS UncutBezugWegKErf_SQ003 "[Onlineshops (Inland)] Schätze bitte außerdem deine persönlichen Erfolgsaussichten ein, auf folgenden Wegen an die ungeschnittene Version eines Spiels zu gelangen.".
+VARIABLE LABELS UncutBezugWegKErf_SQ004 "[Onlineshops (Ausland)] Schätze bitte außerdem deine persönlichen Erfolgsaussichten ein, auf folgenden Wegen an die ungeschnittene Version eines Spiels zu gelangen.".
+VARIABLE LABELS UncutBezugWegKErf_SQ005 "[Illegal über das Internet (z.B. Tauschbörsen)] Schätze bitte außerdem deine persönlichen Erfolgsaussichten ein, auf folgenden Wegen an die ungeschnittene Version eines Spiels zu gelangen.".
+VARIABLE LABELS UncutBezugWegKErf_SQ006 "[Modifizieren der zensierten Version (z.B. ""Blutpatches"")] Schätze bitte außerdem deine persönlichen Erfolgsaussichten ein, auf folgenden Wegen an die ungeschnittene Version eines Spiels zu gelangen.".
+VARIABLE LABELS UncutBezugWegKErf_SQ007 "[Legal von Bekannten (z.B. geliehen)] Schätze bitte außerdem deine persönlichen Erfolgsaussichten ein, auf folgenden Wegen an die ungeschnittene Version eines Spiels zu gelangen.".
+VARIABLE LABELS UncutBezugWegKErf_SQ008 "[Legal über Bekannte (im Ausland)] Schätze bitte außerdem deine persönlichen Erfolgsaussichten ein, auf folgenden Wegen an die ungeschnittene Version eines Spiels zu gelangen.".
+VARIABLE LABELS UncutBezugWegKErf_SQ009 "[Über Unbekannte im Ausland (z.B. ""Gifter"")] Schätze bitte außerdem deine persönlichen Erfolgsaussichten ein, auf folgenden Wegen an die ungeschnittene Version eines Spiels zu gelangen.".
+VARIABLE LABELS UncutBezugWegKErf_SQ010 "[Illegal von Bekannten (z.B. auf DVD gebrannt)] Schätze bitte außerdem deine persönlichen Erfolgsaussichten ein, auf folgenden Wegen an die ungeschnittene Version eines Spiels zu gelangen.".
+VARIABLE LABELS UncutBezugWegErf_SQ001#0 "[Ladengeschäfte (Inland)] [Skala 1] Gib bitte an, auf welchen der folgenden Wege du bereits versucht hast, an die ungeschnittene Version eines Spiels zu gelangen. Schätze bitte außerdem deine persönlichen Erfolgsaussichten ein,"+
 " auf folgenden Wegen an die ungeschnittene Version eines Spiels zu gelangen.".
-VARIABLE LABELS V142 "[Ladengeschäfte (Inland)] [Skala 2] Gib bitte an, auf welchen der folgenden Wege du bereits versucht hast, an die ungeschnittene Version eines Spiels zu gelangen. Schätze bitte außerdem deine persönlichen Erfolgsaussichten ein,"+
+VARIABLE LABELS UncutBezugWegErf_SQ001#1 "[Ladengeschäfte (Inland)] [Skala 2] Gib bitte an, auf welchen der folgenden Wege du bereits versucht hast, an die ungeschnittene Version eines Spiels zu gelangen. Schätze bitte außerdem deine persönlichen Erfolgsaussichten ein,"+
 " auf folgenden Wegen an die ungeschnittene Version eines Spiels zu gelangen.".
-VARIABLE LABELS V143 "[Ladengeschäfte (Ausland)] [Skala 1] Gib bitte an, auf welchen der folgenden Wege du bereits versucht hast, an die ungeschnittene Version eines Spiels zu gelangen. Schätze bitte außerdem deine persönlichen Erfolgsaussichten ein"+
+VARIABLE LABELS UncutBezugWegErf_SQ002#0 "[Ladengeschäfte (Ausland)] [Skala 1] Gib bitte an, auf welchen der folgenden Wege du bereits versucht hast, an die ungeschnittene Version eines Spiels zu gelangen. Schätze bitte außerdem deine persönlichen Erfolgsaussichten ein"+
 ", auf folgenden Wegen an die ungeschnittene Version eines Spiels zu gelangen.".
-VARIABLE LABELS V144 "[Ladengeschäfte (Ausland)] [Skala 2] Gib bitte an, auf welchen der folgenden Wege du bereits versucht hast, an die ungeschnittene Version eines Spiels zu gelangen. Schätze bitte außerdem deine persönlichen Erfolgsaussichten ein"+
+VARIABLE LABELS UncutBezugWegErf_SQ002#1 "[Ladengeschäfte (Ausland)] [Skala 2] Gib bitte an, auf welchen der folgenden Wege du bereits versucht hast, an die ungeschnittene Version eines Spiels zu gelangen. Schätze bitte außerdem deine persönlichen Erfolgsaussichten ein"+
 ", auf folgenden Wegen an die ungeschnittene Version eines Spiels zu gelangen.".
-VARIABLE LABELS V145 "[Versandhandel (Inland)] [Skala 1] Gib bitte an, auf welchen der folgenden Wege du bereits versucht hast, an die ungeschnittene Version eines Spiels zu gelangen. Schätze bitte außerdem deine persönlichen Erfolgsaussichten ein, "+
+VARIABLE LABELS UncutBezugWegErf_SQ003#0 "[Versandhandel (Inland)] [Skala 1] Gib bitte an, auf welchen der folgenden Wege du bereits versucht hast, an die ungeschnittene Version eines Spiels zu gelangen. Schätze bitte außerdem deine persönlichen Erfolgsaussichten ein, "+
 "auf folgenden Wegen an die ungeschnittene Version eines Spiels zu gelangen.".
-VARIABLE LABELS V146 "[Versandhandel (Inland)] [Skala 2] Gib bitte an, auf welchen der folgenden Wege du bereits versucht hast, an die ungeschnittene Version eines Spiels zu gelangen. Schätze bitte außerdem deine persönlichen Erfolgsaussichten ein, "+
+VARIABLE LABELS UncutBezugWegErf_SQ003#1 "[Versandhandel (Inland)] [Skala 2] Gib bitte an, auf welchen der folgenden Wege du bereits versucht hast, an die ungeschnittene Version eines Spiels zu gelangen. Schätze bitte außerdem deine persönlichen Erfolgsaussichten ein, "+
 "auf folgenden Wegen an die ungeschnittene Version eines Spiels zu gelangen.".
-VARIABLE LABELS V147 "[Versandhandel (Ausland)] [Skala 1] Gib bitte an, auf welchen der folgenden Wege du bereits versucht hast, an die ungeschnittene Version eines Spiels zu gelangen. Schätze bitte außerdem deine persönlichen Erfolgsaussichten ein,"+
+VARIABLE LABELS UncutBezugWegErf_SQ004#0 "[Versandhandel (Ausland)] [Skala 1] Gib bitte an, auf welchen der folgenden Wege du bereits versucht hast, an die ungeschnittene Version eines Spiels zu gelangen. Schätze bitte außerdem deine persönlichen Erfolgsaussichten ein,"+
 " auf folgenden Wegen an die ungeschnittene Version eines Spiels zu gelangen.".
-VARIABLE LABELS V148 "[Versandhandel (Ausland)] [Skala 2] Gib bitte an, auf welchen der folgenden Wege du bereits versucht hast, an die ungeschnittene Version eines Spiels zu gelangen. Schätze bitte außerdem deine persönlichen Erfolgsaussichten ein,"+
+VARIABLE LABELS UncutBezugWegErf_SQ004#1 "[Versandhandel (Ausland)] [Skala 2] Gib bitte an, auf welchen der folgenden Wege du bereits versucht hast, an die ungeschnittene Version eines Spiels zu gelangen. Schätze bitte außerdem deine persönlichen Erfolgsaussichten ein,"+
 " auf folgenden Wegen an die ungeschnittene Version eines Spiels zu gelangen.".
-VARIABLE LABELS V149 "[Illegal über das Internet (z.B. Tauschbörsen)] [Skala 1] Gib bitte an, auf welchen der folgenden Wege du bereits versucht hast, an die ungeschnittene Version eines Spiels zu gelangen. Schätze bitte außerdem deine persönlichen "+
+VARIABLE LABELS UncutBezugWegErf_SQ005#0 "[Illegal über das Internet (z.B. Tauschbörsen)] [Skala 1] Gib bitte an, auf welchen der folgenden Wege du bereits versucht hast, an die ungeschnittene Version eines Spiels zu gelangen. Schätze bitte außerdem deine persönlichen "+
 "Erfolgsaussichten ein, auf folgenden Wegen an die ungeschnittene Version eines Spiels zu gelangen.".
-VARIABLE LABELS V150 "[Illegal über das Internet (z.B. Tauschbörsen)] [Skala 2] Gib bitte an, auf welchen der folgenden Wege du bereits versucht hast, an die ungeschnittene Version eines Spiels zu gelangen. Schätze bitte außerdem deine persönlichen "+
+VARIABLE LABELS UncutBezugWegErf_SQ005#1 "[Illegal über das Internet (z.B. Tauschbörsen)] [Skala 2] Gib bitte an, auf welchen der folgenden Wege du bereits versucht hast, an die ungeschnittene Version eines Spiels zu gelangen. Schätze bitte außerdem deine persönlichen "+
 "Erfolgsaussichten ein, auf folgenden Wegen an die ungeschnittene Version eines Spiels zu gelangen.".
-VARIABLE LABELS V151 "[Modifizieren der zensierten Version (z.B. ""Blutpatches"")] [Skala 1] Gib bitte an, auf welchen der folgenden Wege du bereits versucht hast, an die ungeschnittene Version eines Spiels zu gelangen. Schätze bitte außerdem deine "+
+VARIABLE LABELS UncutBezugWegErf_SQ006#0 "[Modifizieren der zensierten Version (z.B. ""Blutpatches"")] [Skala 1] Gib bitte an, auf welchen der folgenden Wege du bereits versucht hast, an die ungeschnittene Version eines Spiels zu gelangen. Schätze bitte außerdem deine "+
 "persönlichen Erfolgsaussichten ein, auf folgenden Wegen an die ungeschnittene Version eines Spiels zu gelangen.".
-VARIABLE LABELS V152 "[Modifizieren der zensierten Version (z.B. ""Blutpatches"")] [Skala 2] Gib bitte an, auf welchen der folgenden Wege du bereits versucht hast, an die ungeschnittene Version eines Spiels zu gelangen. Schätze bitte außerdem deine "+
+VARIABLE LABELS UncutBezugWegErf_SQ006#1 "[Modifizieren der zensierten Version (z.B. ""Blutpatches"")] [Skala 2] Gib bitte an, auf welchen der folgenden Wege du bereits versucht hast, an die ungeschnittene Version eines Spiels zu gelangen. Schätze bitte außerdem deine "+
 "persönlichen Erfolgsaussichten ein, auf folgenden Wegen an die ungeschnittene Version eines Spiels zu gelangen.".
-VARIABLE LABELS V153 "[Legal von Bekannten (z.B. geliehen)] [Skala 1] Gib bitte an, auf welchen der folgenden Wege du bereits versucht hast, an die ungeschnittene Version eines Spiels zu gelangen. Schätze bitte außerdem deine persönlichen Erfolgsaus"+
+VARIABLE LABELS UncutBezugWegErf_SQ007#0 "[Legal von Bekannten (z.B. geliehen)] [Skala 1] Gib bitte an, auf welchen der folgenden Wege du bereits versucht hast, an die ungeschnittene Version eines Spiels zu gelangen. Schätze bitte außerdem deine persönlichen Erfolgsaus"+
 "sichten ein, auf folgenden Wegen an die ungeschnittene Version eines Spiels zu gelangen.".
-VARIABLE LABELS V154 "[Legal von Bekannten (z.B. geliehen)] [Skala 2] Gib bitte an, auf welchen der folgenden Wege du bereits versucht hast, an die ungeschnittene Version eines Spiels zu gelangen. Schätze bitte außerdem deine persönlichen Erfolgsaus"+
+VARIABLE LABELS UncutBezugWegErf_SQ007#1 "[Legal von Bekannten (z.B. geliehen)] [Skala 2] Gib bitte an, auf welchen der folgenden Wege du bereits versucht hast, an die ungeschnittene Version eines Spiels zu gelangen. Schätze bitte außerdem deine persönlichen Erfolgsaus"+
 "sichten ein, auf folgenden Wegen an die ungeschnittene Version eines Spiels zu gelangen.".
-VARIABLE LABELS V155 "[Legal über Bekannte (im Ausland)] [Skala 1] Gib bitte an, auf welchen der folgenden Wege du bereits versucht hast, an die ungeschnittene Version eines Spiels zu gelangen. Schätze bitte außerdem deine persönlichen Erfolgsaussic"+
+VARIABLE LABELS UncutBezugWegErf_SQ008#0 "[Legal über Bekannte (im Ausland)] [Skala 1] Gib bitte an, auf welchen der folgenden Wege du bereits versucht hast, an die ungeschnittene Version eines Spiels zu gelangen. Schätze bitte außerdem deine persönlichen Erfolgsaussic"+
 "hten ein, auf folgenden Wegen an die ungeschnittene Version eines Spiels zu gelangen.".
-VARIABLE LABELS V156 "[Legal über Bekannte (im Ausland)] [Skala 2] Gib bitte an, auf welchen der folgenden Wege du bereits versucht hast, an die ungeschnittene Version eines Spiels zu gelangen. Schätze bitte außerdem deine persönlichen Erfolgsaussic"+
+VARIABLE LABELS UncutBezugWegErf_SQ008#1 "[Legal über Bekannte (im Ausland)] [Skala 2] Gib bitte an, auf welchen der folgenden Wege du bereits versucht hast, an die ungeschnittene Version eines Spiels zu gelangen. Schätze bitte außerdem deine persönlichen Erfolgsaussic"+
 "hten ein, auf folgenden Wegen an die ungeschnittene Version eines Spiels zu gelangen.".
-VARIABLE LABELS V157 "[Über Unbekannte im Ausland (z.B. ""Gifter"")] [Skala 1] Gib bitte an, auf welchen der folgenden Wege du bereits versucht hast, an die ungeschnittene Version eines Spiels zu gelangen. Schätze bitte außerdem deine persönlichen E"+
+VARIABLE LABELS UncutBezugWegErf_SQ009#0 "[Über Unbekannte im Ausland (z.B. ""Gifter"")] [Skala 1] Gib bitte an, auf welchen der folgenden Wege du bereits versucht hast, an die ungeschnittene Version eines Spiels zu gelangen. Schätze bitte außerdem deine persönlichen E"+
 "rfolgsaussichten ein, auf folgenden Wegen an die ungeschnittene Version eines Spiels zu gelangen.".
-VARIABLE LABELS V158 "[Über Unbekannte im Ausland (z.B. ""Gifter"")] [Skala 2] Gib bitte an, auf welchen der folgenden Wege du bereits versucht hast, an die ungeschnittene Version eines Spiels zu gelangen. Schätze bitte außerdem deine persönlichen E"+
+VARIABLE LABELS UncutBezugWegErf_SQ009#1 "[Über Unbekannte im Ausland (z.B. ""Gifter"")] [Skala 2] Gib bitte an, auf welchen der folgenden Wege du bereits versucht hast, an die ungeschnittene Version eines Spiels zu gelangen. Schätze bitte außerdem deine persönlichen E"+
 "rfolgsaussichten ein, auf folgenden Wegen an die ungeschnittene Version eines Spiels zu gelangen.".
-VARIABLE LABELS V159 "[Illegal von Bekannten (z.B. auf DVD gebrannt)] [Skala 1] Gib bitte an, auf welchen der folgenden Wege du bereits versucht hast, an die ungeschnittene Version eines Spiels zu gelangen. Schätze bitte außerdem deine persönlichen "+
+VARIABLE LABELS UncutBezugWegErf_SQ010#0 "[Illegal von Bekannten (z.B. auf DVD gebrannt)] [Skala 1] Gib bitte an, auf welchen der folgenden Wege du bereits versucht hast, an die ungeschnittene Version eines Spiels zu gelangen. Schätze bitte außerdem deine persönlichen "+
 "Erfolgsaussichten ein, auf folgenden Wegen an die ungeschnittene Version eines Spiels zu gelangen.".
-VARIABLE LABELS V160 "[Illegal von Bekannten (z.B. auf DVD gebrannt)] [Skala 2] Gib bitte an, auf welchen der folgenden Wege du bereits versucht hast, an die ungeschnittene Version eines Spiels zu gelangen. Schätze bitte außerdem deine persönlichen "+
+VARIABLE LABELS UncutBezugWegErf_SQ010#1 "[Illegal von Bekannten (z.B. auf DVD gebrannt)] [Skala 2] Gib bitte an, auf welchen der folgenden Wege du bereits versucht hast, an die ungeschnittene Version eines Spiels zu gelangen. Schätze bitte außerdem deine persönlichen "+
 "Erfolgsaussichten ein, auf folgenden Wegen an die ungeschnittene Version eines Spiels zu gelangen.".
 VARIABLE LABELS V161 "Hat bei deiner Kaufentscheidung die Erforderlichkeit einer (nach jeder Installation einmaligen) Onlineaktivierung eine Bedeutung?".
 VARIABLE LABELS V162 "Hat bei deiner Kaufentscheidung das Vorhandensein eines Always-On-System (auch zur Nutzung im Einzelspieler muss eine Internetverbindung bestehen), eine Bedeutung?".
@@ -1560,159 +1558,6 @@ VARIABLE LEVEL V60(ORDINAL).
 VARIABLE LEVEL V61(ORDINAL).
 VARIABLE LEVEL V62(ORDINAL).
 VARIABLE LEVEL V63(ORDINAL).
-RENAME VARIABLE ( V2 = token ).
-RENAME VARIABLE ( V3 = submitdate ).
-RENAME VARIABLE ( V5 = startlanguage ).
-RENAME VARIABLE ( V6 = startdate ).
-RENAME VARIABLE ( V7 = datestamp ).
-RENAME VARIABLE ( V8 = ipaddr ).
-RENAME VARIABLE ( V9 = refurl ).
-RENAME VARIABLE ( V10 = Geburtsjahr ).
-RENAME VARIABLE ( V11 = Geschlecht ).
-RENAME VARIABLE ( V12 = WohnortDeutschland ).
-RENAME VARIABLE ( V13 = Breitbandzugang ).
-RENAME VARIABLE ( V14 = COAXSpeed ).
-RENAME VARIABLE ( V15 = DSLSpeed ).
-RENAME VARIABLE ( V16 = FunkSpeed ).
-RENAME VARIABLE ( V17 = Videospieler ).
-RENAME VARIABLE ( V18 = ExSpieler ).
-RENAME VARIABLE ( V19 = ExWann ).
-RENAME VARIABLE ( V20 = Ablehnung_1 ).
-RENAME VARIABLE ( V21 = Ablehnung_2 ).
-RENAME VARIABLE ( V22 = Ablehnung_3 ).
-RENAME VARIABLE ( V23 = Ablehnung_4 ).
-RENAME VARIABLE ( V24 = Ablehnung_5 ).
-RENAME VARIABLE ( V25 = VersteckJN ).
-RENAME VARIABLE ( V26 = VersteckArt_1 ).
-RENAME VARIABLE ( V27 = VersteckArt_2 ).
-RENAME VARIABLE ( V28 = VersteckArt_3 ).
-RENAME VARIABLE ( V29 = VersteckArt_4 ).
-RENAME VARIABLE ( V30 = VersteckArt_other ).
-RENAME VARIABLE ( V31 = Multiplayer ).
-RENAME VARIABLE ( V32 = Erfahrung ).
-RENAME VARIABLE ( V33 = AllgemPlatt_SQ001 ).
-RENAME VARIABLE ( V34 = AllgemPlatt_SQ002 ).
-RENAME VARIABLE ( V35 = AllgemPlatt_SQ003 ).
-RENAME VARIABLE ( V36 = AllgemPlatt_SQ004 ).
-RENAME VARIABLE ( V37 = AllgemPlatt_SQ005 ).
-RENAME VARIABLE ( V38 = AllgemPlatt_SQ006 ).
-RENAME VARIABLE ( V39 = AllgemPlatt_SQ007 ).
-RENAME VARIABLE ( V40 = AllgemPlatt_SQ008 ).
-RENAME VARIABLE ( V41 = AllgemPlatt_SQ009 ).
-RENAME VARIABLE ( V42 = AllgemPlatt_SQ010 ).
-RENAME VARIABLE ( V48 = Nutzungsdauer_SQ1 ).
-RENAME VARIABLE ( V49 = Nutzungsdauer_SQ2 ).
-RENAME VARIABLE ( V50 = Nutzungsdauer_SQ3 ).
-RENAME VARIABLE ( V51 = Nutzungsdauer_SQ4 ).
-RENAME VARIABLE ( V52 = Nutzungsdauer_SQ5 ).
-RENAME VARIABLE ( V53 = Nutzungsumfang ).
-RENAME VARIABLE ( V54 = Bezugsweg_SQ1 ).
-RENAME VARIABLE ( V55 = Bezugsweg_SQ2 ).
-RENAME VARIABLE ( V56 = Bezugsweg_SQ3 ).
-RENAME VARIABLE ( V57 = Bezugsweg_SQ4 ).
-RENAME VARIABLE ( V58 = Bezugsweg_SQ5 ).
-RENAME VARIABLE ( V59 = Plattformen_SQ1 ).
-RENAME VARIABLE ( V60 = Plattformen_SQ2 ).
-RENAME VARIABLE ( V61 = Plattformen_SQ3 ).
-RENAME VARIABLE ( V62 = Plattformen_SQ4 ).
-RENAME VARIABLE ( V63 = Plattformen_SQ5 ).
-RENAME VARIABLE ( V64 = Zusatzangebote_SQ000 ).
-RENAME VARIABLE ( V65 = Zusatzangebote_SQ001 ).
-RENAME VARIABLE ( V66 = Zusatzangebote_SQ002 ).
-RENAME VARIABLE ( V67 = Zusatzangebote_SQ003 ).
-RENAME VARIABLE ( V68 = Zusatzangebote_SQ004 ).
-RENAME VARIABLE ( V69 = Endmotivation_1 ).
-RENAME VARIABLE ( V70 = Endmotivation_2 ).
-RENAME VARIABLE ( V71 = Endmotivation_3 ).
-RENAME VARIABLE ( V72 = Endmotivation_4 ).
-RENAME VARIABLE ( V73 = Endmotivation_5 ).
-RENAME VARIABLE ( V74 = Endmotivation_7 ).
-RENAME VARIABLE ( V75 = Endmotivation_9 ).
-RENAME VARIABLE ( V76 = Endzwang_SQ001 ).
-RENAME VARIABLE ( V77 = Endzwang_SQ002 ).
-RENAME VARIABLE ( V78 = Endverstndnis_1 ).
-RENAME VARIABLE ( V79 = Endverstndnis_2 ).
-RENAME VARIABLE ( V80 = Endverstndnis_3 ).
-RENAME VARIABLE ( V81 = Endverstndnis_4 ).
-RENAME VARIABLE ( V82 = Endverstndnis_5 ).
-RENAME VARIABLE ( V83 = Endverstndnis_7 ).
-RENAME VARIABLE ( V84 = Endverstndnis_9 ).
-RENAME VARIABLE ( V85 = Startmotivation_1 ).
-RENAME VARIABLE ( V86 = Startmotivation_2 ).
-RENAME VARIABLE ( V87 = Startmotivation_3 ).
-RENAME VARIABLE ( V88 = Startmotivation_4 ).
-RENAME VARIABLE ( V89 = Startmotivation_5 ).
-RENAME VARIABLE ( V90 = Illegalmotivation_1#0 ).
-RENAME VARIABLE ( V91 = Illegalmotivation_1#1 ).
-RENAME VARIABLE ( V92 = Illegalmotivation_2#0 ).
-RENAME VARIABLE ( V93 = Illegalmotivation_2#1 ).
-RENAME VARIABLE ( V94 = Illegalmotivation_3#0 ).
-RENAME VARIABLE ( V95 = Illegalmotivation_3#1 ).
-RENAME VARIABLE ( V96 = Illegalmotivation_4#0 ).
-RENAME VARIABLE ( V97 = Illegalmotivation_4#1 ).
-RENAME VARIABLE ( V98 = Illegalmotivation_5#0 ).
-RENAME VARIABLE ( V99 = Illegalmotivation_5#1 ).
-RENAME VARIABLE ( V100 = Illegalmotivation_6#0 ).
-RENAME VARIABLE ( V101 = Illegalmotivation_6#1 ).
-RENAME VARIABLE ( V102 = Illegalmotivation_7#0 ).
-RENAME VARIABLE ( V103 = Illegalmotivation_7#1 ).
-RENAME VARIABLE ( V104 = Illegalmotivation_8#0 ).
-RENAME VARIABLE ( V105 = Illegalmotivation_8#1 ).
-RENAME VARIABLE ( V106 = IllegalVerstaendnis_1 ).
-RENAME VARIABLE ( V107 = IllegalVerstaendnis_2 ).
-RENAME VARIABLE ( V108 = IllegalVerstaendnis_3 ).
-RENAME VARIABLE ( V109 = IllegalVerstaendnis_4 ).
-RENAME VARIABLE ( V110 = IllegalVerstaendnis_5 ).
-RENAME VARIABLE ( V111 = IllegalVerstaendnis_6 ).
-RENAME VARIABLE ( V112 = IllegalVerstaendnis_7 ).
-RENAME VARIABLE ( V113 = IllegalVerstaendnis_8 ).
-RENAME VARIABLE ( V114 = Kennzeichenkenntnis_SQ001 ).
-RENAME VARIABLE ( V115 = Kennzeichenkenntnis_SQ002 ).
-RENAME VARIABLE ( V116 = Kennzeichenkenntnis_SQ003 ).
-RENAME VARIABLE ( V117 = Kennzeichenkenntnis_SQ004 ).
-RENAME VARIABLE ( V118 = Kennzeichenkenntnis_SQ005 ).
-RENAME VARIABLE ( V119 = Schnittkenntnis ).
-RENAME VARIABLE ( V120 = Zensurmeinung ).
-RENAME VARIABLE ( V121 = Zensurinformation ).
-RENAME VARIABLE ( V122 = Zensurinfowege_1 ).
-RENAME VARIABLE ( V123 = Zensurinfowege_2 ).
-RENAME VARIABLE ( V124 = Zensurinfowege_3 ).
-RENAME VARIABLE ( V125 = Zensurinfowege_4 ).
-RENAME VARIABLE ( V126 = Zensurinfowege_5 ).
-RENAME VARIABLE ( V127 = Zensurinfowege_6 ).
-RENAME VARIABLE ( V128 = Zensurinfowege_other ).
-RENAME VARIABLE ( V129 = UncutBezug ).
-RENAME VARIABLE ( V130 = UncutBezugErfolg ).
-RENAME VARIABLE ( V131 = UncutBezugWegKErf_SQ001 ).
-RENAME VARIABLE ( V132 = UncutBezugWegKErf_SQ002 ).
-RENAME VARIABLE ( V133 = UncutBezugWegKErf_SQ003 ).
-RENAME VARIABLE ( V134 = UncutBezugWegKErf_SQ004 ).
-RENAME VARIABLE ( V135 = UncutBezugWegKErf_SQ005 ).
-RENAME VARIABLE ( V136 = UncutBezugWegKErf_SQ006 ).
-RENAME VARIABLE ( V137 = UncutBezugWegKErf_SQ007 ).
-RENAME VARIABLE ( V138 = UncutBezugWegKErf_SQ008 ).
-RENAME VARIABLE ( V139 = UncutBezugWegKErf_SQ009 ).
-RENAME VARIABLE ( V140 = UncutBezugWegKErf_SQ010 ).
-RENAME VARIABLE ( V141 = UncutBezugWegErf_SQ001#0 ).
-RENAME VARIABLE ( V142 = UncutBezugWegErf_SQ001#1 ).
-RENAME VARIABLE ( V143 = UncutBezugWegErf_SQ002#0 ).
-RENAME VARIABLE ( V144 = UncutBezugWegErf_SQ002#1 ).
-RENAME VARIABLE ( V145 = UncutBezugWegErf_SQ003#0 ).
-RENAME VARIABLE ( V146 = UncutBezugWegErf_SQ003#1 ).
-RENAME VARIABLE ( V147 = UncutBezugWegErf_SQ004#0 ).
-RENAME VARIABLE ( V148 = UncutBezugWegErf_SQ004#1 ).
-RENAME VARIABLE ( V149 = UncutBezugWegErf_SQ005#0 ).
-RENAME VARIABLE ( V150 = UncutBezugWegErf_SQ005#1 ).
-RENAME VARIABLE ( V151 = UncutBezugWegErf_SQ006#0 ).
-RENAME VARIABLE ( V152 = UncutBezugWegErf_SQ006#1 ).
-RENAME VARIABLE ( V153 = UncutBezugWegErf_SQ007#0 ).
-RENAME VARIABLE ( V154 = UncutBezugWegErf_SQ007#1 ).
-RENAME VARIABLE ( V155 = UncutBezugWegErf_SQ008#0 ).
-RENAME VARIABLE ( V156 = UncutBezugWegErf_SQ008#1 ).
-RENAME VARIABLE ( V157 = UncutBezugWegErf_SQ009#0 ).
-RENAME VARIABLE ( V158 = UncutBezugWegErf_SQ009#1 ).
-RENAME VARIABLE ( V159 = UncutBezugWegErf_SQ010#0 ).
-RENAME VARIABLE ( V160 = UncutBezugWegErf_SQ010#1 ).
 RENAME VARIABLE ( V161 = Onlineaktivierung ).
 RENAME VARIABLE ( V162 = Onlinezwang ).
 RENAME VARIABLE ( V163 = Kontingent ).
