@@ -70,26 +70,40 @@ def find_gameinfo(title): # search data of the game
 
 
 
+feedback = io.open("./daten/feedback2014.dat", "w", encoding="utf8")
 results = io.open("./daten/rohdaten2014.dat", "w", encoding="utf8")
+versteck = io.open("./daten/versteck2014.dat", "w", encoding="utf8")
+zensurinfo = io.open("./daten/zensurinfo2014.dat", "w", encoding="utf8")
 
 #for pspp_entry in pspp_data:
 with io.open('./rohdaten/survey-data.dat', encoding='utf8') as f:
 	reader = unicodecsv.reader(f,delimiter=';')
 	for spss_entry in reader:
-		game = ''
-		if len(spss_entry) > 46:
+		if len(spss_entry) == 223 or len(spss_entry) == 224:
 			game = spss_entry[41:46]
 		else:
-			sys.exit()
+			print("Error in Entry:")
+			print(spss_entry)
 
 		# write data before items to insert
-		for item in spss_entry[:41]:
+		for item in spss_entry[:27]:
+			results.write(u'"'+item+u'";')
+		if (len(spss_entry[28]) > 0):
+			versteck.write(spss_entry[28]+u'\n\n')
+		for item in spss_entry[28:41]:
 			results.write(u'"'+item+u'";')
 		for g in range(0,5): # 5 games (hardcoded)
 			gameinfo = find_gameinfo(game[g])
 			results.write(u'"'+spss_entry[41+g]+u'";')
 			for i in range(0,2):
 				results.write(u'\"'+gameinfo[i]+u'\";')
-		for item in spss_entry[46:-1]:
+		for item in spss_entry[46:126]:
 			results.write(u'"'+item+u'";')
-		results.write(u'"'+spss_entry[-1]+u'"\n')
+		if(len(spss_entry[126]) > 0):
+			zensurinfo.write(spss_entry[126]+u'\n\n')
+		for item in spss_entry[127:222]:
+			results.write(u'"'+item+u'";')
+		results.write(u'"'+spss_entry[222]+u'"\n')
+		if (len(spss_entry) > 223):
+			if (len(spss_entry[223]) > 0):
+				feedback.write(spss_entry[223]+u'\n\n')

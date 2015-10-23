@@ -39,7 +39,6 @@ GET DATA
  VersteckArt_2 F1
  VersteckArt_3 F1
  VersteckArt_4 F1
- VersteckArt_other A50
  Multiplayer A2
  Erfahrung F15.14
  AllgemPlatt_SQ001 A2
@@ -147,7 +146,6 @@ GET DATA
  Zensurinfowege_4 F1
  Zensurinfowege_5 F1
  Zensurinfowege_6 F1
- Zensurinfowege_other A66
  UncutBezug F1
  UncutBezugErfolg A2
  UncutBezugWegKErf_SQ001 A2
@@ -243,8 +241,7 @@ GET DATA
  SexMehr_Selbstbew#0 F1
  SexMehr_Selbstbew#1 F1
  SexMehr_Stereotype#0 F1
- SexMehr_Stereotype#1 F1
- feddbacktext A2033.
+ SexMehr_Stereotype#1 F1.
 CACHE.
 EXECUTE.
 *Define Variable Properties.
@@ -1563,4 +1560,3 @@ VARIABLE LEVEL Plattformen_SQ2(ORDINAL).
 VARIABLE LEVEL Plattformen_SQ3(ORDINAL).
 VARIABLE LEVEL Plattformen_SQ4(ORDINAL).
 VARIABLE LEVEL Plattformen_SQ5(ORDINAL).
-RESTORE LOCALE.
