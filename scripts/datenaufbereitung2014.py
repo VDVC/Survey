@@ -12,9 +12,18 @@ import unicodecsv
 reload(sys)  
 sys.setdefaultencoding('utf8')
 
+# SPSS-Export
+rohdaten='./rohdaten/rohdaten2014.dat'
+
 duplikatsliste='./daten/zuordnung.tsv'
 ogdbgames='./rohdaten/ogdb-games.csv'
 moregames='./daten/no-ogdb.tsv'
+
+# Dateien für Ergebnisse
+feedback = io.open("./rohdaten/feedback2014.dat", "w", encoding="utf8")
+results = io.open("./rohdaten/daten2014.dat", "w", encoding="utf8")
+versteck = io.open("./rohdaten/versteck2014.dat", "w", encoding="utf8")
+zensurinfo = io.open("./rohdaten/zensurinfo2014.dat", "w", encoding="utf8")
 
 # Dieses Dictionary ordnet Spieltitel eine Releasejahr und eine USK-Friegabe zu
 # Zuordnung von Genres wäre möglich.
@@ -69,14 +78,8 @@ def find_gameinfo(title): # search data of the game
 	return [year,freigabe]
 
 
-
-feedback = io.open("./daten/feedback2014.dat", "w", encoding="utf8")
-results = io.open("./daten/rohdaten2014.dat", "w", encoding="utf8")
-versteck = io.open("./daten/versteck2014.dat", "w", encoding="utf8")
-zensurinfo = io.open("./daten/zensurinfo2014.dat", "w", encoding="utf8")
-
 #for pspp_entry in pspp_data:
-with io.open('./rohdaten/survey-data.dat', encoding='utf8') as f:
+with io.open(rohdaten, encoding='utf8') as f:
 	reader = unicodecsv.reader(f,delimiter=';')
 	for spss_entry in reader:
 		if len(spss_entry) == 223 or len(spss_entry) == 224:
@@ -86,11 +89,11 @@ with io.open('./rohdaten/survey-data.dat', encoding='utf8') as f:
 			print(spss_entry)
 
 		# write data before items to insert
-		for item in spss_entry[:27]:
+		for item in spss_entry[:28]:
 			results.write(u'"'+item+u'";')
 		if (len(spss_entry[28]) > 0):
 			versteck.write(spss_entry[28]+u'\n\n')
-		for item in spss_entry[28:41]:
+		for item in spss_entry[29:41]:
 			results.write(u'"'+item+u'";')
 		for g in range(0,5): # 5 games (hardcoded)
 			gameinfo = find_gameinfo(game[g])
