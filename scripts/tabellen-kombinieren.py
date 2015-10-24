@@ -15,7 +15,7 @@ with io.open(csvfile, encoding='utf8') as csv:
     mergetable = []
     for entry in csvreader:
         if (len(entry) > 3):
-            value=entry[1]
+            value=entry[1].rstrip()
             count=entry[2]
             known=False
             for oldentry in mergetable:
@@ -28,7 +28,7 @@ with io.open(csvfile, encoding='utf8') as csv:
                     mergetable.append([value,int(count)])
                 else:
                     mergetable.append([value,count])
-
+skipped=0
 mergedtable=[]
 for entry in mergetable[1:]:
     if entry[0] not in [u"",u"."]:
