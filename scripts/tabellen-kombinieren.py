@@ -45,5 +45,5 @@ results.write(u'"'+mergetable[0][0]+u'"\t"Anzahl"\n')
 for item in mergedtable:
 	results.write(u'"'+item[0]+u'"\t'+str(item[1])+u'\n')
 results.write(u'"."\t'+str(skipped)+'\n')
-results.write(u'#"Gesamt"\t'+str(total)+u'\n')
+results.write(u'"Gesamt"\t'+str(total)+u'\n')
 
