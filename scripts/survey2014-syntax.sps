@@ -50,27 +50,27 @@ GET DATA
  AllgemPlatt_SQ008 A2
  AllgemPlatt_SQ009 A2
  AllgemPlatt_SQ010 A2
- Spiel_1 A44
- Release_1 F4
- Freigabe_1 F2
- Spiel_2 A79
- Release_2 F4
- Freigabe_2 F2
- Spiel_3 A46
+ Spiel1 A44
+ Release1 F4
+ Freigabe1 F2
+ Spiel2 A79
+ Release2 F4
+ Freigabe2 F2
+ Spiel3 A46
  Release3 F4
  Freigabe3 F2
- Spiel_4 A39
+ Spiel4 A39
  Release4 F4
  Freigabe4 F2
- Spiel_5 A46
- Release_5 F4
- Freigabe_5 F2
+ Spiel5 A46
+ Release5 F4
+ Freigabe5 F2
  Nutzungsdauer_SQ1 A2
  Nutzungsdauer_SQ2 A2
  Nutzungsdauer_SQ3 A2
  Nutzungsdauer_SQ4 A2
  Nutzungsdauer_SQ5 A2
- Nutzungsumfang F14.13
+ Nutzungsumfang F14
  Bezugsweg_SQ1 F1
  Bezugsweg_SQ2 F1
  Bezugsweg_SQ3 F1
@@ -81,11 +81,11 @@ GET DATA
  Plattformen_SQ3 A5
  Plattformen_SQ4 A5
  Plattformen_SQ5 A5
- Zusatzangebote_SQ000 F15.14
- Zusatzangebote_SQ001 F15.14
- Zusatzangebote_SQ002 F15.14
- Zusatzangebote_SQ003 F15.14
- Zusatzangebote_SQ004 F14.13
+ Zusatzangebote_SQ000 F15.2
+ Zusatzangebote_SQ001 F15.2
+ Zusatzangebote_SQ002 F15.2
+ Zusatzangebote_SQ003 F15.2
+ Zusatzangebote_SQ004 F14.2
  Endmotivation_1 A2
  Endmotivation_2 A2
  Endmotivation_3 A2
@@ -460,15 +460,15 @@ VALUE LABELS  AllgemPlatt_SQ010
  "A4" "Oft"
  "A5" "Ständig".
 
-VARIABLE LABELS Spiel_1 "[Spiel 1] Welche Spiele hast du in den letzten 21 Tagen genutzt? (Gib bei Addons/Mods bitte das Hauptspiel an.)".
+VARIABLE LABELS Spiel1 "[Spiel 1] Welche Spiele hast du in den letzten 21 Tagen genutzt? (Gib bei Addons/Mods bitte das Hauptspiel an.)".
 
-VARIABLE LABELS Spiel_2 "[Spiel 2] Welche Spiele hast du in den letzten 21 Tagen genutzt? (Gib bei Addons/Mods bitte das Hauptspiel an.)".
+VARIABLE LABELS Spiel2 "[Spiel 2] Welche Spiele hast du in den letzten 21 Tagen genutzt? (Gib bei Addons/Mods bitte das Hauptspiel an.)".
 
-VARIABLE LABELS Spiel_3 "[Spiel 3] Welche Spiele hast du in den letzten 21 Tagen genutzt? (Gib bei Addons/Mods bitte das Hauptspiel an.)".
+VARIABLE LABELS Spiel3 "[Spiel 3] Welche Spiele hast du in den letzten 21 Tagen genutzt? (Gib bei Addons/Mods bitte das Hauptspiel an.)".
 
-VARIABLE LABELS Spiel_4 "[Spiel 4] Welche Spiele hast du in den letzten 21 Tagen genutzt? (Gib bei Addons/Mods bitte das Hauptspiel an.)".
+VARIABLE LABELS Spiel4 "[Spiel 4] Welche Spiele hast du in den letzten 21 Tagen genutzt? (Gib bei Addons/Mods bitte das Hauptspiel an.)".
 
-VARIABLE LABELS Spiel_5 "[Spiel 5] Welche Spiele hast du in den letzten 21 Tagen genutzt? (Gib bei Addons/Mods bitte das Hauptspiel an.)".
+VARIABLE LABELS Spiel5 "[Spiel 5] Welche Spiele hast du in den letzten 21 Tagen genutzt? (Gib bei Addons/Mods bitte das Hauptspiel an.)".
 
 VARIABLE LABELS Nutzungsdauer_SQ1 "[{Products_SQ1}] Seit wann nutzt du diese Spiele?".
 VARIABLE LEVEL Nutzungsdauer_SQ1(ORDINAL).
@@ -1667,3 +1667,5 @@ VALUE LABELS  SexMehr_Stereotype#1
  0 "mehr"
  1 "unverändert"
  2 "weniger".
+
+save outfile='./rohdaten/daten2014.sav'.
