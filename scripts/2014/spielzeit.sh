@@ -1,10 +1,9 @@
 #! /bin/bash
 
-csvfile="./daten/2014/releases.csv"
+csvfile="./daten/2014/spielzeit.csv"
 tsvfile=${csvfile%csv}tsv
 
-pspp ./scripts/2014/releases.sps -o $csvfile
+pspp ./scripts/2014/spielzeit.sps -o $csvfile
 ./scripts/tabellenformatierung.py $csvfile $tsvfile
 
 rm $csvfile
-
