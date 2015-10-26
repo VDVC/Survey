@@ -81,11 +81,11 @@ GET DATA
  Plattformen_SQ3 A5
  Plattformen_SQ4 A5
  Plattformen_SQ5 A5
- Zusatzangebote_SQ000 F15.2
- Zusatzangebote_SQ001 F15.2
- Zusatzangebote_SQ002 F15.2
- Zusatzangebote_SQ003 F15.2
- Zusatzangebote_SQ004 F14.2
+ AusgabenHardware F15.2
+ AusgabenSpieleKauf F15.2
+ AusgabenSpieleAbos F15.2
+ AusgabenAddonsDLCs F15.2
+ AusgabenGameserver F14.2
  Endmotivation_1 A2
  Endmotivation_2 A2
  Endmotivation_3 A2
@@ -633,15 +633,15 @@ VALUE LABELS  Plattformen_SQ5
  "Win" "PC: Windows"
  "X" "Sonstige".
 
-VARIABLE LABELS Zusatzangebote_SQ000 "[Spielbezogene Hardware] Wie viel hast du im vergangenen Jahr in etwa für Folgendes ausgegeben?".
+VARIABLE LABELS AusgabenHardware "[Spielbezogene Hardware] Wie viel hast du im vergangenen Jahr in etwa für Folgendes ausgegeben?".
 
-VARIABLE LABELS Zusatzangebote_SQ001 "[Spiele-Kauf (einmalige Ausgabe)] Wie viel hast du im vergangenen Jahr in etwa für Folgendes ausgegeben?".
+VARIABLE LABELS AusgabenSpieleKauf "[Spiele-Kauf (einmalige Ausgabe)] Wie viel hast du im vergangenen Jahr in etwa für Folgendes ausgegeben?".
 
-VARIABLE LABELS Zusatzangebote_SQ002 "[Spielbezogene Abos (regelmäßige Ausgabe)] Wie viel hast du im vergangenen Jahr in etwa für Folgendes ausgegeben?".
+VARIABLE LABELS AusgabenSpieleAbos "[Spielbezogene Abos (regelmäßige Ausgabe)] Wie viel hast du im vergangenen Jahr in etwa für Folgendes ausgegeben?".
 
-VARIABLE LABELS Zusatzangebote_SQ003 "[Addons, DLC, Bezahlinhalte] Wie viel hast du im vergangenen Jahr in etwa für Folgendes ausgegeben?".
+VARIABLE LABELS AusgabenAddonsDLCs "[Addons, DLC, Bezahlinhalte] Wie viel hast du im vergangenen Jahr in etwa für Folgendes ausgegeben?".
 
-VARIABLE LABELS Zusatzangebote_SQ004 "[Eigene Gameserver (bei Clans: dein Anteil)] Wie viel hast du im vergangenen Jahr in etwa für Folgendes ausgegeben?".
+VARIABLE LABELS AusgabenGameserver "[Eigene Gameserver (bei Clans: dein Anteil)] Wie viel hast du im vergangenen Jahr in etwa für Folgendes ausgegeben?".
 
 VARIABLE LABELS Endmotivation_1 "[Durchgespielt] Aus welchen Gründen hörst du auf, ein Spiel zu nutzen?".
 VALUE LABELS  Endmotivation_1

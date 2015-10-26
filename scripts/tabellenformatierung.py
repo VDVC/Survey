@@ -7,6 +7,13 @@ import unicodecsv
 reload(sys)  
 sys.setdefaultencoding('utf8')
 
+def is_number(s):
+    try:
+        float(s)
+        return True
+    except ValueError:
+        return False
+
 runmode=sys.argv[1].lower()
 csvfile=sys.argv[2]
 
@@ -21,8 +28,6 @@ with io.open(csvfile, encoding='utf8') as csv:
                 intable=[]
         if (len(entry) > 3):
             value=entry[1].rstrip()
-            if value.isnumeric():
-                value=float(value)
             if value not in [u"",u"."]:
                 count=entry[2]
                 if (count.isnumeric()):
@@ -37,7 +42,10 @@ if runmode == "split":
         summe = 0
         for item in table:
             summe +=item[1]
-            results.write(u'"'+str(item[0])+u'"\t'+str(item[1])+'\t'+str(summe)+u'\n')
+            if is_number(item[0].replace(",",".")):
+                results.write(str(item[0].replace(",","."))+u'\t'+str(item[1])+'\t'+str(summe)+u'\n')
+            else:
+                results.write(u'"'+item[0]+u'"\t'+str(item[1])+'\t'+str(summe)+u'\n')
         i+=1
 
 if runmode == "merge":
@@ -61,5 +69,7 @@ if runmode == "merge":
     summe=0
     for item in mergedtable:
         summe +=item[1]
-        results.write(u'"'+str(item[0])+u'"\t'+str(item[1])+'\t'+str(summe)+u'\n')
-
+        if is_number(item[0].replace(",",".")):
+            results.write(str(item[0].replace(",","."))+u'\t'+str(item[1])+'\t'+str(summe)+u'\n')
+        else:
+            results.write(u'"'+item[0]+u'\t'+str(item[1])+'\t'+str(summe)+u'\n')
