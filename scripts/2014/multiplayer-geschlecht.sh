@@ -9,7 +9,7 @@ f3=${tsvfile}_f.tsv
 f4=${tsvfile}_anders.tsv
 
 pspp ./scripts/2014/multiplayer-geschlecht.sps -o $csvfile
-./scripts/tabellenformatierung.py split $csvfile ${f1} ${f2} ${f3} ${f4}
+./scripts/tabellenformatierung.py $csvfile ${f1} ${f2} ${f3} ${f4}
 
 for f in $f1 $f2 $f3 $f4; do
   sed -i "s/A1/SP/g" $f

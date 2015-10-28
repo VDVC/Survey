@@ -7,6 +7,10 @@ import unicodecsv
 reload(sys)  
 sys.setdefaultencoding('utf8')
 
+def chunks(l, n):
+    n = max(1, n)
+    return [l[i:i + n] for i in range(0, len(l), n)]
+
 def is_number(s):
     try:
         float(s)
@@ -14,8 +18,8 @@ def is_number(s):
     except ValueError:
         return False
 
-runmode=sys.argv[1].lower()
-csvfile=sys.argv[2]
+csvfile=sys.argv[1]
+resulttable=sys.argv[2:]
 
 tables=[]
 with io.open(csvfile, encoding='utf8') as csv:
@@ -34,25 +38,20 @@ with io.open(csvfile, encoding='utf8') as csv:
                     intable.append([value,int(count)])
     tables.append(intable)
 
-if runmode == "split":
-    i=0
-    for table in tables:
-        results=io.open(sys.argv[3+i], "w", encoding="utf8")
-        results.write(u'"Wert"\t"n"\t"sum"\n')
-        summe = 0
-        for item in table:
-            summe +=item[1]
-            if is_number(item[0].replace(",",".")):
-                results.write(str(item[0].replace(",","."))+u'\t'+str(item[1])+'\t'+str(summe)+u'\n')
-            else:
-                results.write(u'"'+item[0]+u'"\t'+str(item[1])+'\t'+str(summe)+u'\n')
-        i+=1
+print("Fasse "+str(len(tables))+
+	  " Tabellen zu "+str(len(resulttable))+
+	  " zusammen.")
 
-if runmode == "merge":
+tableno=0
+for mergetables in chunks(tables,len(tables)/len(resulttable)):
+    results=io.open(resulttable[tableno], "w", encoding="utf8")
+    results.write(u'"Wert"\t"n"\t"sum"\n')
     mergedtable=[]
-    for table in tables:
+    for table in mergetables:
         for entry in table:
             value=entry[0]
+            if is_number(value.replace(",",".")):
+                value=float(value.replace(",","."))
             count=entry[1]
             known=False
             for oldentry in mergedtable:
@@ -64,12 +63,11 @@ if runmode == "merge":
 
     mergedtable.sort()
 
-    results=io.open(sys.argv[3], "w", encoding="utf8")
-    results.write(u'"Wert"\t"n"\t"sum"\n')
     summe=0
     for item in mergedtable:
         summe +=item[1]
-        if is_number(item[0].replace(",",".")):
-            results.write(str(item[0].replace(",","."))+u'\t'+str(item[1])+'\t'+str(summe)+u'\n')
+        if is_number(item[0]):
+            results.write(str(item[0])+u'\t'+str(item[1])+'\t'+str(summe)+u'\n')
         else:
             results.write(u'"'+item[0]+u'\t'+str(item[1])+'\t'+str(summe)+u'\n')
+    tableno=tableno+1
