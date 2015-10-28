@@ -1,9 +1,9 @@
 #! /bin/bash
 
-csvfile="./daten/2014/titel-anzahl.csv"
+csvfile="./daten/2014/titel.csv"
 tsvfile=${csvfile%csv}tsv
 
-pspp ./scripts/2014/titel-anzahl.sps -o $csvfile
+pspp ./scripts/2014/titel.sps -o $csvfile
 ./scripts/tabellenformatierung.py merge $csvfile $tsvfile
 
 rm $csvfile
