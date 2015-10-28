@@ -69,5 +69,5 @@ for mergetables in chunks(tables,len(tables)/len(resulttable)):
         if is_number(item[0]):
             results.write(str(item[0])+u'\t'+str(item[1])+'\t'+str(summe)+u'\n')
         else:
-            results.write(u'"'+item[0]+u'\t'+str(item[1])+'\t'+str(summe)+u'\n')
+            results.write(u'"'+item[0]+u'"\t'+str(item[1])+'\t'+str(summe)+u'\n')
     tableno=tableno+1
