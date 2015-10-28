@@ -26,7 +26,12 @@ def is_number(s):
         return False
 
 csvfile=sys.argv[1]
-resulttable=sys.argv[2:]
+if sys.argv[-1] == "countsort":
+    countsort=True
+    resulttable=sys.argv[2:-1]
+else:
+    countsort=False
+    resulttable=sys.argv[2:]
 
 tables=[]
 with io.open(csvfile, encoding='utf8') as csv:
@@ -69,8 +74,10 @@ for mergetables in chunks(tables,len(tables)/len(resulttable)):
                     oldentry[1]+=count
             if not known:
                 mergedtable.append([value,count])
-
-    mergedtable.sort()
+    if countsort:
+         mergedtable.sort(key=lambda x: x[1], reverse=True)
+    else:
+         mergedtable.sort()
 
     summe=0
     for item in mergedtable:
