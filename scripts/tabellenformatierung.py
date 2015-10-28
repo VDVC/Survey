@@ -11,6 +11,13 @@ def chunks(l, n):
     n = max(1, n)
     return [l[i:i + n] for i in range(0, len(l), n)]
 
+def is_int(s):
+    try:
+        int(s)
+        return True
+    except ValueError:
+        return False
+
 def is_number(s):
     try:
         float(s)
@@ -50,7 +57,9 @@ for mergetables in chunks(tables,len(tables)/len(resulttable)):
     for table in mergetables:
         for entry in table:
             value=entry[0]
-            if is_number(value.replace(",",".")):
+            if is_int(value):
+                value=int(value)
+            elif is_number(value.replace(",",".")):
                 value=float(value.replace(",","."))
             count=entry[1]
             known=False
