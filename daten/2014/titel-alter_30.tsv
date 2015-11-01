@@ -1,4 +1,4 @@
-"Wert"	"n"	"sum"
+"Table: [Spiel 2] Welche Spiele hast du in den letzten 21 Tagen genutzt? (Gib bei Addons/Mods bitte das Hauptspiel an.)"	"n"	"sum"
 "Dragon Age: Inquisition"	102	102
 "Far Cry 4"	89	191
 "Diablo III"	86	277
@@ -95,7 +95,7 @@
 "Die Sims 4"	6	1679
 "Mass Effect 3"	6	1685
 "Driveclub"	6	1691
-"Solit??r"	6	1697
+"Solitär"	6	1697
 "(???) X-Com"	5	1702
 "Anno 1404"	5	1707
 "Assassin's Creed III"	5	1712
@@ -157,7 +157,7 @@
 "Halo: Combat Evolved"	3	1937
 "LEGO Batman 3: Beyond Gotham"	3	1940
 "Monument Valley"	3	1943
-"Pok??mon: Alpha Saphir"	3	1946
+"Pokémon: Alpha Saphir"	3	1946
 "Sid Meier's Civilization IV"	3	1949
 "Starbound"	3	1952
 "The Simpsons: Springfield"	3	1955
@@ -272,7 +272,7 @@
 "Metro: Last Light"	2	2201
 "Mirror's Edge"	2	2203
 "Never Alone"	2	2205
-"Pok??mon: Silberne Edition SoulSilver"	2	2207
+"Pokémon: Silberne Edition SoulSilver"	2	2207
 "Risen"	2	2209
 "Ryse: Son of Rome"	2	2211
 "Serious Sam 3: BFE"	2	2213
@@ -285,8 +285,8 @@
 "Terra Battle"	2	2227
 "The Forest"	2	2229
 "TransOcean: The Shipping Company"	2	2231
-"Br??tal Legend"	2	2233
-"Broforce"	2	2235
+"Broforce"	2	2233
+"Brütal Legend"	2	2235
 "Das Schwarze Auge: Drakensang"	2	2237
 "Day of Defeat: Source"	2	2239
 "Final Fantasy VII"	2	2241
@@ -331,8 +331,8 @@
 "Might & Magic: Heroes 6"	1	2288
 "NHL 14"	1	2289
 "PayDay"	1	2290
-"Pok??mon: Schwarze Edition"	1	2291
-"Pok??mon: Silberne Edition"	1	2292
+"Pokémon: Schwarze Edition"	1	2291
+"Pokémon: Silberne Edition"	1	2292
 "Resident Evil 4"	1	2293
 "Rift"	1	2294
 "Rust"	1	2295
@@ -353,7 +353,7 @@
 "Xenonauts"	1	2310
 "(???) Battlefield: Modern Warfacre"	1	2311
 "(???) Die Sims 2 / 3"	1	2312
-"(???) Fu??ball Manager"	1	2313
+"(???) Fußball Manager"	1	2313
 "(???) Halo 1-4"	1	2314
 "(???) Mario Kart"	1	2315
 "(???) Portal 1/2"	1	2316
@@ -366,7 +366,7 @@
 "Bad Piggies"	1	2323
 "Batman: Arkham Asylum"	1	2324
 "BattleBlock Theater"	1	2325
-"Bernd Das Brot Und Die Unm??glichen"	1	2326
+"Bernd Das Brot Und Die Unmöglichen"	1	2326
 "Beyond Good & Evil"	1	2327
 "Blackshot"	1	2328
 "Braid"	1	2329
@@ -415,8 +415,8 @@
 "One Finger Death Punch"	1	2372
 "Plague Inc: Evolved"	1	2373
 "Planetary Annihilation"	1	2374
-"Pok??mon X"	1	2375
-"Professor Layton und das Verm??chtnis von Aslant"	1	2376
+"Pokémon X"	1	2375
+"Professor Layton und das Vermächtnis von Aslant"	1	2376
 "Project CARS"	1	2377
 "Quake III Arena"	1	2378
 "Race Driver: GRID"	1	2379
@@ -470,7 +470,7 @@
 "Anarchy Online"	1	2427
 "Art of Balance"	1	2428
 "Beat Hazard"	1	2429
-"Bladestorm: Der Hundertj??hrige Krieg"	1	2430
+"Bladestorm: Der Hundertjährige Krieg"	1	2430
 "Call of Juarez"	1	2431
 "Candy Crush Saga"	1	2432
 "Ceville"	1	2433
@@ -498,8 +498,8 @@
 "Football Manager 2014"	1	2455
 "Freedom Wars"	1	2456
 "Frozen Synapse"	1	2457
-"Fu??ball Manager 13"	1	2458
-"Fussball Manager 13"	1	2459
+"Fussball Manager 13"	1	2458
+"Fußball Manager 13"	1	2459
 "GODUS"	1	2460
 "Geheimakte 2: Puritas Cordis"	1	2461
 "Grand Theft Auto: San Andreas"	1	2462
@@ -582,7 +582,7 @@
 "Asphalt 8: Airborne"	1	2539
 "Awesomenauts"	1	2540
 "Baldur's Gate: Enhanced Edition"	1	2541
-"Baphomets Fluch: Der S??ndenfall"	1	2542
+"Baphomets Fluch: Der Sündenfall"	1	2542
 "Beasts of Prey"	1	2543
 "Betrayer"	1	2544
 "Blur"	1	2545
@@ -605,8 +605,8 @@
 "Fable III"	1	2562
 "Far Cry"	1	2563
 "Final Fantasy XIII-2"	1	2564
-"Fu??ball Manager 14"	1	2565
-"Fuchstreff: Doppelkopf f??r F??chse"	1	2566
+"Fuchstreff: Doppelkopf für Füchse"	1	2565
+"Fußball Manager 14"	1	2566
 "Gears of War"	1	2567
 "God of War"	1	2568
 "Gods Will Be Watching"	1	2569
@@ -697,7 +697,7 @@
 "Dark Souls - Prepare to Die Edition"	1	2654
 "Deliverance-Kingdome Comes Tech Alpha"	1	2655
 "Die Siedler 7"	1	2656
-"Die Siedler II ??? Die n??chste Generation"	1	2657
+"Die Siedler II – Die nächste Generation"	1	2657
 "Doom & Destiny"	1	2658
 "Dragon's Dogma"	1	2659
 "Duke Nukem: Manhattan Project"	1	2660

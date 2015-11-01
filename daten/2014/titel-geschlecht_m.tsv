@@ -1,4 +1,4 @@
-"Wert"	"n"	"sum"
+"Table: [Spiel 2] Welche Spiele hast du in den letzten 21 Tagen genutzt? (Gib bei Addons/Mods bitte das Hauptspiel an.)"	"n"	"sum"
 "Dragon Age: Inquisition"	494	494
 "Assassin's Creed: Unity"	452	946
 "Far Cry 4"	442	1388
@@ -36,7 +36,7 @@
 "Guild Wars 2"	88	6967
 "Mario Kart 8"	88	7055
 "World of Tanks"	84	7139
-"Pok??mon: Alpha Saphir"	83	7222
+"Pokémon: Alpha Saphir"	83	7222
 "Sid Meier's Civilization: Beyond Earth"	80	7302
 "StarCraft II: Wings of Liberty"	79	7381
 "Europa Universalis IV"	78	7459
@@ -150,7 +150,7 @@
 "Mass Effect 2"	19	11417
 "Metro 2033 Redux"	19	11436
 "Papers, Please"	19	11455
-"Pok??mon X"	19	11474
+"Pokémon X"	19	11474
 "(???) Fifa"	18	11492
 "ArcheAge"	18	11510
 "GRID 2"	18	11528
@@ -191,7 +191,7 @@
 "Planetary Annihilation"	14	12076
 "Spec Ops: The Line"	14	12090
 "(???) Battlefield"	13	12103
-"(???) Pok??mon"	13	12116
+"(???) Pokémon"	13	12116
 2048	13	12129
 "Alan Wake"	13	12142
 "Assassin's Creed: Revelations"	13	12155
@@ -242,7 +242,7 @@
 "Tom Clancy's Splinter Cell: Blacklist"	11	12695
 "Tropico 4"	11	12706
 "XCOM: Enemy Within"	11	12717
-"Solit??r"	11	12728
+"Solitär"	11	12728
 "A Bird Story"	10	12738
 "Assassin's Creed: Brotherhood"	10	12748
 "Baldur's Gate 2: Schatten von Amn"	10	12758
@@ -395,7 +395,7 @@
 "(???) Mario Kart"	5	13785
 "Bastion"	5	13790
 "Beyond Good & Evil"	5	13795
-"Br??tal Legend"	5	13800
+"Brütal Legend"	5	13800
 "DCS: A-10C Warthog - Digital Combat Simulator"	5	13805
 "Dead Island: Riptide"	5	13810
 "Die Siedler 7"	5	13815
@@ -448,7 +448,7 @@
 "Natural Selection 2"	4	14035
 "Osu!"	4	14039
 "PayDay"	4	14043
-"Pok??mon: Silberne Edition"	4	14047
+"Pokémon: Silberne Edition"	4	14047
 "Race Driver: GRID"	4	14051
 "Sniper Elite V2"	4	14055
 "Super Hexagon"	4	14059
@@ -785,14 +785,14 @@
 "Cut The Rope 2"	2	14957
 "Day of Defeat"	2	14959
 "Dead Rising"	2	14961
-"Die St??mme"	2	14963
+"Die Stämme"	2	14963
 "Dirt: Showdown"	2	14965
 "Distant Worlds"	2	14967
 "Downfall"	2	14969
 "Elder Sign: Omens"	2	14971
-"Fu??ball Manager 13"	2	14973
+"Fußball Manager 13"	2	14973
 "Hero Siege"	2	14975
-"Herrscher des Olymp ??? Zeus"	2	14977
+"Herrscher des Olymp – Zeus"	2	14977
 "Hex: Shards of Fate"	2	14979
 "Hitman: Contracts"	2	14981
 "Journey"	2	14983
@@ -811,8 +811,8 @@
 "Need for Speed: Most Wanted"	2	15009
 "Ogame"	2	15011
 "Pixel Dungeon"	2	15013
-"Pok??mon: Feuerrote Edition"	2	15015
-"Pok??mon: Silberne Edition SoulSilver"	2	15017
+"Pokémon: Feuerrote Edition"	2	15015
+"Pokémon: Silberne Edition SoulSilver"	2	15017
 "Port Royale 3"	2	15019
 "Psychonauts"	2	15021
 "Race 07: Official WTCC Game"	2	15023
@@ -930,7 +930,7 @@
 "Bike Rivals"	1	15212
 "Blacklight Retribution"	1	15213
 "Book of unwritten Tales"	1	15214
-"Castlevania: Lords of Shadow ??? Mirror of F"	1	15215
+"Castlevania: Lords of Shadow – Mirror of F"	1	15215
 "Circuits"	1	15216
 "Civ. Beyond Earth"	1	15217
 "Cognition: An Erica Reed Thriller"	1	15218
@@ -953,8 +953,8 @@
 "Dungeon Village"	1	15235
 "Eschalon"	1	15236
 "F.E.A.R. 3"	1	15237
-"Fa??ade"	1	15238
-"Far cry 4"	1	15239
+"Far cry 4"	1	15238
+"Façade"	1	15239
 "Final Fantasy III"	1	15240
 "Forge of Empires"	1	15241
 "Freecol"	1	15242
@@ -982,8 +982,8 @@
 "Obscure II"	1	15264
 "Oddworld: Abe's Oddysee"	1	15265
 "Playstation Home"	1	15266
-"Pok??mon: Gelbe Edition - Special Pikachu Ed"	1	15267
-"Pok??mon: Schwarze Edition"	1	15268
+"Pokémon: Gelbe Edition - Special Pikachu Ed"	1	15267
+"Pokémon: Schwarze Edition"	1	15268
 "Primordia"	1	15269
 "Prince of Persia: The Sands of Time"	1	15270
 "Samurai Warriors 4"	1	15271
@@ -1021,7 +1021,7 @@
 "(???) F.E.A.R. 1, 2 & 3"	1	15303
 "(???) Farcry alle Teile"	1	15304
 "(???) Football Manager"	1	15305
-"(???) Fu??ball Manager"	1	15306
+"(???) Fußball Manager"	1	15306
 "(???) Lego Harry Potter 5-7"	1	15307
 "(???) Mario Party"	1	15308
 "(???) Marvell Heroes"	1	15309
@@ -1041,7 +1041,7 @@
 "Academagia: The Making of Mages"	1	15323
 "Age of Wonders II: Der Zirkel der Zauberer"	1	15324
 "Alan Wake's American Nightmare"	1	15325
-"Alarm f??r Cobra 11: Das Syndikat"	1	15326
+"Alarm für Cobra 11: Das Syndikat"	1	15326
 "Alien Isolation"	1	15327
 "Amazing Ninja"	1	15328
 "Anarchy Reigns"	1	15329
@@ -1051,7 +1051,7 @@
 "Assassin's Creed"	1	15333
 "Battlefield 4/Final Stand"	1	15334
 "Bejeweled"	1	15335
-"Bernd Das Brot Und Die Unm??glichen"	1	15336
+"Bernd Das Brot Und Die Unmöglichen"	1	15336
 "Black & White 2"	1	15337
 "Blackshot"	1	15338
 "Bleach - Soul Resurreccion"	1	15339
@@ -1075,7 +1075,7 @@
 "Deus Ex: The Fall"	1	15357
 "Die Siedler II"	1	15358
 "Die Siedler IV"	1	15359
-"Die Sielder - Das Erbe der K??nige"	1	15360
+"Die Sielder - Das Erbe der Könige"	1	15360
 "Divine Divinity"	1	15361
 "Door Kickers"	1	15362
 "Dragon Ball Z: Budokai Tenkaichi 2"	1	15363
@@ -1096,7 +1096,7 @@
 "Fortix 2"	1	15378
 "Fractured Space"	1	15379
 "Frets on Fire"	1	15380
-"Fu??ball manager 13"	1	15381
+"Fußball manager 13"	1	15381
 "Gangsters: Organized Crime"	1	15382
 "Ghost Recon: Future Soldier"	1	15383
 "Giana Sisters: Twisted Dreams (Limited Edition)"	1	15384
@@ -1136,7 +1136,7 @@
 "One Piece: Pirate Warriors"	1	15418
 "One Piece: Pirate Warriors 2"	1	15419
 "Operation Flashpoint: Red River"	1	15420
-"Pok??mon Mystery Dungeon: Erkundungsteam Himmel"	1	15421
+"Pokémon Mystery Dungeon: Erkundungsteam Himmel"	1	15421
 "Pro Evolution Soccer 2014"	1	15422
 "Prototype"	1	15423
 "Radiant Historia"	1	15424
@@ -1218,11 +1218,11 @@
 "Airline Tycoon 2"	1	15500
 "Amnesia: The Dark Descent"	1	15501
 "Angry Birds Rio"	1	15502
-"Armed Assault 3???"	1	15503
+"Armed Assault 3‎"	1	15503
 "Art of Balance"	1	15504
 "Bang Bang Racing"	1	15505
 "Blackwell Unbound"	1	15506
-"Bladestorm: Der Hundertj??hrige Krieg"	1	15507
+"Bladestorm: Der Hundertjährige Krieg"	1	15507
 "Blendoku"	1	15508
 "Blockstorm"	1	15509
 "Bubble Witch 2 Saga"	1	15510
@@ -1245,7 +1245,7 @@
 "Defy Gravity"	1	15527
 "Delta Force: Black Hawk Down"	1	15528
 "Delver"	1	15529
-"Die Siedler ??? Aufstieg eines K??nigreichs"	1	15530
+"Die Siedler – Aufstieg eines Königreichs"	1	15530
 "Disney Infinity"	1	15531
 "Doodle God"	1	15532
 "Doom"	1	15533
@@ -1316,7 +1316,7 @@
 "Pikmin"	1	15598
 "Plants vs. Zombie"	1	15599
 "Play Epic Battle Fantasy 4"	1	15600
-"Pok??mon: Platinum Version"	1	15601
+"Pokémon: Platinum Version"	1	15601
 "Prison Rape Simulator 2014"	1	15602
 "Professor Layton und das Geheimnisvolle Dorf"	1	15603
 "Professor Layton vs. Phoenix Wright: Ace Attor"	1	15604
@@ -1379,8 +1379,8 @@
 "UFC Undisputed 3"	1	15661
 "Ultimate NES Remix"	1	15662
 "Unholy Heights"	1	15663
-"V??lgarr the Viking"	1	15664
-"Victim of Xen"	1	15665
+"Victim of Xen"	1	15664
+"Völgarr the Viking"	1	15665
 "Way of the Samurai 4"	1	15666
 "Wizardry: Crusaders of the Dark Savant"	1	15667
 "Worms: Clan Wars"	1	15668
@@ -1434,7 +1434,7 @@
 "Armies of Exigo"	1	15716
 "Assassins Creed Black Flag"	1	15717
 "Badland (2013)"	1	15718
-"Baphomets Fluch: Der S??ndenfall"	1	15719
+"Baphomets Fluch: Der Sündenfall"	1	15719
 "Beasts of Prey"	1	15720
 "Betrayer"	1	15721
 "Biohazard rebirth"	1	15722
@@ -1457,7 +1457,7 @@
 "Der Herr der Ringe: Die Schlacht um Mit"	1	15739
 "Devil's Attorney"	1	15740
 "Die Kunst des Mordens: Geheimakte FBI"	1	15741
-"Die Siedler ??? Aufstieg eines K??nigre"	1	15742
+"Die Siedler – Aufstieg eines Königre"	1	15742
 "Donkey Kong Country"	1	15743
 "Donkey Kong Country: Tropical Freeze"	1	15744
 "Doom 3"	1	15745
@@ -1484,8 +1484,8 @@
 "Formel 1 2011"	1	15766
 "Framed"	1	15767
 "FreeCell"	1	15768
-"Fu??ball Manager 14"	1	15769
-"Fuchstreff: Doppelkopf f??r F??chse"	1	15770
+"Fuchstreff: Doppelkopf für Füchse"	1	15769
+"Fußball Manager 14"	1	15770
 "Gabriel Knight: Sins of the Fathers 20t"	1	15771
 "Gardenscape"	1	15772
 "Gods Will Be Watching"	1	15773
@@ -1544,9 +1544,9 @@
 "Pharaoh"	1	15826
 "Piano Tiles (Don't Tap The White Tile)"	1	15827
 "PixelJunk Monsters Ultimate"	1	15828
-"Pok??mon Mystery Dungeon: Erkundungstea"	1	15829
-"Pok??mon Omega Rubin"	1	15830
-"Pok??mon: Schwarze Edition 2"	1	15831
+"Pokémon Mystery Dungeon: Erkundungstea"	1	15829
+"Pokémon Omega Rubin"	1	15830
+"Pokémon: Schwarze Edition 2"	1	15831
 "Ragnarok Online 2"	1	15832
 "Rail Nation"	1	15833
 "Rayman"	1	15834
@@ -1575,7 +1575,7 @@
 "Sonic the Hedgehog 2"	1	15857
 "Spirit Stones"	1	15858
 "Splice"	1	15859
-"Star Wars: Episode III ??? Die Rache de"	1	15860
+"Star Wars: Episode III – Die Rache de"	1	15860
 "Star Wars: Jedi Knight 2: Jedi Outcast"	1	15861
 "Star Wars: The Battle of Endor"	1	15862
 "StarDrive"	1	15863
@@ -1670,7 +1670,7 @@
 "Brave and Default"	1	15952
 "Captain Toad: Treasure Tracker"	1	15953
 "Caste Ville"	1	15954
-"Castlevania: Lords of Shadow ??? Mirror of Fat"	1	15955
+"Castlevania: Lords of Shadow – Mirror of Fat"	1	15955
 "Cities XL Platinum"	1	15956
 "Cities in Motion"	1	15957
 "ClusterPuck 99"	1	15958
@@ -1686,7 +1686,7 @@
 "Darwinia"	1	15968
 "Deliverance-Kingdome Comes Tech Alpha"	1	15969
 "Die Gilde"	1	15970
-"Die Siedler II ??? Die n??chste Generation"	1	15971
+"Die Siedler II – Die nächste Generation"	1	15971
 "Dirks kostenloser Fussballmanager"	1	15972
 "Dirty Bomb"	1	15973
 "Doom & Destiny"	1	15974
@@ -1732,7 +1732,7 @@
 "Maia"	1	16014
 "Manhunt"	1	16015
 "Mata Hari"	1	16016
-"Max & Mario - Die Rache des Dr. D??ster"	1	16017
+"Max & Mario - Die Rache des Dr. Düster"	1	16017
 "McPixel"	1	16018
 "MechWarrior 4: Mercenaries"	1	16019
 "Monopoly Plus"	1	16020
@@ -1743,9 +1743,9 @@
 "ORION: Prelude"	1	16025
 "Obulis"	1	16026
 "Pizza Connection"	1	16027
-"Pok??mon Showdown"	1	16028
-"Pok??mon Trading Card Game Online"	1	16029
-"Pok??mon: Smaragd-Edition"	1	16030
+"Pokémon Showdown"	1	16028
+"Pokémon Trading Card Game Online"	1	16029
+"Pokémon: Smaragd-Edition"	1	16030
 "Pro Cycling Manager 2013"	1	16031
 "Pro Evolution Soccer 6"	1	16032
 "Professor Layton und die Maske der Wunder"	1	16033
@@ -1753,30 +1753,30 @@
 "Real World Racing"	1	16035
 "Renegade Ops"	1	16036
 "Rise of Flight"	1	16037
-"S??ldner ??? Secret Wars"	1	16038
-"Sacred 3"	1	16039
-"Sauspiel Schafkopf"	1	16040
-"School of Dragons"	1	16041
-"Serious Sam 2 HD"	1	16042
-"Shadow Man"	1	16043
-"Shantae"	1	16044
-"Shattered Horizon"	1	16045
-"Sing Party"	1	16046
-"Skull Girls"	1	16047
-"Skylanders: Trap Team"	1	16048
-"Sniper Elite: Zombie Army"	1	16049
-"Sonic Boom: Rise of Lyric"	1	16050
-"Space Trader (Eigenproduktion)"	1	16051
-"Spider-Man Unlimited"	1	16052
-"Star Wars: The Force Unleashed"	1	16053
-"Star Wars: X-Wing"	1	16054
-"Starwhal"	1	16055
-"Still Life 2"	1	16056
-"Subway Surfers"	1	16057
-"Sudeki"	1	16058
-"Sudoku Free"	1	16059
-"Supersonic Acrobatic Rocket-Powered Battle-Car"	1	16060
-"Sword of the Stars: The Pit"	1	16061
+"Sacred 3"	1	16038
+"Sauspiel Schafkopf"	1	16039
+"School of Dragons"	1	16040
+"Serious Sam 2 HD"	1	16041
+"Shadow Man"	1	16042
+"Shantae"	1	16043
+"Shattered Horizon"	1	16044
+"Sing Party"	1	16045
+"Skull Girls"	1	16046
+"Skylanders: Trap Team"	1	16047
+"Sniper Elite: Zombie Army"	1	16048
+"Sonic Boom: Rise of Lyric"	1	16049
+"Space Trader (Eigenproduktion)"	1	16050
+"Spider-Man Unlimited"	1	16051
+"Star Wars: The Force Unleashed"	1	16052
+"Star Wars: X-Wing"	1	16053
+"Starwhal"	1	16054
+"Still Life 2"	1	16055
+"Subway Surfers"	1	16056
+"Sudeki"	1	16057
+"Sudoku Free"	1	16058
+"Supersonic Acrobatic Rocket-Powered Battle-Car"	1	16059
+"Sword of the Stars: The Pit"	1	16060
+"Söldner – Secret Wars"	1	16061
 "Tales of Xillia"	1	16062
 "Tangled"	1	16063
 "Tekken 6"	1	16064

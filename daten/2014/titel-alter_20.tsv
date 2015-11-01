@@ -1,4 +1,4 @@
-"Wert"	"n"	"sum"
+"Table: [Spiel 4] Welche Spiele hast du in den letzten 21 Tagen genutzt? (Gib bei Addons/Mods bitte das Hauptspiel an.)"	"n"	"sum"
 "Assassin's Creed: Unity"	120	120
 "Dragon Age: Inquisition"	108	228
 "Battlefield 4"	107	335
@@ -19,7 +19,7 @@
 "Hearthstone: Heroes of Warcraft"	35	1243
 "ArmA 2"	34	1277
 "Dragon Age: Origins"	34	1311
-"Pok??mon: Alpha Saphir"	34	1345
+"Pokémon: Alpha Saphir"	34	1345
 "Mittelerde: Mordors Schatten"	34	1379
 "Assassin's Creed IV: Black Flag"	33	1412
 "Total War: Rome II"	32	1444
@@ -140,7 +140,7 @@
 "Rocksmith 2014"	5	2793
 "The Elder Scrolls III: Morrowind"	5	2798
 "Tom Clancy's Splinter Cell: Blacklist"	5	2803
-"(???) Pok??mon"	5	2808
+"(???) Pokémon"	5	2808
 "Assassin's Creed Rogue"	5	2813
 "Deponia"	5	2818
 "Far Cry"	5	2823
@@ -178,7 +178,7 @@
 "Magicka"	4	2963
 "Neverwinter Nights"	4	2967
 "Papers, Please"	4	2971
-"Pok??mon X"	4	2975
+"Pokémon X"	4	2975
 "Red Dead Redemption"	4	2979
 "Robocraft"	4	2983
 "Sleeping Dogs"	4	2987
@@ -293,7 +293,7 @@
 "Loadout"	2	3277
 "Monster Hunter 3 Ultimate"	2	3279
 "Need for Speed World"	2	3281
-"Pok??mon: Silberne Edition"	2	3283
+"Pokémon: Silberne Edition"	2	3283
 "Shadowrun Returns"	2	3285
 "Shin Megami Tensei: Persona 4"	2	3287
 "Star Wars: Empire at War"	2	3289
@@ -319,7 +319,7 @@
 "Monument Valley"	2	3329
 "NHL 15"	2	3331
 "Never Alone"	2	3333
-"Pok??mon: Feuerrote Edition"	2	3335
+"Pokémon: Feuerrote Edition"	2	3335
 "R.U.S.E."	2	3337
 "The Simpsons: Springfield"	2	3339
 "Unreal Tournament 2004"	2	3341
@@ -378,7 +378,7 @@
 "Metal Gear Solid 3: Snake Eater"	1	3411
 "MotoGP 14"	1	3412
 "Pflanzen gegen Zombies"	1	3413
-"Pok??mon: Gelbe Edition - Special Pikachu Ed"	1	3414
+"Pokémon: Gelbe Edition - Special Pikachu Ed"	1	3414
 "Prince of Persia: The Sands of Time"	1	3415
 "Professor Layton vs. Phoenix Wright: Ace Att"	1	3416
 "Pure Pool"	1	3417
@@ -515,7 +515,7 @@
 "Hard Reset (Extended Edition)"	1	3548
 "Hearts of Iron II"	1	3549
 "Heroes of Might and Magic III: The Restoration"	1	3550
-"Herrscher des Olymp ??? Zeus"	1	3551
+"Herrscher des Olymp – Zeus"	1	3551
 "Just Cause"	1	3552
 "Kingdom Come: Deliverance"	1	3553
 "LEGO Pirates of the Caribbean"	1	3554
@@ -535,7 +535,7 @@
 "Nuclear Throne"	1	3568
 "Plants vs. Zombie"	1	3569
 "Play Epic Battle Fantasy 4"	1	3570
-"Pok??mon: Platinum Version"	1	3571
+"Pokémon: Platinum Version"	1	3571
 "Professor Layton vs. Phoenix Wright: Ace Attor"	1	3572
 "Prototype 2"	1	3573
 "Quantum Conundrum"	1	3574
@@ -553,7 +553,7 @@
 "Sid Meier's Railroad Tycoon"	1	3586
 "Singstar"	1	3587
 "Sniper Elite V2"	1	3588
-"Solit??r"	1	3589
+"Solitär"	1	3589
 "Spin Tires"	1	3590
 "Starpoint Gemini 2"	1	3591
 "Super Mario Galaxy"	1	3592
@@ -564,7 +564,7 @@
 "The Organ Trail"	1	3597
 "Traffic Racer"	1	3598
 "Tropico 3"	1	3599
-"V??lgarr the Viking"	1	3600
+"Völgarr the Viking"	1	3600
 "Way of the Samurai 4"	1	3601
 "Xenonauts"	1	3602
 "YGOPro DevPro"	1	3603
@@ -598,7 +598,7 @@
 "Dead Space 3"	1	3631
 "Der Herr der Ringe: Die Schlacht um Mit"	1	3632
 "Devil's Attorney"	1	3633
-"Die Siedler ??? Aufstieg eines K??nigre"	1	3634
+"Die Siedler – Aufstieg eines Königre"	1	3634
 "Dirt: Showdown"	1	3635
 "Doom 3"	1	3636
 "Duke Nukem Forever"	1	3637
@@ -683,7 +683,7 @@
 "Defender's Quest: Valley of the Forgotten"	1	3716
 "Defense Grid 2"	1	3717
 "Die Gilde"	1	3718
-"Die St??mme"	1	3719
+"Die Stämme"	1	3719
 "Disney Infinity: 2.0 Edition"	1	3720
 "Driver: San Francisco"	1	3721
 "EDGE Extended"	1	3722
@@ -704,28 +704,28 @@
 "Manhunt"	1	3737
 "Mario Kart Wii"	1	3738
 "Mars Effect"	1	3739
-"Max & Mario - Die Rache des Dr. D??ster"	1	3740
+"Max & Mario - Die Rache des Dr. Düster"	1	3740
 "ORION: Prelude"	1	3741
-"Pok??mon Trading Card Game Online"	1	3742
+"Pokémon Trading Card Game Online"	1	3742
 "Quake III Arena"	1	3743
 "RESOGUN"	1	3744
 "RETRY"	1	3745
 "Red Faction: Guerrilla"	1	3746
 "Resident Evil: Revelations"	1	3747
-"S??ldner ??? Secret Wars"	1	3748
-"Senran Kagura Shinovi Versus"	1	3749
-"Shattered Horizon"	1	3750
-"Sherlock Holmes and the Hound of Baskervilles"	1	3751
-"Skull Girls"	1	3752
-"Small World"	1	3753
-"Sniper Elite: Zombie Army"	1	3754
-"Sonic & All-Stars Racing Transformed"	1	3755
-"Speedrunners"	1	3756
-"Spider Solitaire"	1	3757
-"Starbound"	1	3758
-"Super Meat Boy"	1	3759
-"Supreme Commander 2"	1	3760
-"Survarium"	1	3761
+"Senran Kagura Shinovi Versus"	1	3748
+"Shattered Horizon"	1	3749
+"Sherlock Holmes and the Hound of Baskervilles"	1	3750
+"Skull Girls"	1	3751
+"Small World"	1	3752
+"Sniper Elite: Zombie Army"	1	3753
+"Sonic & All-Stars Racing Transformed"	1	3754
+"Speedrunners"	1	3755
+"Spider Solitaire"	1	3756
+"Starbound"	1	3757
+"Super Meat Boy"	1	3758
+"Supreme Commander 2"	1	3759
+"Survarium"	1	3760
+"Söldner – Secret Wars"	1	3761
 "Tales of Xillia"	1	3762
 "The Secret World"	1	3763
 "Tomodachi Life"	1	3764
