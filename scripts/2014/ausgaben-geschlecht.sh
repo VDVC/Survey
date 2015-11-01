@@ -4,8 +4,8 @@ csvfile="./daten/2014/ausgaben-geschlecht.csv"
 tsvdir="./daten/2014/"
 
 filelist=""
-for geschlecht in kA m f anders; do
-  for ausgabe in hardware spielekauf abos addons server; do
+for ausgabe in hardware spielekauf abos addons server; do
+  for geschlecht in kA m f anders; do
     filelist="$filelist ${tsvdir}ausgaben_${ausgabe}-geschlecht_${geschlecht}.tsv"
   done
 done

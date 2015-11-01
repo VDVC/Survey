@@ -34,6 +34,7 @@ else:
     resulttable=sys.argv[2:]
 
 tables=[]
+tabname=[]
 with io.open(csvfile, encoding='utf8') as csv:
     csvreader = unicodecsv.reader(csv,delimiter=",")
     intable = []
@@ -42,6 +43,7 @@ with io.open(csvfile, encoding='utf8') as csv:
             if len(intable) > 0:
                 tables.append(intable)
                 intable=[]
+            tabname.append(entry)
         if (len(entry) > 3):
             value=entry[1].rstrip()
             if value not in [u"",u"."]:
@@ -58,6 +60,7 @@ tableno=0
 for mergetables in chunks(tables,len(tables)/len(resulttable)):
     results=io.open(resulttable[tableno], "w", encoding="utf8")
     results.write(u'"Wert"\t"n"\t"sum"\n')
+    print(str(tableno)+": "+str(tabname[tableno])+"\n\t--> '"+str(resulttable[tableno])+"'")
     mergedtable=[]
     for table in mergetables:
         for entry in table:
