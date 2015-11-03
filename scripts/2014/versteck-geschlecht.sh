@@ -5,7 +5,7 @@ tsvdir="./daten/2014/"
 
 filelist=""
 
-for versteck in Verbergen Nachfrage Verteidigen Offensive; do
+for versteck in JN Verbergen Nachfrage Verteidigen Offensive; do
   for geschlecht in kA m f anders; do
     filelist="$filelist ${tsvdir}versteck_${versteck}-geschlecht_${geschlecht}.tsv"
   done
