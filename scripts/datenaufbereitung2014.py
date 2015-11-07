@@ -25,11 +25,40 @@ results = io.open("./rohdaten/daten2014.dat", "w", encoding="utf8")
 versteck = io.open("./rohdaten/versteck2014.dat", "w", encoding="utf8")
 zensurinfo = io.open("./rohdaten/zensurinfo2014.dat", "w", encoding="utf8")
 
+def freigabe(string):
+	parts = string.replace(',','_').split('_')
+	kandidat=21
+	for part in parts:
+		if part.isnumeric():
+			kandidat = min(kandidat,int(part))
+		elif u"OA" in part:
+			return u"0"
+		elif u"KJ" in part:
+			kandidat = min(kandidat,18)
+	if kandidat == 21:
+		return u""
+	else:
+		return unicode(kandidat)
+
+
 # Dieses Dictionary ordnet Spieltitel eine Releasejahr und eine USK-Friegabe zu
 # Zuordnung von Genres wäre möglich.
 with io.open(ogdbgames, encoding='utf8') as ogdb_file:
 	ogdb_reader = unicodecsv.reader(ogdb_file,delimiter=";")
-	ogdblookup={ogdb_entry[0].lower():(ogdb_entry[9],ogdb_entry[3]) for ogdb_entry in ogdb_reader}
+	ogdb_list=[]
+	lastentry=""
+	for ogdb_entry in ogdb_reader:
+		if ogdb_entry[0].lower() == lastentry:
+			if freigabe(ogdb_entry[3]) != u'':
+				if ogdb_list[-1][2] == u'':
+					ogdb_list[-1][2]=freigabe(ogdb_entry[3])
+				elif int(freigabe(ogdb_entry[3])) < ogdb_list[-1][2]:
+					ogdb_list[-1][2]=freigabe(ogdb_entry[3])
+		else:
+			ogdb_list.append([ogdb_entry[0].lower(),ogdb_entry[9],freigabe(ogdb_entry[3])])
+			lastentry=ogdb_entry[0].lower()
+
+	ogdblookup={ogdb_entry[0]:(ogdb_entry[1],ogdb_entry[2]) for ogdb_entry in ogdb_list}
 
 # Dieses Dictionary ordnet Spieltitel eine Releasejahr und eine USK-Friegabe zu
 with io.open(moregames, encoding='utf8') as extra_file:
@@ -48,25 +77,7 @@ def find_gameinfo(title): # search data of the game
 	freigabe = u""
 	if title in ogdblookup:
 		year = ogdblookup[title][0].encode('utf-8')
-		usk = ogdblookup[title][1]
-		if ',' in usk:
-			usk = usk.split(',')[0];
-		if len(usk) >= 6:
-			if usk[4] == '_': # Format: YYYY_NN or YYYY_N
-				freigabe = usk[5:]
-			elif usk[2] == '_': # Format: NN_YYYY
-				freigabe = usk[0:2]
-			elif usk[1] == '_': # Format: N_YYYY
-				freigabe = usk[0]
-			else:
-				freigabe = usk
-		else:
-			if len(usk) == '1':
-				freigabe = usk
-			elif usk[0:2] == 'OA':
-				freigabe = '00'
-			elif usk[0:2] == "KJ":
-				freigabe = '18'
+		freigabe = ogdblookup[title][1]
 	elif title in vdvclookup:
 		year = vdvclookup[title][0].encode('utf-8')
 		freigabe = vdvclookup[title][1][3:].encode('utf-8')
