@@ -24,6 +24,7 @@ feedback = io.open("./rohdaten/feedback2014.dat", "w", encoding="utf8")
 results = io.open("./rohdaten/daten2014.dat", "w", encoding="utf8")
 versteck = io.open("./rohdaten/versteck2014.dat", "w", encoding="utf8")
 zensurinfo = io.open("./rohdaten/zensurinfo2014.dat", "w", encoding="utf8")
+nennungen = io.open("./daten/2014/nennungen.tsv", "w", encoding="utf8")
 
 def freigabe(string):
 	parts = string.replace(',','_').split('_')
@@ -89,10 +90,12 @@ def find_gameinfo(title): # search data of the game
 	return [year,freigabe]
 
 
+gameshist=[0,0,0,0,0,0]
 #for pspp_entry in pspp_data:
 with io.open(rohdaten, encoding='utf8') as f:
 	reader = unicodecsv.reader(f,delimiter=';')
 	for spss_entry in reader:
+		ngames=0
 		if len(spss_entry) == 223 or len(spss_entry) == 224:
 			game = spss_entry[41:46]
 		else:
@@ -107,8 +110,10 @@ with io.open(rohdaten, encoding='utf8') as f:
 		for item in spss_entry[29:41]:
 			results.write(u'"'+item+u'";')
 		for g in range(0,5): # 5 games (hardcoded)
+			if (len(game[g]) > 1):
+				ngames=ngames+1
 			gameinfo = find_gameinfo(game[g])
-			results.write(u'"'+spss_entry[41+g]+u'";')
+			results.write(u'"'+spss_entry[41+g]+u' ('+gameinfo[0]+u')";')
 			for i in range(0,2):
 				results.write(u'\"'+gameinfo[i]+u'\";')
 		for item in spss_entry[46:126]:
@@ -121,3 +126,7 @@ with io.open(rohdaten, encoding='utf8') as f:
 		if (len(spss_entry) > 223):
 			if (len(spss_entry[223]) > 0):
 				feedback.write(spss_entry[223]+u'\n\n')
+		gameshist[ngames] = gameshist[ngames]+1
+nennungen.write(u'"Genannte Titel"\t"Häufigkeit"\n')
+for nr in range(0,6):
+	nennungen.write(unicode(nr)+u'\t'+unicode(gameshist[nr])+u'\n')
