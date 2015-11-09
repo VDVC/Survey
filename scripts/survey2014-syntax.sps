@@ -40,16 +40,16 @@ GET DATA
  VersteckArt_4 F1
  Multiplayer A2
  Erfahrung F4
- AllgemPlatt_SQ001 A2
- AllgemPlatt_SQ002 A2
- AllgemPlatt_SQ003 A2
- AllgemPlatt_SQ004 A2
- AllgemPlatt_SQ005 A2
- AllgemPlatt_SQ006 A2
- AllgemPlatt_SQ007 A2
- AllgemPlatt_SQ008 A2
- AllgemPlatt_SQ009 A2
- AllgemPlatt_SQ010 A2
+ Plattform_PCMac A2
+ Plattform_PCWin A2
+ Plattform_PCLnx A2
+ Plattform_Plystn A2
+ Plattform_Wii A2
+ Plattform_XBox A2
+ Plattform_DS A2
+ Plattform_Android A2
+ Plattform_iPhone A2
+ Plattform_WinPhone A2
  Spiel1 A44
  Release1 F4
  Freigabe1 F2
@@ -380,80 +380,80 @@ VALUE LABELS  Multiplayer
 VARIABLE LABELS Erfahrung "Seit wann nutzt du Videospiele?".
 VARIABLE LEVEL Erfahrung(SCALE).
 
-VARIABLE LABELS AllgemPlatt_SQ001 "[Mac/MacBook] Auf welchen Plattformen hast du im vergangenen Jahr wie intensiv gespielt?".
-VALUE LABELS  AllgemPlatt_SQ001
+VARIABLE LABELS Plattform_PCMac "[Mac/MacBook] Auf welchen Plattformen hast du im vergangenen Jahr wie intensiv gespielt?".
+VALUE LABELS  Plattform_PCMac
  "A1" "Gar nicht"
  "A2" "Selten"
  "A3" "Manchmal"
  "A4" "Oft"
  "A5" "Ständig".
 
-VARIABLE LABELS AllgemPlatt_SQ002 "[Windows] Auf welchen Plattformen hast du im vergangenen Jahr wie intensiv gespielt?".
-VALUE LABELS  AllgemPlatt_SQ002
+VARIABLE LABELS Plattform_PCWin "[Windows] Auf welchen Plattformen hast du im vergangenen Jahr wie intensiv gespielt?".
+VALUE LABELS  Plattform_PCWin
  "A1" "Gar nicht"
  "A2" "Selten"
  "A3" "Manchmal"
  "A4" "Oft"
  "A5" "Ständig".
 
-VARIABLE LABELS AllgemPlatt_SQ003 "[Linux] Auf welchen Plattformen hast du im vergangenen Jahr wie intensiv gespielt?".
-VALUE LABELS  AllgemPlatt_SQ003
+VARIABLE LABELS Plattform_PCLnx "[Linux] Auf welchen Plattformen hast du im vergangenen Jahr wie intensiv gespielt?".
+VALUE LABELS  Plattform_PCLnx
  "A1" "Gar nicht"
  "A2" "Selten"
  "A3" "Manchmal"
  "A4" "Oft"
  "A5" "Ständig".
 
-VARIABLE LABELS AllgemPlatt_SQ004 "[Playstation 3/4] Auf welchen Plattformen hast du im vergangenen Jahr wie intensiv gespielt?".
-VALUE LABELS  AllgemPlatt_SQ004
+VARIABLE LABELS Plattform_Plystn "[Playstation 3/4] Auf welchen Plattformen hast du im vergangenen Jahr wie intensiv gespielt?".
+VALUE LABELS  Plattform_Plystn
  "A1" "Gar nicht"
  "A2" "Selten"
  "A3" "Manchmal"
  "A4" "Oft"
  "A5" "Ständig".
 
-VARIABLE LABELS AllgemPlatt_SQ005 "[Wii/WiiU] Auf welchen Plattformen hast du im vergangenen Jahr wie intensiv gespielt?".
-VALUE LABELS  AllgemPlatt_SQ005
+VARIABLE LABELS Plattform_Wii "[Wii/WiiU] Auf welchen Plattformen hast du im vergangenen Jahr wie intensiv gespielt?".
+VALUE LABELS  Plattform_Wii
  "A1" "Gar nicht"
  "A2" "Selten"
  "A3" "Manchmal"
  "A4" "Oft"
  "A5" "Ständig".
 
-VARIABLE LABELS AllgemPlatt_SQ006 "[XBox360/ XBox One] Auf welchen Plattformen hast du im vergangenen Jahr wie intensiv gespielt?".
-VALUE LABELS  AllgemPlatt_SQ006
+VARIABLE LABELS Plattform_XBox "[XBox360/ XBox One] Auf welchen Plattformen hast du im vergangenen Jahr wie intensiv gespielt?".
+VALUE LABELS  Plattform_XBox
  "A1" "Gar nicht"
  "A2" "Selten"
  "A3" "Manchmal"
  "A4" "Oft"
  "A5" "Ständig".
 
-VARIABLE LABELS AllgemPlatt_SQ007 "[DS/2DS/3DS/DSi/…] Auf welchen Plattformen hast du im vergangenen Jahr wie intensiv gespielt?".
-VALUE LABELS  AllgemPlatt_SQ007
+VARIABLE LABELS Plattform_DS "[DS/2DS/3DS/DSi/…] Auf welchen Plattformen hast du im vergangenen Jahr wie intensiv gespielt?".
+VALUE LABELS  Plattform_DS
  "A1" "Gar nicht"
  "A2" "Selten"
  "A3" "Manchmal"
  "A4" "Oft"
  "A5" "Ständig".
 
-VARIABLE LABELS AllgemPlatt_SQ008 "[Smartphone (Android)] Auf welchen Plattformen hast du im vergangenen Jahr wie intensiv gespielt?".
-VALUE LABELS  AllgemPlatt_SQ008
+VARIABLE LABELS Plattform_Android "[Smartphone (Android)] Auf welchen Plattformen hast du im vergangenen Jahr wie intensiv gespielt?".
+VALUE LABELS  Plattform_Android
  "A1" "Gar nicht"
  "A2" "Selten"
  "A3" "Manchmal"
  "A4" "Oft"
  "A5" "Ständig".
 
-VARIABLE LABELS AllgemPlatt_SQ009 "[Smartphone (iPhone)] Auf welchen Plattformen hast du im vergangenen Jahr wie intensiv gespielt?".
-VALUE LABELS  AllgemPlatt_SQ009
+VARIABLE LABELS Plattform_iPhone "[Smartphone (iPhone)] Auf welchen Plattformen hast du im vergangenen Jahr wie intensiv gespielt?".
+VALUE LABELS  Plattform_iPhone
  "A1" "Gar nicht"
  "A2" "Selten"
  "A3" "Manchmal"
  "A4" "Oft"
  "A5" "Ständig".
 
-VARIABLE LABELS AllgemPlatt_SQ010 "[Smartphone (Windows)] Auf welchen Plattformen hast du im vergangenen Jahr wie intensiv gespielt?".
-VALUE LABELS  AllgemPlatt_SQ010
+VARIABLE LABELS Plattform_WinPhone "[Smartphone (Windows)] Auf welchen Plattformen hast du im vergangenen Jahr wie intensiv gespielt?".
+VALUE LABELS  Plattform_WinPhone
  "A1" "Gar nicht"
  "A2" "Selten"
  "A3" "Manchmal"
