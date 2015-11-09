@@ -16,8 +16,9 @@ set logscale y
 set style fill solid 0.5
 
 plot \
-	'daten/2014/ausgaben_spiele.tsv' u (100-$3/40.54):1 w l t"Spiele",\
-	'daten/2014/ausgaben_hardware.tsv' u (100-$3/37.05):1 w l t"Hardware",\
-	'daten/2014/ausgaben_addons.tsv' u (100-$3/37.49):1 w l t"Addons",\
-	'daten/2014/ausgaben_abos.tsv' u (100-$3/34.33):1 w l t"Abos",\
-	'daten/2014/ausgaben_server.tsv' u (100-$3/32.31):1 w l t"Sonstiges"
+	'daten/2014/ausgaben_spielekauf.tsv' u (100-$3/39.11):1 w l t"Spiele",\
+	'daten/2014/ausgaben_hardware.tsv' u (100-$3/35.69):1 w l t"Hardware",\
+	'daten/2014/ausgaben_addons.tsv' u (100-$3/36.18):1 w l t"Addons",\
+	'daten/2014/ausgaben_abos.tsv' u (100-$3/33.09):1 w l t"Abos",\
+	'daten/2014/ausgaben_server.tsv' u (100-$3/31.11):1 w l t"Sonstiges"
+
