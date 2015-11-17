@@ -50,21 +50,21 @@ GET DATA
  Plattform_Android A2
  Plattform_iPhone A2
  Plattform_WinPhone A2
- Spiel1 A44
+ Spiel1 A85
  Release1 F4
- Freigabe1 F2
- Spiel2 A79
+ Freigabe1 A5
+ Spiel2 A85
  Release2 F4
- Freigabe2 F2
- Spiel3 A46
+ Freigabe2 A5
+ Spiel3 A85
  Release3 F4
- Freigabe3 F2
- Spiel4 A39
+ Freigabe3 A5
+ Spiel4 A85
  Release4 F4
- Freigabe4 F2
- Spiel5 A46
+ Freigabe4 A5
+ Spiel5 A85
  Release5 F4
- Freigabe5 F2
+ Freigabe5 A5
  Nutzungsdauer_SQ1 A2
  Nutzungsdauer_SQ2 A2
  Nutzungsdauer_SQ3 A2
