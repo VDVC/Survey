@@ -33,13 +33,15 @@ def freigabe(string):
 		if part.isnumeric():
 			kandidat = min(kandidat,int(part))
 		elif u"OA" in part:
-			return u"0"
+			return u"USK0"
 		elif u"KJ" in part:
 			kandidat = min(kandidat,18)
 	if kandidat == 21:
 		return u""
 	else:
-		return unicode(kandidat)
+		return u'USK'+unicode(kandidat)
+
+freigabeordnung = {u'BPjM' : -1, u'StGB' : -1, u'USK0' : 0, u'USK6' : 1, u'USK12' : 2, u'USK16' : 3, u'USK18' : 4, u'' : 100, u'.' : 100}
 
 
 # Dieses Dictionary ordnet Spieltitel eine Releasejahr und eine USK-Friegabe zu
@@ -53,7 +55,7 @@ with io.open(ogdbgames, encoding='utf8') as ogdb_file:
 			if freigabe(ogdb_entry[3]) != u'':
 				if ogdb_list[-1][2] == u'':
 					ogdb_list[-1][2]=freigabe(ogdb_entry[3])
-				elif int(freigabe(ogdb_entry[3])) < ogdb_list[-1][2]:
+				elif freigabeordnung[freigabe(ogdb_entry[3])] < freigabeordnung[ogdb_list[-1][2]]:
 					ogdb_list[-1][2]=freigabe(ogdb_entry[3])
 		else:
 			ogdb_list.append([ogdb_entry[0].lower(),ogdb_entry[9],freigabe(ogdb_entry[3])])
@@ -81,7 +83,7 @@ def find_gameinfo(title): # search data of the game
 		freigabe = ogdblookup[title][1]
 	elif title in vdvclookup:
 		year = vdvclookup[title][0].encode('utf-8')
-		freigabe = vdvclookup[title][1][3:].encode('utf-8')
+		freigabe = vdvclookup[title][1].encode('utf-8')
 	else:
 		if len(title) > 0 and title[0:5] != "(???)":
 			print("Not found: " + title)
