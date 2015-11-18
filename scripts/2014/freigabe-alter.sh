@@ -8,3 +8,5 @@ pspp ./scripts/2014/freigabe-alter.sps -o $csvfile
 
 rm $csvfile
 
+gnuplot ./scripts/2014/freigabe-alter.gp
+
