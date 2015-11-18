@@ -11,27 +11,19 @@ def chunks(l, n):
     n = max(1, n)
     return [l[i:i + n] for i in range(0, len(l), n)]
 
-def is_int(s):
+def best_format(s):
     try:
-        int(s)
-        return True
-    except ValueError:
-        return False
-
-def is_number(s):
-    try:
-        float(s)
-        return True
-    except ValueError:
-        return False
+        rv=int(s)
+        return unicode(rv)
+    except:
+        try:
+            rv=float(s)
+            return unicode(rv)
+        except:
+            return unicode(s)
 
 csvfile=sys.argv[1]
-if sys.argv[-1] == "countsort":
-    countsort=True
-    resulttable=sys.argv[2:-1]
-else:
-    countsort=False
-    resulttable=sys.argv[2:]
+resulttable=sys.argv[2:]
 
 intabname=""
 incollabels=[] # list of columnn labels
@@ -78,55 +70,47 @@ with io.open(csvfile, encoding='utf8') as csv:
     if "Zusammenfassung" not in intabname:
         tables.append([intabname,set(incollabels),set(inrowlabels),intabcontent])
 
-for table in tables:
-    print(table[0])
-    print(table[1])
-    for rowlabel in table[2]:
-        toprint=[rowlabel]
-        for collabel in table[1]:
-            try:
-                toprint=toprint+[table[3][(collabel,rowlabel)]]
-            except:
-                toprint=toprint+[0]
-        print(toprint)
-    print('\n')
-
 print("Fasse "+str(len(tables))+
 	  " Tabellen zu "+str(len(resulttable))+
 	  " zusammen.")
-sys.exit()
 
 tableno=0
 chunklen=len(tables)/len(resulttable)
 for mergetables in chunks(tables,chunklen):
-    results=io.open(resulttable[tableno], "w", encoding="utf8")
-    results.write(u'"'+tabname[tableno*chunklen]+u'"\t"n"\t"sum"\n')
-    mergedtable=[]
+    mergedcollabels=[]
+    mergedrowlabels=[]
     for table in mergetables:
-        for entry in table:
-            value=entry[0]
-            if is_int(value):
-                value=int(value)
-            elif is_number(value.replace(",",".")):
-                value=float(value.replace(",","."))
-            count=entry[1]
-            known=False
-            for oldentry in mergedtable:
-                if oldentry[0] == value:
-                    known=True
-                    oldentry[1]+=count
-            if not known:
-                mergedtable.append([value,count])
-    if countsort:
-         mergedtable.sort(key=lambda x: x[1], reverse=True)
-    else:
-         mergedtable.sort()
+        mergedcollabels += list(table[1])
+        mergedrowlabels += list(table[2])
+    # keep only unique entries
+    mergedcollabels=list(set(mergedcollabels))
+    mergedrowlabels=list(set(mergedrowlabels))
+    mergedtabcontent={}
+    for collabel in mergedcollabels:
+        for rowlabel in mergedrowlabels:
+            mergedtabcontent.update({(collabel,rowlabel):0.0})
+    for table in mergetables:
+            for collabel in mergedcollabels:
+                for rowlabel in mergedrowlabels:
+                    try:
+                        add = table[3][(collabel,rowlabel)]
+                    except:
+                        add = 0
+                    val = add + mergedtabcontent[(collabel,rowlabel)]
+                    mergedtabcontent.update({(collabel,rowlabel):val})
 
-    summe=0
-    for item in mergedtable:
-        summe +=item[1]
-        if is_number(item[0]):
-            results.write(str(item[0])+u'\t'+str(item[1])+'\t'+str(summe)+u'\n')
-        else:
-            results.write(u'"'+item[0]+u'"\t'+str(item[1])+'\t'+str(summe)+u'\n')
+    mergedcollabels.sort()
+    mergedrowlabels.sort()
+
+    results=io.open(resulttable[tableno], "w", encoding="utf8")
+    results.write(u'"'+mergetables[0][0]+u'"')
+    for collabel in mergedcollabels:
+        results.write(u'\t"'+best_format(collabel)+u'"')
+    results.write(u'\n')
+    for rowlabel in mergedrowlabels:
+        results.write(best_format(rowlabel))
+        for collabel in mergedcollabels:
+            results.write(u'\t')
+            results.write(best_format(mergedtabcontent[(collabel,rowlabel)]))
+        results.write(u'\n')
     tableno=tableno+1
