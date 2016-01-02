@@ -1,16 +1,16 @@
 reset
 set encoding utf8
 
-set terminal postscript eps enhanced color linewidth 4 size 16cm,9cm font 32
-set title "Alter"
+set terminal postscript eps enhanced color linewidth 2 size 15cm,4cm font 16
+unset title
 
 set bars 0
 
 set xlabel "Alter / a"
 set ylabel "Anteil \%"
 
-set xrange [10:60]
-set yrange [0:10]
+set xrange [0:70]
+set yrange [0:8]
 
 set key top right
 
