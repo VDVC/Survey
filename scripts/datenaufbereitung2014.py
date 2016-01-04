@@ -115,7 +115,7 @@ with io.open(rohdaten, encoding='utf8') as f:
 			if (len(game[g]) > 1):
 				ngames=ngames+1
 			gameinfo = find_gameinfo(game[g])
-			results.write(u'"'+spss_entry[41+g]+u' ('+gameinfo[0]+u')";')
+			results.write(u'"'+game[g]+u' ('+gameinfo[0]+u')";')
 			for i in range(0,2):
 				results.write(u'\"'+gameinfo[i]+u'\";')
 		for item in spss_entry[46:126]:
