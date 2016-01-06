@@ -110,9 +110,9 @@ def find_gameinfo(title): # search data of the game
     elif title in vdvclookup:
         year = vdvclookup[title][0].encode('utf-8')
         freigabe = vdvclookup[title][1].encode('utf-8')
-    #else:
-    #    if len(title) > 0 and title[0:5] != "(???)":
-    #        print("Not found: '" + title + "'")
+    else:
+        if len(title) > 0 and title[0:5] != "(???)":
+            print("Not found: '" + title + "'")
 
     # make a return value out of the result
     return [year,freigabe]
@@ -144,7 +144,7 @@ with io.open(rohdaten, encoding='utf8') as f:
         else:
             results.write(u'"";')
         # write questions before first game
-        for item in spss_entry[8:23]:
+        for item in spss_entry[8:33]:
             results.write(u'"'+item+u'";')
         results.write(u'"'+gamequest+u'";')
         for g in range(0,5): # 5 games (hardcoded)
