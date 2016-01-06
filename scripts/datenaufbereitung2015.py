@@ -174,13 +174,31 @@ with io.open(rohdaten, encoding='utf8') as f:
             for item in spss_entry[58:63]: # Letzte Nutzung?
                 results.write(u'"'+item+u'";')
         # ab "Ausgaben"
-        for item in spss_entry[73:140]:
+        for item in spss_entry[73:99]:
+            results.write(u'"'+item+u'";')
+        # ab Illegalmotivation
+        for item in spss_entry[99:126]:
+            results.write(u'"'+item+u'";')
+        #ab Kennzeichenkenntnis
+        for item in spss_entry[126:131]:
+            results.write(u'"'+item+u'";')
+        for item in spss_entry[131:140]:
             results.write(u'"'+item+u'";')
         if(len(spss_entry[140]) > 0):
             zensurinfo.write(spss_entry[140]+u'\n\n')
-        for item in spss_entry[141:212]:
+        #ab UncutBezug
+        for item in spss_entry[141:193]:
             results.write(u'"'+item+u'";')
-        results.write(u'"'+spss_entry[212]+u'"\n')
+        #Informationsinteresse
+        if len(spss_entry[193]) > len(spss_entry[203]):
+            results.write(u'"0"')
+            for item in spss_entry[193:203]:
+                results.write(u';"'+item+u'"')
+        else:
+            results.write(u'"1"')
+            for item in spss_entry[203:213]:
+                results.write(u';"'+item+u'"')
+        results.write(u'\n')
         if (len(spss_entry[213]) > 0):
             feedback.write(spss_entry[213]+u'\n\n')
         gameshist[ngames] = gameshist[ngames]+1

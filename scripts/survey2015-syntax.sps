@@ -114,6 +114,8 @@ GET DATA
  Illegalmotivation_7#1 F1
  Illegalmotivation_8#0 A2
  Illegalmotivation_8#1 F1
+ Illegalmotivation_9#0 A2
+ Illegalmotivation_9#1 F1
  IllegalVerstaendnis_1 F1
  IllegalVerstaendnis_2 F1
  IllegalVerstaendnis_3 F1
@@ -122,11 +124,12 @@ GET DATA
  IllegalVerstaendnis_6 F1
  IllegalVerstaendnis_7 F1
  IllegalVerstaendnis_8 F1
- Kennzeichenkenntnis_SQ001 F1
- Kennzeichenkenntnis_SQ002 F1
- Kennzeichenkenntnis_SQ003 F1
- Kennzeichenkenntnis_SQ004 F1
- Kennzeichenkenntnis_SQ005 F1
+ IllegalVerstaendnis_9 F1
+ Kennzeichenkenntnis_USK F1
+ Kennzeichenkenntnis_PEGI F1
+ Kennzeichenkenntnis_BPjM F1
+ Kennzeichenkenntnis_StGB F1
+ Kennzeichenkenntnis_GUrt F1
  Schnittkenntnis F1
  Zensurmeinung F1
  Zensurinformation F1
@@ -148,26 +151,28 @@ GET DATA
  UncutBezugWegKErf_SQ008 A2
  UncutBezugWegKErf_SQ009 A2
  UncutBezugWegKErf_SQ010 A2
- UncutBezugWegErf_SQ001#0 A1
- UncutBezugWegErf_SQ001#1 A2
- UncutBezugWegErf_SQ002#0 A1
- UncutBezugWegErf_SQ002#1 A2
- UncutBezugWegErf_SQ003#0 A1
- UncutBezugWegErf_SQ003#1 A2
- UncutBezugWegErf_SQ004#0 A1
- UncutBezugWegErf_SQ004#1 A2
- UncutBezugWegErf_SQ005#0 A1
- UncutBezugWegErf_SQ005#1 A2
- UncutBezugWegErf_SQ006#0 A1
- UncutBezugWegErf_SQ006#1 A2
- UncutBezugWegErf_SQ007#0 A1
- UncutBezugWegErf_SQ007#1 A2
- UncutBezugWegErf_SQ008#0 A1
- UncutBezugWegErf_SQ008#1 A2
- UncutBezugWegErf_SQ009#0 A1
- UncutBezugWegErf_SQ009#1 A2
- UncutBezugWegErf_SQ010#0 A1
- UncutBezugWegErf_SQ010#1 A2
+ UncutBezugWegErf_LI#0 A1
+ UncutBezugWegErf_LI#1 A2
+ UncutBezugWegErf_LA#0 A1
+ UncutBezugWegErf_LA#1 A2
+ UncutBezugWegErf_VI#0 A1
+ UncutBezugWegErf_VI#1 A2
+ UncutBezugWegErf_VA#0 A1
+ UncutBezugWegErf_VA#1 A2
+ UncutBezugWegErf_II#0 A1
+ UncutBezugWegErf_II#1 A2
+ UncutBezugWegErf_IL#0 A1
+ UncutBezugWegErf_IL#1 A2
+ UncutBezugWegErf_MD#0 A1
+ UncutBezugWegErf_MD#1 A2
+ UncutBezugWegErf_BI#0 A1
+ UncutBezugWegErf_BI#1 A2
+ UncutBezugWegErf_BA#0 A1
+ UncutBezugWegErf_BA#1 A2
+ UncutBezugWegErf_UA#0 A1
+ UncutBezugWegErf_UA#1 A2
+ UncutBezugWegErf_IB#0 A1
+ UncutBezugWegErf_IB#1 A2
  Screenshots_NC A1
  Screenshots_CU A1
  Modifikationen_NC A1
@@ -186,6 +191,7 @@ GET DATA
  Sicherheitskopie F1
  Datenschutz F1
  Geolock F1
+ InfoFrage F1
  Informationsinteress_1#0 F1
  Informationsinteress_1#1 A2
  Informationsinteress_2#0 F1
@@ -265,56 +271,6 @@ VALUE LABELS ExSpieler
 
 VARIABLE LABELS ExWann "In welchem Jahr hast du zuletzt ein Videospiel genutzt?".
 VARIABLE LEVEL ExWann(SCALE).
-
-VARIABLE LABELS Ablehnung_1 "[… Erwachsene sich mit so etwas nicht mehr beschäftigen sollten.] Auf meine Videospielnutzung haben Außenstehende schon abschätzig reagiert, weil sie meinen, dass …".
-VALUE LABELS Ablehnung_1
- 1 "Yes"
- 0 "Not selected".
-
-VARIABLE LABELS Ablehnung_2 "[… dadurch die Aggressivität beeinflusst werde.] Auf meine Videospielnutzung haben Außenstehende schon abschätzig reagiert, weil sie meinen, dass …".
-VALUE LABELS Ablehnung_2
- 1 "Yes"
- 0 "Not selected".
-
-VARIABLE LABELS Ablehnung_3 "[… es eine Freizeitbeschäftigung “ungebildeter Kreise” sei.] Auf meine Videospielnutzung haben Außenstehende schon abschätzig reagiert, weil sie meinen, dass …".
-VALUE LABELS Ablehnung_3
- 1 "Yes"
- 0 "Not selected".
-
-VARIABLE LABELS Ablehnung_4 "[… man offenbar Spaß daran habe Menschen zu töten.] Auf meine Videospielnutzung haben Außenstehende schon abschätzig reagiert, weil sie meinen, dass …".
-VALUE LABELS Ablehnung_4
- 1 "Yes"
- 0 "Not selected".
-
-VARIABLE LABELS Ablehnung_5 "[… es keinen kulturellen/sonstigen Wert habe.] Auf meine Videospielnutzung haben Außenstehende schon abschätzig reagiert, weil sie meinen, dass …".
-VALUE LABELS Ablehnung_5
- 1 "Yes"
- 0 "Not selected".
-
-VARIABLE LABELS VersteckJN "Wegen dieser Erfahrungen ist es so, dass ich mein Verhalten in der Öffentlichkeit/am Arbeitsplatz angepasst habe.".
-VALUE LABELS  VersteckJN
- 1 "Yes"
- 2 "No".
-
-VARIABLE LABELS VersteckArt_1 "[… verberge/verleugne ich meine Videospielnutzung.] Auf meine Videospielnutzung haben Außenstehende schon abschätzig reagiert. Als Reaktion hierauf …".
-VALUE LABELS  VersteckArt_1
- 1 "Yes"
- 0 "Not selected".
-
-VARIABLE LABELS VersteckArt_2 "[… ""oute"" ich mich nur auf Nachfrage als Videospieler.] Auf meine Videospielnutzung haben Außenstehende schon abschätzig reagiert. Als Reaktion hierauf …".
-VALUE LABELS  VersteckArt_2
- 1 "Yes"
- 0 "Not selected".
-
-VARIABLE LABELS VersteckArt_3 "[… versuche ich Videospiele(r) zu verteidigen, wenn ich darauf angesprochen werde.] Auf meine Videospielnutzung haben Außenstehende schon abschätzig reagiert. Als Reaktion hierauf …".
-VALUE LABELS  VersteckArt_3
- 1 "Yes"
- 0 "Not selected".
-
-VARIABLE LABELS VersteckArt_4 "[… gehe ich offensiv mit dem Thema um - in dem ich z.B. Kleidung mit Games-Motiven trage.] Auf meine Videospielnutzung haben Außenstehende schon abschätzig reagiert. Als Reaktion hierauf …".
-VALUE LABELS  VersteckArt_1
- 1 "Yes"
- 0 "Not selected".
 
 VARIABLE LABELS Multiplayer "Spielst du eher Single- oder Multiplayer?".
 VALUE LABELS  Multiplayer
@@ -891,3 +847,6 @@ VALUE LABELS  IllegalVerstaendnis_8
  2 "Ja"
  1 "Manchmal"
  0 "Nein".
+
+
+save outfile='./rohdaten/daten2015.sav'.
