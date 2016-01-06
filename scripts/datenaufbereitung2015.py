@@ -155,12 +155,12 @@ with io.open(rohdaten, encoding='utf8') as f:
             results.write(u'"'+game[g]+u' ('+gameinfo[0]+u')";')
             for i in range(0,2):
                 results.write(u'\"'+gameinfo[i]+u'\";')
-        if gamequest == '1':
+        if int(gamequest) == 1:
             for item in spss_entry[38:43]: # Seit wann?
                 results.write(u'"'+item+u'";')
             for item in spss_entry[43:48]: # Woher?
                 results.write(u'"'+item+u'";')
-            for item in spss_entry[48:43]: # Plattform?
+            for item in spss_entry[48:53]: # Plattform?
                 results.write(u'"'+item+u'";')
             for i in range(0,5): # Letzte Nutzung?
                 results.write(u'"";')
@@ -173,7 +173,7 @@ with io.open(rohdaten, encoding='utf8') as f:
                 results.write(u'"";')
             for item in spss_entry[58:63]: # Letzte Nutzung?
                 results.write(u'"'+item+u'";')
-        #
+        # ab "Ausgaben"
         for item in spss_entry[73:140]:
             results.write(u'"'+item+u'";')
         if(len(spss_entry[140]) > 0):
