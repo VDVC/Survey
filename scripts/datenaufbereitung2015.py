@@ -191,10 +191,12 @@ with io.open(rohdaten, encoding='utf8') as f:
             results.write(u'"'+item+u'";')
         #Informationsinteresse
         if len(spss_entry[193]) > len(spss_entry[203]):
+            # Alternative A
             results.write(u'"0"')
             for item in spss_entry[193:203]:
                 results.write(u';"'+item+u'"')
         else:
+            # Alternative B
             results.write(u'"1"')
             for item in spss_entry[203:213]:
                 results.write(u';"'+item+u'"')
