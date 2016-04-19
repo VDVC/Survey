@@ -1,4 +1,5 @@
 get file='./rohdaten/daten2014.sav'.
+SET /DECIMAL=DOT.
 SORT CASES BY Geburtsjahr.
 COMPUTE Alter=  MAX(0,MIN(2014-Geburtsjahr,100)).
 CROSSTABS

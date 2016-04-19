@@ -10,7 +10,7 @@ for altersgruppe in 60 55 50 45 40 35 30 25 20 15 nA; do
 done
 
 pspp ./scripts/2014/titel-altersstufe.sps -o $csvfile
-./scripts/tabellenformatierung.py $csvfile $filelist countsort
+./scripts/tabellenformatierung.py $csvfile $filelist
 
 rm $csvfile
 

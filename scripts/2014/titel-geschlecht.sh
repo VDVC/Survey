@@ -10,7 +10,7 @@ for geschlecht in kA m f anders; do
 done
 
 pspp ./scripts/2014/titel-geschlecht.sps -o $csvfile
-./scripts/tabellenformatierung.py $csvfile $filelist countsort
+./scripts/tabellenformatierung.py $csvfile $filelist
 
 rm $csvfile
 
