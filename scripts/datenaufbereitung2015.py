@@ -22,7 +22,7 @@ teilnehmer='./rohdaten/participants2015.csv'
 
 
 duplikatsliste='./daten/zuordnung.tsv'
-ogdbgames='./rohdaten/ogdb-games.csv'
+ogdbgames='./rohdaten/ogdbexport20160419_174747.csv'
 moregames='./daten/no-ogdb.tsv'
 
 # Dateien für Ergebnisse
@@ -30,6 +30,7 @@ feedback = io.open("./rohdaten/feedback2015.dat", "w", encoding="utf8")
 results = io.open("./daten/daten2015.dat", "w", encoding="utf8")
 zensurinfo = io.open("./rohdaten/zensurinfo2015.dat", "w", encoding="utf8")
 nennungen = io.open("./daten/2015/nennungen.tsv", "w", encoding="utf8")
+f_unbekannt = io.open("./daten/2015/unbekante-titel.tsv", "w", encoding="utf8") 
 
 def long2ip(ip):
     ip=int(ip)
@@ -64,6 +65,7 @@ def freigabe(string):
 
 freigabeordnung = {u'BPjM' : -1, u'StGB' : -1, u'USK0' : 0, u'USK6' : 1, u'USK12' : 2, u'USK16' : 3, u'USK18' : 4, u'' : 100, u'.' : 100}
 
+d_unbekannt = {}
 
 # Dieses Dictionary ordnet Spieltitel eine Releasejahr und eine USK-Friegabe zu
 # Zuordnung von Genres wäre möglich.
@@ -111,8 +113,11 @@ def find_gameinfo(title): # search data of the game
         year = vdvclookup[title][0].encode('utf-8')
         freigabe = vdvclookup[title][1].encode('utf-8')
     else:
-        if len(title) > 0 and title[0:5] != "(???)":
-            print("Not found: '" + title + "'")
+        if len(title) > 0:
+            if title in d_unbekannt:
+            	d_unbekannt[title] = d_unbekannt[title] + 1
+            else:
+            	d_unbekannt[title] = 1
 
     # make a return value out of the result
     return [year,freigabe]
@@ -208,3 +213,8 @@ with io.open(rohdaten, encoding='utf8') as f:
 nennungen.write(u'"Genannte Titel"\t"Häufigkeit"\n')
 for nr in range(0,6):
     nennungen.write(unicode(nr)+u'\t'+unicode(gameshist[nr])+u'\n')
+
+f_unbekannt.write(u'"Unbeaknnter Titel"\t"Nennungen"\n')
+for item in sorted(d_unbekannt.items(),key=lambda x: x[1], reverse=True):
+	f_unbekannt.write(u'"'+unicode(item[0])+u'"\t'+unicode(item[1])+u'\n')
+

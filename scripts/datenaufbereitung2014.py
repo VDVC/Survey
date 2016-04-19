@@ -25,6 +25,7 @@ results = io.open("./rohdaten/daten2014.dat", "w", encoding="utf8")
 versteck = io.open("./rohdaten/versteck2014.dat", "w", encoding="utf8")
 zensurinfo = io.open("./rohdaten/zensurinfo2014.dat", "w", encoding="utf8")
 nennungen = io.open("./daten/2014/nennungen.tsv", "w", encoding="utf8")
+f_unbekannt = io.open("./daten/2014/unbekante-titel.tsv", "w", encoding="utf8") 
 
 def freigabe(string):
 	parts = string.replace(',','_').split('_')
@@ -43,6 +44,7 @@ def freigabe(string):
 
 freigabeordnung = {u'BPjM' : -1, u'StGB' : -1, u'USK0' : 0, u'USK6' : 1, u'USK12' : 2, u'USK16' : 3, u'USK18' : 4, u'' : 100, u'.' : 100}
 
+d_unbekannt = {}
 
 # Dieses Dictionary ordnet Spieltitel eine Releasejahr und eine USK-Friegabe zu
 # Zuordnung von Genres wäre möglich.
@@ -86,7 +88,10 @@ def find_gameinfo(title): # search data of the game
 		freigabe = vdvclookup[title][1].encode('utf-8')
 	else:
 		if len(title) > 0 and title[0:5] != "(???)":
-			print("Not found: " + title)
+			d_unbekannt[title] = d_unbekannt[title] + 1
+		else:
+			d_unbekannt[title] = 1
+			
 
 	# make a return value out of the result
 	return [year,freigabe]
@@ -132,3 +137,8 @@ with io.open(rohdaten, encoding='utf8') as f:
 nennungen.write(u'"Genannte Titel"\t"Häufigkeit"\n')
 for nr in range(0,6):
 	nennungen.write(unicode(nr)+u'\t'+unicode(gameshist[nr])+u'\n')
+	
+f_unbekannt.write(u'"Unbeaknnter Titel"\t"Nennungen"\n')
+for item in sorted(d_unbekannt.items(),key=lambda x: x[1], reverse=True):
+	f_unbekannt.write(u'"'+unicode(item[0])+u'"\t'+unicode(item[1])+u'\n')
+
