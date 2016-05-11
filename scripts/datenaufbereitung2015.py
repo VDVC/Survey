@@ -30,7 +30,7 @@ feedback = io.open("./rohdaten/feedback2015.dat", "w", encoding="utf8")
 results = io.open("./daten/daten2015.dat", "w", encoding="utf8")
 zensurinfo = io.open("./rohdaten/zensurinfo2015.dat", "w", encoding="utf8")
 nennungen = io.open("./daten/2015/nennungen.tsv", "w", encoding="utf8")
-f_unbekannt = io.open("./daten/2015/unbekante-titel.tsv", "w", encoding="utf8") 
+f_unbekannt = io.open("./daten/2015/unbekannte-titel.tsv", "w", encoding="utf8") 
 
 def long2ip(ip):
     ip=int(ip)

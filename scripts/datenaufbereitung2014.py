@@ -25,7 +25,7 @@ results = io.open("./rohdaten/daten2014.dat", "w", encoding="utf8")
 versteck = io.open("./rohdaten/versteck2014.dat", "w", encoding="utf8")
 zensurinfo = io.open("./rohdaten/zensurinfo2014.dat", "w", encoding="utf8")
 nennungen = io.open("./daten/2014/nennungen.tsv", "w", encoding="utf8")
-f_unbekannt = io.open("./daten/2014/unbekante-titel.tsv", "w", encoding="utf8") 
+f_unbekannt = io.open("./daten/2014/unbekannte-titel.tsv", "w", encoding="utf8") 
 
 def freigabe(string):
 	parts = string.replace(',','_').split('_')
