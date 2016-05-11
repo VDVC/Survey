@@ -15,7 +15,7 @@ sys.setdefaultencoding('utf8')
 # SPSS-Export
 rohdaten='./rohdaten/rohdaten2014.dat'
 
-duplikatsliste='./daten/zuordnung.tsv'
+duplikatsliste='./daten/schreibweisen.tsv'
 ogdbgames='./rohdaten/ogdb-games.csv'
 moregames='./daten/no-ogdb.tsv'
 
@@ -138,7 +138,7 @@ nennungen.write(u'"Genannte Titel"\t"Häufigkeit"\n')
 for nr in range(0,6):
 	nennungen.write(unicode(nr)+u'\t'+unicode(gameshist[nr])+u'\n')
 	
-f_unbekannt.write(u'"Unbeaknnter Titel"\t"Nennungen"\n')
+f_unbekannt.write(u'"Unbekannter Titel"\t"Nennungen"\n')
 for item in sorted(d_unbekannt.items(),key=lambda x: x[1], reverse=True):
 	f_unbekannt.write(u'"'+unicode(item[0])+u'"\t'+unicode(item[1])+u'\n')
 

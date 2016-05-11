@@ -21,7 +21,8 @@ rohdaten='./rohdaten/rohdaten2015.dat'
 teilnehmer='./rohdaten/participants2015.csv'
 
 
-duplikatsliste='./daten/zuordnung.tsv'
+duplikatsliste='./daten/schreibweisen.tsv'
+zuordnungsliste='./daten/zuordnung.tsv'
 ogdbgames='./rohdaten/ogdbexport20160419_174747.csv'
 moregames='./daten/no-ogdb.tsv'
 
@@ -95,6 +96,11 @@ with io.open(moregames, encoding='utf8') as extra_file:
 with io.open(duplikatsliste, encoding='utf8') as nl_file:
     nl_reader = unicodecsv.reader(nl_file,delimiter="\t")
     namelookup={nl_entry[1].lower():nl_entry[0] for nl_entry in nl_reader}
+
+# Dieses Dictionary ordnet Spielen einen speziellen ODGB-Eintrag zu
+with io.open(zuordnungsliste, encoding='utf8') as ol_file:
+    ol_reader = unicodecsv.reader(ol_file,delimiter="\t")
+    ogdblookup={ol_entry[1].lower():ol_entry[0] for ol_entry in ol_reader}
 
 # Dieses Dictionary ordnet einer IP-Adresse einen Referer zu
 with io.open(teilnehmer, encoding='utf8') as ref_file:
@@ -214,7 +220,7 @@ nennungen.write(u'"Genannte Titel"\t"Häufigkeit"\n')
 for nr in range(0,6):
     nennungen.write(unicode(nr)+u'\t'+unicode(gameshist[nr])+u'\n')
 
-f_unbekannt.write(u'"Unbeaknnter Titel"\t"Nennungen"\n')
+f_unbekannt.write(u'"Unbekannter Titel"\t"Nennungen"\n')
 for item in sorted(d_unbekannt.items(),key=lambda x: x[1], reverse=True):
 	f_unbekannt.write(u'"'+unicode(item[0])+u'"\t'+unicode(item[1])+u'\n')
 
