@@ -4,3 +4,5 @@
 pspp ./scripts/survey2014-syntax.sps
 
 ./scripts/datenaufbereitung2015.py
+pspp ./scripts/survey2015-syntax.sps
+
