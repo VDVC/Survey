@@ -100,7 +100,7 @@ with io.open(duplikatsliste, encoding='utf8') as nl_file:
 # Dieses Dictionary ordnet Spielen einen speziellen ODGB-Eintrag zu
 with io.open(zuordnungsliste, encoding='utf8') as ol_file:
     ol_reader = unicodecsv.reader(ol_file,delimiter="\t")
-    ogdbtitles={ol_entry[1].lower():ol_entry[0] for ol_entry in ol_reader}
+    ogdbtitles={ol_entry[0].lower():ol_entry[1].lower() for ol_entry in ol_reader}
 
 # Dieses Dictionary ordnet einer IP-Adresse einen Referer zu
 with io.open(teilnehmer, encoding='utf8') as ref_file:
@@ -112,6 +112,9 @@ def find_gameinfo(title): # search data of the game
     title = title.lower()
     year = u""
     freigabe = u""
+    if title in ogdbtitles:
+       title = ogdbtitles[title]
+
     if title in ogdblookup:
         year = ogdblookup[title][0].encode('utf-8')
         freigabe = ogdblookup[title][1]
