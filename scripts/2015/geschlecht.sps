@@ -1,0 +1,8 @@
+get file='./rohdaten/daten2015.sav'.
+SET DECIMAL=DOT.
+FREQUENCIES
+  /VARIABLES=Geschlecht
+  /FORMAT=TABLE
+  /STATISTICS=NONE.
+EXIT.
+

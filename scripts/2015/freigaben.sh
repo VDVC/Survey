@@ -9,3 +9,4 @@ pspp ./scripts/2015/freigaben.sps -o $csvfile
 rm $csvfile
 
 gnuplot ./scripts/2015/freigaben.gp
+
