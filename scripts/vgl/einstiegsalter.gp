@@ -1,8 +1,8 @@
 reset
 set encoding utf8
 
-set terminal postscript eps enhanced color linewidth 4 size 16cm,9cm font 32
-set title "Einstiegsalter"
+set terminal postscript eps enhanced color linewidth 2 size 15cm,4cm font 16
+unset title
 
 set bars 0
 
