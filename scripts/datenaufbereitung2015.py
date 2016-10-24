@@ -23,7 +23,7 @@ teilnehmer='./rohdaten/participants2015.csv'
 
 duplikatsliste='./daten/schreibweisen.tsv'
 zuordnungsliste='./daten/zuordnung.tsv'
-ogdbgames='./rohdaten/ogdbexport20160419_174747.csv'
+ogdbgames='./rohdaten/ogdbexport20161024_211122.csv'
 moregames='./daten/no-ogdb.tsv'
 
 # Dateien für Ergebnisse
