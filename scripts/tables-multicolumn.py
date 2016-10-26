@@ -3,6 +3,7 @@
 import io
 import sys
 import unicodecsv
+import numpy as np
 
 reload(sys)  
 sys.setdefaultencoding('utf8')
@@ -90,6 +91,25 @@ for table in tables:
     mergedrowlabels += list(table[2])
 # keep only unique entries
 mergedrowlabels=list(set(mergedrowlabels))
+
+allnumeric=True
+allintegers=True
+for entry in mergedrowlabels:
+    if type(entry) != int and type(entry) != float:
+        allnumeric=False
+    else:
+	    if entry%1 != 0:
+	        allintegers=False
+
+minval = None
+maxval = None
+
+if allnumeric:
+    maxval = max(mergedrowlabels)
+    minval = min(mergedrowlabels)
+    if allintegers:
+        mergedrowlabels = np.linspace(minval,maxval,maxval-minval+1)
+
 mergedtabcontent={}
 for collabel in mergedcollabels:
     for rowlabel in mergedrowlabels:
