@@ -4,7 +4,7 @@ csvfile="./daten/2015/einstiegsalter.csv"
 tsvfile=${csvfile%.csv}.tsv
 
 pspp ./scripts/2015/einstiegsalter.sps -o $csvfile
-./scripts/tabellenformatierung.py $csvfile ${tsvfile}
+./scripts/tables-singlecolumn.py $csvfile ${tsvfile}
 
 mv $tsvfile $csvfile
 
