@@ -81,6 +81,8 @@ with io.open(ogdbgames, encoding='utf8') as ogdb_file:
                     ogdb_list[-1][2]=freigabe(ogdb_entry[3])
                 elif freigabeordnung[freigabe(ogdb_entry[3])] < freigabeordnung[ogdb_list[-1][2]]:
                     ogdb_list[-1][2]=freigabe(ogdb_entry[3])
+            if ogdb_entry[9] != "" and ogdb_list[-1][1] == "":
+                ogdb_list[-1][1] = ogdb_entry[9]
         else:
             ogdb_list.append([ogdb_entry[0].lower(),ogdb_entry[9],freigabe(ogdb_entry[3])])
             lastentry=ogdb_entry[0].lower()

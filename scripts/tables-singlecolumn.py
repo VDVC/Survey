@@ -20,7 +20,7 @@ def best_format(s):
             rv=float(s)
             return unicode(rv)
         except:
-            return unicode(s)
+            return unicode(u'"'+s+u'"')
 
 csvfile=sys.argv[1]
 resulttable=sys.argv[2:]
