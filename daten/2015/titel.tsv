@@ -1,7 +1,7 @@
 "Titel"	"Nennungen"
 "()"	2460
 "Fallout 4 (2015)"	330
-"Counter-Strike: Global Offensive (2012)"	225
+"Counter-Strike: Global Offensive (2012)"	228
 "The Witcher III: Wild Hunt (2015)"	169
 "Grand Theft Auto V (2013)"	155
 "The Elder Scrolls V: Skyrim (2011)"	94
@@ -9,15 +9,15 @@
 "Rocket League (2015)"	85
 "PayDay 2 (2013)"	83
 "League of Legends (2009)"	65
+"Call of Duty: Black Ops III (2015)"	64
+"Battlefield 4 (2013)"	63
 "DotA 2 (2013)"	61
-"Battlefield 4 (2013)"	60
 "Just Cause 3 (2015)"	57
-"Call of Duty: Black Ops III (2015)"	54
+"Borderlands 2 (2012)"	52
 "Minecraft (2010)"	51
 "StarCraft II: Wings of Liberty (2010)"	50
-"Borderlands 2 (2012)"	49
+"Assassin's Creed: Syndicate (2015)"	48
 "Dying Light (2015)"	47
-"Assassin's Creed: Syndicate (2015)"	47
 "Star Wars: Battlefront (2004)"	46
 "Diablo III (2012)"	44
 "Team Fortress 2 (2007)"	43
@@ -26,16 +26,16 @@
 "The Binding of Isaac: Rebirth (2014)"	39
 "Fallout: New Vegas (2010)"	38
 "Heroes of the Storm (2015)"	36
+"Cities: Skylines (2015)"	36
 "ArmA III (2013)"	36
 "Sid Meier's Civilization V (2011)"	35
 "Far Cry 4 (2014)"	35
 "Left 4 Dead 2 (2009)"	34
-"Cities: Skylines (2015)"	33
+"Ark: Survival Evolved (2015)"	32
 "Life is Strange (2015)"	30
 "Europa Universalis IV (2014)"	30
 "Dragon Age: Inquisition (2014)"	30
 "Mad Max (2015)"	28
-"Ark: Survival Evolved (2015)"	28
 "Warhammer: End Times - Vermintide (2015)"	27
 "Euro Truck Simulator 2 (2012)"	27
 "Warframe (2013)"	26
@@ -49,13 +49,13 @@
 "War Thunder (2012)"	21
 "Star Wars: The Old Republic (2011)"	21
 "Elite: Dangerous (2014)"	21
+"Age of Empires II HD (2013)"	21
 "Mass Effect 3 (2012)"	19
 "Fallout 3 (2008)"	19
+"Counter-Strike (2003)"	19
 "XCOM: Enemy Unknown (2012)"	18
 "Counter-Strike: Source (2004)"	18
-"Counter-Strike (2003)"	18
 "Anno 2205 (2015)"	18
-"Age of Empires II HD (2013)"	18
 "World of Warships (2015)"	17
 "World of Tanks (2011)"	17
 "Undertale (2015)"	17
@@ -76,17 +76,21 @@
 "Star Citizen (2013)"	15
 "Space Engieeners (2013)"	15
 "Mass Effect (2007)"	15
+"Total War: Attila (2015)"	14
 "Project CARS (2015)"	14
 "Half-Life 2 (2004)"	14
 "Fifa 16 (2015)"	14
 "Dead Island (2011)"	14
 "DayZ (2013)"	14
-"Total War: Attila (2015)"	13
+"Call of Duty: Black Ops II (2012)"	14
+"Borderlands (2009)"	14
+"Assassin's Creed IV: Black Flag (2013)"	14
 "Grim Dawn (2016)"	13
 "Gothic II (2003)"	13
 "Dishonored: Die Maske des Zorns (2012)"	13
 "Deus Ex: Human Revolution (2011)"	13
 "Dark Souls (2011)"	13
+"Crusader Kings II (2012)"	13
 "Clash of Clans (2012)"	13
 "The Witcher 2: Assassins of Kings (2011)"	12
 "Saints Row IV (2013)"	12
@@ -94,12 +98,10 @@
 "Path of Exile (2013)"	12
 "Mount & Blade: Warband (2010)"	12
 "Don't Starve (2014)"	12
-"Crusader Kings II (2012)"	12
-"Borderlands (2009)"	12
+"Borderlands: The Pre-Sequel! (2015)"	12
 "Portal 2 (2011)"	11
 "Mortal Kombat X (2015)"	11
 "FIFA 16 (2015)"	11
-"Call of Duty: Black Ops II (2012)"	11
 "Bioshock (2008)"	11
 "Xenoblade Chronicles X (2015)"	10
 "Wolfenstein: The Old Blood (2015)"	10
@@ -112,7 +114,7 @@
 "Gettysburg: Armored Warfare (2012)"	10
 "Die Sims 4 (2014)"	10
 "Broforce (2016)"	10
-"Assassin's Creed IV: Black Flag (2013)"	10
+"Age of Empires II: The Age of Kings (1999)"	10
 "Total War: Rome II (2013)"	9
 "Super Smash Bros 4 (2014)"	9
 "Mittelerde: Mordors Schatten (2014)"	9
@@ -127,7 +129,6 @@
 "Battlefield: Hardline (2015)"	9
 "ArmA II (2009)"	9
 "ARK: Survival Evolved (2015)"	9
-"Age of Empires II: The Age of Kings (1999)"	9
 "The Wolf Among Us (2014)"	8
 "Sniper Elite III (2014)"	8
 "Shadow Warrior (1997)"	8
@@ -136,9 +137,11 @@
 "Far Cry 3 (2012)"	8
 "Endless Legend (2014)"	8
 "Dead Island: Riptide (2013)"	8
-"Borderlands: The Pre-Sequel! (2015)"	8
+"Call of Duty: Modern Warfare 3 (2011)"	8
+"Call of Duty: Modern Warfare 2 (2009)"	8
 "Banished (2014)"	8
 "Assassin's Creed: Unity (2014)"	8
+"(???) Assassin's Creed ()"	8
 "Anno 2070 (2012)"	8
 "AdVenture Capitalist (2015)"	8
 "Watch_Dogs (2014)"	7
@@ -168,9 +171,7 @@
 "Fallout (1997)"	7
 "Evolve (2015)"	7
 "Divinity: Original Sin (2014)"	7
-"Call of Duty: Modern Warfare 2 (2009)"	7
 "(???) Battlefield ()"	7
-"(???) Assassin's Creed ()"	7
 "Adventure Capitalist (2015)"	7
 "XCOM: Enemy Within (2013)"	6
 "Victor Vran (2015)"	6
@@ -196,7 +197,12 @@
 "Don't Starve Together (2014)"	6
 "Darkest Dungeon (2015)"	6
 "Chivalry: Medieval Warfare (2014)"	6
+"Call of Duty: Black Ops (2010)"	6
+"Call of Duty: Advanced Warfare (2014)"	6
 "Call of Duty (2003)"	6
+"Assassin's Creed III (2012)"	6
+"Anno 1404 (2009)"	6
+"Age of Empires III (2005)"	6
 "Zombie Army Trilogy (2015)"	5
 "Wolfenstein (2009)"	5
 "Tropico 4 (2011)"	5
@@ -241,15 +247,13 @@
 "Deadpool (2013)"	5
 "Crysis 3 (2013)"	5
 "Company of Heroes (2006)"	5
-"Call of Duty: Modern Warfare 3 (2011)"	5
-"Call of Duty: Advanced Warfare (2014)"	5
 "Brawlhalla (2015)"	5
 "BioShock Infinite (2013)"	5
 "Biohazard: The Darkside Chronicles (2010)"	5
 "Battlefield 2 (2005)"	5
 "Batman: Arkham Origins (2013)"	5
 "Assetto Corsa (2014)"	5
-"Assassin's Creed III (2012)"	5
+"Assassin's Creed II (2009)"	5
 "Animal Crossing: New Leaf (2013)"	5
 "(???) X-Com ()"	4
 "Worms (1995)"	4
@@ -309,10 +313,9 @@
 "Brothers: A Tale of Two Sons (2013)"	4
 "Boom Beach (2014)"	4
 "Batman: Arkham Asylum (2009)"	4
-"Assassin's Creed II (2009)"	4
-"Anno 1404 (2009)"	4
+"Assassin's Creed: Rogue (2014)"	4
+"Assassin's Creed: Brotherhood (2010)"	4
 "Alien: Isolation (2014)"	4
-"Age of Empires III (2005)"	4
 "WWE 2K16 (2015)"	3
 "Way of the Samurai 4 (2012)"	3
 "Wargame: Red Dragon (2014)"	3
@@ -383,12 +386,12 @@
 "Doom (2016)"	3
 "Dark Project: Der Meisterdieb (1998)"	3
 "Crysis 2 (2011)"	3
-"Call of Duty: Black Ops (2010)"	3
+"Call of Duty: World at War (2008)"	3
 "Brütal Legend (2009)"	3
 "BioShock 2 (2010)"	3
 "Beyond: Two Souls (2015)"	3
 "Awesomenauts (2012)"	3
-"Assassin's Creed: Brotherhood (2010)"	3
+"Assassin's Creed: Revelations (2011)"	3
 "Age of Wonders III (2014)"	3
 "Zombie Driver HD (2013)"	2
 "X³: Terran Conflict (2008)"	2
@@ -560,7 +563,7 @@
 "Catlateral Damage (2015)"	2
 "Castle Crashers (2008)"	2
 "Candy Crush Saga (2012)"	2
-"Call of Duty: World at War (2008)"	2
+"Call of Duty 4: Modern Warfare (2007)"	2
 "Call of Duty 2 (2005)"	2
 "Buzz Aldrin's Space Program Manager (2014)"	2
 "Blood Bowl 2 (2015)"	2
@@ -575,13 +578,13 @@
 "Baldur's Gate II: Schatten von Amn (2006)"	2
 "Axiom Verge (2015)"	2
 "A.V.A - Alliance of Valiant Arms (2011)"	2
-"Assassin's Creed: Revelations (2011)"	2
 "Apotheon (2015)"	2
 "Anno 1701 (2006)"	2
 "Alone in the Dark: The New Nightmare (2001)"	2
 "Alan Wake (2012)"	2
 "Age of Empires (1997)"	2
 "Act of Aggression (2015)"	2
+"0 A.D. (2015)"	2
 "Zombie Army Triology ()"	1
 "Zombie Army Trilogie ()"	1
 "Zombie Alien Trilogie ()"	1
@@ -1598,23 +1601,18 @@
 "Dakrness II ()"	1
 "Curse of the Azure Bonds ()"	1
 "cthulu saves the world ()"	1
-"CS.GO ()"	1
 "Crysis 2 Maximum Edition ()"	1
 "Cry of Fear ()"	1
 "Crusaders Of the Lost Idols ()"	1
-"Crusader King 2 ()"	1
 "Crookz - The Big Heist ()"	1
 "Crash Team Racing (1999)"	1
 "Crash of the Titans (2007)"	1
 "(???) Crash Bandicoot 2 ()"	1
 "Craft The World (2014)"	1
-"Coutner Strike ()"	1
 "Counter ()"	1
 "Cossacks Back to War ()"	1
 "Cook; Serve; Delicious ()"	1
 "Contraption Maker ()"	1
-"Conter Strike Global Offensive ()"	1
-"Conter-Strike: Global-Offensiv ()"	1
 "Construction Simulator 2015 (2014)"	1
 "Company of Heros Blitzkrieg Mod ()"	1
 "Company of Heroes (New Steam Version) ()"	1
@@ -1628,14 +1626,7 @@
 "Command & Conquer (1995)"	1
 "Command and Conquer 4 ()"	1
 "Comany of Heroes 2 ()"	1
-"CoD MW 2 ()"	1
-"CoD MW1 ()"	1
-"COD III ()"	1
 "Codename CURE ()"	1
-"COD BO 3 ()"	1
-"COD Bo3 ()"	1
-"CoD- BO 3 ()"	1
-"CoD BO ()"	1
 "Cobalt ()"	1
 "Club Manager 2016 ()"	1
 "Closure ()"	1
@@ -1643,9 +1634,6 @@
 "Civilization Beyond Earth - Rising Tide ()"	1
 "Civilization 5  beyond earth ()"	1
 "Civilisation Serie ()"	1
-"City Skylines ()"	1
-"Cities:Skylines ()"	1
-"Cities:Skyline ()"	1
 "Cities in Motion 2 (2013)"	1
 "Circuits ()"	1
 "Chrono Trigger (2008)"	1
@@ -1666,20 +1654,7 @@
 "Call to Arms ()"	1
 "Call Of Juarez The Cartel ()"	1
 "Call of Juarez (2006)"	1
-"Call of Duty : World at War ()"	1
-"call of duty ops 3 ()"	1
-"call of duty ops 2 ()"	1
-"Call of Duty MW 3 ()"	1
-"Call of Duty: Modern Warfare 3 Multiplayer ()"	1
-"Call of duty Modernwarfare 3 ()"	1
-"Call of Duty BO 3 ()"	1
-"Call of Duty: Black Ops II Multiplayer ()"	1
-"Call of Duty Black Ops 3 Multiplayer ()"	1
-"Call of Duty- Black Ops 3 ()"	1
-"Call of Duty - Black Ops 3 ()"	1
-"Call of Duty: Black Ops 1 ()"	1
-"Call of Duty-Advance Warfare ()"	1
-"Call of Duty 4: Modern Warfare (2007)"	1
+"Call of Duty 3 (2006)"	1
 "C ()"	1
 "Burnout: Paradise (2008)"	1
 "Burnout (2002)"	1
@@ -1692,17 +1667,8 @@
 "BRAWL ()"	1
 "Bout 2 ()"	1
 "Bound by Flame (2014)"	1
-"Borderlands UNCUT ()"	1
-"Borderlands- The Pre Sequel ()"	1
-"Borderlands - The Presequel ()"	1
 "Borderlands Serie ()"	1
-"Borderlands: Pre-Sequel ()"	1
-"Borderlands Pre SE ()"	1
-"Borderlands 2 UNCUT ()"	1
 "Borderlands 1/2 ()"	1
-"Borderlands 1 ()"	1
-"Bordelands 2 ()"	1
-"Boderlands 2 ()"	1
 "Bloons TD 5 (2012)"	1
 "Bloodrayne 2 (2004)"	1
 "Bloodbourne ()"	1
@@ -1713,10 +1679,6 @@
 "Blitzkrieg Anthology ()"	1
 "Blade & Soul Beta ()"	1
 "Blade & Soul ()"	1
-"Black Ops II ()"	1
-"Black Ops 3 (CoD) ()"	1
-"BlackOps 3 ()"	1
-"Black Ops 1 ()"	1
 "Blackguards 1 ()"	1
 "Blackguard ()"	1
 "BioShok: Infinite ()"	1
@@ -1734,10 +1696,7 @@
 "Betrayer ()"	1
 "Besiege ()"	1
 "Beat Hazard (2010)"	1
-"Battlfeield 4 ()"	1
 "Battlefield hartline ()"	1
-"Battlefield 4 (PC) ()"	1
-"Battledield 4 ()"	1
 "Batman: Arkham City - Game of the Year Edition ()"	1
 "Batman: Arkham Asylum GOTY Edition ()"	1
 "Batman: Arkham Asylum Game of the Year Edition ()"	1
@@ -1752,7 +1711,6 @@
 "Aura Kingdom (2013)"	1
 "Audiosurf: Ride Your Music (2008)"	1
 "Audiosurf 2 ()"	1
-"Attila: Total War ()"	1
 "Attila -Total War ()"	1
 "Atomas ()"	1
 "Atelier Rorona Plus: The Alchemist of Arland (2014)"	1
@@ -1761,44 +1719,23 @@
 "Asterix & Obelix XXL ()"	1
 "AssettoCorsa ()"	1
 "Assault Android Cactus ()"	1
-"Assassin's Creed: Rogue (2014)"	1
-"Assassin’s Creed® Rogue ()"	1
-"Assassin´s Creed Rogue ()"	1
-"Assassins Creed Roge ()"	1
-"Assassins Creed IV: Black Flag ()"	1
-"Assassin’s Creed IV Black Flag ()"	1
-"Assassin’s Creed® III ()"	1
-"Assassins Creed II ()"	1
-"Assassin's Creed Freedom Cry ()"	1
-"Assassins Creed Brotherhooh ()"	1
-"Assassin Creed: Blag Flag ()"	1
-"Assasin´s Creed Revelation ()"	1
-"Assasin´s Creed 1-4 ()"	1
 "Asphalt 8: Airborne (.)"	1
 "Asassins Creed 3 ()"	1
 "ArmoredWarfare ()"	1
 "ArmA: Armed Assault (2006)"	1
-"Ark: Survivial Evolved ()"	1
-"ARK Survival Evolves ()"	1
-"ARK-Survival Evolved ()"	1
-"ARK: Survival Envolved ()"	1
 "Ark evolved ()"	1
 "Arche Blade ()"	1
 "ArcheAge (2013)"	1
 "Arcania: Gothic 4 (2010)"	1
 "Arcana Heart 3 LOVE MAX!!!!! ()"	1
 "Arc ()"	1
-"AoE II HD ()"	1
 "Antichamber ()"	1
 "Anno Online ()"	1
 "Anno 1602: Erschaffung einer neuen Welt (2005)"	1
-"Anno 1503 A.D. ()"	1
+"Anno 1503 (2006)"	1
 "Anno 1404: Venice (2010)"	1
-"Anno 1404 Venice ()"	1
-"Anno1404 ()"	1
 "(???) Anno ()"	1
 "Anna´s Quest ()"	1
-"Ange of Empires 2 HD ()"	1
 "A New Beginning (2012)"	1
 "andere viele Spiele (Nicht-Steam) ()"	1
 "andere viele Spiele ()"	1
@@ -1809,16 +1746,12 @@
 "Amnesia: The Dark Descent (2011)"	1
 "American Mc Gees Alice ()"	1
 "Alpha Protocoll ()"	1
-"Aliens vs Predator Classic 2000 ()"	1
-"Aliens vs. Predator (1993)"	1
+"Aliens vs Predator (2010) ()"	1
+"Aliens vs. Predator (1999) ()"	1
 "Albion Online ()"	1
 "Aion (2009)"	1
 "Age Of Wonders (1999)"	1
 "Age of Mythology (2002)"	1
-"Age Of Empires III Complete Edition ()"	1
-"Age of Empires II: HD ()"	1
-"Age of Empires3 ()"	1
-"Age of Empires 2 Klassik ()"	1
 "Age of Decadence ()"	1
 "(???) Age of Conan ()"	1
 "agar.io ()"	1
@@ -1826,12 +1759,9 @@
 "Adveture Capitalist ()"	1
 "adventure (1979)"	1
 "Act of Agression ()"	1
-"AC Syndikate ()"	1
 "Ace Attorney - All for Justice ()"	1
 "Abyss Odyssey ()"	1
 "7.62 High calibre ()"	1
 "2ft3r23 ()"	1
 "2048 ()"	1
 "1954 Alcatraz ()"	1
-"0 AD ()"	1
-"0 A.D. ()"	1
