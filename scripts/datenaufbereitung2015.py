@@ -124,7 +124,7 @@ def find_gameinfo(title): # search data of the game
         year = vdvclookup[title][0].encode('utf-8')
         freigabe = vdvclookup[title][1].encode('utf-8')
     else:
-        if len(title) > 0:
+        if len(title) > 0 and title not in namelookup:
             if title in d_unbekannt:
             	d_unbekannt[title] = d_unbekannt[title] + 1
             else:
