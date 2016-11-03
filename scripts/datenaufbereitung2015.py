@@ -99,7 +99,7 @@ with io.open(duplikatsliste, encoding='utf8') as nl_file:
     nl_reader = unicodecsv.reader(nl_file,delimiter="\t")
     namelookup={nl_entry[1].lower():nl_entry[0] for nl_entry in nl_reader}
 
-# Dieses Set enthält alle bekannten Spiele
+# Dieses Set enthält alle erfassten Schreibweisen
 with io.open(duplikatsliste, encoding='utf8') as nl_file:
     nl_reader = unicodecsv.reader(nl_file,delimiter="\t")
     knowngames ={nl_entry[0].lower() for nl_entry in nl_reader}
@@ -138,7 +138,7 @@ def find_gameinfo(title): # search data of the game
         if lowtitle not in knowngames:
             title = vdvclookup[lowtitle][2]
     else:
-        if len(lowtitle) > 0 and lowtitle not in namelookup:
+        if len(lowtitle) > 0 and lowtitle not in knowngames:
             if title in d_unbekannt:
             	d_unbekannt[title] = d_unbekannt[title] + 1
             else:
