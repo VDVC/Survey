@@ -87,7 +87,7 @@ with io.open(ogdbgames, encoding='utf8') as ogdb_file:
             ogdb_list.append([ogdb_entry[0].lower(),ogdb_entry[9],freigabe(ogdb_entry[3])])
             lastentry=ogdb_entry[0].lower()
 
-    ogdblookup={ogdb_entry[0]:(ogdb_entry[1],ogdb_entry[2]) for ogdb_entry in ogdb_list}
+    ogdblookup={ogdb_entry[0]:(ogdb_entry[1] if ogdb_entry[1] != "" else "0",ogdb_entry[2]) for ogdb_entry in ogdb_list}
 
 # Dieses Dictionary ordnet Spieltitel eine Releasejahr und eine USK-Friegabe zu
 with io.open(moregames, encoding='utf8') as extra_file:
