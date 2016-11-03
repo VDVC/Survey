@@ -84,20 +84,25 @@ with io.open(ogdbgames, encoding='utf8') as ogdb_file:
             if ogdb_entry[9] != "" and ogdb_list[-1][1] == "":
                 ogdb_list[-1][1] = ogdb_entry[9]
         else:
-            ogdb_list.append([ogdb_entry[0].lower(),ogdb_entry[9],freigabe(ogdb_entry[3])])
+            ogdb_list.append([ogdb_entry[0].lower(),ogdb_entry[9],freigabe(ogdb_entry[3]),ogdb_entry[0]])
             lastentry=ogdb_entry[0].lower()
 
-    ogdblookup={ogdb_entry[0]:(ogdb_entry[1] if ogdb_entry[1] != "" else "0",ogdb_entry[2]) for ogdb_entry in ogdb_list}
+    ogdblookup={ogdb_entry[0]:(ogdb_entry[1] if ogdb_entry[1] != "" else "0",ogdb_entry[2],ogdb_entry[3]) for ogdb_entry in ogdb_list}
 
 # Dieses Dictionary ordnet Spieltitel eine Releasejahr und eine USK-Friegabe zu
 with io.open(moregames, encoding='utf8') as extra_file:
     extra_reader = unicodecsv.reader(extra_file,delimiter="\t")
-    vdvclookup={extra_entry[0].lower():(extra_entry[1],extra_entry[2]) for extra_entry in extra_reader}
+    vdvclookup={extra_entry[0].lower():(extra_entry[1],extra_entry[2],extra_entry[0]) for extra_entry in extra_reader}
 
 # Dieses Dictionary ordnet genannten Spieltiteln die bekannte Schreibweise zu
 with io.open(duplikatsliste, encoding='utf8') as nl_file:
     nl_reader = unicodecsv.reader(nl_file,delimiter="\t")
     namelookup={nl_entry[1].lower():nl_entry[0] for nl_entry in nl_reader}
+
+# Dieses Set enthält alle bekannten Spiele
+with io.open(duplikatsliste, encoding='utf8') as nl_file:
+    nl_reader = unicodecsv.reader(nl_file,delimiter="\t")
+    knowngames ={nl_entry[0].lower() for nl_entry in nl_reader}
 
 # Dieses Dictionary ordnet Spielen einen speziellen ODGB-Eintrag zu
 with io.open(zuordnungsliste, encoding='utf8') as ol_file:
@@ -111,27 +116,36 @@ with io.open(teilnehmer, encoding='utf8') as ref_file:
 
 
 def find_gameinfo(title): # search data of the game
-    title = title.lower()
+    lowtitle = title.lower()
     year = u""
     freigabe = u""
-    if title in ogdbtitles:
-       title = ogdbtitles[title]
-
-    if title in ogdblookup:
-        year = ogdblookup[title][0].encode('utf-8')
-        freigabe = ogdblookup[title][1]
-    elif title in vdvclookup:
-        year = vdvclookup[title][0].encode('utf-8')
-        freigabe = vdvclookup[title][1].encode('utf-8')
+    if lowtitle in ogdbtitles:
+       ogdbtitle = ogdbtitles[lowtitle]
     else:
-        if len(title) > 0 and title not in namelookup:
+       ogdbtitle = lowtitle
+
+    if ogdbtitle in ogdblookup:
+        year = ogdblookup[ogdbtitle][0].encode('utf-8')
+        freigabe = ogdblookup[ogdbtitle][1]
+        if lowtitle not in knowngames:
+            if lowtitle == ogdbtitle:
+                title = ogdblookup[ogdbtitle][2]
+            else:
+                title = lowtitle
+    elif lowtitle in vdvclookup:
+        year = vdvclookup[lowtitle][0].encode('utf-8')
+        freigabe = vdvclookup[lowtitle][1].encode('utf-8')
+        if lowtitle not in knowngames:
+            title = vdvclookup[lowtitle][2]
+    else:
+        if len(lowtitle) > 0 and lowtitle not in namelookup:
             if title in d_unbekannt:
             	d_unbekannt[title] = d_unbekannt[title] + 1
             else:
             	d_unbekannt[title] = 1
 
     # make a return value out of the result
-    return [year,freigabe]
+    return [title,year,freigabe]
 
 
 gameshist=[0,0,0,0,0,0]
@@ -168,8 +182,8 @@ with io.open(rohdaten, encoding='utf8') as f:
                 ngames=ngames+1
             gameinfo = find_gameinfo(game[g])
             # Titel (Releasejahr)
-            results.write(u'"'+game[g]+u' ('+gameinfo[0]+u')";')
-            for i in range(0,2):
+            results.write(u'"'+gameinfo[0]+u' ('+gameinfo[1]+u')";')
+            for i in range(1,3):
                 results.write(u'\"'+gameinfo[i]+u'\";')
         if int(gamequest) == 1:
             for item in spss_entry[38:43]: # Seit wann?

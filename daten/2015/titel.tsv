@@ -12,12 +12,12 @@
 "Call of Duty: Black Ops III (2015)"	64
 "Battlefield 4 (2013)"	63
 "DotA 2 (2013)"	61
-"Just Cause 3 (2015)"	57
+"Just Cause 3 (2015)"	59
+"Dying Light (2015)"	52
 "Borderlands 2 (2012)"	52
 "Minecraft (2010)"	51
 "StarCraft II: Wings of Liberty (2010)"	50
 "Assassin's Creed: Syndicate (2015)"	48
-"Dying Light (2015)"	47
 "Star Wars: Battlefront (2004)"	46
 "Diablo III (2012)"	44
 "Team Fortress 2 (2007)"	43
@@ -31,15 +31,16 @@
 "Sid Meier's Civilization V (2011)"	35
 "Far Cry 4 (2014)"	35
 "Left 4 Dead 2 (2009)"	34
+"Mad Max (2015)"	32
 "Ark: Survival Evolved (2015)"	32
 "Life is Strange (2015)"	30
 "Europa Universalis IV (2014)"	30
 "Dragon Age: Inquisition (2014)"	30
-"Mad Max (2015)"	28
 "Warhammer: End Times - Vermintide (2015)"	27
 "Euro Truck Simulator 2 (2012)"	27
 "Warframe (2013)"	26
 "Terraria (2013)"	26
+"FIFA 16 (2015)"	25
 "Batman: Arkham Knight (2015)"	25
 "Garry's Mod (2006)"	24
 "Tom Clancy's Rainbow Six Siege (2015)"	23
@@ -50,24 +51,24 @@
 "Star Wars: The Old Republic (2011)"	21
 "Elite: Dangerous (2014)"	21
 "Age of Empires II HD (2013)"	21
+"World of Warships (2015)"	20
 "Mass Effect 3 (2012)"	19
 "Fallout 3 (2008)"	19
 "Counter-Strike (2003)"	19
 "XCOM: Enemy Unknown (2012)"	18
 "Counter-Strike: Source (2004)"	18
 "Anno 2205 (2015)"	18
-"World of Warships (2015)"	17
 "World of Tanks (2011)"	17
-"Undertale (2015)"	17
+"UNDERTALE (2015)"	17
 "Tomb Raider featuring Lara Croft (1996)"	17
 "Prison Architect (2013)"	17
 "Dark Souls II (2014)"	17
 "Company of Heroes 2 (2013)"	17
+"Bloodborne (2015)"	17
 "7 Days to Die (2013)"	17
 "The Binding of Isaac (2011)"	16
 "Metal Gear Solid V: The Phantom Pain (2015)"	16
 "Guild Wars 2 (2012)"	16
-"Bloodborne (2015)"	16
 "Battlefield 3 (2011)"	16
 "Wolfenstein: The New Order (2014)"	15
 "The Evil Within (2014)"	15
@@ -76,15 +77,16 @@
 "Star Citizen (2013)"	15
 "Space Engieeners (2013)"	15
 "Mass Effect (2007)"	15
+"AdVenture Capitalist (2015)"	15
 "Total War: Attila (2015)"	14
 "Project CARS (2015)"	14
 "Half-Life 2 (2004)"	14
-"Fifa 16 (2015)"	14
 "Dead Island (2011)"	14
 "DayZ (2013)"	14
 "Call of Duty: Black Ops II (2012)"	14
 "Borderlands (2009)"	14
 "Assassin's Creed IV: Black Flag (2013)"	14
+"pillars of eternity (2016)"	13
 "Grim Dawn (2016)"	13
 "Gothic II (2003)"	13
 "Dishonored: Die Maske des Zorns (2012)"	13
@@ -94,14 +96,13 @@
 "Clash of Clans (2012)"	13
 "The Witcher 2: Assassins of Kings (2011)"	12
 "Saints Row IV (2013)"	12
-"Pillars of Eternity (2016)"	12
 "Path of Exile (2013)"	12
 "Mount & Blade: Warband (2010)"	12
 "Don't Starve (2014)"	12
 "Borderlands: The Pre-Sequel! (2015)"	12
 "Portal 2 (2011)"	11
 "Mortal Kombat X (2015)"	11
-"FIFA 16 (2015)"	11
+"DiRT Rally (2015)"	11
 "Bioshock (2008)"	11
 "Xenoblade Chronicles X (2015)"	10
 "Wolfenstein: The Old Blood (2015)"	10
@@ -115,17 +116,16 @@
 "Die Sims 4 (2014)"	10
 "Broforce (2016)"	10
 "Age of Empires II: The Age of Kings (1999)"	10
+"metal gear solid 5 (2014)"	9
 "Total War: Rome II (2013)"	9
 "Super Smash Bros 4 (2014)"	9
 "Mittelerde: Mordors Schatten (2014)"	9
-"Metal Gear Solid 5 (2014)"	9
 "Killing Floor (2009)"	9
 "Just Cause 2 (2010)"	9
 "Gothic (2001)"	9
 "Game of Thrones (2012)"	9
 "Final Fantasy XIV Online: A Realm Reborn (2013)"	9
 "Dirty Bomb (2015)"	9
-"Dirt Rally (2015)"	9
 "Battlefield: Hardline (2015)"	9
 "ArmA II (2009)"	9
 "ARK: Survival Evolved (2015)"	9
@@ -134,6 +134,8 @@
 "Shadow Warrior (1997)"	8
 "Risen (2012)"	8
 "Resident Evil 5 (2009)"	8
+"Ori and The Blind Forest (2015)"	8
+"Hatred (0)"	8
 "Far Cry 3 (2012)"	8
 "Endless Legend (2014)"	8
 "Dead Island: Riptide (2013)"	8
@@ -142,8 +144,8 @@
 "Banished (2014)"	8
 "Assassin's Creed: Unity (2014)"	8
 "Anno 2070 (2012)"	8
-"AdVenture Capitalist (2015)"	8
 "(???) Assassin's Creed ()"	8
+"grav (2015)"	7
 "Watch_Dogs (2014)"	7
 "Wasteland 2 (2014)"	7
 "Verdun (2015)"	7
@@ -162,7 +164,6 @@
 "MechWarrior Online (2013)"	7
 "Landwirtschafts-Simulator 2015 (2015)"	7
 "LYNE (2014)"	7
-"Hatred (0)"	7
 "Grand Theft Auto: San Andreas (2007)"	7
 "Grand Theft Auto IV (2008)"	7
 "GRID: Autosport (2014)"	7
@@ -170,9 +171,10 @@
 "FIFA 15 (2014)"	7
 "Evolve (2015)"	7
 "Divinity: Original Sin (2014)"	7
-"Adventure Capitalist (2015)"	7
 "(???) The Walking Dead ()"	7
 "(???) Battlefield ()"	7
+"don't starve together (2014)"	6
+"darkest dungeon (2015)"	6
 "XCOM: Enemy Within (2013)"	6
 "Victor Vran (2015)"	6
 "Tropico 5 (2015)"	6
@@ -184,18 +186,18 @@
 "Starcraft (1998)"	6
 "Star Trek Online (2010)"	6
 "Sleeping Dogs (2012)"	6
+"SOMA (2015)"	6
+"Rise of the Tomb Raider (2016)"	6
 "Quake III Arena (1999)"	6
 "Left 4 Dead (2008)"	6
 "Heroes & Generals (2014)"	6
 "Helldivers (2015)"	6
+"Hand of Fate (2015)"	6
 "Goat Simulator (2015)"	6
-"GRAV (2015)"	6
 "Final Fantasy XIII (2010)"	6
 "FTL: Faster Than Light (2012)"	6
 "EVE Online (2006)"	6
 "Dragon Age: Origins (2009)"	6
-"Don't Starve Together (2014)"	6
-"Darkest Dungeon (2015)"	6
 "Chivalry: Medieval Warfare (2014)"	6
 "Call of Duty: Black Ops (2010)"	6
 "Call of Duty: Advanced Warfare (2014)"	6
@@ -203,6 +205,8 @@
 "Assassin's Creed III (2012)"	6
 "Anno 1404 (2009)"	6
 "Age of Empires III (2005)"	6
+"hard west (2015)"	5
+"dragon quest heroes (2015)"	5
 "Zombie Army Trilogy (2015)"	5
 "Wolfenstein (2009)"	5
 "Tropico 4 (2011)"	5
@@ -232,15 +236,12 @@
 "METAL GEAR SOLID V: THE PHANTOM PAIN (2015)"	5
 "Life is Feudal: Your Own (2014)"	5
 "Hitman: Absolution (2012)"	5
-"Hard West (2015)"	5
-"Hand of Fate (2015)"	5
 "Halo 5: Guardians (2015)"	5
 "Half-Life (1998)"	5
 "GRID 2 (2013)"	5
 "F.E.A.R.: First Encounter Assault Recon (2005)"	5
 "Empire: Total War (2009)"	5
 "Dreamfall Chapters: Book One - Reborn (2014)"	5
-"Dragon Quest Heroes (2015)"	5
 "Digital Combat Simulator: A-10C Warthog (2011)"	5
 "Devil May Cry (2001)"	5
 "Deponia (2012)"	5
@@ -255,8 +256,13 @@
 "Assetto Corsa (2014)"	5
 "Assassin's Creed II (2009)"	5
 "Animal Crossing: New Leaf (2013)"	5
+"subnautica (2014)"	4
+"planetbase (2015)"	4
+"h1z1 (2015)"	4
 "fallout 4 (2015)"	4
+"distance (2014)"	4
 "Worms (1995)"	4
+"WWE 2K16 (2015)"	4
 "Until Dawn (2015)"	4
 "Uncharted: The Nathan Drake Collection (2015)"	4
 "Transistor (2014)"	4
@@ -269,32 +275,26 @@
 "The Elder Scrolls Online: Tamriel Unlimited (2015)"	4
 "The Elder Scrolls IV: Oblivion (2006)"	4
 "The Battle for Wesnoth (2005)"	4
-"Subnautica (2014)"	4
+"Stasis (2015)"	4
 "Star Wars: Battlefront II (2005)"	4
 "Sniper Elite V2 (2013)"	4
 "Sid Meier's Civilization: Beyond Earth (2014)"	4
 "Shadowrun Hong Kong (2015)"	4
-"SOMA (2015)"	4
 "Rocksmith 2014 (2013)"	4
-"Rise of the Tomb Raider (2016)"	4
 "Resident Evil: Revelations 2 (2015)"	4
 "Rage (2011)"	4
 "Quake Live (2009)"	4
-"Planetbase (2015)"	4
 "Plague Inc.: Evolved (2012)"	4
-"Ori and the Blind Forest (2015)"	4
 "Nation Red (2009)"	4
 "Metal Gear Solid V (2015)"	4
 "Mark of the Ninja (2012)"	4
 "Lords of the Fallen (2014)"	4
 "Life is strange (2015)"	4
 "Hyperdimension Neptunia Re;Birth1 (2014)"	4
-"H1Z1 (2015)"	4
 "Grand Theft Auto (1998)"	4
 "Fallout: Shelter (2015)"	4
 "Dungeon Defenders II (2014)"	4
 "Dragon Age II (2011)"	4
-"Distance (2014)"	4
 "Dirt 3 (2011)"	4
 "Die Sims 3 (2010)"	4
 "Diablo II (2000)"	4
@@ -316,12 +316,11 @@
 "Assassin's Creed: Brotherhood (2010)"	4
 "Alien: Isolation (2014)"	4
 "(???) X-Com ()"	4
-"mad max (2015)"	3
+"stranded deep (2015)"	3
+"reign of kings (2015)"	3
 "iRacing.com (2015)"	3
-"dying light (2015)"	3
 "Way of the Samurai 4 (2012)"	3
 "Wargame: Red Dragon (2014)"	3
-"WWE 2K16 (2015)"	3
 "Uncharted 3: Drake's Deception (2011)"	3
 "Ultra Street Fighter IV (2014)"	3
 "Total War: ATTILA (2015)"	3
@@ -330,11 +329,8 @@
 "The Order: 1886 (2015)"	3
 "The Banner Saga (2014)"	3
 "Stronghold: Crusader II (2014)"	3
-"Stranded Deep (2015)"	3
 "State of Decay (2013)"	3
-"Stasis (2015)"	3
 "Star Wars: Republic Commando (2005)"	3
-"Squad (2015)"	3
 "Speedrunners (2013)"	3
 "Solitär (2008)"	3
 "Sniper: Ghost Warrior 2 (2013)"	3
@@ -342,9 +338,9 @@
 "Sins of a Solar Empire (2008)"	3
 "Serious Sam 3: BFE (2014)"	3
 "Satellite Reign (2014)"	3
+"SQUAD (2015)"	3
 "Risk of Rain (2013)"	3
 "Remember Me (2013)"	3
-"Reign of Kings (2015)"	3
 "Reflex (2013)"	3
 "Rebel Galaxy (2016)"	3
 "Quake (1996)"	3
@@ -353,7 +349,6 @@
 "Pinball FX2 (2010)"	3
 "Pflanzen gegen Zombies 2 (0)"	3
 "Party Hard (2016)"	3
-"Ori and the blind forest (2015)"	3
 "One Piece: Pirate Warriors 3 (2015)"	3
 "OMSI 2 (2013)"	3
 "Nuclear Throne (2013)"	3
@@ -364,10 +359,12 @@
 "Need for Speed: No Limits (2015)"	3
 "Need for Speed (2015)"	3
 "Natural Selection 2 (2012)"	3
+"NBA 2K16 (2015)"	3
 "Monster Hunter 4 Ultimate (2015)"	3
 "Metro 2033 (2010)"	3
 "Men of War: Assault Squad 2 (2014)"	3
 "Magicka (2011)"	3
+"LEGO Jurassic World (2015)"	3
 "Hyrule Warriors (2014)"	3
 "HuniePop (2015)"	3
 "Hero Siege (2014)"	3
@@ -382,10 +379,12 @@
 "Doom (2016)"	3
 "Dark Project: Der Meisterdieb (1998)"	3
 "Crysis 2 (2011)"	3
+"Chroma Squad (2015)"	3
 "Call of Duty: World at War (2008)"	3
 "Brütal Legend (2009)"	3
 "BioShock 2 (2010)"	3
 "Beyond: Two Souls (2015)"	3
+"Axiom Verge (2015)"	3
 "Awesomenauts (2012)"	3
 "Assassin's Creed: Revelations (2011)"	3
 "Age of Wonders III (2014)"	3
@@ -394,9 +393,17 @@
 "(???) Magic: The Gathering ()"	3
 "(???) Fifa ()"	3
 "theHunter: Primal (2015)"	2
+"sword coast legends (2015)"	2
 "rocket league (2015)"	2
+"road redemption (2014)"	2
 "plants vs. zombies (2009)"	2
+"overwatch (2016)"	2
+"her story (2015)"	2
 "helldivers (2015)"	2
+"gratuitous space battles 2 (2015)"	2
+"forza motorsport 6 (2015)"	2
+"contradiction (2015)"	2
+"buzz aldrin's space program manager (2014)"	2
 "Zombie Driver HD (2013)"	2
 "X³: Terran Conflict (2008)"	2
 "X³: Albion Prelude (2012)"	2
@@ -434,13 +441,13 @@
 "Team Fortress Classic (2005)"	2
 "Tales of Zesteria (2015)"	2
 "System Shock 2 (2000)"	2
-"Sword Coast Legends (2015)"	2
 "Super Meat Boy (2015)"	2
 "Sunless Sea (2014)"	2
 "Summoners War: Sky Arena (0)"	2
 "Stronghold: Kingdoms (2012)"	2
 "Stronghold: Crusader (2002)"	2
 "State of Decay: Year One Survival Edition (2016)"	2
+"StarCraft II: Legacy of the Void (2015)"	2
 "Star Wars: Knights of the Old Republic II - The Sith Lords (2004)"	2
 "Star Wars: Empire at War (2006)"	2
 "Star Wars: Dark Forces (1997)"	2
@@ -448,14 +455,13 @@
 "Spec Ops: The Line (2012)"	2
 "SpaceChem (2011)"	2
 "Sonic & All-Stars Racing Transformed (2012)"	2
-"Soma (2015)"	2
 "Sim City (2013)"	2
 "Serious Sam HD: The First Encounter (2011)"	2
+"Saints Row: Gat out of Hell (2015)"	2
 "Sacred (2004)"	2
 "S.T.A.L.K.E.R.: Clear Sky (2008)"	2
 "RollerCoaster Tycoon 2 (2004)"	2
 "Robocraft (2014)"	2
-"Road Redemption (2014)"	2
 "Rift (2011)"	2
 "Return to Castle Wolfenstein (2001)"	2
 "Red Faction: Guerrilla (2009)"	2
@@ -466,11 +472,9 @@
 "Pro Evolution Soccer 2015 (2014)"	2
 "Paladins (2016)"	2
 "Painkiller: Hell & Damnation (2013)"	2
-"Overwatch (2016)"	2
 "Outlast (2014)"	2
 "Need for Speed: Hot Pursuit (2010)"	2
 "NBA 2k15 (2014)"	2
-"NBA 2K16 (2015)"	2
 "Mortal Kombat (Komplete Edition) (2012)"	2
 "Modern Combat 5 (2015)"	2
 "Mirror's Edge (2008)"	2
@@ -481,10 +485,10 @@
 "Medieval II: Total War (2000)"	2
 "Mario Kart Wii (2008)"	2
 "Magicka 2 (2015)"	2
+"Lovers in a Dangerous Spacetime (2015)"	2
 "LittleBigPlanet 3 (2014)"	2
 "LittleBigPlanet (2008)"	2
 "Legend of Grimrock (2012)"	2
-"LEGO Jurassic World (2015)"	2
 "LEGO Der Herr der Ringe (2012)"	2
 "LEGO Batman 3: Beyond Gotham (2014)"	2
 "L.A. Noire (2011)"	2
@@ -500,10 +504,8 @@
 "Homeworld Remastered (2015)"	2
 "Hitman Go (2014)"	2
 "Heroes of Might and Magic III: The Restoration of Erathia (2006)"	2
-"Her Story (2015)"	2
 "Hearts of Iron III (2009)"	2
 "HELLDIVERS (2015)"	2
-"Gratuitous Space Battles 2 (2015)"	2
 "Gone Home (2014)"	2
 "Gods Will Be Watching (2014)"	2
 "Gnomoria (2013)"	2
@@ -511,7 +513,6 @@
 "Gems of War (2015)"	2
 "Gas Guzzlers Extreme (2013)"	2
 "Freedom Wars (2014)"	2
-"Forza Motorsport 6 (2015)"	2
 "Forza Motorsport 5 (2013)"	2
 "FlatOut 2 (2006)"	2
 "Fistful of Frags (2014)"	2
@@ -526,10 +527,10 @@
 "Empire Earth II (2005)"	2
 "Emily is Away (2015)"	2
 "Edna bricht aus (2011)"	2
-"Dying light (2015)"	2
 "Dungeons II (2016)"	2
 "Dungeons & Dragons: Neverwinter (2013)"	2
 "Dungeon Siege II (2005)"	2
+"Doom 3: BFG Edition (2006)"	2
 "Doom 3 (2005)"	2
 "Doom (2016) (2016)"	2
 "Divinity: Original Sin - Enhanced Edition (2015)"	2
@@ -549,19 +550,16 @@
 "Day of Defeat (2003)"	2
 "Darksiders II (2012)"	2
 "Darksiders (2010)"	2
-"DOOM 3: BFG Edition (2006)"	2
 "Creativerse (2014)"	2
-"Contradiction (2015)"	2
-"Chroma Squad (2015)"	2
 "Catlateral Damage (2015)"	2
 "Castle Crashers (2008)"	2
 "Candy Crush Saga (2012)"	2
 "Call of Duty 4: Modern Warfare (2007)"	2
 "Call of Duty 2 (2005)"	2
-"Buzz Aldrin's Space Program Manager (2014)"	2
 "Blood Bowl 2 (2015)"	2
 "Black Mirror II (2009)"	2
 "Black Mirror (2009)"	2
+"Beyond Eyes (2015)"	2
 "Bedlam (1996)"	2
 "Battlefield: Bad Company 2 (2010)"	2
 "BattleBlock Theater (2013)"	2
@@ -569,7 +567,6 @@
 "Bastion (2011)"	2
 "Baphomets Fluch 5 (2016)"	2
 "Baldur's Gate II: Schatten von Amn (2006)"	2
-"Axiom Verge (2015)"	2
 "Apotheon (2015)"	2
 "Anno 1701 (2006)"	2
 "Alone in the Dark: The New Nightmare (2001)"	2
@@ -585,38 +582,30 @@
 "(???) Mario Kart ()"	2
 "(???) LEGO Star Wars ()"	2
 "(???) Just Cause 4 ()"	2
-"world of warships (2015)"	1
 "wfw3f3w ()"	1
 "warhammer-vermintide ()"	1
 "the legend of zelda majora's mask ()"	1
 "t34t32tgf34 ()"	1
 "skyforge ()"	1
-"rise of the tomb raider (2016)"	1
 "resident evil 4 / biohazard 4 ()"	1
 "rFactor 2 ()"	1
 "pillars of enternity ()"	1
 "lotro ()"	1
 "life Is Strage ()"	1
 "knetwalk ()"	1
-"just cause 3 (2015)"	1
 "jewels ()"	1
 "inFAMOUS: Second Son (2014)"	1
 "iBomber Defense ()"	1
-"hatred (0)"	1
 "gas gasslers ()"	1
 "fe ()"	1
+"european universalis v (2014)"	1
 "efsfef ()"	1
 "devil may cry 4 special edition ()"	1
 "deadspace 3 ()"	1
 "cthulu saves the world ()"	1
-"chroma squad (2015)"	1
-"bloodborne (2015)"	1
-"beyond eyes (2015)"	1
-"axiom verge (2015)"	1
 "andere viele Spiele (Nicht-Steam) ()"	1
 "andere viele Spiele ()"	1
 "agar.io ()"	1
-"adventure (1979)"	1
 "Zombie Army Triology ()"	1
 "Zombie Army Trilogie ()"	1
 "Zombie Alien Trilogie ()"	1
@@ -646,14 +635,12 @@
 "Worms: Revolution (2012)"	1
 "Worms: Clan Wars (2015)"	1
 "Worms Armageddon (1999)"	1
-"World of warships (2015)"	1
 "World of Warship ()"	1
 "World of Warschips ()"	1
 "World of Diving ()"	1
 "World of Battleships ()"	1
-"World Of Warships (2015)"	1
+"World in Conflict: Soviet Assault (2009)"	1
 "World Of Tanks Xbox ()"	1
-"World In Conflict: Soviet Assault (2009)"	1
 "Wordament (2012)"	1
 "Word of Warships ()"	1
 "Wolfenstein: The New Order CUT VERSION !! ()"	1
@@ -690,7 +677,6 @@
 "War of the Roses ()"	1
 "Walking Dead Nomands Land ()"	1
 "Wacraft 3 The Frozen Throne ()"	1
-"WWE 2k16 (2015)"	1
 "WRC: Powerslide ()"	1
 "WITCHER3 ()"	1
 "WC3 ()"	1
@@ -867,7 +853,7 @@
 "Sudoku Daily ()"	1
 "Styx: Master of the Shadow ()"	1
 "Stronghold: Crusader HD ()"	1
-"Street Fighter x Tekken (2012)"	1
+"Street Fighter X Tekken (2012)"	1
 "Street Fighter (1992)"	1
 "Stonehearth (2015)"	1
 "Stock Car Extreme ()"	1
@@ -878,15 +864,13 @@
 "Starship Titanic ()"	1
 "Starsector ()"	1
 "Starpoint Gemini 2 ()"	1
-"Starcraft: Brood War (2000)"	1
-"Starcraft II: Legacy of the Void (2015)"	1
-"Starcraft II: Heart Of The Swarm (2013)"	1
 "Starcraft II - Legacy of the Void ()"	1
 "Starcraft 2: LotV ()"	1
 "Starcraft 2 LotV ()"	1
 "Starcraft 2 - LotV ()"	1
 "Starcraft / Brood War ()"	1
-"StarCraft II: Legacy of the Void (2015)"	1
+"StarCraft: Brood War (2000)"	1
+"StarCraft II: Heart of the Swarm (2013)"	1
 "StarCraft Boodwar ()"	1
 "StarCraft 2: Legacy of the Void ()"	1
 "StarCraft 2 - Legacy of the Void ()"	1
@@ -939,6 +923,7 @@
 "Sonic & Allstar Racing Transformed ()"	1
 "Software Inc ()"	1
 "Sniper Elite: Berlin 1945 ()"	1
+"Skyhill (2015)"	1
 "Sims 2 (Playstation 2) ()"	1
 "Simpsons tappedout ()"	1
 "Simple Planes ()"	1
@@ -984,18 +969,14 @@
 "Samurai Warriors 4-II (2015)"	1
 "Sakura Angels ()"	1
 "Saints Row: IV ()"	1
-"Saints Row: Gat out of Hell (2015)"	1
-"Saints Row: Gat Out Of Hell (2015)"	1
 "Saints Row V ()"	1
 "Saints Row 2 (2008)"	1
 "Saint Row III ()"	1
 "Sacred 2: Fallen Angel (2009)"	1
-"STASIS (2015)"	1
 "STAR WARS™ Knights of the Old Republic™ II: The Sith Lords™ ()"	1
 "STAR WARS™ Knights of the Old Republic™ II: The Sith Lords ()"	1
 "SNOW (2014)"	1
 "SNES-Emulator (verschiedene Spiele) ()"	1
-"SKYHILL (2015)"	1
 "SC2 ()"	1
 "S4 League (2006)"	1
 "RymdResa ()"	1
@@ -1012,7 +993,6 @@
 "Roblox ()"	1
 "Road Redemtion ()"	1
 "Rise of Venice (2015)"	1
-"Rise of The Tomb Raider (2016)"	1
 "Ride (2015)"	1
 "Riddik Escape from Butcherbay ()"	1
 "Reus ()"	1
@@ -1078,15 +1058,14 @@
 "Plaque Inc ()"	1
 "Plants vs. Zombies: Garden Warfare (2014)"	1
 "Plants vs. Zombies (2009)"	1
-"Planetside (2003)"	1
 "Planetary Annihilation ()"	1
+"PlanetSide (2003)"	1
 "Planet Explorers ()"	1
 "Plague Inc. Evolved (2014)"	1
 "Plague Inc. (2012)"	1
 "Pixel Puzzles 2: Anime ()"	1
 "Pinball FX (2007)"	1
 "Pinball Dreams (1993)"	1
-"Pillars of eternity (2016)"	1
 "Phantom Pain ()"	1
 "Phantasy Star Online (2000)"	1
 "Persona Q: Shadow of the Labyrinth (2014)"	1
@@ -1099,7 +1078,6 @@
 "Our Love will growe ()"	1
 "Otherland ()"	1
 "Orion: A Sci-Fi Visual Novel ()"	1
-"Ori and the blind Forest (2015)"	1
 "Orcs Must Die! 2 ()"	1
 "OpenTTD (2010)"	1
 "Open Red Alert ()"	1
@@ -1118,7 +1096,7 @@
 "Nobunaga's Ambition ()"	1
 "No One Lives Forever (1) ()"	1
 "Night Of The Rabbit ()"	1
-"Nier (2010)"	1
+"NieR (2010)"	1
 "Nidhogg (2014)"	1
 "Ni Nu Kuni ()"	1
 "New Super Mario Bros. U (2012)"	1
@@ -1133,7 +1111,6 @@
 "Napoleon: Total War (2010)"	1
 "NR2003 Racing Season ()"	1
 "NEON STRUCT ()"	1
-"NBA 2k16 (2015)"	1
 "NBA 2K14 (2013)"	1
 "Multi Theft Auto San Andreas ()"	1
 "Multi Theft Auto (GTASA Multiplayer Mod) ()"	1
@@ -1191,7 +1168,7 @@
 "Mario Kart 64 (1996)"	1
 "Mario & Luigi - Paper Jam Bros. ()"	1
 "Manhunt (2004)"	1
-"Mahjong (2012)"	1
+"MahJong (2012)"	1
 "Magrunner: Dark Pulse (2013)"	1
 "Magick: 2014 ()"	1
 "Magicite (2014)"	1
@@ -1204,10 +1181,7 @@
 "MS Flight Simulator X ()"	1
 "MGSV: The Phantom Pain ()"	1
 "MGS 5 ()"	1
-"MAD Max (2015)"	1
-"Luftrausers (2014)"	1
-"Lovers in a dangerous spacetime (2015)"	1
-"Lovers in a Dangerous Spacetime (2015)"	1
+"LuftrauserS (2014)"	1
 "Lovely Planet ()"	1
 "Lost Odyssey (2008)"	1
 "Lost Horizon (2013)"	1
@@ -1222,9 +1196,7 @@
 "Life Is Strange™ ()"	1
 "Lichdom: Battlemage ()"	1
 "Leisure Suit Larry 1 ()"	1
-"Lego The Hobbit (2013)"	1
 "Lego Marvel Superheroes ()"	1
-"Lego Jurassic World (2015)"	1
 "Lego Jurassic Park ()"	1
 "Lego Dimensons ()"	1
 "Lego Dimensions ()"	1
@@ -1240,9 +1212,10 @@
 "Last Chaos (2009)"	1
 "Larva Mortus ()"	1
 "Lara Croft and the Tempel of Osiris ()"	1
-"Lara Croft Go (2015)"	1
+"Lara Croft GO (2015)"	1
 "LIMBO (2011)"	1
 "LEGO® Worlds ()"	1
+"LEGO The Hobbit (2013)"	1
 "LEGO Marvel Super Heroes (2013)"	1
 "LEGO Der Hobbit (2014)"	1
 "L. A. Noire ()"	1
@@ -1253,7 +1226,7 @@
 "Knights of Pen and Paper 2 ()"	1
 "Kirby's Adventure Wii (2011)"	1
 "Kingdoms of Amalur: Reckoning (2012)"	1
-"Kingdom Under Fire (2000)"	1
+"Kingdom under Fire (2000)"	1
 "Kingdom Rush (2011)"	1
 "Kingdom Hearts II.5 HD ReMIX ()"	1
 "Kingdom Hearts 358/2 Days (2009)"	1
@@ -1265,7 +1238,6 @@
 "Killing Floor 1 ()"	1
 "Kholat (2016)"	1
 "Kerbal Spaceprogram ()"	1
-"Just cause 3 (2015)"	1
 "Just Cause™ 3 ()"	1
 "Just Cause 2 - Multiplayer ()"	1
 "Judge Dredd: Dredd vs. Death (2003)"	1
@@ -1323,7 +1295,6 @@
 "Harvest Moon Baum der Stille ()"	1
 "Harry Potter und der Feuerkelch (Gamecube) ()"	1
 "Hard Reset (Extended Edition) (2012)"	1
-"Hand Of Fate (2015)"	1
 "Hammerfall ()"	1
 "Halo: Combat Evolved (2001)"	1
 "Halo 5 Guardians ()"	1
@@ -1346,7 +1317,6 @@
 "Grim Fandango (1998)"	1
 "Gray Goo ()"	1
 "Grav Reborn ()"	1
-"Grav (2015)"	1
 "Grandia II Anniversary Edition ()"	1
 "Grandia 2 ()"	1
 "Grandia (1999)"	1
@@ -1454,7 +1424,6 @@
 "Everlasting Summer ()"	1
 "EverQuest II (2004)"	1
 "Evel Knievel (1999)"	1
-"European Universalis V (2014)"	1
 "Europa Truck Simulator 2015 ()"	1
 "EuroTruckSimulator 2 ()"	1
 "Euro Fishing ()"	1
@@ -1540,8 +1509,6 @@
 "Diddy Kong Racing (1997)"	1
 "Diablo III: Reaper of Soul ()"	1
 "Diablo 2: Lord of Destruction ()"	1
-"DiRt Rally (2015)"	1
-"DiRT Rally (2015)"	1
 "DiRT 3 Complete Edition ()"	1
 "Devils & Demons ()"	1
 "Deus Ex: HR ()"	1
@@ -1558,7 +1525,7 @@
 "Deep Dungeons of Doom ()"	1
 "Deadlight (2012)"	1
 "Deadfall Adventures (2013)"	1
-"Dead or alive 5 last round (2015)"	1
+"Dead or Alive 5 Last Round (2015)"	1
 "Dead or Alive 5 (2012)"	1
 "Dead Space 3 (2013)"	1
 "Dead Rising 2:Off The Record ()"	1
@@ -1660,9 +1627,9 @@
 "Borderlands Serie ()"	1
 "Borderlands 1/2 ()"	1
 "Bloons TD 5 (2012)"	1
-"Bloodrayne 2 (2004)"	1
 "Bloodbourne ()"	1
 "Bloodborne: The Old Hunters (2015)"	1
+"BloodRayne 2 (2004)"	1
 "Blood Borne ()"	1
 "Blitzriegmod / Mod von Company of Heroes 1 ()"	1
 "Blitzkrieg Anthology ()"	1
@@ -1679,7 +1646,6 @@
 "Binary Domain (2012)"	1
 "Big Pharma ()"	1
 "Big Farm ()"	1
-"Beyond Eyes (2015)"	1
 "Betrayer ()"	1
 "Besiege ()"	1
 "Beat Hazard (2010)"	1
@@ -1725,7 +1691,7 @@
 "Anarchy Online (2004)"	1
 "Amored Warfrare ()"	1
 "Amored Warfare ()"	1
-"Among The Sleep (2015)"	1
+"Among the Sleep (2015)"	1
 "Amnesia: The Dark Descent (2011)"	1
 "American Mc Gees Alice ()"	1
 "Alpha Protocoll ()"	1
@@ -1738,6 +1704,7 @@
 "Age Of Wonders (1999)"	1
 "Agarest Generation of War: Zero ()"	1
 "Adveture Capitalist ()"	1
+"Adventure (1979)"	1
 "Act of Agression ()"	1
 "Ace Attorney - All for Justice ()"	1
 "Abyss Odyssey ()"	1
