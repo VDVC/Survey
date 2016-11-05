@@ -9,7 +9,7 @@ pspp ./scripts/2015/titel.sps -o $csvfile
 sort -r -t$'\t' -n -k2 $tsvfile > $csvfile
 
 echo '"Titel"	"Nennungen"' > $tsvfile
-ghead -n-1 $csvfile >> $tsvfile
+head -n-1 $csvfile >> $tsvfile
 
 rm $csvfile
 

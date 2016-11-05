@@ -68,6 +68,7 @@ freigabeordnung = {u'BPjM' : -1, u'StGB' : -1, u'USK0' : 0, u'USK6' : 1, u'USK12
 
 d_unbekannt = {}
 
+strikeout=[" (Steam)"," (GOG)"," (Early Access)"]
 # Dieses Dictionary ordnet Spieltitel eine Releasejahr und eine USK-Friegabe zu
 # Zuordnung von Genres wäre möglich.
 with io.open(ogdbgames, encoding='utf8') as ogdb_file:
@@ -75,7 +76,11 @@ with io.open(ogdbgames, encoding='utf8') as ogdb_file:
     ogdb_list=[]
     lastentry=""
     for ogdb_entry in ogdb_reader:
+        for so in strikeout:
+            ogdb_entry[0] = ogdb_entry[0].replace(so, "" )
         if ogdb_entry[0].lower() == lastentry:
+            if ogdb_entry[9] != u'' and ogdb_list[-1][1] == u'':
+                ogdb_list[-1][1] = ogdb_entry[9]
             if freigabe(ogdb_entry[3]) != u'':
                 if ogdb_list[-1][2] == u'':
                     ogdb_list[-1][2]=freigabe(ogdb_entry[3])
@@ -86,7 +91,6 @@ with io.open(ogdbgames, encoding='utf8') as ogdb_file:
         else:
             ogdb_list.append([ogdb_entry[0].lower(),ogdb_entry[9],freigabe(ogdb_entry[3]),ogdb_entry[0]])
             lastentry=ogdb_entry[0].lower()
-
     ogdblookup={ogdb_entry[0]:(ogdb_entry[1] if ogdb_entry[1] != "" else "0",ogdb_entry[2],ogdb_entry[3]) for ogdb_entry in ogdb_list}
 
 # Dieses Dictionary ordnet Spieltitel eine Releasejahr und eine USK-Friegabe zu
@@ -146,8 +150,6 @@ def find_gameinfo(title): # search data of the game
 
     # make a return value out of the result
     return [title,year,freigabe]
-
-
 gameshist=[0,0,0,0,0,0]
 #for pspp_entry in pspp_data:
 with io.open(rohdaten, encoding='utf8') as f:
