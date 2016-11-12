@@ -4,7 +4,7 @@ set encoding utf8
 set terminal postscript eps enhanced color linewidth 4 size 16cm,9cm font 32
 
 set xlabel "Alter / a"
-set xrange [12.5:30]
+set xrange [12.5:30.5]
 set ylabel "Anteil an Spielenutzung / %"
 set yrange [0:50]
 
@@ -25,9 +25,6 @@ fit f06(x) "daten/2015/freigabe-alter.tsv" u ($1-0.1):($7*100/$8):($7*100/$8/sqr
 fit f12(x) "daten/2015/freigabe-alter.tsv" u ($1):($4*100/$8):($4*100/$8/sqrt($4)) via m12,b12
 fit f16(x) "daten/2015/freigabe-alter.tsv" u ($1+0.1):($5*100/$8):($5*100/$8/sqrt($5)) via m16,b16
 fit f18(x) "daten/2015/freigabe-alter.tsv" u ($1+0.2):($6*100/$8):($6*100/$8/sqrt($6)) via m18,b18
-
-
-
 
 set output 'plots/2015/freigabe-alter.eps'
 plot \
