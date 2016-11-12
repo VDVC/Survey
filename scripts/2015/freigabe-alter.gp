@@ -33,11 +33,11 @@ plot \
 	"daten/2015/freigabe-alter.tsv" u ($1):($4*100/$8):($4*100/$8/sqrt($4)) w e lc "green" lw 1 t"USK12", \
 	"daten/2015/freigabe-alter.tsv" u ($1+0.1):($5*100/$8):($5*100/$8/sqrt($5)) w e lc "blue" lw 1 t"USK16", \
 	"daten/2015/freigabe-alter.tsv" u ($1+0.2):($6*100/$8):($6*100/$8/sqrt($6)) w e lc "red" lw 1 t"USK18", \
-	f00(x) lc "white", \
-	f06(x) lc "yellow", \
-	f12(x) lc "green", \
-	f16(x) lc "blue", \
-	f18(x) lc "red"
+#	f00(x) lc "white", \
+#	f06(x) lc "yellow", \
+#	f12(x) lc "green", \
+#	f16(x) lc "blue", \
+#	f18(x) lc "red"
 	
 #	"daten/2015/freigabe-alter.tsv" u ($1-0.2):($3*100/$8) w l lc rgb"white" lw 1 t"USK0", \
 #	"daten/2015/freigabe-alter.tsv" u ($1-0.1):($7*100/$8) w l lc rgb"yellow" lw 1 t"USK6", \
