@@ -18,6 +18,13 @@
 \begin{document}
 \maketitle
 
+\textbf{Disclaimer:} Diese Arbeit wurde in der Absicht erstellt,
+nützlich zu sein und neue und interessante Erkenntnisse zu gewinnen.
+Auch wenn die Autoren einen wissenschaftlichen Hintergrund besitzen,
+so können sie eine Qualität,
+die ihren Maßstäben in ihren eigentlichen Fachbereichen genügt,
+für dieses Freizeitprojekt allein zeitlich nicht gewährleisten.
+
 \section{Beschreibung der Stichprobe}
 Der erste Teil der VDVC-Umfrage (künftig: \emph{2013})
 wurde über insgesamt 14 Tage
@@ -181,6 +188,88 @@ einer repräsentativen Abbildung der
 \emph{Coregamer} aus Deutschland entsprechen.
 Die Daten sind jedoch im Allgmeinen nicht repräsentativ
 und insbesondere in keinem Fall repräsentativ für alle Gamer.
+
+
+\section{Jugendschutz}
+
+\subsection{Einsteigsalter}
+
+
+\subsection{Verbreitung von Freigaben nach Alter}
+
+Unterstellt man einen linearen Verlauf,
+so lässt sich mittels Regression ermitteln,
+wie stark die Verbreitung der jeweiligen Freigabestufen mit dem Alter
+steigt oder fällt.
+Die resultierenden Ausgleichsgeraden sind zusammen mit den Daten in
+Abbildung~\ref{fig: freigabe-alter} dargestellt,
+die dazugehörigen Werte finden sich in Tabelle~\ref{tab: freigabe-alter}.
+
+\begin{figure}[htb]
+	\begin{minipage}[b]{0.3\linewidth}
+		\centering 2013 (n=3995)\\
+		\includegraphics[width=\linewidth]{2013/freigabe-alter}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[b]{0.3\linewidth}
+		\centering 2014 (n=13307)\\
+		\includegraphics[width=\linewidth]{2014/freigabe-alter}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[b]{0.3\linewidth}
+		\centering 2015 (n=4725)\\
+		\includegraphics[width=\linewidth]{2015/freigabe-alter}
+	\end{minipage}
+	\caption{Verbreitung von USK-Freigaben nach Alter.
+	Die Farben richten ich nach dem jeweiligen USK-Symbol:
+	weiß=`ab 0', gelb=`ab 6', grün=`ab 12', blau=`ab 16', rot=`ab 18'.
+	Zusätzlich geben schwarze Punkte Spiele an, die nicht bewertet wurden.}
+	\label{fig: freigabe-alter}
+\end{figure}
+
+Es fällt auf,
+dass USK6- und USK12-Titel beständig in höheren Altersgruppen beliebter
+sind als bei jüngeren Umfrageteilnehmern.
+Für USK18-Titel hingegen gilt das Gegenteil,
+ihre Verbreitung nimmt mit dem Alter ab.
+Bei USK0- und USK16-Titeln ist kein eindeutiger Trend erkennbar.
+
+Es ist zudem zu beobachten,
+dass der Anteil an nicht getesteten Spielen für alle Altersgruppen
+über die Jahre größer geworden ist.
+Wichtigster Grund hierfür ist die zunehmende Verbreitung von Indy-Games,
+die oft keine Prüfung beantragen.
+
+\newpage
+\section{Anhang}
+
+\begin{table}[ht]
+\caption{Steigungen der Ausgleichsgeraden in Abb.~\ref{fig: freigabe-alter}.}
+\label{tab: freigabe-alter}
+\vspace{1em}
+\centering
+\begin{tabular}{r|c|r|c|r}
+Jahr der Umfrage & Freigabe	&	Steigung	& Unsicherheit & P(falsches Vorzeichen)\\
+\hline
+2013 & USK00 & -0.02 & 0.12 & \(\unit[ 43,4]{\%}\)\\
+	 & USK06 &  0.42 & 0.11 & \(\unit[ 10,1]{\%}\)\\
+	 & USK12 &  0.30 & 0.22 & \(\unit[  8,6]{\%}\)\\
+	 & USK16 & -0.07 & 0.19 & \(\unit[ 35,6]{\%}\)\\
+	 & USK18 & -0.62 & 0.32 & \(\unit[  2,6]{\%}\)\\
+\hline
+2014 & USK00 &  0.01 & 0.06 & \(\unit[43,4]{\%}\)\\
+	 & USK06 &  0.16 & 0.04 & \(\unit[<0,1]{\%}\)\\
+	 & USK12 &  0.24 & 0.11 & \(\unit[ 1,5]{\%}\)\\
+	 & USK16 &  0.14 & 0.11 & \(\unit[10,1]{\%}\)\\
+	 & USK18 & -0.49 & 0.10 & \(\unit[<0,1]{\%}\)\\
+\hline
+2015 & USK00 &  0.40 & 0.19 & \(\unit[ 1,8]{\%}\)\\
+	 & USK06 &  0.24 & 0.06 & \(\unit[<0,1]{\%}\)\\
+	 & USK12 &  0.25 & 0.21 & \(\unit[11,7]{\%}\)\\
+	 & USK16 & -0.28 & 0.21 & \(\unit[ 9,1]{\%}\)\\
+	 & USK18 & -0.32 & 0.24 & \(\unit[ 9,1]{\%}\)\\
+\end{tabular}
+\end{table}
 
 
 \clearpage
