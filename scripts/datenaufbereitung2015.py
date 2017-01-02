@@ -8,110 +8,28 @@ import re
 import string
 import sys
 import unicodecsv
-from socket import inet_ntoa
-from struct import pack
 
 reload(sys)  
 sys.setdefaultencoding('utf8')
 
+from shared.luts import *
+
 # SPSS-Export
 rohdaten='./rohdaten/rohdaten2015.dat'
 
-# Referer-Info
-teilnehmer='./rohdaten/participants2015.csv'
-
-
-duplikatsliste='./daten/schreibweisen.tsv'
-zuordnungsliste='./daten/zuordnung.tsv'
-ogdbgames='./rohdaten/ogdbexport20161024_211122.csv'
-moregames='./daten/no-ogdb.tsv'
 
 # Dateien für Ergebnisse
 feedback = io.open("./rohdaten/feedback2015.dat", "w", encoding="utf8")
 results = io.open("./daten/daten2015.dat", "w", encoding="utf8")
 zensurinfo = io.open("./rohdaten/zensurinfo2015.dat", "w", encoding="utf8")
 nennungen = io.open("./daten/2015/nennungen.tsv", "w", encoding="utf8")
-f_unbekannt = io.open("./daten/2015/unbekannte-titel.tsv", "w", encoding="utf8") 
-
-def long2ip(ip):
-    ip=int(ip)
-    if ip < 0:
-        ip = ip & 0xffffffff
-    return inet_ntoa(pack("!L", ip))
-
-def community(url):
-    if "http://vdvc.de" in url:
-        return "VDVC"
-    elif "http://spielkultur.ea.de" in url:
-        return "EA"
-    elif "worldofplayers" in url:
-        return "WoP"
-    else:
-        return "?"
-
-def freigabe(string):
-    parts = string.replace(',','_').split('_')
-    kandidat=21
-    for part in parts:
-        if part.isnumeric():
-            kandidat = min(kandidat,int(part))
-        elif u"OA" in part:
-            return u"USK0"
-        elif u"KJ" in part:
-            kandidat = min(kandidat,18)
-    if kandidat == 21:
-        return u""
-    else:
-        return u'USK'+unicode(kandidat)
-
-freigabeordnung = {u'BPjM' : -1, u'StGB' : -1, u'USK0' : 0, u'USK6' : 1, u'USK12' : 2, u'USK16' : 3, u'USK18' : 4, u'' : 100, u'.' : 100}
+f_unbekannt = io.open("./daten/2015/unbekannte-titel.tsv", "w", encoding="utf8")
 
 d_unbekannt = {}
 
-strikeout=[" (Steam)"," (GOG)"," (Early Access)"]
-# Dieses Dictionary ordnet Spieltitel eine Releasejahr und eine USK-Friegabe zu
-# Zuordnung von Genres wäre möglich.
-with io.open(ogdbgames, encoding='utf8') as ogdb_file:
-    ogdb_reader = unicodecsv.reader(ogdb_file,delimiter=";")
-    ogdb_list=[]
-    lastentry=""
-    for ogdb_entry in ogdb_reader:
-        for so in strikeout:
-            ogdb_entry[0] = ogdb_entry[0].replace(so, "" )
-        if ogdb_entry[0].lower() == lastentry:
-            if ogdb_entry[9] != u'' and ogdb_list[-1][1] == u'':
-                ogdb_list[-1][1] = ogdb_entry[9]
-            if freigabe(ogdb_entry[3]) != u'':
-                if ogdb_list[-1][2] == u'':
-                    ogdb_list[-1][2]=freigabe(ogdb_entry[3])
-                elif freigabeordnung[freigabe(ogdb_entry[3])] < freigabeordnung[ogdb_list[-1][2]]:
-                    ogdb_list[-1][2]=freigabe(ogdb_entry[3])
-            if ogdb_entry[9] != "" and ogdb_list[-1][1] == "":
-                ogdb_list[-1][1] = ogdb_entry[9]
-        else:
-            ogdb_list.append([ogdb_entry[0].lower(),ogdb_entry[9],freigabe(ogdb_entry[3]),ogdb_entry[0]])
-            lastentry=ogdb_entry[0].lower()
-    ogdblookup={ogdb_entry[0]:(ogdb_entry[1] if ogdb_entry[1] != "" else "0",ogdb_entry[2],ogdb_entry[3]) for ogdb_entry in ogdb_list}
 
-# Dieses Dictionary ordnet Spieltitel eine Releasejahr und eine USK-Friegabe zu
-with io.open(moregames, encoding='utf8') as extra_file:
-    extra_reader = unicodecsv.reader(extra_file,delimiter="\t")
-    vdvclookup={extra_entry[0].lower():(extra_entry[1],extra_entry[2],extra_entry[0]) for extra_entry in extra_reader}
-
-# Dieses Dictionary ordnet genannten Spieltiteln die bekannte Schreibweise zu
-with io.open(duplikatsliste, encoding='utf8') as nl_file:
-    nl_reader = unicodecsv.reader(nl_file,delimiter="\t")
-    namelookup={nl_entry[1].lower():nl_entry[0] for nl_entry in nl_reader}
-
-# Dieses Set enthält alle erfassten Schreibweisen
-with io.open(duplikatsliste, encoding='utf8') as nl_file:
-    nl_reader = unicodecsv.reader(nl_file,delimiter="\t")
-    knowngames ={nl_entry[0].lower() for nl_entry in nl_reader}
-
-# Dieses Dictionary ordnet Spielen einen speziellen ODGB-Eintrag zu
-with io.open(zuordnungsliste, encoding='utf8') as ol_file:
-    ol_reader = unicodecsv.reader(ol_file,delimiter="\t")
-    ogdbtitles={ol_entry[0].lower():ol_entry[1].lower() for ol_entry in ol_reader}
+# Referer-Info
+teilnehmer='./rohdaten/participants2015.csv'
 
 # Dieses Dictionary ordnet einer IP-Adresse einen Referer zu
 with io.open(teilnehmer, encoding='utf8') as ref_file:
