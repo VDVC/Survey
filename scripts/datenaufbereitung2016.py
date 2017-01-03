@@ -41,8 +41,8 @@ items.append("") #RENAME VARIABLE ( V3 = submitdate ).
 items.append("") #RENAME VARIABLE ( V5 = startlanguage ).
 items.append("") #RENAME VARIABLE ( V6 = startdate ).
 items.append("") #RENAME VARIABLE ( V7 = datestamp ).
-items.append("") #RENAME VARIABLE ( V8 = ipaddr ).
-items.append("Gruppe") #RENAME VARIABLE ( V9 = refurl ).
+items.append("Gruppe") #RENAME VARIABLE ( V8 = ipaddr ).
+items.append("") #RENAME VARIABLE ( V9 = refurl ).
 items.append("Geburtsjahr") #RENAME VARIABLE ( V10 = Geburtsjahr ).
 items.append("Geschlecht") #RENAME VARIABLE ( V11 = Geschlecht ).
 items.append("WohnortDeutschland") #RENAME VARIABLE ( V12 = WohnortDeutschland ).
@@ -257,6 +257,11 @@ with io.open(rohdaten, encoding='utf8') as f:
                     game = namelookup[game.lower()]
                 gameinfo.append(find_gameinfo(game))
                 results.write(u'"'+gameinfo[-1][0]+u' ('+gameinfo[-1][1]+u')";')
+            elif item[0] == "Gruppe":
+                if item[1] in reflookup:
+                    results.write(u'"'+reflookup[item[1]]+u'";')
+                else:
+                    results.write(u'"";')
             else:
                 results.write(u'"'+item[1]+u'";')
                 
