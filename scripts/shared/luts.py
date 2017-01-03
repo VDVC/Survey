@@ -65,3 +65,36 @@ with io.open(zuordnungsliste, encoding='utf8') as ol_file:
     ogdbtitles={ol_entry[0].lower():ol_entry[1].lower() for ol_entry in ol_reader}
 
 
+# Führt die Look-Up-Tables zusammen und liefert Info zum Spiel
+def find_gameinfo(title): # search data of the game
+    lowtitle = title.lower()
+    year = u""
+    freigabe = u""
+    if lowtitle in ogdbtitles:
+       ogdbtitle = ogdbtitles[lowtitle]
+    else:
+       ogdbtitle = lowtitle
+
+    if ogdbtitle in ogdblookup:
+        year = ogdblookup[ogdbtitle][0].encode('utf-8')
+        freigabe = ogdblookup[ogdbtitle][1]
+        if lowtitle not in knowngames:
+            if lowtitle == ogdbtitle:
+                title = ogdblookup[ogdbtitle][2]
+            else:
+                title = lowtitle
+    elif lowtitle in vdvclookup:
+        year = vdvclookup[lowtitle][0].encode('utf-8')
+        freigabe = vdvclookup[lowtitle][1].encode('utf-8')
+        if lowtitle not in knowngames:
+            title = vdvclookup[lowtitle][2]
+    else:
+        if len(lowtitle) > 0 and lowtitle not in knowngames:
+            if title in d_unbekannt:
+            	d_unbekannt[title] = d_unbekannt[title] + 1
+            else:
+            	d_unbekannt[title] = 1
+
+    # make a return value out of the result
+    return [title,year,freigabe]
+

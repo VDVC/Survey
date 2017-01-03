@@ -18,6 +18,10 @@ from shared.luts import *
 rohdaten='./rohdaten/rohdaten2015.dat'
 
 
+# Referer-Info
+teilnehmer='./rohdaten/participants2015.csv'
+
+
 # Dateien für Ergebnisse
 feedback = io.open("./rohdaten/feedback2015.dat", "w", encoding="utf8")
 results = io.open("./daten/daten2015.dat", "w", encoding="utf8")
@@ -25,49 +29,16 @@ zensurinfo = io.open("./rohdaten/zensurinfo2015.dat", "w", encoding="utf8")
 nennungen = io.open("./daten/2015/nennungen.tsv", "w", encoding="utf8")
 f_unbekannt = io.open("./daten/2015/unbekannte-titel.tsv", "w", encoding="utf8")
 
+
+# Datenstruktur für unbekannte Titel
 d_unbekannt = {}
 
-
-# Referer-Info
-teilnehmer='./rohdaten/participants2015.csv'
 
 # Dieses Dictionary ordnet einer IP-Adresse einen Referer zu
 with io.open(teilnehmer, encoding='utf8') as ref_file:
     ref_reader = unicodecsv.reader(ref_file,delimiter=",")
     reflookup={long2ip(ref_entry[1]):community(ref_entry[2]) for ref_entry in ref_reader}
 
-
-def find_gameinfo(title): # search data of the game
-    lowtitle = title.lower()
-    year = u""
-    freigabe = u""
-    if lowtitle in ogdbtitles:
-       ogdbtitle = ogdbtitles[lowtitle]
-    else:
-       ogdbtitle = lowtitle
-
-    if ogdbtitle in ogdblookup:
-        year = ogdblookup[ogdbtitle][0].encode('utf-8')
-        freigabe = ogdblookup[ogdbtitle][1]
-        if lowtitle not in knowngames:
-            if lowtitle == ogdbtitle:
-                title = ogdblookup[ogdbtitle][2]
-            else:
-                title = lowtitle
-    elif lowtitle in vdvclookup:
-        year = vdvclookup[lowtitle][0].encode('utf-8')
-        freigabe = vdvclookup[lowtitle][1].encode('utf-8')
-        if lowtitle not in knowngames:
-            title = vdvclookup[lowtitle][2]
-    else:
-        if len(lowtitle) > 0 and lowtitle not in knowngames:
-            if title in d_unbekannt:
-            	d_unbekannt[title] = d_unbekannt[title] + 1
-            else:
-            	d_unbekannt[title] = 1
-
-    # make a return value out of the result
-    return [title,year,freigabe]
 
 #write table headers
 results.write(u'"gruppe";"Geburtsjahr";"Geschlecht";"WohnortDeutschland";"Breitbandzugang";"COAXSpeed";"DSLSpeed";"FunkSpeed";"Videospieler";"ExSpieler";"ExWann";"RandC";"RandX";"Multiplayer";"Erfahrung";"Plattform_PCMac";"Plattform_PCWin";"Plattform_PCLnx";"Plattform_Plystn";"Plattform_Wii";"Plattform_XBox";"Plattform_DS";"Plattform_Android";"Plattform_iPhone";"Plattform_WinPhone";"Nutzungsumfang";"SpielFrage";"Spiel1";"Release1";"Freigabe1";"Spiel2";"Release2 F4";"Freigabe2";"Spiel3";"Release3 F4";"Freigabe3";"Spiel4";"Release4 F4";"Freigabe4";"Spiel5";"Release5 F4";"Freigabe5";"Nutzungsdauer_SQ1";"Nutzungsdauer_SQ2";"Nutzungsdauer_SQ3";"Nutzungsdauer_SQ4";"Nutzungsdauer_SQ5";"Bezugsweg_SQ1";"Bezugsweg_SQ2";"Bezugsweg_SQ3";"Bezugsweg_SQ4";"Bezugsweg_SQ5";"Plattformen_SQ1";"Plattformen_SQ2";"Plattformen_SQ3";"Plattformen_SQ4";"Plattformen_SQ5";"LetzteNutzung_SQ1";"LetzteNutzung_SQ2";"LetzteNutzung_SQ3";"LetzteNutzung_SQ4";"LetzteNutzung_SQ5";"AusgabenHardware";"AusgabenSpieleKauf";"AusgabenSpieleAbos";"AusgabenAddonsDLCs";"AusgabenGameserver ";"Endmotivation_1";"Endmotivation_2";"Endmotivation_3";"Endmotivation_4";"Endmotivation_5";"Endmotivation_7";"Endmotivation_9";"Endzwang_SQ001";"Endzwang_SQ002";"Endverstndnis_1";"Endverstndnis_2";"Endverstndnis_3";"Endverstndnis_4";"Endverstndnis_5";"Endverstndnis_7";"Endverstndnis_9";"Startmotivation_1";"Startmotivation_2";"Startmotivation_3";"Startmotivation_4";"Startmotivation_5";"Illegalmotivation_1#0";"Illegalmotivation_1#1";"Illegalmotivation_2#0";"Illegalmotivation_2#1";"Illegalmotivation_3#0";"Illegalmotivation_3#1";"Illegalmotivation_4#0";"Illegalmotivation_4#1";"Illegalmotivation_5#0";"Illegalmotivation_5#1";"Illegalmotivation_6#0";"Illegalmotivation_6#1";"Illegalmotivation_7#0";"Illegalmotivation_7#1";"Illegalmotivation_8#0";"Illegalmotivation_8#1";"Illegalmotivation_9#0";"Illegalmotivation_9#1";"IllegalVerstaendnis_1";"IllegalVerstaendnis_2";"IllegalVerstaendnis_3";"IllegalVerstaendnis_4";"IllegalVerstaendnis_5";"IllegalVerstaendnis_6";"IllegalVerstaendnis_7";"IllegalVerstaendnis_8";"IllegalVerstaendnis_9";"Kennzeichenkenntnis_USK";"Kennzeichenkenntnis_PEGI";"Kennzeichenkenntnis_BPjM";"Kennzeichenkenntnis_StGB";"Kennzeichenkenntnis_GUrt";"Schnittkenntnis";"Zensurmeinung";"Zensurinformation";"Zensurinfowege_1";"Zensurinfowege_2";"Zensurinfowege_3";"Zensurinfowege_4";"Zensurinfowege_5";"Zensurinfowege_6";"UncutBezug";"UncutBezugErfolg";"UncutBezugWegKErf_SQ001";"UncutBezugWegKErf_SQ002";"UncutBezugWegKErf_SQ003";"UncutBezugWegKErf_SQ004";"UncutBezugWegKErf_SQ005";"UncutBezugWegKErf_SQ006";"UncutBezugWegKErf_SQ007";"UncutBezugWegKErf_SQ008";"UncutBezugWegKErf_SQ009";"UncutBezugWegKErf_SQ010";"UncutBezugWegErf_LI#0";"UncutBezugWegErf_LI#1";"UncutBezugWegErf_LA#0";"UncutBezugWegErf_LA#1";"UncutBezugWegErf_VI#0";"UncutBezugWegErf_VI#1";"UncutBezugWegErf_VA#0";"UncutBezugWegErf_VA#1";"UncutBezugWegErf_II#0";"UncutBezugWegErf_II#1";"UncutBezugWegErf_IL#0";"UncutBezugWegErf_IL#1";"UncutBezugWegErf_MD#0";"UncutBezugWegErf_MD#1";"UncutBezugWegErf_BI#0";"UncutBezugWegErf_BI#1";"UncutBezugWegErf_BA#0";"UncutBezugWegErf_BA#1";"UncutBezugWegErf_UA#0";"UncutBezugWegErf_UA#1";"UncutBezugWegErf_IB#0";"UncutBezugWegErf_IB#1";"Screenshots_NC";"Screenshots_CU";"Modifikationen_NC";"Modifikationen_CU";"eSport_NC";"eSport_CU";"Casten_NC";"Casten_CU";"LetsPlay_NC";"LetsPlay_CU";"Cheatbann";"Onlineaktivierung";"Onlinezwang";"Kontingent";"Kopierschutz";"Sicherheitskopie";"Datenschutz";"Geolock";"InfoFrage";"Informationsinteress_1#0";"Informationsinteress_1#1";"Informationsinteress_2#0";"Informationsinteress_2#1";"Informationsinteress_3#0";"Informationsinteress_3#1";"Informationsinteress_4#0";"Informationsinteress_4#1";"Informationsinteress_5#0";"Informationsinteress_5#1"\n')
