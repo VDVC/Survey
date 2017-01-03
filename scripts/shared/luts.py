@@ -17,6 +17,7 @@ moregames='./daten/no-ogdb.tsv'
 
 freigabeordnung = {u'BPjM' : -1, u'StGB' : -1, u'USK0' : 0, u'USK6' : 1, u'USK12' : 2, u'USK16' : 3, u'USK18' : 4, u'' : 100, u'.' : 100}
 
+d_unbekannt = {}
 
 # Dieses Dictionary ordnet Spieltitel eine Releasejahr und eine USK-Friegabe zu
 # Zuordnung von Genres wäre möglich.
