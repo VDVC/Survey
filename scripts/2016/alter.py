@@ -31,21 +31,24 @@ hist_alter_f.to_csv("./daten/"+str(umfragejahrgang)+"/alter_f.tsv",sep='\t',
 
 alter_answers=alter_m_answers+alter_f_answers
 
-hist_alter_m=hist_alter_m/alter_answers*100
-hist_alter_f=hist_alter_f/alter_answers*100
+hist_alter_m=hist_alter_m/alter_m_answers*100
+hist_alter_f=hist_alter_f/alter_f_answers*100
 
-fig = plt.figure()
-gs = matplotlib.gridspec.GridSpec(2,1)
-ax1 = plt.subplot(gs[0])
-ax2 = plt.subplot(gs[1])
+fig, axes = plt.subplots(ncols=2, sharey=True,tight_layout=True)
+ax1 = axes[0]
+ax2 = axes[1]
 
-hist_alter_m.plot(subplots=True,kind='bar',ax=ax1)
+hist_alter_m.plot(subplots=True,kind='barh',ax=ax1)
 ax1.legend().set_visible(False)
+ax1.invert_xaxis()
 
-hist_alter_f.plot(subplots=True,kind='bar',ax=ax2)
+hist_alter_f.plot(subplots=True,kind='barh',ax=ax2)
 ax2.legend().set_visible(False)
 
-ax1.set_title("Alter (n = "+str(alter_answers)+")")
-ax2.set_title("")
-plt.show()
+ax1.set_title("Männlich (n = "+str(alter_m_answers)+")")
+ax2.set_title("Weiblich (n = "+str(alter_f_answers)+")")
+ax1.set_xlabel("Anteil (%)")
+ax1.set_ylabel("Alter (Jahre)")
+ax2.set_xlabel("Anteil (%)")
+plt.savefig("plots/2016/alter.eps")
 
