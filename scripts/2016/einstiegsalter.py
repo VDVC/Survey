@@ -38,6 +38,7 @@ ax1.set_title("Einstiegsalter (n = "+str(answers)+")")
 ax1.set_xlabel("Einstiegsalter (Jahre)")
 ax1.set_ylabel("Anteil (%)")
 plt.savefig("plots/2016/einstiegsalter.eps")
+plt.savefig("plots/2016/einstiegsalter.svg")
 
 answers,hist['1970-1974']=data2hist(data[(data.Geburtsjahr>=1970)&(data.Geburtsjahr<1975)])
 answers,hist['1975-1979']=data2hist(data[(data.Geburtsjahr>=1975)&(data.Geburtsjahr<1980)])

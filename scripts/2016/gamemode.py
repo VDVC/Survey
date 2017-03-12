@@ -30,6 +30,7 @@ plt.gca().legend().set_visible(False)
 plt.title("Spielmodus")
 plt.ylabel("")
 plt.savefig("plots/2016/gamemode.eps")
+plt.savefig("plots/2016/gamemode.svg")
 
 hist.rename(columns={"Multiplayer":"Gesamt"}, inplace=True)
 hist['1970-1974']=data2hist(data[(data.Geburtsjahr>=1970)&(data.Geburtsjahr<1975)])

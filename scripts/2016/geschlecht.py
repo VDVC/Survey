@@ -24,4 +24,7 @@ hist_geschlecht.plot(kind='pie',ax=ax,subplots=True)
 plt.gca().legend().set_visible(False)
 plt.title("Geschlecht")
 plt.ylabel("")
+
 plt.savefig("plots/2016/geschlecht.eps")
+plt.savefig("plots/2016/geschlecht.svg")
+

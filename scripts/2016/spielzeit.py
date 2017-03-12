@@ -34,5 +34,6 @@ ax1.set_xlabel("Durchschnittliche wöchentliche Spielzeit von maximal … Stunde
 ax1.set_ylabel("Anteil (%)")
 ax1.set_xlim(1,80)
 plt.savefig("plots/2016/spielzeit.eps")
-plt.show()
+plt.savefig("plots/2016/spielzeit.svg")
+#plt.show()
 

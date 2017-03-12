@@ -19,3 +19,4 @@ hist_group.to_csv("./daten/"+str(umfragejahrgang)+"/gruppe.tsv",sep='\t',
 hist_group.plot(kind='pie',subplots=True)
 plt.gca().legend().set_visible(False)
 plt.show()
+

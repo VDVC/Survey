@@ -25,3 +25,5 @@ plt.gca().legend().set_visible(False)
 plt.title("Ist es dir persönlich wichtig,\ndass E-Sport offiziell als Sport anerkannt wird?")
 plt.ylabel("")
 plt.savefig("plots/2016/esport_wichtig.eps")
+plt.savefig("plots/2016/esport_wichtig.svg")
+

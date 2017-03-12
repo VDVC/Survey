@@ -1,4 +1,5 @@
 #! /usr/bin/env python3
+# -*- coding: utf-8 -*-
 
 import pandas as pd
 import csv
@@ -48,4 +49,5 @@ ax1.set_ylabel("Alter (Jahre)")
 ax2.set_xlabel("Anzahl")
 
 plt.savefig("plots/2016/alter.eps")
+plt.savefig("plots/2016/alter.svg")
 
