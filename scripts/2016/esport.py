@@ -9,6 +9,7 @@ import sys
 sys.path.append('./scripts/shared/')
 
 from auswertung.Anzahl import eval_Anzahl
+from auswertung.AnzahlSumme import eval_AnzahlSumme
 from auswertung.JaNein import eval_JaNein
 from plot.PieChart import plot_PieChart
 
@@ -39,4 +40,10 @@ antworten_ESportGrund = {
 counts_ESportGrund = eval_Anzahl(dataset,antworten_ESportGrund)
 counts_ESportGrund.to_csv("./daten/"+str(umfragejahrgang)+"/ESportGrund.tsv",sep='\t',
                   quoting=csv.QUOTE_NONNUMERIC,index_label=["ESportGrund"])
+
+
+ESportRealistisch = eval_AnzahlSumme(dataset,"ESportRealistisch")
+ESportRealistisch.to_csv("./daten/"+str(umfragejahrgang)+"/ESportRealistisch.tsv",
+						sep='\t',quoting=csv.QUOTE_NONNUMERIC,
+						index_label=["ESportRealistisch"])
 

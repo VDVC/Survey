@@ -10,6 +10,7 @@ sys.path.append('./scripts/shared/')
 
 
 from auswertung.Anzahl import eval_Anzahl
+from auswertung.AnzahlSumme import eval_AnzahlSumme
 from auswertung.JaNein import eval_JaNein
 from auswertung.WahlAus import eval_WahlAus
 from plot.PieChart import plot_PieChart
@@ -49,3 +50,10 @@ antworten_KunstGrund = {
 counts_KunstGrund = eval_Anzahl(dataset,antworten_KunstGrund)
 counts_KunstGrund.to_csv("./daten/"+str(umfragejahrgang)+"/KunstGrund.tsv",sep='\t',
                   quoting=csv.QUOTE_NONNUMERIC,index_label=["KunstGrund"])
+
+
+KunstRealistisch = eval_AnzahlSumme(dataset,"KunstRealistisch")
+KunstRealistisch.to_csv("./daten/"+str(umfragejahrgang)+"/KunstRealistisch.tsv",
+						sep='\t',quoting=csv.QUOTE_NONNUMERIC,
+						index_label=["KunstRealistisch"])
+
