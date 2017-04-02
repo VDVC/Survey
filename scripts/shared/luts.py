@@ -12,7 +12,7 @@ from parsers import long2ip
 
 duplikatsliste='./daten/schreibweisen.tsv'
 zuordnungsliste='./daten/zuordnung.tsv'
-ogdbgames='./rohdaten/ogdbexport20161024_211122.csv'
+ogdbgames='./rohdaten/ogdbexport20170402_170220.csv'
 moregames='./daten/no-ogdb.tsv'
 
 freigabeordnung = {u'BPjM' : -1, u'StGB' : -1, u'USK0' : 0, u'USK6' : 1, u'USK12' : 2, u'USK16' : 3, u'USK18' : 4, u'' : 100, u'.' : 100}
