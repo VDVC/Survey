@@ -90,6 +90,7 @@ def find_gameinfo(title): # search data of the game
         if lowtitle not in knowngames:
             title = vdvclookup[lowtitle][2]
     else:
+        # kein Treffern: unbekannter Titel wenn nicht in Liste bekannter Spiele
         if len(lowtitle) > 0 and lowtitle not in knowngames:
             if title in d_unbekannt:
             	d_unbekannt[title] = d_unbekannt[title] + 1
