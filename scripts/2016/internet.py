@@ -34,5 +34,35 @@ speed["Summe"] = speed["Anzahl"].cumsum()
 speed.to_csv("./daten/"+str(umfragejahrgang)+"/internetspeed.tsv",sep='\t',
                    index_label=["Internetgeschwindigkeit"])
 
+frage_BreitbandSpeed="Wie schnell ist der Internetzugang an deinem Wohnort?"
+
+plt.figure(figsize=(6,3),tight_layout=True)
+ax = plt.subplot(111)
+plt.plot(speed["Summe"])
+plt.gca().legend().set_visible(False)
+plt.title(frage_BreitbandSpeed)
+plt.xlabel("Geschwindigkeit (MBit/s)")
+plt.ylabel("Anzahl")
+plt.xlim(1,500)
+plt.ylim(0,1000)
+plt.xscale("log")
+
+fname = "./plots/"+str(umfragejahrgang)+"/internetspeed-summe"
+plt.savefig(fname+".eps")
+plt.savefig(fname+".svg")
+
+plt.figure(figsize=(6,3),tight_layout=True)
+ax = plt.subplot(111)
+plt.plot(speed["Anzahl"])
+plt.gca().legend().set_visible(False)
+plt.title(frage_BreitbandSpeed)
+plt.xlabel("Geschwindigkeit (MBit/s)")
+plt.ylabel("Anzahl")
+plt.xlim(0,110)
+
+fname = "./plots/"+str(umfragejahrgang)+"/internetspeed"
+plt.savefig(fname+".eps")
+plt.savefig(fname+".svg")
+
 exit()
 
