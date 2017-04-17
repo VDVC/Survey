@@ -10,14 +10,6 @@ data = pd.read_csv('daten/daten2016.dat',sep=";")
 
 umfragejahrgang=2016
 
-hist_alter=(umfragejahrgang-(data[data.Geburtsjahr>1950])['Geburtsjahr']).value_counts()
-hist_alter.sort_index(inplace=True)
-hist_alter=hist_alter.reindex(np.arange(10,65,1),fill_value=0)
-hist_alter = hist_alter.to_frame()
-hist_alter=hist_alter.rename(columns={"Geburtsjahr": "Anzahl"})
-hist_alter.to_csv("./daten/"+str(umfragejahrgang)+"/alter.tsv",sep='\t',
-                  quoting=csv.QUOTE_NONNUMERIC,index_label=["Alter"])
-
 hist_game=pd.concat([data['Spiel_1'],\
                      data['Spiel_2'],\
                      data['Spiel_3'],\
