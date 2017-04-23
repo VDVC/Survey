@@ -15,7 +15,14 @@ hist_game=pd.concat([data['Spiel_1'],\
                      data['Spiel_3'],\
                      data['Spiel_4'],\
                      data['Spiel_5']]).value_counts()
-hist_game.sort_values(inplace=True,ascending=False)
+
+hist_game = pd.DataFrame(hist_game,columns=["Anzahl"])
+
+hist_game['colFromIndex'] = hist_game.index
+
+hist_game.sort_values(["Anzahl","colFromIndex"],inplace=True,ascending=[False,True])
+#hist_game.sort_values(["Anzahl"],ascending=False,inplace=True)
+hist_game = hist_game.drop('colFromIndex', 1)
 pd.DataFrame(data=hist_game,\
              columns=["Anzahl"]).to_csv("./daten/"+str(umfragejahrgang)+"/titel.tsv",\
                                            sep='\t',
