@@ -5,6 +5,7 @@ import io
 import pandas as pd
 import csv
 import operator
+import numpy as np
 
 fname_schreibweisen='./daten/schreibweisen.tsv'
 fname_zuordnung='./daten/zuordnung.tsv'
@@ -28,8 +29,11 @@ with io.open(fname_moregames, encoding='utf8') as extra_file:
     extra_reader = csv.reader(extra_file,delimiter="\t")
     vdvclookup={extra_entry[0].lower():(extra_entry[1],extra_entry[2],extra_entry[0]) for extra_entry in extra_reader}
 
-neue_schreibweisen = pd.DataFrame(neue_titel, columns=["Unbekannter Titel","Schreibweise"])
+neue_schreibweisen = pd.DataFrame(neue_titel, columns=["Unbekannter Titel","Schreibweise","OGDB_Name"])
+neue_schreibweisen[neue_schreibweisen["OGDB_Name"]==""] = np.NaN
+neue_schreibweisen['Schreibweise'].fillna(neue_schreibweisen['OGDB_Name'], inplace=True)
 neue_schreibweisen = neue_schreibweisen[pd.notnull(neue_schreibweisen["Schreibweise"])]
+
 korrekt = neue_schreibweisen["Schreibweise"].tolist()
 genannt = neue_schreibweisen["Unbekannter Titel"].tolist()
 neue_schreibweisen = {genannt.lower():korrekt for korrekt,genannt in zip(korrekt,genannt)}
