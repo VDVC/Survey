@@ -36,7 +36,8 @@ neue_schreibweisen = {genannt.lower():korrekt for korrekt,genannt in zip(korrekt
 
 schreibweisen.update(neue_schreibweisen)
 
-schreibweisen = sorted(schreibweisen.items(), key=operator.itemgetter(1))
+# sortiere alphanumerisch, erst Value dann Key, ignoriere Groß- und Kleinschreibung
+schreibweisen = sorted(schreibweisen.items(), key=lambda x: x[1].lower()+"  "+x[0].lower())
 
 file_schreibweisen = open(fname_schreibweisen, "w")
 
