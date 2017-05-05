@@ -24,6 +24,7 @@ teilnehmer='./rohdaten/participants2016.csv'
 
 # Dateien für Ergebnisse
 results = io.open("./daten/daten2016.dat", "w", encoding="utf8")
+nennungen = io.open("./daten/2016/nennungen.tsv", "w", encoding="utf8")
 f_unbekannt = io.open("./daten/2016/unbekannte-titel.tsv", "w", encoding="utf8")
 
 
@@ -238,6 +239,9 @@ for item in items:
 
 results.write(u'\n')
 
+# Anzahl der Nennungen
+gameshist=[0,0,0,0,0,0]
+
 # Lese Rohdaten ein
 with io.open(rohdaten, encoding='utf8') as f:
     reader = unicodecsv.reader(f,delimiter=';',quotechar='"')
@@ -253,6 +257,8 @@ with io.open(rohdaten, encoding='utf8') as f:
                 continue
             elif item[0][:5] == "Spiel":
                 game = item[1]
+                if (len(game) > 1):
+                    ngames=ngames+1
                 if game.lower() in namelookup:
                     game = namelookup[game.lower()]
                 gameinfo.append(find_gameinfo(game))
@@ -272,6 +278,11 @@ with io.open(rohdaten, encoding='utf8') as f:
 
         # Datensatz fertig verarbeitet, neue Zeile!
         results.write(u'\n')
+        gameshist[ngames] = gameshist[ngames]+1
+
+nennungen.write(u'"Genannte Titel"\t"Häufigkeit"\n')
+for nr in range(0,6):
+    nennungen.write(unicode(nr)+u'\t'+unicode(gameshist[nr])+u'\n')
 
 f_unbekannt.write(u'"Unbekannter Titel"\t"Nennungen"\n')
 for item in sorted(d_unbekannt.items(),key=lambda x: x[1], reverse=True):
