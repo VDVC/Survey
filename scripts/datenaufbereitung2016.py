@@ -262,7 +262,7 @@ with io.open(rohdaten, encoding='utf8') as f:
                 if game.lower() in namelookup:
                     game = namelookup[game.lower()]
                 gameinfo.append(find_gameinfo(game))
-                results.write(u'"'+gameinfo[-1][0]+u' ('+gameinfo[-1][1]+u')";')
+                results.write(u'"'+gameinfo[-1][0]+u'";')
             elif item[0] == "Gruppe":
                 if item[1] in reflookup:
                     results.write(u'"'+reflookup[item[1]]+u'";')
