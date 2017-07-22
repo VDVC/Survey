@@ -31,21 +31,6 @@ spiele.to_csv("./daten/"+str(umfragejahrgang)+"/titel.tsv",\
                                            float_format='%.f',
                                            index=False)
 
-exit()
-
-freigabe=pd.concat([data['Freigabe_1'],\
-                    data['Freigabe_2'],\
-                    data['Freigabe_3'],\
-                    data['Freigabe_4'],\
-                    data['Freigabe_5']])
-hist_freigabe = freigabe.value_counts()
-hist_freigabe.sort_values(inplace=True,ascending=False)
-pd.DataFrame(data=hist_freigabe,\
-             columns=["Anzahl"]).to_csv("./daten/"+str(umfragejahrgang)+"/freigabe.tsv",\
-                                           sep='\t',
-                                           quoting=csv.QUOTE_NONNUMERIC,
-                                           index_label=["Freigabe"])
-
 freigabe_alter=pd.crosstab(umfragejahrgang-(data[data.Geburtsjahr>1950])['Geburtsjahr'],\
                data.Freigabe_1)\
               +pd.crosstab(umfragejahrgang-(data[data.Geburtsjahr>1950])['Geburtsjahr'],\
