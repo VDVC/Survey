@@ -10,24 +10,28 @@ data = pd.read_csv('daten/daten2016.dat',sep=";")
 
 umfragejahrgang=2016
 
-hist_game=pd.concat([data['Spiel_1'],\
-                     data['Spiel_2'],\
-                     data['Spiel_3'],\
-                     data['Spiel_4'],\
-                     data['Spiel_5']]).value_counts()
+spiel1 = pd.DataFrame(data, columns=['Spiel_1','Release_1']).rename(columns={'Spiel_1': 'Titel', 'Release_1': 'Release' })
+spiel2 = pd.DataFrame(data, columns=['Spiel_2','Release_2']).rename(columns={'Spiel_2': 'Titel', 'Release_2': 'Release' })
+spiel3 = pd.DataFrame(data, columns=['Spiel_3','Release_3']).rename(columns={'Spiel_3': 'Titel', 'Release_3': 'Release' })
+spiel4 = pd.DataFrame(data, columns=['Spiel_4','Release_4']).rename(columns={'Spiel_4': 'Titel', 'Release_4': 'Release' })
+spiel5 = pd.DataFrame(data, columns=['Spiel_5','Release_5']).rename(columns={'Spiel_5': 'Titel', 'Release_5': 'Release' })
 
-hist_game = pd.DataFrame(hist_game,columns=["Anzahl"])
 
-hist_game['colFromIndex'] = hist_game.index
+spiele = pd.concat([spiel1, spiel2, spiel3, spiel4, spiel5])
 
-hist_game.sort_values(["Anzahl","colFromIndex"],inplace=True,ascending=[False,True])
-#hist_game.sort_values(["Anzahl"],ascending=False,inplace=True)
-hist_game = hist_game.drop('colFromIndex', 1)
-pd.DataFrame(data=hist_game,\
-             columns=["Anzahl"]).to_csv("./daten/"+str(umfragejahrgang)+"/titel.tsv",\
+spiele['Nennungen'] = spiele.groupby(['Titel'])['Titel'].transform('count')
+
+spiele.drop_duplicates(inplace=True)
+spiele.sort_values(["Nennungen","Titel"],inplace=True,ascending=[False,True])
+
+
+spiele.to_csv("./daten/"+str(umfragejahrgang)+"/titel.tsv",\
                                            sep='\t',
                                            quoting=csv.QUOTE_NONNUMERIC,
-                                           index_label=["Titel"])
+                                           float_format='%.f',
+                                           index=False)
+
+exit()
 
 freigabe=pd.concat([data['Freigabe_1'],\
                     data['Freigabe_2'],\
