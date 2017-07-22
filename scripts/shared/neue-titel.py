@@ -22,7 +22,7 @@ with io.open(fname_schreibweisen, encoding='utf8') as nl_file:
 # Dieses Dictionary ordnet Spielen einen speziellen ODGB-Eintrag zu
 with io.open(fname_zuordnung, encoding='utf8') as ol_file:
     ol_reader = csv.reader(ol_file,delimiter="\t")
-    zuordnung={ol_entry[0].lower():ol_entry[1].lower() for ol_entry in ol_reader}
+    zuordnungen={ol_entry[0].lower():ol_entry[1].lower() for ol_entry in ol_reader}
 
 # Dieses Dictionary ordnet Spieltitel eine Releasejahr und eine USK-Freigabe zu
 # Einträge sind Titel, Release, Freigabe
@@ -57,7 +57,24 @@ for schreibweise in schreibweisen:
 #################### neue OGDB-Zuordnung #########################
 ## füge neue Zuordnung zu OGDB-Eintrag in fname_zuordnung ein
 
-print("Achtung: OGDB-Zuordnung hier noch nicht implementiert")
+neue_zuordnungen = pd.DataFrame(neue_titel, columns=["Schreibweise","OGDB_Name"])
+neue_zuordnungen = neue_zuordnungen[pd.notnull(neue_zuordnungen["OGDB_Name"])]
+neue_zuordnungen = neue_zuordnungen[pd.notnull(neue_zuordnungen["Schreibweise"])]
+
+vdvc_name = neue_zuordnungen["Schreibweise"].tolist()
+ogdb_name = neue_zuordnungen["OGDB_Name"].tolist()
+neue_zuordnungen = {vdvc_name:ogdb_name for ogdb_name,vdvc_name in zip(ogdb_name,vdvc_name)}
+
+zuordnungen.update(neue_zuordnungen)
+
+# sortiere alphanumerisch, erst Value dann Key, ignoriere Groß- und Kleinschreibung
+zuordnungen = sorted(zuordnungen.items(), key=lambda x: x[1].lower()+"  "+x[0].lower())
+
+file_zuordnung = open(fname_zuordnung, "w")
+
+file_zuordnung.write('"Titel"\t"OGDB-Eintrag"\n')
+for zuordnung in zuordnungen:
+    file_zuordnung.write('"'+zuordnung[0]+'"\t"'+zuordnung[1]+'"\n')
 
 #################### neue Infos (Freigabe und Release) #########################
 ## füge neue Infos (Freigabe und Release) in fname_moregames ein
