@@ -17,6 +17,17 @@ dataset = pd.read_csv('daten/daten2016.dat',sep=";")
 
 umfragejahrgang=2016
 
+crosstab_ESportWichtig = pd.crosstab(dataset['Multiplayer'], dataset['ESportWichtig'])
+crosstab_ESportWichtig.rename(	{	"A1": "Vorrangig Einzelspieler.",
+										"A3": "Beides gleichermaßen.",
+										"A5": "Vorrangig Mehrspieler."},
+								columns={1: "Ja",2: "Nein"},
+								inplace=True)
+
+crosstab_ESportWichtig.to_csv("./daten/"+str(umfragejahrgang)+"/ESportWichtig_Multiplayer.tsv",sep='\t',
+                  quoting=csv.QUOTE_NONNUMERIC)
+
+
 hist_EsportWichtig = eval_JaNein(dataset,'ESportWichtig')
 hist_EsportWichtig.to_csv("./daten/"+str(umfragejahrgang)+"/ESportWichtig.tsv",sep='\t',
                   quoting=csv.QUOTE_NONNUMERIC,index_label=["ESportWichtig"])
