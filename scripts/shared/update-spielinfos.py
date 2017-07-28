@@ -9,10 +9,11 @@ import numpy as np
 
 fname_schreibweisen='./daten/schreibweisen.tsv'
 fname_zuordnung='./daten/zuordnung.tsv'
-fname_ogdbgames='./rohdaten/ogdbexport20161024_211122.csv'
-fname_moregames='./daten/no-ogdb.tsv'
+fname_moregames='./daten/spielinfos.tsv'
 
 neue_titel = pd.read_csv('./daten/neue-titel.tsv',sep="\t")
+
+no_year_placeholder = '0'
 
 # Dieses Dictionary ordnet genannten Spieltiteln die bekannte Schreibweise zu
 with io.open(fname_schreibweisen, encoding='utf8') as nl_file:
@@ -40,9 +41,20 @@ neue_schreibweisen = neue_schreibweisen[pd.notnull(neue_schreibweisen["Schreibwe
 
 korrekt = neue_schreibweisen["Schreibweise"].tolist()
 genannt = neue_schreibweisen["Unbekannter Titel"].tolist()
-neue_schreibweisen = {genannt.lower():korrekt for korrekt,genannt in zip(korrekt,genannt)}
+neue_schreibweisen = {genannt.lower():korrekt.lower() for korrekt,genannt in zip(korrekt,genannt)}
 
 schreibweisen.update(neue_schreibweisen)
+
+# füge Identitäten hinzu
+
+id_schreibweisen = []
+for key,val in schreibweisen.items():
+	if val[:5] != "(???)":
+		id_schreibweisen.append(val)
+
+id_schreibweisen = {key:key for key in id_schreibweisen}
+
+schreibweisen.update(id_schreibweisen)
 
 # sortiere alphanumerisch, erst Value dann Key, ignoriere Groß- und Kleinschreibung
 schreibweisen = sorted(schreibweisen.items(), key=lambda x: x[1].lower()+"  "+x[0].lower())
@@ -98,14 +110,14 @@ file_vdvclookup = open(fname_moregames, "w")
 for game in vdvclookup:
     entry = '"'+game[1][2]+'"\t'
     if str(game[1][0]) == "0":
-        entry += 'NaN'
+        entry += no_year_placeholder
     elif str(game[1][0]).lower() == "nan":
-        entry += 'NaN'
+        entry += no_year_placeholder
     else:
         entry += str(int(game[1][0]))
     entry += '\t"'
     if str(game[1][1]) == "nan":
-        entry += '.'
+        entry += '????'
     else:
         entry += str(game[1][1])
     file_vdvclookup.write(entry+'"\n')
