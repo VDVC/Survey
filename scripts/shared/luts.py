@@ -12,7 +12,7 @@ from parsers import long2ip
 duplikatsliste='./daten/schreibweisen.tsv'
 zuordnungsliste='./daten/zuordnung.tsv'
 ogdbgames='./rohdaten/ogdbexport20170402_170220.csv'
-moregames='./daten/no-ogdb.tsv'
+moregames='./daten/spielinfos.tsv'
 
 freigabeordnung = {u'BPjM' : -1, u'StGB' : -1, u'USK0' : 0, u'USK6' : 1, u'USK12' : 2, u'USK16' : 3, u'USK18' : 4, u'' : 100, u'.' : 100}
 
@@ -77,7 +77,12 @@ def find_gameinfo(title): # search data of the game
     else:
        ogdbtitle = lowtitle
 
-    if ogdbtitle in ogdblookup:
+    if lowtitle in vdvclookup:
+        year = vdvclookup[lowtitle][0].encode('utf-8')
+        freigabe = vdvclookup[lowtitle][1].encode('utf-8')
+        if lowtitle not in knowngames:
+            title = vdvclookup[lowtitle][2]
+    elif ogdbtitle in ogdblookup:
         year = ogdblookup[ogdbtitle][0].encode('utf-8')
         freigabe = ogdblookup[ogdbtitle][1]
         if lowtitle not in knowngames:
@@ -85,11 +90,7 @@ def find_gameinfo(title): # search data of the game
                 title = ogdblookup[ogdbtitle][2]
             else:
                 title = lowtitle
-    elif lowtitle in vdvclookup:
-        year = vdvclookup[lowtitle][0].encode('utf-8')
-        freigabe = vdvclookup[lowtitle][1].encode('utf-8')
-        if lowtitle not in knowngames:
-            title = vdvclookup[lowtitle][2]
+
     else:
         # kein Treffern: unbekannter Titel wenn nicht in Liste bekannter Spiele
         if len(lowtitle) > 0 and lowtitle not in knowngames:
