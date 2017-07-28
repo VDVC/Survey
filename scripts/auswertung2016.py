@@ -16,7 +16,6 @@ spiel3 = pd.DataFrame(data, columns=['Spiel_3','Release_3']).rename(columns={'Sp
 spiel4 = pd.DataFrame(data, columns=['Spiel_4','Release_4']).rename(columns={'Spiel_4': 'Titel', 'Release_4': 'Release' })
 spiel5 = pd.DataFrame(data, columns=['Spiel_5','Release_5']).rename(columns={'Spiel_5': 'Titel', 'Release_5': 'Release' })
 
-
 spiele = pd.concat([spiel1, spiel2, spiel3, spiel4, spiel5])
 
 spiele['Nennungen'] = spiele.groupby(['Titel'])['Titel'].transform('count')
@@ -42,7 +41,7 @@ freigabe_alter=pd.crosstab(umfragejahrgang-(data[data.Geburtsjahr>1950])['Geburt
               +pd.crosstab(umfragejahrgang-(data[data.Geburtsjahr>1950])['Geburtsjahr'],\
                data.Freigabe_5)
 freigabe_alter=freigabe_alter.reindex(np.arange(10,65,1),fill_value=0)
-freigabe_alter["Gesamt"]=freigabe_alter["."]\
+freigabe_alter["Gesamt"]=freigabe_alter["????"]\
                         +freigabe_alter["USK0"]\
                         +freigabe_alter["USK12"]\
                         +freigabe_alter["USK16"]\

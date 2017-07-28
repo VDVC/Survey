@@ -4,7 +4,6 @@
 import io
 import unicodecsv
 
-
 from parsers import community
 from parsers import freigabe
 from parsers import long2ip
@@ -19,7 +18,8 @@ freigabeordnung = {u'BPjM' : -1, u'StGB' : -1, u'USK0' : 0, u'USK6' : 1, u'USK12
 
 d_unbekannt = {}
 
-# Dieses Dictionary ordnet Spieltitel eine Releasejahr und eine USK-Friegabe zu
+# Dieses Dictionary ordnet Spieltitel eine Releasejahr und eine USK-Friegabe zu.
+# Einträge sind: Titel (klein): (Releasejahr, Freigabe, Titel)
 # Zuordnung von Genres wäre möglich.
 strikeout=[" (Steam)"," (GOG)"," (Early Access)"]
 with io.open(ogdbgames, encoding='utf8') as ogdb_file:
@@ -42,7 +42,8 @@ with io.open(ogdbgames, encoding='utf8') as ogdb_file:
         else:
             ogdb_list.append([ogdb_entry[0].lower(),ogdb_entry[9],freigabe(ogdb_entry[3]),ogdb_entry[0]])
             lastentry=ogdb_entry[0].lower()
-    ogdblookup={ogdb_entry[0]:(ogdb_entry[1] if ogdb_entry[1] != "" else "0",ogdb_entry[2],ogdb_entry[3]) for ogdb_entry in ogdb_list}
+    ogdblookup={ogdb_entry[0]:(	ogdb_entry[1] if ogdb_entry[1] != "" else "0",
+    							ogdb_entry[2] if len(ogdb_entry[2]) > 2 else "????",ogdb_entry[3]) for ogdb_entry in ogdb_list}
 
 # Dieses Dictionary ordnet Spieltitel eine Releasejahr und eine USK-Freigabe zu
 with io.open(moregames, encoding='utf8') as extra_file:
