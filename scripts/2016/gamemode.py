@@ -41,6 +41,10 @@ hist['1990-1994']=data2hist(data[(data.Geburtsjahr>=1990)&(data.Geburtsjahr<1995
 hist['1995-1999']=data2hist(data[(data.Geburtsjahr>=1995)&(data.Geburtsjahr<2000)])
 hist['2000-2004']=data2hist(data[(data.Geburtsjahr>=2000)&(data.Geburtsjahr<2005)])
 
+
+hist['m']=data2hist(data[(data.Geschlecht==1.0)])
+hist['f']=data2hist(data[(data.Geschlecht==2.0)])
+
 hist.to_csv("./daten/"+str(umfragejahrgang)+"/gamemode.tsv",sep='\t',
                   quoting=csv.QUOTE_NONNUMERIC,index_label=["Gamemode"])
 

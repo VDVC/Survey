@@ -20,8 +20,13 @@ df_spielzeit=df_spielzeit.rename(columns={"Nutzungsumfang": "Anzahl"})
 df_spielzeit['Summe'] = df_spielzeit['Anzahl'].cumsum()
 spielzeit_answers = df_spielzeit['Anzahl'].sum()
 
+df_spielzeit['m'] = (data[(data.Geschlecht==1.0)]['Nutzungsumfang']).value_counts()
+df_spielzeit['Sum_m'] = df_spielzeit['m'].cumsum()
+df_spielzeit['f'] = (data[(data.Geschlecht==2.0)]['Nutzungsumfang']).value_counts()
+df_spielzeit['Sum_f'] = df_spielzeit['f'].cumsum()
+
 df_spielzeit.to_csv("./daten/"+str(umfragejahrgang)+"/spielzeit.tsv",sep='\t',
-                  quoting=csv.QUOTE_NONNUMERIC,index_label=["Alter"])
+                  quoting=csv.QUOTE_NONNUMERIC,index_label=["Spielzeit"])
 
 
 fig = plt.figure()
