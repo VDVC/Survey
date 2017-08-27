@@ -28,35 +28,40 @@ df_ausgaben['HW(f)'] = df_ausgaben['N'].cumsum()
 
 
 dataname='AusgabenSpieleKauf'
-df_ausgaben['Kauf(alle)'] = (data[dataname]).value_counts()
+df_ausgaben['N'] = (data[dataname]).value_counts()
+df_ausgaben['Kauf(alle)'] = df_ausgaben['N'].cumsum()
 df_ausgaben['N'] = (data[(data.Geschlecht==1.0)][dataname]).value_counts()
 df_ausgaben['Kauf(m)'] = df_ausgaben['N'].cumsum()
 df_ausgaben['N'] = (data[(data.Geschlecht==2.0)][dataname]).value_counts()
 df_ausgaben['Kauf(f)'] = df_ausgaben['N'].cumsum()
 
 dataname='AusgabenSpieleAbos'
-df_ausgaben['Abo(alle)'] = (data[dataname]).value_counts()
+df_ausgaben['N'] = (data[dataname]).value_counts()
+df_ausgaben['Abo(alle)'] = df_ausgaben['N'].cumsum()
 df_ausgaben['N'] = (data[(data.Geschlecht==1.0)][dataname]).value_counts()
 df_ausgaben['Abo(m)'] = df_ausgaben['N'].cumsum()
 df_ausgaben['N'] = (data[(data.Geschlecht==2.0)][dataname]).value_counts()
 df_ausgaben['Abo(f)'] = df_ausgaben['N'].cumsum()
 
 dataname='AusgabenAddonsDLCs'
-df_ausgaben['DLC(alle)'] = (data[dataname]).value_counts()
+df_ausgaben['N'] = (data[dataname]).value_counts()
+df_ausgaben['DLC(alle)'] = df_ausgaben['N'].cumsum()
 df_ausgaben['N'] = (data[(data.Geschlecht==1.0)][dataname]).value_counts()
 df_ausgaben['DLC(m)'] = df_ausgaben['N'].cumsum()
 df_ausgaben['N'] = (data[(data.Geschlecht==2.0)][dataname]).value_counts()
 df_ausgaben['DLC(f)'] = df_ausgaben['N'].cumsum()
 
 dataname='AusgabenContent'
-df_ausgaben['Cont(alle)'] = (data[dataname]).value_counts()
+df_ausgaben['N'] = (data[dataname]).value_counts()
+df_ausgaben['Cont(alle)'] = df_ausgaben['N'].cumsum()
 df_ausgaben['N'] = (data[(data.Geschlecht==1.0)][dataname]).value_counts()
 df_ausgaben['Cont(m)'] = df_ausgaben['N'].cumsum()
 df_ausgaben['N'] = (data[(data.Geschlecht==2.0)][dataname]).value_counts()
 df_ausgaben['Cont(f)'] = df_ausgaben['N'].cumsum()
 
 dataname='AusgabenGameserver'
-df_ausgaben['Server(alle)'] = (data[dataname]).value_counts()
+df_ausgaben['N'] = (data[dataname]).value_counts()
+df_ausgaben['Server(alle)'] = df_ausgaben['N'].cumsum()
 df_ausgaben['N'] = (data[(data.Geschlecht==1.0)][dataname]).value_counts()
 df_ausgaben['Server(m)'] = df_ausgaben['N'].cumsum()
 df_ausgaben['N'] = (data[(data.Geschlecht==2.0)][dataname]).value_counts()
