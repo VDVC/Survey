@@ -70,7 +70,20 @@ df_ausgaben['Server(f)'] = df_ausgaben['N'].cumsum()
 
 del df_ausgaben['N']
 
+# temporäre erste Zeile mit Nullen
+df_ausgaben.loc[df_ausgaben.index.min() - 1] = np.zeros(df_ausgaben.shape[1])
+df_ausgaben.sort_index(inplace=True)
+
+df_ausgaben = df_ausgaben.ffill()
+
+df_ausgaben = df_ausgaben.applymap(np.int64)
+
+df_ausgaben.drop(df_ausgaben.index[0],inplace=True)
+
+df_ausgaben.insert(0,'Betrag',df_ausgaben.index)
+
+
 df_ausgaben.to_csv("./daten/"+str(umfragejahrgang)+"/ausgaben.tsv",sep='\t',
-                  quoting=csv.QUOTE_NONNUMERIC,index_label=["Ausgaben"])
+                  quoting=csv.QUOTE_NONNUMERIC,index=False)
 
 
