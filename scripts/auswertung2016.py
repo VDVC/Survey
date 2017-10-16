@@ -52,4 +52,12 @@ pd.DataFrame(data=freigabe_alter).to_csv("./daten/"+str(umfragejahrgang)+"/freig
                                            quoting=csv.QUOTE_NONNUMERIC,
                                            index_label=["Alter"])
 
+spielzeit_alter=pd.crosstab(data.Nutzungsumfang,\
+               np.floor((umfragejahrgang-(data[data.Geburtsjahr>1950])['Geburtsjahr'])/5)*5)
+
+spielzeit_alter=spielzeit_alter.cumsum()
+pd.DataFrame(data=spielzeit_alter).to_csv("./daten/"+str(umfragejahrgang)+"/spielzeit-alter.tsv",\
+                                           sep='\t',
+                                           index_label=["Spielzeit"])
+
 
