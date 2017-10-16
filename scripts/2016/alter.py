@@ -26,7 +26,7 @@ hist_alter["Weiblich"] = hist_alter_f.to_frame()
 # remove NaN and replace floats by integers
 hist_alter = hist_alter.fillna(0).astype(int)
 
-hist_alter=hist_alter.reindex(np.arange(10,51,1),fill_value=0)
+hist_alter=hist_alter.reindex(np.arange(10,66,1),fill_value=0)
 
 hist_alter.to_csv("./daten/"+str(umfragejahrgang)+"/alter.tsv",sep='\t',
                   quoting=csv.QUOTE_NONNUMERIC,index_label=["Alter"])
