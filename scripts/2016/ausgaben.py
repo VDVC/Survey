@@ -20,12 +20,20 @@ df_ausgaben = df_ausgaben.to_frame()
 df_ausgaben=df_ausgaben.rename(columns={dataname: "N"})
 df_ausgaben['HW(alle)'] = df_ausgaben["N"].cumsum()
 
-
 df_ausgaben['N'] = (data[(data.Geschlecht==1.0)][dataname]).value_counts()
 df_ausgaben['HW(m)'] = df_ausgaben['N'].cumsum()
 df_ausgaben['N'] = (data[(data.Geschlecht==2.0)][dataname]).value_counts()
 df_ausgaben['HW(f)'] = df_ausgaben['N'].cumsum()
 
+def make_crosstab():
+    crosstab=pd.crosstab(data[dataname],\
+               np.floor((umfragejahrgang-(data[data.Geburtsjahr>1950])['Geburtsjahr'])/5)*5)
+    crosstab=crosstab.cumsum()
+    pd.DataFrame(data=crosstab).to_csv("./daten/"+str(umfragejahrgang)+"/"+dataname+"-alter.tsv",\
+                                           sep='\t',
+                                           index_label=["Betrag"])
+
+make_crosstab()
 
 dataname='AusgabenSpieleKauf'
 df_ausgaben['N'] = (data[dataname]).value_counts()
@@ -35,6 +43,8 @@ df_ausgaben['Kauf(m)'] = df_ausgaben['N'].cumsum()
 df_ausgaben['N'] = (data[(data.Geschlecht==2.0)][dataname]).value_counts()
 df_ausgaben['Kauf(f)'] = df_ausgaben['N'].cumsum()
 
+make_crosstab()
+
 dataname='AusgabenSpieleAbos'
 df_ausgaben['N'] = (data[dataname]).value_counts()
 df_ausgaben['Abo(alle)'] = df_ausgaben['N'].cumsum()
@@ -42,6 +52,8 @@ df_ausgaben['N'] = (data[(data.Geschlecht==1.0)][dataname]).value_counts()
 df_ausgaben['Abo(m)'] = df_ausgaben['N'].cumsum()
 df_ausgaben['N'] = (data[(data.Geschlecht==2.0)][dataname]).value_counts()
 df_ausgaben['Abo(f)'] = df_ausgaben['N'].cumsum()
+
+make_crosstab()
 
 dataname='AusgabenAddonsDLCs'
 df_ausgaben['N'] = (data[dataname]).value_counts()
@@ -51,6 +63,8 @@ df_ausgaben['DLC(m)'] = df_ausgaben['N'].cumsum()
 df_ausgaben['N'] = (data[(data.Geschlecht==2.0)][dataname]).value_counts()
 df_ausgaben['DLC(f)'] = df_ausgaben['N'].cumsum()
 
+make_crosstab()
+
 dataname='AusgabenContent'
 df_ausgaben['N'] = (data[dataname]).value_counts()
 df_ausgaben['Cont(alle)'] = df_ausgaben['N'].cumsum()
@@ -58,6 +72,8 @@ df_ausgaben['N'] = (data[(data.Geschlecht==1.0)][dataname]).value_counts()
 df_ausgaben['Cont(m)'] = df_ausgaben['N'].cumsum()
 df_ausgaben['N'] = (data[(data.Geschlecht==2.0)][dataname]).value_counts()
 df_ausgaben['Cont(f)'] = df_ausgaben['N'].cumsum()
+
+make_crosstab()
 
 dataname='AusgabenGameserver'
 df_ausgaben['N'] = (data[dataname]).value_counts()
@@ -67,6 +83,7 @@ df_ausgaben['Server(m)'] = df_ausgaben['N'].cumsum()
 df_ausgaben['N'] = (data[(data.Geschlecht==2.0)][dataname]).value_counts()
 df_ausgaben['Server(f)'] = df_ausgaben['N'].cumsum()
 
+make_crosstab()
 
 del df_ausgaben['N']
 
