@@ -27,6 +27,8 @@ results = io.open("./daten/daten2016.dat", "w", encoding="utf8")
 nennungen = io.open("./daten/2016/nennungen.tsv", "w", encoding="utf8")
 f_unbekannt = io.open("./daten/2016/unbekannte-titel.tsv", "w", encoding="utf8")
 
+kunst = io.open("./daten/2016/kunst-beispiele.tsv", "w", encoding="utf8")
+
 
 
 # Dieses Dictionary ordnet einer IP-Adresse einen Referer zu
@@ -204,7 +206,7 @@ items.append("KunstGrund_Foerderung") #RENAME VARIABLE ( V165 = KunstGrund_3 ).
 items.append("") #RENAME VARIABLE ( V166 = KunstGrund_other ).
 items.append("KunstRealistisch") #RENAME VARIABLE ( V167 = KunstRealistisch ).
 items.append("KunstBeispiel") #RENAME VARIABLE ( V168 = KunstBeispiel ).
-items.append("") #RENAME VARIABLE ( V169 = KunstBeispielName ).
+items.append("KunstBeispielName") #RENAME VARIABLE ( V169 = KunstBeispielName ).
 items.append("VRErfahrung") #RENAME VARIABLE ( V170 = VRErfahrung ).
 items.append("VRPlan") #RENAME VARIABLE ( V171 = VRPlan ).
 items.append("VRNein_Preis") #RENAME VARIABLE ( V172 = VRNein_1 ).
@@ -234,7 +236,7 @@ items.append("Freigabe_5")
 
 #write table headers
 for item in items:
-    if item != "":
+    if item != "" and item != "KunstBeispielName":
         results.write(u'"'+item+u'";')
 
 results.write(u'\n')
@@ -255,6 +257,9 @@ with io.open(rohdaten, encoding='utf8') as f:
         for item in zip(items,spss_entry):
             if item[0] == "":
                 continue
+            elif item[0] == "KunstBeispielName":
+                if item[1] != "":
+                    kunst.write(item[1]+u"\n")
             elif item[0][:5] == "Spiel":
                 game = item[1]
                 if (len(game) > 1):
@@ -286,5 +291,5 @@ for nr in range(0,6):
 
 f_unbekannt.write(u'"Unbekannter Titel"\t"Nennungen"\n')
 for item in sorted(d_unbekannt.items(),key=lambda x: x[1], reverse=True):
-	f_unbekannt.write(u'"'+unicode(item[0])+u'"\t'+unicode(item[1])+u'\n')
+    f_unbekannt.write(u'"'+unicode(item[0])+u'"\t'+unicode(item[1])+u'\n')
 
